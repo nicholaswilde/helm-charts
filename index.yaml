@@ -3,12 +3,12 @@ entries:
   installer:
   - apiVersion: v2
     appVersion: 0.2.9
-    created: "2020-11-14T22:39:51.961591488-08:00"
-    description: A Helm chart for Kubernetes
-    digest: da0a15631433fec2f8588bb30070d142f341df66071e960be37bbed77a0e083c
+    created: "2020-11-14T23:49:47.651065425-08:00"
+    description: Quickly install pre-compiled binaries from Github releases.
+    digest: 397ebf12413d7e6e92472a0a75c8834b9176b2f10a1fdf6e7fc679a5a126e175
     name: installer
     type: application
     urls:
-    - https://github.com/nicholaswilde/helm-charts/releases/download/v0.1.0/installer-0.1.0.tgz
-    version: 0.1.0
-generated: "2020-11-14T22:39:51.957206788-08:00"
+    - https://github.com/nicholaswilde/helm-charts/releases/download/v0.1.1/installer-0.1.1.tgz
+    version: 0.1.1
+generated: "2020-11-14T23:49:47.646909815-08:00"
