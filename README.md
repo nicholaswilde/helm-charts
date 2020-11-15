@@ -1,2 +1,8 @@
 # helm-charts
-A Helm chart for jpillora's installer.
+
+## Installation
+
+```console
+helm repo add nicholaswilde https://nicholaswilde.github.io/helm-charts/
+helm search nicholaswilde
+```
