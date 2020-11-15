@@ -1,3 +1,4 @@
+{{- $fullName := include "installer.fullname" . -}}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -47,6 +48,11 @@ spec:
               port: 3000
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          {{- if .Values.secret.enabled }}
+          envFrom:
+          - secretRef:
+              name: {{ $fullName }}
+          {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
