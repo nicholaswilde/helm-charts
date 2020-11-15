@@ -1,6 +1,6 @@
 apiVersion: v2
 name: installer
-description: A Helm chart for Kubernetes
+description: Quickly install pre-compiled binaries from Github releases.
 
 # A chart can be either an 'application' or a 'library' chart.
 #
