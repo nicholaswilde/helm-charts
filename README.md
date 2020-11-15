@@ -1,2 +1,2 @@
-# helm-installer
-A Helm chart for jpillora's installer.
+# helm-charts
+All of my helm charts.
