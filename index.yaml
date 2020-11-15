@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  installer:
+  - apiVersion: v2
+    appVersion: 0.2.9
+    created: "2020-11-14T22:39:51.961591488-08:00"
+    description: A Helm chart for Kubernetes
+    digest: da0a15631433fec2f8588bb30070d142f341df66071e960be37bbed77a0e083c
+    name: installer
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/v0.1.0/installer-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-11-14T22:39:51.957206788-08:00"
