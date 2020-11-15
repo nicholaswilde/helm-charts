@@ -32,7 +32,7 @@ The command removes all the Kubernetes components associated with the chart and 
 
 ## Configuration
 
-Read through the [values.yaml](https://github.com/k8s-at-home/charts/blob/master/charts/unifi-poller/values.yaml) file. It has several commented out suggested values.
+Read through the [values.yaml](https://github.com/nicholaswilde/helm-charts/blob/main/charts/installer/values.yaml) file. It has several commented out suggested values.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
