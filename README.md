@@ -16,7 +16,7 @@ You can then run `helm search repo nicholaswilde` to see the charts.
 
 ## Charts
 
-See [artifact hub](https://artifacthub.io/packages/search?org=nicholaswilde) for a complete list.
+See [artifact hub](https://artifacthub.io/packages/search?repo=nicholaswilde) for a complete list.
 
 ## License
 
