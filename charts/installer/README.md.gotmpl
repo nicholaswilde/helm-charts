@@ -18,6 +18,7 @@
 ## TL;DR
 ```console
 $ helm repo add {{ template "repository.organization" . }} {{ template "helm.url" . }}
+$ helm repo update
 $ helm install {{ template "chart.name" . }} {{ template "helm.path" . }}
 ```
 {{- end -}}
@@ -52,7 +53,7 @@ file. It has several commented out suggested values.
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 ```console
 helm install {{ template "chart.name" . }} \
-  --set env.TZ="America/New York" \
+  --set env.USER="nicholaswilde" \
     {{ template "helm.path" . }}
 ```
 {{- end -}}
