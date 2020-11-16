@@ -1,5 +1,3 @@
-#-----------------------------------#------------------------------------
-
 # installer
 
 Quickly install pre-compiled binaries from Github releases.
