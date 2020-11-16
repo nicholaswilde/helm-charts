@@ -1,6 +1,7 @@
 apiVersion: v2
 name: installer
 description: Quickly install pre-compiled binaries from Github releases.
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/installer"
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -21,3 +22,4 @@ version: 0.1.2
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 appVersion: 0.2.9
+
