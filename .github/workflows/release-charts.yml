@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'Chart.yaml'
-      - 'Chart.yml'
 
 jobs:
   release:
