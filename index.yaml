@@ -11,4 +11,16 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/v0.1.1/installer-0.1.1.tgz
     version: 0.1.1
+  transmission:
+  - apiVersion: v2
+    appVersion: "3"
+    created: "2020-11-19T09:00:01.232637289Z"
+    description: A Fast, Easy, and Free BitTorrent Client.
+    digest: c7953e9a18f03664f34e3c1c69aeaa555e969297210489e653f964c016b862ff
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/transmission
+    name: transmission
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/transmission-0.1.4/transmission-0.1.4.tgz
+    version: 0.1.4
 generated: "2020-11-14T23:49:47.646909815-08:00"
