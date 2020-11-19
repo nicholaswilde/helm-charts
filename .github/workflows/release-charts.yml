@@ -3,8 +3,8 @@ name: Release Charts
 
 on:
   push:
-    paths:
-    - 'Chart.**'
+    branches: 
+      - main
 
 jobs:
   release:
