@@ -3,6 +3,17 @@ entries:
   installer:
   - apiVersion: v2
     appVersion: 0.2.9
+    created: "2020-11-19T09:02:06.237218899Z"
+    description: Quickly install pre-compiled binaries from Github releases.
+    digest: 67819939afe55b60856f02edd9b178835b2f414ddf3967cfcf2445c9d104dca2
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/installer
+    name: installer
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/installer-0.1.4/installer-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 0.2.9
     created: "2020-11-14T23:49:47.651065425-08:00"
     description: Quickly install pre-compiled binaries from Github releases.
     digest: 397ebf12413d7e6e92472a0a75c8834b9176b2f10a1fdf6e7fc679a5a126e175
