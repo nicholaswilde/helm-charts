@@ -3,6 +3,25 @@ entries:
   installer:
   - apiVersion: v2
     appVersion: 0.2.9
+    created: "2020-11-20T06:19:27.588307896Z"
+    description: Quickly install pre-compiled binaries from Github releases.
+    digest: ca32ee33769331e74bfbd02aa42123278f9ca008f93d170282d61b7e9c26c82d
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/installer
+    keywords:
+    - installer
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: installer
+    sources:
+    - https://github.com/jpillora/installer
+    - https://hub.docker.com/r/nicholaswilde/installer
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/installer-0.1.5/installer-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 0.2.9
     created: "2020-11-19T09:02:06.237218899Z"
     description: Quickly install pre-compiled binaries from Github releases.
     digest: 67819939afe55b60856f02edd9b178835b2f414ddf3967cfcf2445c9d104dca2
@@ -13,6 +32,23 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/installer-0.1.4/installer-0.1.4.tgz
     version: 0.1.4
   transmission:
+  - apiVersion: v2
+    appVersion: "3"
+    created: "2020-11-20T06:19:27.683145003Z"
+    description: A Fast, Easy, and Free BitTorrent Client.
+    digest: 13070bc798104e0b36152af7ac0c1179d7725e6e0404e5137269ee1b15c8183a
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/transmission
+    keywords:
+    - transmission
+    - bittorrent
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: transmission
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/transmission-0.1.5/transmission-0.1.5.tgz
+    version: 0.1.5
   - apiVersion: v2
     appVersion: "3"
     created: "2020-11-19T09:00:01.232637289Z"
