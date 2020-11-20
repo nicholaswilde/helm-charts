@@ -1,3 +1,4 @@
+---
 # Default values for transmission.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
@@ -52,12 +53,12 @@ service:
   port: 9091
   protocol: TCP
   additionalPorts:
-  - name: "51413-tcp"
-    port: 51413
-    protocol: TCP
-  - name: "51412-udp"
-    port: 51413
-    protocol: UDP
+    - name: "51413-tcp"
+      port: 51413
+      protocol: TCP
+    - name: "51412-udp"
+      port: 51413
+      protocol: UDP
 
 ingress:
   enabled: true
