@@ -57,24 +57,23 @@ ingress:
   #      - chart-example.local
 
 persistence:
-  data:
-    enabled: true
-    ## Transmission downloads data Persistent Volume Storage Class
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
-    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
-    ##   GKE, AWS & OpenStack)
-    ##
-    storageClass: "managed-nfs-storage"
-    ##
-    ## If you want to reuse an existing claim, you can pass the name of the PVC using
-    ## the existingClaim variable
-    # existingClaim: your-claim
-    accessMode: ReadWriteOnce
-    size: 1Gi
-    ## Do not delete the pvc upon helm uninstall
-    skipuninstall: false
+  enabled: true
+  ## gotify downloads data Persistent Volume Storage Class
+  ## If defined, storageClassName: <storageClass>
+  ## If set to "-", storageClassName: "", which disables dynamic provisioning
+  ## If undefined (the default) or set to null, no storageClassName spec is
+  ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+  ##   GKE, AWS & OpenStack)
+  ##
+  storageClass: "managed-nfs-storage"
+  ##
+  ## If you want to reuse an existing claim, you can pass the name of the PVC using
+  ## the existingClaim variable
+  # existingClaim: your-claim
+  accessMode: ReadWriteOnce
+  size: 1Gi
+  ## Do not delete the pvc upon helm uninstall
+  skipuninstall: false
 
 config:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
