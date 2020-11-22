@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 3.00
-version: 0.1.6
+version: 0.1.7
 name: transmission
 description: A Fast, Easy, and Free BitTorrent Client.
 type: application
@@ -10,6 +10,9 @@ icon: "https://raw.githubusercontent.com/transmission/transmission/master/web/pu
 keywords:
   - transmission
   - bittorrent
+sources:
+  - https://transmissionbt.com/
+  - https://hub.docker.com/r/linuxserver/transmission
 maintainers:
   - name: Nicholas Wilde
     email: ncwilde43@gmail.com

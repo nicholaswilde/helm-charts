@@ -2,7 +2,7 @@
 
 Quickly install pre-compiled binaries from Github releases.
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.9](https://img.shields.io/badge/AppVersion-0.2.9-informational?style=flat-square)
+![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.9](https://img.shields.io/badge/AppVersion-0.2.9-informational?style=flat-square)
 
 ## TL;DR
 ```console
@@ -39,7 +39,7 @@ helm install installer \
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 For example,
 ```console
-helm install installer nicholaswilde/installer --values values.yaml
+helm install installer nicholaswilde/installer -f values.yaml
 ```
 
 ## Author

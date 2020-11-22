@@ -2,7 +2,7 @@
 
 A Fast, Easy, and Free BitTorrent Client.
 
-![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.00](https://img.shields.io/badge/AppVersion-3.00-informational?style=flat-square)
+![Version: 0.1.7](https://img.shields.io/badge/Version-0.1.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.00](https://img.shields.io/badge/AppVersion-3.00-informational?style=flat-square)
 
 ## TL;DR
 ```console
@@ -39,7 +39,7 @@ helm install transmission \
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 For example,
 ```console
-helm install transmission nicholaswilde/transmission --values values.yaml
+helm install transmission nicholaswilde/transmission -f values.yaml
 ```
 
 ## Author

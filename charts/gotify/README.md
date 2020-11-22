@@ -2,7 +2,7 @@
 
 a simple server for sending and receiving messages
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.0.20](https://img.shields.io/badge/AppVersion-2.0.20-informational?style=flat-square)
+![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.0.20](https://img.shields.io/badge/AppVersion-2.0.20-informational?style=flat-square)
 
 ## TL;DR
 ```console
@@ -39,7 +39,7 @@ helm install gotify \
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 For example,
 ```console
-helm install gotify nicholaswilde/gotify --values values.yaml
+helm install gotify nicholaswilde/gotify -f values.yaml
 ```
 
 ## Author
