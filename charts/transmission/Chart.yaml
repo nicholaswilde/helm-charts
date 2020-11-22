@@ -1,11 +1,12 @@
 ---
 apiVersion: v2
 appVersion: 3.00
-version: 0.1.5
+version: 0.1.6
 name: transmission
 description: A Fast, Easy, and Free BitTorrent Client.
 type: application
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/transmission"
+icon: "https://raw.githubusercontent.com/transmission/transmission/master/web/public_html/images/webclip-icon.png"
 keywords:
   - transmission
   - bittorrent
