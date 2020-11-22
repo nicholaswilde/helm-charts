@@ -18,6 +18,7 @@
 ## TL;DR
 ```console
 $ helm repo add {{ template "repository.organization" . }} {{ template "helm.url" . }}
+$ helm repo update
 $ helm install {{ template "chart.name" . }} {{ template "helm.path" . }}
 ```
 {{- end -}}
