@@ -3,6 +3,29 @@ entries:
   gotify:
   - apiVersion: v2
     appVersion: 2.0.20
+    created: "2020-11-22T02:52:39.466664987Z"
+    description: a simple server for sending and receiving messages
+    digest: 4dbaf2da8388e7a1094e6be215121c34ec089a90e00e7fb80af38825d0ad9d20
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/gotify
+    icon: https://gotify.net/img/logo.png
+    keywords:
+    - server
+    - gotify
+    - messages
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: gotify
+    sources:
+    - https://gotify.net/
+    - https://github.com/gotify/server
+    - https://hub.docker.com/r/gotify/server
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/gotify-0.1.1/gotify-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 2.0.20
     created: "2020-11-22T02:23:44.995109696Z"
     description: a simple server for sending and receiving messages
     digest: 5ffaa9903dc6b48d5cda90064aaf9aebbd584d1210a8c16f9a77319d6c8dde4b
@@ -56,6 +79,24 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/installer-0.1.4/installer-0.1.4.tgz
     version: 0.1.4
   transmission:
+  - apiVersion: v2
+    appVersion: "3"
+    created: "2020-11-22T02:52:39.56227134Z"
+    description: A Fast, Easy, and Free BitTorrent Client.
+    digest: 943a43927af5c410b8b591818f3a87603e91c97f432b45875d23c84ffb235d43
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/transmission
+    icon: https://raw.githubusercontent.com/transmission/transmission/master/web/public_html/images/webclip-icon.png
+    keywords:
+    - transmission
+    - bittorrent
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: transmission
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/transmission-0.1.6/transmission-0.1.6.tgz
+    version: 0.1.6
   - apiVersion: v2
     appVersion: "3"
     created: "2020-11-20T06:19:27.683145003Z"
