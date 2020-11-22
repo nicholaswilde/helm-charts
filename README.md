@@ -1,7 +1,7 @@
 # helm-charts
 My collection of [Helm](https://helm.sh/) charts.
 
-[![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/nicholaswilde)](https://artifacthub.io/packages/search?repo=nicholaswilde)
+[![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/nicholaswilde)](https://artifacthub.io/packages/search?repo=nicholaswilde) ![Release Charts](https://github.com/nicholaswilde/helm-charts/workflows/Release%20Charts/badge.svg)
 
 ## Usage
 
