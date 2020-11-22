@@ -1,6 +1,8 @@
 # helm-charts
 My collection of [Helm](https://helm.sh/) charts.
 
+[![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/nicholaswilde)](https://artifacthub.io/packages/search?repo=nicholaswilde)
+
 ## Usage
 
 [Helm](https://helm.sh) must be installed to use the charts.
