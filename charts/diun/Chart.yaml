@@ -1,0 +1,21 @@
+---
+apiVersion: v2
+appVersion: 4.9.0
+version: 0.1.0
+name: diun
+description: Docker image update notifier
+type: application
+homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/diun"
+icon: "https://raw.githubusercontent.com/crazy-max/diun/master/.res/diun.png"
+keywords:
+  - docker
+  - notifier
+  - notification
+  - image
+  - update
+sources:
+  - https://crazymax.dev/diun/
+  - https://hub.docker.com/r/crazymax/diun
+maintainers:
+  - name: Nicholas Wilde
+    email: ncwilde43@gmail.com

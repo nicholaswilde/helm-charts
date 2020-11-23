@@ -1,0 +1,113 @@
+---
+# Default values for template.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+image:
+  repository: crazymax/diun
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "4.9.0"
+
+secret:
+  DIUN_NOTIF_GOTIFY_TOKEN: "Af-zgMzu-2fke_6"
+
+# https://crazymax.dev/diun/config/
+config:
+  # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  TZ: "America/Los_Angeles"
+  LOG_LEVEL: "info"
+  LOG_JSON: "false"
+  DIUN_WATCH_WORKERS: "20"
+  DIUN_WATCH_SCHEDULE: "0 */12 * * *"
+  # Gotify
+  DIUN_NOTIF_GOTIFY_ENDPOINT: "http://gotify.192.168.1.189.nip.io/"
+  DIUN_NOTIF_GOTIFY_PRIORITY: "1"
+  DIUN_NOTIF_GOTIFY_TIMEOUT: "10s"
+  # Kubernetes
+  DIUN_PROVIDERS_KUBERNETES: "true"
+
+podAnnotations:
+  # https://crazymax.dev/diun/providers/kubernetes/#kubernetes-annotations
+  # Set to true to enable image analysis of this pod
+  diun.enable: "true"
+  # Watch all tags of this pod image
+  diun.watch_repo: "true"
+  ## Registry options name to use
+  # regopt: ""
+  ## Maximum number of tags to watch if diun.watch_repo enabled. 0 means all of them
+  # max_tags: 0
+  ## Semi-colon separated list of regular expressions to include tags. Can be
+  ## useful if you enable diun.watch_repo
+  # include_tags: ""
+  ## Semi-colon separated list of regular expressions to exclude tags. Can be
+  ## useful if you enable diun.watch_repo
+  # exclude_tags: ""
+
+persistence:
+  enabled: true
+  ## Template downloads data Persistent Volume Storage Class
+  ## If defined, storageClassName: <storageClass>
+  ## If set to "-", storageClassName: "", which disables dynamic provisioning
+  ## If undefined (the default) or set to null, no storageClassName spec is
+  ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+  ##   GKE, AWS & OpenStack)
+  ##
+  storageClass: "managed-nfs-storage"
+  ##
+  ## If you want to reuse an existing claim, you can pass the name of the PVC using
+  ## the existingClaim variable
+  # existingClaim: your-claim
+  accessMode: ReadWriteOnce
+  size: 1Gi
+  ## Do not delete the pvc upon helm uninstall
+  skipuninstall: false
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+nameOverride: ""
+fullnameOverride: ""
+
+replicaCount: 1
+
+nodeSelector: {}
+
+imagePullSecrets: []
+
+tolerations: []
+
+affinity: {}
