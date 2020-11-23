@@ -1,5 +1,6 @@
 # Helm Charts
-[![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/nicholaswilde)](https://artifacthub.io/packages/search?repo=nicholaswilde) ![Release Charts](https://github.com/nicholaswilde/helm-charts/workflows/Release%20Charts/badge.svg)
+[![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/nicholaswilde)](https://artifacthub.io/packages/search?repo=nicholaswilde) ![Release Charts](https://github.com/nicholaswilde/helm-charts/workflows/Release%20Charts/badge.svg) ![GitHub](https://img.shields.io/github/license/nicholaswilde/helm-charts) ![GitHub all releases](https://img.shields.io/github/downloads/nicholaswilde/helm-charts/total)
+
 My collection of [Helm](https://helm.sh/) charts.
 
 ## Usage
