@@ -1,7 +1,6 @@
-# helm-charts
-My collection of [Helm](https://helm.sh/) charts.
-
+# Helm Charts
 [![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/nicholaswilde)](https://artifacthub.io/packages/search?repo=nicholaswilde) ![Release Charts](https://github.com/nicholaswilde/helm-charts/workflows/Release%20Charts/badge.svg)
+My collection of [Helm](https://helm.sh/) charts.
 
 ## Usage
 
@@ -12,6 +11,7 @@ Once Helm is set up properly, add the repo as follows:
 
 ```console
 helm repo add nicholaswilde https://nicholaswilde.github.io/helm-charts/
+helm repo update
 ```
 You can then run `helm search repo nicholaswilde` to see the charts.
 
