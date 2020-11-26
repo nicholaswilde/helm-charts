@@ -1,8 +1,8 @@
 # transmission
 
-A Fast, Easy, and Free BitTorrent Client.
+![Version: 0.1.9](https://img.shields.io/badge/Version-0.1.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.00](https://img.shields.io/badge/AppVersion-3.00-informational?style=flat-square)
 
-![Version: 0.1.7](https://img.shields.io/badge/Version-0.1.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.00](https://img.shields.io/badge/AppVersion-3.00-informational?style=flat-square)
+A Fast, Easy, and Free BitTorrent Client.
 
 ## TL;DR
 ```console
