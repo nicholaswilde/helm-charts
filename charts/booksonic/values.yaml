@@ -111,14 +111,14 @@ persistence:
     skipuninstall: false
 
 livenessProbe:
-  enabled: false
+  enabled: true
   initialDelaySeconds: 30
   periodSeconds: 10
   timeoutSeconds: 1
   failureThreshold: 3
   successThreshold: 1
 readinessProbe:
-  enabled: false
+  enabled: true
   initialDelaySeconds: 15
   periodSeconds: 10
   timeoutSeconds: 1
