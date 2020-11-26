@@ -31,6 +31,10 @@ pre-commit install-hooks
 
 See [artifact hub](https://artifacthub.io/packages/search?repo=nicholaswilde) for a complete list.
 
+## Inspiration
+
+Inspiration for this repository has been taken from [k8s-at-home/charts](https://github.com/k8s-at-home/charts).
+
 ## License
 
 [Apache 2.0 License](./LICENSE)
