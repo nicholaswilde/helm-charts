@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 2.0.20
-version: 0.1.6
+version: 0.1.7
 name: gotify
 description: a simple server for sending and receiving messages
 type: application
