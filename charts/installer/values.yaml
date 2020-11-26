@@ -1,3 +1,4 @@
+---
 # Default values for installer.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
@@ -6,11 +7,8 @@ replicaCount: 1
 
 image:
   repository: nicholaswilde/installer
-  pullPolicy: Always
-
-imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
+  pullPolicy: IfNotPresent
+  tag: "0.2.9"
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -21,17 +19,16 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
-secret:
-  enabled: false
-  user: ""
-  gh_token: ""
+secret: {}
+  # user: ""
+  # gh_token: ""
 
 podAnnotations:
   # https://crazymax.dev/diun/providers/kubernetes/#kubernetes-annotations
   # Set to true to enable image analysis of this pod
-  diun.enable: "true"
+  diun.enable: "false"
   # Watch all tags of this pod image
-  diun.watch_repo: "true"
+  diun.watch_repo: "false"
   ## Registry options name to use
   # regopt: ""
   ## Maximum number of tags to watch if diun.watch_repo enabled. 0 means all of them
@@ -43,17 +40,6 @@ podAnnotations:
   ## useful if you enable diun.watch_repo
   # exclude_tags: ""
 
-podSecurityContext: {}
-  # fsGroup: 2000
-
-securityContext: {}
-  # capabilities:
-  #   drop:
-  #   - ALL
-  # readOnlyRootFilesystem: true
-  # runAsNonRoot: true
-  # runAsUser: 1000
-
 service:
   type: ClusterIP
   port: 3000
@@ -64,8 +50,10 @@ ingress:
   annotations:
     nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
   hosts:
-    - host: installer.192.168.1.193.nip.io
-      paths: [/]
+    - host: "installer.192.168.1.193.nip.io"
+      paths:
+        - path: "/"
+          pathType: Prefix
   # tls: []
   #  - secretName: chart-example-tls
   #    hosts:
@@ -89,6 +77,21 @@ autoscaling:
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
 
 nodeSelector: {}
 

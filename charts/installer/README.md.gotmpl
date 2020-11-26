@@ -66,15 +66,21 @@ helm install {{ template "chart.name" . }} {{ template "helm.path" . }} -f value
 ```
 {{- end -}}
 
+{{- define "todo" -}}
+## Todo
+- [ ] Incorporate Docker secret.
+{{- end -}}
+
 {{- define "author" -}}
 ## Author
 This project was started in 2020 by Nicholas Wilde.
 {{- end -}}
 
 {{ template "chart.header" . }}
-{{ template "chart.description" . }}
 
 {{ template "chart.versionBadge" . }}{{ template "chart.typeBadge" . }}{{ template "chart.appVersionBadge" . }}
+
+{{ template "chart.description" . }}
 
 {{ template "chart.requirementsSection" . }}
 
