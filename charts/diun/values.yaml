@@ -9,8 +9,8 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "4.9.0"
 
-secret:
-  DIUN_NOTIF_GOTIFY_TOKEN: "Af-zgMzu-2fke_6"
+secret: {}
+  # DIUN_NOTIF_GOTIFY_TOKEN: ""
 
 # https://crazymax.dev/diun/config/
 config:
@@ -30,9 +30,9 @@ config:
 podAnnotations:
   # https://crazymax.dev/diun/providers/kubernetes/#kubernetes-annotations
   # Set to true to enable image analysis of this pod
-  diun.enable: "true"
+  diun.enable: "false"
   # Watch all tags of this pod image
-  diun.watch_repo: "true"
+  diun.watch_repo: "false"
   ## Registry options name to use
   # regopt: ""
   ## Maximum number of tags to watch if diun.watch_repo enabled. 0 means all of them
@@ -45,7 +45,7 @@ podAnnotations:
   # exclude_tags: ""
 
 persistence:
-  enabled: true
+  enabled: false
   ## Template downloads data Persistent Volume Storage Class
   ## If defined, storageClassName: <storageClass>
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
@@ -53,7 +53,7 @@ persistence:
   ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
   ##   GKE, AWS & OpenStack)
   ##
-  storageClass: "managed-nfs-storage"
+  # storageClass: "-"
   ##
   ## If you want to reuse an existing claim, you can pass the name of the PVC using
   ## the existingClaim variable
