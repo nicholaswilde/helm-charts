@@ -1,16 +1,13 @@
 ---
 repos:
-  - repo: https://github.com/norwoodj/helm-docs
-    rev: v1.4.0
+  - repo: local
     hooks:
-      - id: helm-docs
+      - id: ct-lint
+        name: "Chart Test: Lint"
+        language: docker_image
+        pass_filenames: false
+        types: ['file']
+        files: '^charts/.*(\.ya?ml|\.tpl|\.helmignore|NOTES.txt)'
+        entry: -u 0 quay.io/helmpack/chart-testing:v3.0.0 ct
         args:
-          # Make the tool search for charts only under the `example-charts` directory
-          - --chart-search-root=charts
-
-          # The `./` makes it relative to the chart-search-root set above
-          - --template-files=./_templates.gotmpl
-
-          # Repeating the flag adds this to the list, now [./_templates.gotmpl, README.md.gotmpl]
-          # A base filename makes it relative to each chart directory found
-          - --template-files=README.md.gotmpl
+          - lint
