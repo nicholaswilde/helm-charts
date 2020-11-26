@@ -1,0 +1,26 @@
+{{- if and .Values.persistence.othermedia.enabled (not .Values.persistence.othermedia.existingClaim) }}
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ template "booksonic.fullname" . }}-othermedia
+  {{- if .Values.persistence.othermedia.skipuninstall }}
+  annotations:
+    "helm.sh/resource-policy": keep
+  {{- end }}
+  labels:
+    {{- include "booksonic.labels" . | nindent 4 }}
+spec:
+  accessModes:
+    - {{ .Values.persistence.othermedia.accessMode | quote }}
+  resources:
+    requests:
+      storage: {{ .Values.persistence.othermedia.size | quote }}
+{{- if .Values.persistence.othermedia.storageClass }}
+{{- if (eq "-" .Values.persistence.othermedia.storageClass) }}
+  storageClassName: ""
+{{- else }}
+  storageClassName: {{ .Values.persistence.othermedia.storageClass | quote }}
+{{- end }}
+{{- end }}
+{{- end -}}

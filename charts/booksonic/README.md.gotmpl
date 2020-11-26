@@ -18,6 +18,7 @@
 ## TL;DR
 ```console
 $ helm repo add {{ template "repository.organization" . }} {{ template "helm.url" . }}
+$ helm repo update
 $ helm install {{ template "chart.name" . }} {{ template "helm.path" . }}
 ```
 {{- end -}}
@@ -65,6 +66,11 @@ helm install {{ template "chart.name" . }} {{ template "helm.path" . }} -f value
 ```
 {{- end -}}
 
+{{- define "todo" -}}
+## Todo
+- [ ] Incorporate Docker secret.
+{{- end -}}
+
 {{- define "author" -}}
 ## Author
 This project was started in 2020 by Nicholas Wilde.
@@ -93,7 +99,8 @@ This project was started in 2020 by Nicholas Wilde.
 
 {{ template "configuration.example.file" . }}
 
+{{ template "todo" . }}
+
 {{ template "author" . }}
 
 {{ template "helm-docs.versionFooter" . }}
-

@@ -1,0 +1,26 @@
+{{- if and .Values.persistence.podcasts.enabled (not .Values.persistence.podcasts.existingClaim) }}
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ template "booksonic.fullname" . }}-podcasts
+  {{- if .Values.persistence.podcasts.skipuninstall }}
+  annotations:
+    "helm.sh/resource-policy": keep
+  {{- end }}
+  labels:
+    {{- include "booksonic.labels" . | nindent 4 }}
+spec:
+  accessModes:
+    - {{ .Values.persistence.podcasts.accessMode | quote }}
+  resources:
+    requests:
+      storage: {{ .Values.persistence.podcasts.size | quote }}
+{{- if .Values.persistence.podcasts.storageClass }}
+{{- if (eq "-" .Values.persistence.podcasts.storageClass) }}
+  storageClassName: ""
+{{- else }}
+  storageClassName: {{ .Values.persistence.podcasts.storageClass | quote }}
+{{- end }}
+{{- end }}
+{{- end -}}

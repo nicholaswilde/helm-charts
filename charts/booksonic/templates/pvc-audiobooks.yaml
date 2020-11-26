@@ -1,0 +1,26 @@
+{{- if and .Values.persistence.audiobooks.enabled (not .Values.persistence.audiobooks.existingClaim) }}
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ template "booksonic.fullname" . }}-audiobooks
+  {{- if .Values.persistence.audiobooks.skipuninstall }}
+  annotations:
+    "helm.sh/resource-policy": keep
+  {{- end }}
+  labels:
+    {{- include "booksonic.labels" . | nindent 4 }}
+spec:
+  accessModes:
+    - {{ .Values.persistence.audiobooks.accessMode | quote }}
+  resources:
+    requests:
+      storage: {{ .Values.persistence.audiobooks.size | quote }}
+{{- if .Values.persistence.audiobooks.storageClass }}
+{{- if (eq "-" .Values.persistence.audiobooks.storageClass) }}
+  storageClassName: ""
+{{- else }}
+  storageClassName: {{ .Values.persistence.audiobooks.storageClass | quote }}
+{{- end }}
+{{- end }}
+{{- end -}}
