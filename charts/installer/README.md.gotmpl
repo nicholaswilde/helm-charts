@@ -73,7 +73,7 @@ helm install {{ template "chart.name" . }} {{ template "helm.path" . }} -f value
 
 {{- define "author" -}}
 ## Author
-This project was started in 2020 by Nicholas Wilde.
+This project was started in 2020 by [Nicholas Wilde](https://github.com/{{ template "repository.organization" . }}).
 {{- end -}}
 
 {{ template "chart.header" . }}
