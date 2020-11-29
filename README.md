@@ -4,6 +4,7 @@
 [![GitHub](https://img.shields.io/github/license/nicholaswilde/helm-charts)](https://github.com/nicholaswilde/helm-charts/blob/main/LICENSE)
 [![GitHub all releases](https://img.shields.io/github/downloads/nicholaswilde/helm-charts/total)](https://github.com/nicholaswilde/helm-charts/releases)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnicholaswilde%2Fhelm-charts.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnicholaswilde%2Fhelm-charts?ref=badge_shield)
 
 My collection of [Helm](https://helm.sh/) charts.
 
@@ -42,6 +43,9 @@ Inspiration for this repository has been taken from [k8s-at-home/charts](https:/
 ## License
 
 [Apache 2.0 License](./LICENSE)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnicholaswilde%2Fhelm-charts.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnicholaswilde%2Fhelm-charts?ref=badge_large)
 
 ## Author
 This project was started in 2020 by [Nicholas Wilde](https://github.com/nicholaswilde/).
