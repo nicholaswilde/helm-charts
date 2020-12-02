@@ -15,7 +15,7 @@ spec:
     - {{ .Values.persistence.data.accessMode | quote }}
   resources:
     requests:
-      storage: {{ .Values.data.size | quote }}
+      storage: {{ .Values.persistence.data.size | quote }}
 {{- if .Values.persistence.data.storageClass }}
 {{- if (eq "-" .Values.persistence.data.storageClass) }}
   storageClassName: ""
