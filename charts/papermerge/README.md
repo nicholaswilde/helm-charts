@@ -1,45 +1,45 @@
-# booksonic
+# papermerge
 
-The selfhosted audiobook server
+Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2](https://img.shields.io/badge/AppVersion-1.2-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.5.3](https://img.shields.io/badge/AppVersion-1.5.3-informational?style=flat-square)
 
 ## TL;DR
 ```console
 $ helm repo add nicholaswilde https://nicholaswilde.github.io/helm-charts/
 $ helm repo update
-$ helm install booksonic nicholaswilde/booksonic
+$ helm install papermerge nicholaswilde/papermerge
 ```
 
 ## Installing the Chart
-To install the chart with the release name `booksonic`:
+To install the chart with the release name `papermerge`:
 ```console
-helm install booksonic nicholaswilde/booksonic
+helm install papermerge nicholaswilde/papermerge
 ```
 
 ## Uninstalling the Chart
-To uninstall the `booksonic` deployment:
+To uninstall the `papermerge` deployment:
 ```console
-helm uninstall booksonic
+helm uninstall papermerge
 ```
 The command removes all the Kubernetes components associated with the chart and deletes the release.
 
 ## Configuration
 
-Read through the [values.yaml](https://github.com/nicholaswilde/helm-charts/blob/master/charts/booksonic/values.yaml)
+Read through the [values.yaml](https://github.com/nicholaswilde/helm-charts/blob/master/charts/papermerge/values.yaml)
 file. It has several commented out suggested values.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 ```console
-helm install booksonic \
+helm install papermerge \
   --set env.TZ="America/New York" \
-    nicholaswilde/booksonic
+    nicholaswilde/papermerge
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 For example,
 ```console
-helm install booksonic nicholaswilde/booksonic -f values.yaml
+helm install papermerge nicholaswilde/papermerge -f values.yaml
 ```
 
 ## Todo
