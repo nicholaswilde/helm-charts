@@ -62,6 +62,16 @@ spec:
           {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          {{- if .Values.config }}
+          envFrom:
+            - configMapRef:
+                name: {{ include "booksonic.fullname" . }}
+          {{- end }}
+          {{- if .Values.secret }}
+          envFrom:
+            - secretRef:
+                name: {{ include "booksonic.fullname" . }}
+          {{- end }}
           volumeMounts:
             - name: config
               mountPath: /config
