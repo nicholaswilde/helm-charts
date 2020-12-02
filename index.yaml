@@ -476,6 +476,29 @@ entries:
   papermerge:
   - apiVersion: v2
     appVersion: 1.5.3
+    created: "2020-12-02T04:45:40.466651537Z"
+    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    digest: 00e9c46ed8dbce286b0f379a9395e79d3ae8c2a91746090b0e82e68b0b6beb3b
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
+    keywords:
+    - paper
+    - merge
+    - document
+    - scan
+    - scanner
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: papermerge
+    sources:
+    - https://www.papermerge.com/
+    - https://hub.docker.com/r/linuxserver/papermerge
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/papermerge-0.1.1/papermerge-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.5.3
     created: "2020-12-02T04:30:49.920561147Z"
     description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
     digest: c92f56b5cf1057154a6520c17c3899799225bf86e1862252b4cec259942a7b9f
