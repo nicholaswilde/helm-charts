@@ -1,0 +1,21 @@
+---
+apiVersion: v2
+appVersion: 1.5.3
+version: 0.1.0
+name: papermerge
+description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+type: application
+homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge"
+icon: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png"
+keywords:
+  - paper
+  - merge
+  - document
+  - scan
+  - scanner
+sources:
+  - https://www.papermerge.com/
+  - https://hub.docker.com/r/linuxserver/papermerge
+maintainers:
+  - name: Nicholas Wilde
+    email: ncwilde43@gmail.com

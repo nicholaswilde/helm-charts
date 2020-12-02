@@ -8,6 +8,6 @@ repos:
         pass_filenames: false
         types: ['file']
         files: '^charts/.*(\.ya?ml|\.tpl|\.helmignore|NOTES.txt)'
-        entry: -u 0 quay.io/helmpack/chart-testing:v3.3.0 ct
+        entry: -u 0 quay.io/helmpack/chart-testing:v3.3.1 ct
         args:
           - lint
