@@ -543,6 +543,29 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/papermerge-0.1.0/papermerge-0.1.0.tgz
     version: 0.1.0
+  projectsend:
+  - apiVersion: v2
+    appVersion: r1070
+    created: "2020-12-03T20:31:46.59339392Z"
+    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    digest: 01c9b53313f40c44f12c82c761ff8f074e711ee1f4fadbddc72f14e06e058185
+    icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg
+    keywords:
+    - project
+    - send
+    - upload
+    - files
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: projectsend
+    sources:
+    - https://www.projectsend.org/
+    - https://hub.docker.com/r/linuxserver/projectsend
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/projectsend-0.1.0/projectsend-0.1.0.tgz
+    version: 0.1.0
   transmission:
   - apiVersion: v2
     appVersion: "3"
