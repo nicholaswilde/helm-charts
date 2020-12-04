@@ -1,0 +1,26 @@
+{{- if and .Values.persistence.code.enabled (not .Values.persistence.code.existingClaim) }}
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ template "cloud9.fullname" . }}-code
+  {{- if .Values.persistence.code.skipuninstall }}
+  annotations:
+    "helm.sh/resource-policy": keep
+  {{- end }}
+  labels:
+    {{- include "cloud9.labels" . | nindent 4 }}
+spec:
+  accessModes:
+    - {{ .Values.persistence.code.accessMode | quote }}
+  resources:
+    requests:
+      storage: {{ .Values.persistence.code.size | quote }}
+{{- if .Values.persistence.code.storageClass }}
+{{- if (eq "-" .Values.persistence.code.storageClass) }}
+  storageClassName: ""
+{{- else }}
+  storageClassName: {{ .Values.persistence.code.storageClass | quote }}
+{{- end }}
+{{- end }}
+{{- end -}}
