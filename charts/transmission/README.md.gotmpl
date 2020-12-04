@@ -77,10 +77,9 @@ This project was started in 2020 by [Nicholas Wilde](https://github.com/{{ templ
 {{- end -}}
 
 {{ template "chart.header" . }}
+{{ template "chart.description" . }}
 
 {{ template "chart.versionBadge" . }}{{ template "chart.typeBadge" . }}{{ template "chart.appVersionBadge" . }}
-
-{{ template "chart.description" . }}
 
 {{ template "chart.requirementsSection" . }}
 
@@ -103,4 +102,3 @@ This project was started in 2020 by [Nicholas Wilde](https://github.com/{{ templ
 {{ template "author" . }}
 
 {{ template "helm-docs.versionFooter" . }}
-

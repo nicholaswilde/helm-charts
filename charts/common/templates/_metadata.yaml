@@ -1,0 +1,10 @@
+{{- /*
+common.metadata creates a standard metadata header.
+It creates a 'metadata:' section with name and labels.
+*/ -}}
+{{ define "common.metadata" -}}
+metadata:
+  name: {{ template "common.names.fullname" . }}
+  labels:
+{{ include "common.labels" . | indent 4 -}}
+{{- end -}}

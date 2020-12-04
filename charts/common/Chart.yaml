@@ -1,0 +1,12 @@
+apiVersion: v2
+name: common
+description: Function library for nicholaswilde's helm charts
+type: library
+version: 0.1.0
+keywords:
+  - nicholaswilde
+  - common
+home: https://github.com/nicholaswilde/helm-charts/tree/master/charts/common
+maintainers:
+  - name: Nicholas Wilde
+    email: ncwilde43@gmail.com
