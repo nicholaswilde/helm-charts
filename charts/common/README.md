@@ -1,4 +1,4 @@
-# Library chart for k8s@home media charts
+# Library chart for nicholaswilde's media charts
 
 **WARNING: THIS CHART IS NOT MEANT TO BE INSTALLED DIRECTLY**
 
