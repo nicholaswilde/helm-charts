@@ -52,7 +52,7 @@ Include this chart as a dependency in your `Chart.yaml` e.g.
 dependencies:
   - name: common
     version: x.x.x
-    repository: https://k8s-at-home.com/charts/
+    repository: http://nicholaswilde.github.io/helm-charts/
 ```
 
 Write a `values.yaml` with some basic defaults you want to present to the user e.g.
