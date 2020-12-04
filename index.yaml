@@ -111,6 +111,30 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/booksonic-0.1.0/booksonic-0.1.0.tgz
     version: 0.1.0
+  cloud9:
+  - apiVersion: v2
+    appVersion: 1.27.4
+    created: "2020-12-04T03:11:02.052185584Z"
+    description: A complete web based IDE with terminal access
+    digest: 343b426904feb2c57d52d806216b9a6888bc8c8991d95d8d728423a5a2bc2750
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cloud9.png
+    keywords:
+    - cloud9
+    - ide
+    - terminal
+    - web
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: cloud9
+    sources:
+    - https://aws.amazon.com/cloud9/
+    - https://github.com/c9/core
+    - https://hub.docker.com/r/linuxserver/cloud9
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/cloud9-0.1.0/cloud9-0.1.0.tgz
+    version: 0.1.0
   diun:
   - apiVersion: v2
     appVersion: 4.9.0
