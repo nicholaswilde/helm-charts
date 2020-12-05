@@ -1,22 +1,5 @@
 apiVersion: v1
 entries:
-  common:
-  - apiVersion: v2
-    created: "2020-12-05T02:34:39.631654982Z"
-    description: Function library for nicholaswilde's helm charts
-    digest: 46fff296324d95a6844e888cff6674ba78e0fe7e121567f15073bb75a65d303e
-    home: https://github.com/nicholaswilde/helm-charts/tree/master/charts/common
-    keywords:
-    - nicholaswilde
-    - common
-    maintainers:
-    - email: ncwilde43@gmail.com
-      name: Nicholas Wilde
-    name: common
-    type: library
-    urls:
-    - https://github.com/nicholaswilde/helm-charts/releases/download/common-0.1.0/common-0.1.0.tgz
-    version: 0.1.0
   booksonic:
   - apiVersion: v2
     appVersion: "1.2"
@@ -131,6 +114,29 @@ entries:
   cloud9:
   - apiVersion: v2
     appVersion: 1.27.4
+    created: "2020-12-05T04:17:45.88884347Z"
+    description: A complete web based IDE with terminal access
+    digest: 0959f77668373051a603fdef96c39f49d1a55cbd7e75791ea627643541005512
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cloud9.png
+    keywords:
+    - cloud9
+    - ide
+    - terminal
+    - web
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: cloud9
+    sources:
+    - https://aws.amazon.com/cloud9/
+    - https://github.com/c9/core
+    - https://hub.docker.com/r/linuxserver/cloud9
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/cloud9-0.1.1/cloud9-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.27.4
     created: "2020-12-04T03:11:02.052185584Z"
     description: A complete web based IDE with terminal access
     digest: 343b426904feb2c57d52d806216b9a6888bc8c8991d95d8d728423a5a2bc2750
@@ -151,6 +157,23 @@ entries:
     type: application
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/cloud9-0.1.0/cloud9-0.1.0.tgz
+    version: 0.1.0
+  common:
+  - apiVersion: v2
+    created: "2020-12-05T02:34:39.631654982Z"
+    description: Function library for nicholaswilde's helm charts
+    digest: 46fff296324d95a6844e888cff6674ba78e0fe7e121567f15073bb75a65d303e
+    home: https://github.com/nicholaswilde/helm-charts/tree/master/charts/common
+    keywords:
+    - nicholaswilde
+    - common
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: common
+    type: library
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/common-0.1.0/common-0.1.0.tgz
     version: 0.1.0
   diun:
   - apiVersion: v2
@@ -606,6 +629,33 @@ entries:
     type: application
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/projectsend-0.1.0/projectsend-0.1.0.tgz
+    version: 0.1.0
+  smokeping:
+  - apiVersion: v2
+    appVersion: 8bf89f91
+    created: "2020-12-05T04:17:46.0191044Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: 0.1.0
+    description: Keep track of your network latency.
+    digest: d8bd990a6c826ef127029a53e978f98782ae637d6d72e0527df5b4e989d5c446
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/smokeping
+    icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/smokeping/img/smokeping-icon.jpg
+    keywords:
+    - smokeping
+    - network
+    - latency
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: smokeping
+    sources:
+    - https://oss.oetiker.ch/smokeping/
+    - https://hub.docker.com/r/linuxserver/smokeping
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/smokeping-0.1.0/smokeping-0.1.0.tgz
     version: 0.1.0
   transmission:
   - apiVersion: v2
