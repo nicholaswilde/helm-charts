@@ -3,6 +3,32 @@ entries:
   booksonic:
   - apiVersion: v2
     appVersion: "1.2"
+    created: "2020-12-05T07:28:20.488966226Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: 0.1.2
+    description: The selfhosted audiobook server
+    digest: e1c8f1f8b60c39bad7129fee5f14b96683eb6e478201cfd243dba1c7c75e760e
+    icon: http://booksonic.org/assets/img/booksonic.png
+    keywords:
+    - audio
+    - audiobook
+    - server
+    - book
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: booksonic
+    sources:
+    - http://booksonic.org/
+    - https://hub.docker.com/r/linuxserver/booksonic
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/booksonic-0.2.0/booksonic-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: "1.2"
     created: "2020-12-02T03:04:04.357403991Z"
     description: The selfhosted audiobook server
     digest: 6796e37bb577a7d81279b14ca2cfb7a24116fc2b411b817caaf8a9959beba5b9
