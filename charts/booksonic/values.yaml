@@ -1,5 +1,5 @@
 ---
-# Default values for template.
+# Default values for booksonic.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
@@ -11,7 +11,7 @@ image:
 
 secret: {}
 
-config:
+env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "America/Los_Angeles"
   PUID: "1000"
@@ -19,8 +19,8 @@ config:
   CONTEXT_PATH: "url-base"
 
 service:
-  type: ClusterIP
-  port: 4040
+  port:
+    port: 4040
 
 ingress:
   enabled: true
@@ -39,24 +39,15 @@ ingress:
 persistence:
   config:
     enabled: false
-    ## Template downloads data Persistent Volume Storage Class
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
-    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
-    ##   GKE, AWS & OpenStack)
-    ##
-    # storageClass: "-"
-    ##
-    ## If you want to reuse an existing claim, you can pass the name of the PVC using
-    ## the existingClaim variable
-    # existingClaim: your-claim
+    emptyDir: false
+    mountPath: /config
     accessMode: ReadWriteOnce
     size: 1Gi
-    ## Do not delete the pvc upon helm uninstall
     skipuninstall: false
   audiobooks:
     enabled: false
+    emptyDir: false
+    mountPath: /audiobooks
     ## Template downloads data Persistent Volume Storage Class
     ## If defined, storageClassName: <storageClass>
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
@@ -75,101 +66,15 @@ persistence:
     skipuninstall: false
   podcasts:
     enabled: false
-    ## Template downloads data Persistent Volume Storage Class
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
-    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
-    ##   GKE, AWS & OpenStack)
-    ##
-    # storageClass: "-"
-    ##
-    ## If you want to reuse an existing claim, you can pass the name of the PVC using
-    ## the existingClaim variable
-    # existingClaim: your-claim
+    emptyDir: false
+    mountPath: /podcasts
     accessMode: ReadWriteOnce
     size: 1Gi
-    ## Do not delete the pvc upon helm uninstall
     skipuninstall: false
   othermedia:
     enabled: false
-    ## Template downloads data Persistent Volume Storage Class
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
-    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
-    ##   GKE, AWS & OpenStack)
-    ##
-    # storageClass: "-"
-    ## 
-    ## If you want to reuse an existing claim, you can pass the name of the PVC using
-    ## the existingClaim variable
-    # existingClaim: your-claim
+    emptyDir: false
+    mountPath: /othermedia
     accessMode: ReadWriteOnce
     size: 1Gi
-    ## Do not delete the pvc upon helm uninstall
     skipuninstall: false
-
-livenessProbe:
-  enabled: true
-  initialDelaySeconds: 30
-  periodSeconds: 10
-  timeoutSeconds: 1
-  failureThreshold: 3
-  successThreshold: 1
-readinessProbe:
-  enabled: true
-  initialDelaySeconds: 15
-  periodSeconds: 10
-  timeoutSeconds: 1
-  failureThreshold: 3
-  successThreshold: 1
-
-serviceAccount:
-  # Specifies whether a service account should be created
-  create: false
-  # Annotations to add to the service account
-  annotations: {}
-  # The name of the service account to use.
-  # If not set and create is true, a name is generated using the fullname template
-  name: ""
-
-securityContext: {}
-  # capabilities:
-  #   drop:
-  #   - ALL
-  # readOnlyRootFilesystem: true
-  # runAsNonRoot: true
-  # runAsUser: 1000
-
-resources: {}
-  # We usually recommend not to specify default resources and to leave this as a conscious
-  # choice for the user. This also increases chances charts run on environments with little
-  # resources, such as Minikube. If you do want to specify resources, uncomment the following
-  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
-  # limits:
-  #   cpu: 100m
-  #   memory: 128Mi
-  # requests:
-  #   cpu: 100m
-  #   memory: 128Mi
-
-autoscaling:
-  enabled: false
-  minReplicas: 1
-  maxReplicas: 100
-  targetCPUUtilizationPercentage: 80
-  # targetMemoryUtilizationPercentage: 80
-
-nameOverride: ""
-fullnameOverride: ""
-
-replicaCount: 1
-
-nodeSelector: {}
-
-imagePullSecrets: []
-
-tolerations: []
-
-affinity: {}

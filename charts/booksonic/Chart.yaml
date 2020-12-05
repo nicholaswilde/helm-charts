@@ -1,12 +1,16 @@
 ---
 apiVersion: v2
 appVersion: 1.2
-version: 0.1.4
+version: 0.2.0
 name: booksonic
 description: The selfhosted audiobook server
 type: application
 homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/booksonic"
 icon: "http://booksonic.org/assets/img/booksonic.png"
+dependencies:
+  - name: common
+    version: 0.1.2
+    repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - audio
   - audiobook
