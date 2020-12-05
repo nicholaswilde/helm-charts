@@ -2,7 +2,13 @@
 
 A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: r1070](https://img.shields.io/badge/AppVersion-r1070-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: r1070](https://img.shields.io/badge/AppVersion-r1070-informational?style=flat-square)
+
+## Requirements
+
+| Repository | Name | Version |
+|------------|------|---------|
+| http://nicholaswilde.github.io/helm-charts/ | common | 0.1.0 |
 
 ## TL;DR
 ```console
