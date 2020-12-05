@@ -1,0 +1,76 @@
+---
+# Default values for SmokePing
+image:
+  repository: ghcr.io/linuxserver/smokeping
+  pullPolicy: IfNotPresent
+  tag: "8bf89f91-ls107"
+
+strategy:
+  type: Recreate
+
+service:
+  port:
+    port: 80
+
+secret: {}
+
+env:
+  TZ: "America/Los_Angeles"
+  # PUID: "1001"
+  # PGID: "1001"
+
+ingress:
+  enabled: true
+  annotations:
+    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
+  hosts:
+    - host: "smokeping.192.168.1.199.nip.io"
+      paths:
+        - path: "/"
+          pathType: Prefix
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+persistence:
+  config:
+    enabled: false
+    emptyDir: false
+    mountPath: /config
+    ## Persistent Volume Storage Class
+    ## If defined, storageClassName: <storageClass>
+    ## If set to "-", storageClassName: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClassName spec is
+    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+    ##   GKE, AWS & OpenStack)
+    # storageClass: "-"
+    accessMode: ReadWriteOnce
+    size: 1Gi
+    ## Do not delete the pvc upon helm uninstall
+    skipuninstall: false
+    # existingClaim: ""
+  data:
+    enabled: false
+    emptyDir: false
+    mountPath: /data
+    accessMode: ReadWriteOnce
+    size: 1Gi
+    skipuninstall: false
+
+podAnnotations: {}
+  # https://crazymax.dev/diun/providers/kubernetes/#kubernetes-annotations
+  # Set to true to enable image analysis of this pod
+  # diun.enable: "false"
+  # Watch all tags of this pod image
+  # diun.watch_repo: "false"
+  ## Registry options name to use
+  # regopt: ""
+  ## Maximum number of tags to watch if diun.watch_repo enabled. 0 means all of them
+  # max_tags: 0
+  ## Semi-colon separated list of regular expressions to include tags. Can be
+  ## useful if you enable diun.watch_repo
+  # include_tags: ""
+  ## Semi-colon separated list of regular expressions to exclude tags. Can be
+  ## useful if you enable diun.watch_repo
+  # exclude_tags: ""

@@ -1,0 +1,22 @@
+apiVersion: v2
+appVersion: 8bf89f91
+version: 0.1.0
+name: smokeping
+description: Keep track of your network latency.
+type: application
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/smokeping"
+icon: "https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/smokeping/img/smokeping-icon.jpg"
+dependencies:
+- name: common
+  version: 0.1.0
+  repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - smokeping
+  - network
+  - latency
+sources:
+  - https://oss.oetiker.ch/smokeping/
+  - https://hub.docker.com/r/linuxserver/smokeping
+maintainers:
+  - name: Nicholas Wilde
+    email: ncwilde43@gmail.com
