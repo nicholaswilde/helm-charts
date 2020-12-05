@@ -1,5 +1,22 @@
 apiVersion: v1
 entries:
+  common:
+  - apiVersion: v2
+    created: "2020-12-05T02:34:39.631654982Z"
+    description: Function library for nicholaswilde's helm charts
+    digest: 46fff296324d95a6844e888cff6674ba78e0fe7e121567f15073bb75a65d303e
+    home: https://github.com/nicholaswilde/helm-charts/tree/master/charts/common
+    keywords:
+    - nicholaswilde
+    - common
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: common
+    type: library
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/common-0.1.0/common-0.1.0.tgz
+    version: 0.1.0
   booksonic:
   - apiVersion: v2
     appVersion: "1.2"
