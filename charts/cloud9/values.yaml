@@ -21,8 +21,8 @@ config:
   #GITURL=https://github.com/linuxserver/docker-cloud9.git #optional
 
 service:
-  type: ClusterIP
-  port: 8000
+  port:
+    port: 8000
 
 ingress:
   enabled: true
@@ -41,6 +41,8 @@ ingress:
 persistence:
   code:
     enabled: false
+    emptyDir: false
+    mountPath: /code
     ## Template downloads data Persistent Volume Storage Class
     ## If defined, storageClassName: <storageClass>
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
@@ -59,6 +61,8 @@ persistence:
     skipuninstall: false
   sock:
     enabled: false
+    emptyDir: false
+    mountPath: /var/run/docker.sock
     ## Template downloads data Persistent Volume Storage Class
     ## If defined, storageClassName: <storageClass>
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
