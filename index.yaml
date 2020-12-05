@@ -514,6 +514,29 @@ entries:
   installer:
   - apiVersion: v2
     appVersion: 0.2.9
+    created: "2020-12-05T06:47:24.684083276Z"
+    dependencies:
+    - name: common
+      repository: http://nicholaswilde.github.io/helm-charts/
+      version: 0.1.0
+    description: Quickly install pre-compiled binaries from Github releases.
+    digest: f33143383c7666df1b73367c5d389b8f7b0838d896f6639d21a398f56ce4eb9f
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/installer
+    keywords:
+    - installer
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: installer
+    sources:
+    - https://github.com/jpillora/installer
+    - https://hub.docker.com/r/nicholaswilde/installer
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/installer-0.2.0/installer-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 0.2.9
     created: "2020-11-27T00:29:13.160279065Z"
     description: Quickly install pre-compiled binaries from Github releases.
     digest: f6e4265388eb7f1a75749b75523000a725dd5359ae948869d8557d1f5ccba85e
