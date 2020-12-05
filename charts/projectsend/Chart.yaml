@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: r1070
-version: 0.2.0
+version: 0.2.1
 name: projectsend
 description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
 type: application
@@ -9,7 +9,7 @@ homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/project
 icon: "https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg"
 dependencies:
   - name: common
-    version: 0.1.0
+    version: 0.1.2
     repository: http://nicholaswilde.github.io/helm-charts/
 keywords:
   - project
