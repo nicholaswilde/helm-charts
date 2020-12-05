@@ -302,6 +302,33 @@ entries:
   gotify:
   - apiVersion: v2
     appVersion: 2.0.20
+    created: "2020-12-05T06:32:04.478664639Z"
+    dependencies:
+    - name: common
+      repository: http://nicholaswilde.github.io/helm-charts/
+      version: 0.1.0
+    description: a simple server for sending and receiving messages
+    digest: 60002b9d28283358c01572bf4f24e9c5db68cbf82ffca5a3627feb9b2815a2e3
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/gotify
+    icon: https://gotify.net/img/logo.png
+    keywords:
+    - server
+    - gotify
+    - messages
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: gotify
+    sources:
+    - https://gotify.net/
+    - https://github.com/gotify/server
+    - https://hub.docker.com/r/gotify/server
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/gotify-0.2.0/gotify-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 2.0.20
     created: "2020-11-27T00:29:13.066539322Z"
     description: a simple server for sending and receiving messages
     digest: aef57daf8af23fa3f2b70806a9fefa387df66c304496732332d44aa509e8ef70
