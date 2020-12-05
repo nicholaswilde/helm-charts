@@ -114,6 +114,33 @@ entries:
   cloud9:
   - apiVersion: v2
     appVersion: 1.27.4
+    created: "2020-12-05T04:57:13.276090531Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: 0.1.0
+    description: A complete web based IDE with terminal access
+    digest: 1e765286bacf40c7ee8fa7a0fbe6d88b9d88a674752d962d65bd0d9faf090f7c
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cloud9.png
+    keywords:
+    - cloud9
+    - ide
+    - terminal
+    - web
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: cloud9
+    sources:
+    - https://aws.amazon.com/cloud9/
+    - https://github.com/c9/core
+    - https://hub.docker.com/r/linuxserver/cloud9
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/cloud9-0.2.0/cloud9-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.27.4
     created: "2020-12-05T04:17:45.88884347Z"
     description: A complete web based IDE with terminal access
     digest: 0959f77668373051a603fdef96c39f49d1a55cbd7e75791ea627643541005512
