@@ -123,9 +123,10 @@ This project was started in 2020 by [Nicholas Wilde](https://github.com/{{ templ
 {{- end -}}
 
 {{ template "chart.header" . }}
-{{ template "chart.description" . }}
 
 {{ template "chart.versionBadge" . }}{{ template "chart.typeBadge" . }}{{ template "chart.appVersionBadge" . }}
+
+{{ template "chart.description" . }}
 
 Since a lot of charts follow the same pattern this library was built to reduce maintenance cost between the charts that use it and try achieve a goal of being DRY.
 
