@@ -1156,6 +1156,32 @@ entries:
   transmission:
   - apiVersion: v2
     appVersion: "3"
+    created: "2020-12-06T21:46:35.836998369Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: 0.1.3
+    description: A Fast, Easy, and Free BitTorrent Client.
+    digest: 5626f8a06d87e42564638631bdb3494dddf6a271ab76e4034533db78126aaa99
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/transmission
+    icon: https://raw.githubusercontent.com/transmission/transmission/master/web/public_html/images/webclip-icon.png
+    keywords:
+    - transmission
+    - bittorrent
+    - torrent
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: transmission
+    sources:
+    - https://transmissionbt.com/
+    - https://hub.docker.com/r/linuxserver/transmission
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/transmission-0.2.3/transmission-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: "3"
     created: "2020-12-05T07:33:34.984823006Z"
     dependencies:
     - name: common
