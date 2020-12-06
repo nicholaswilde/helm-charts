@@ -1,6 +1,6 @@
 apiVersion: v2
 appVersion: 3.00
-version: 0.2.3
+version: 0.2.4
 name: transmission
 description: A Fast, Easy, and Free BitTorrent Client.
 type: application
@@ -8,7 +8,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/transmissio
 icon: "https://raw.githubusercontent.com/transmission/transmission/master/web/public_html/images/webclip-icon.png"
 dependencies:
 - name: common
-  version: 0.1.3
+  version: ~0.1.3
   repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - transmission
