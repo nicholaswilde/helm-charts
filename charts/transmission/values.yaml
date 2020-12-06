@@ -1,9 +1,9 @@
 ---
 # Default values for Transmission.
 image:
-  repository: linuxserver/transmission
+  repository: ghcr.io/linuxserver/transmission
   pullPolicy: IfNotPresent
-  tag: 3.00-r0-ls69
+  tag: version-3.00-r0
 
 strategy:
   type: Recreate
