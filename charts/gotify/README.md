@@ -1,6 +1,6 @@
 # gotify
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.0.20](https://img.shields.io/badge/AppVersion-2.0.20-informational?style=flat-square)
+![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.0.20](https://img.shields.io/badge/AppVersion-2.0.20-informational?style=flat-square)
 
 a simple server for sending and receiving messages
 
@@ -8,7 +8,7 @@ a simple server for sending and receiving messages
 
 | Repository | Name | Version |
 |------------|------|---------|
-| http://nicholaswilde.github.io/helm-charts/ | common | 0.1.0 |
+| http://nicholaswilde.github.io/helm-charts/ | common | 0.1.3 |
 
 ## TL;DR
 ```console
@@ -32,8 +32,8 @@ The command removes all the Kubernetes components associated with the chart and 
 
 ## Configuration
 
-Read through the [values.yaml](https://github.com/nicholaswilde/helm-charts/blob/master/charts/gotify/values.yaml)
-file. It has several commented out suggested values.
+Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
+Other values may be used from the [values.yaml](../common/values.yaml) from the [common library](../common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 ```console
