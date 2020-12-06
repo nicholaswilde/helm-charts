@@ -1,14 +1,14 @@
 ---
 apiVersion: v2
 appVersion: 0.2.9
-version: 0.2.0
+version: 0.2.1
 name: installer
 description: Quickly install pre-compiled binaries from Github releases.
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/installer"
 type: application
 dependencies:
   - name: common
-    version: 0.1.0
+    version: 0.1.3
     repository: http://nicholaswilde.github.io/helm-charts/
 keywords:
   - installer
