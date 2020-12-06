@@ -45,8 +45,8 @@ The command removes all the Kubernetes components associated with the chart and 
 {{- end -}}
 
 {{- define "configuration.readValues" -}}
-Read through the [values.yaml]({{ template "repository.url" . }}/blob/master/charts/{{ template "chart.name" . }}/values.yaml)
-file. It has several commented out suggested values.
+Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
+Other values may be used from the [values.yaml](../common/values.yaml) from the [common library](../common).
 {{- end -}}
 
 {{- define "configuration.example.set" -}}
@@ -77,9 +77,10 @@ This project was started in 2020 by [Nicholas Wilde](https://github.com/{{ templ
 {{- end -}}
 
 {{ template "chart.header" . }}
-{{ template "chart.description" . }}
 
 {{ template "chart.versionBadge" . }}{{ template "chart.typeBadge" . }}{{ template "chart.appVersionBadge" . }}
+
+{{ template "chart.description" . }}
 
 {{ template "chart.requirementsSection" . }}
 
@@ -98,8 +99,6 @@ This project was started in 2020 by [Nicholas Wilde](https://github.com/{{ templ
 {{ template "configuration.example.set" . }}
 
 {{ template "configuration.example.file" . }}
-
-{{ template "todo" . }}
 
 {{ template "author" . }}
 
