@@ -14,9 +14,9 @@ secret: {}
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "America/Los_Angeles"
-  PUID: "1000"
-  PGID: "1000"
   MAX_UPLOAD: <5000>
+  # PUID: "1000"
+  # PGID: "1000"
 
 service:
   port:
@@ -65,20 +65,3 @@ persistence:
     size: 1Gi
     ## Do not delete the pvc upon helm uninstall
     skipuninstall: false
-
-podAnnotations: {}
-  # https://crazymax.dev/diun/providers/kubernetes/#kubernetes-annotations
-  # Set to true to enable image analysis of this pod
-  # diun.enable: "false"
-  # Watch all tags of this pod image
-  # diun.watch_repo: "false"
-  ## Registry options name to use
-  # regopt: ""
-  ## Maximum number of tags to watch if diun.watch_repo enabled. 0 means all of them
-  # max_tags: 0
-  ## Semi-colon separated list of regular expressions to include tags. Can be
-  ## useful if you enable diun.watch_repo
-  # include_tags: ""
-  ## Semi-colon separated list of regular expressions to exclude tags. Can be
-  ## useful if you enable diun.watch_repo
-  # exclude_tags: ""
