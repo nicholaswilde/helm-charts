@@ -2,7 +2,7 @@
 Liveness/readiness/startup probes based on tcpSocket checks.
 */}}
 {{- define "common.controller.probes.tcpSocket" -}}
-{{- if .Values.probes.liveness.enabled -}}
+{{- if and .Values.probes.liveness.enabled .Values.service.enabled -}}
 livenessProbe:
   tcpSocket:
     port: {{ .Values.service.port.name }}
@@ -10,7 +10,7 @@ livenessProbe:
   failureThreshold: {{ .Values.probes.liveness.failureThreshold }}
   timeoutSeconds: {{ .Values.probes.liveness.timeoutSeconds }}
 {{- end }}
-{{- if .Values.probes.readiness.enabled }}
+{{- if and .Values.probes.readiness.enabled .Values.service.enabled }}
 readinessProbe:
   tcpSocket:
     port: {{ .Values.service.port.name }}
@@ -18,7 +18,7 @@ readinessProbe:
   failureThreshold: {{ .Values.probes.readiness.failureThreshold }}
   timeoutSeconds: {{ .Values.probes.readiness.timeoutSeconds }}
 {{- end }}
-{{- if .Values.probes.startup.enabled }}
+{{- if and .Values.probes.startup.enabled .Values.service.enabled }}
 startupProbe:
   tcpSocket:
     port: {{ .Values.service.port.name }}

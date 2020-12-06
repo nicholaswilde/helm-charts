@@ -1,11 +1,14 @@
 # type: options are deployment, daemonset or statefulset
 controllerType: deployment
+
 # Set annotations on the deployment/statefulset/daemonset
 controllerAnnotations: {}
+
 # Set labels on the deployment/statefulset/daemonset
 controllerLabels: {}
 
 replicas: 1
+
 strategy:
   ## For Deployments, valid values are Recreate and RollingUpdate
   ## For StatefulSets, valid values are OnDelete and RollingUpdate
@@ -14,9 +17,6 @@ strategy:
 
 # Override the default args
 args: []
-
-# Set annotations on the pod
-podAnnotations: {}
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -28,6 +28,39 @@ serviceAccount:
   name: ""
 
 env: {}
+
+rbac: {}
+#  additionalSubjects:
+#    - name: test-mychart2
+#      namespace: default
+#      kind: ServiceAccount
+#  rules:
+#    - apiGroups:
+#        - ""
+#      resources:
+#        - pods
+#      verbs:
+#        - get
+#        - watch
+#        - list
+
+# Set annotations on the pod
+podAnnotations: {}
+  # https://crazymax.dev/diun/providers/kubernetes/#kubernetes-annotations
+  # Set to true to enable image analysis of this pod
+  # diun.enable: "false"
+  # Watch all tags of this pod image
+  # diun.watch_repo: "false"
+  ## Registry options name to use
+  # regopt: ""
+  ## Maximum number of tags to watch if diun.watch_repo enabled. 0 means all of them
+  # max_tags: 0
+  ## Semi-colon separated list of regular expressions to include tags. Can be
+  ## useful if you enable diun.watch_repo
+  # include_tags: ""
+  ## Semi-colon separated list of regular expressions to exclude tags. Can be
+  ## useful if you enable diun.watch_repo
+  # exclude_tags: ""
 
 # When using hostNetwork make sure you set dnsPolicy to ClusterFirstWithHostNet
 hostNetwork: false
@@ -86,7 +119,7 @@ service:
   #   type: ClusterIP
   #   # Specify the default port information
   #   port:
-  #     port: 
+  #     port:
   #     # name defaults to http
   #     name:
   #     protocol: TCP
@@ -104,7 +137,7 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   labels: {}
   hosts:
-    - host: chart-example.local
+    - host: "http://common.192.168.1.202.nip.io"
       paths:
         - path: /
           # Ignored if not kubeVersion >= 1.14-0
@@ -207,7 +240,7 @@ addons:
     # Set the VPN container securityContext
     securityContext:
       capabilities:
-        add: 
+        add:
           - NET_ADMIN
           - SYS_MODULE
 
