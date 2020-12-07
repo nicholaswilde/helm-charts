@@ -70,6 +70,23 @@ persistence:
     mountPath: /data
 ```
 
+If not using a service, set the `service.enabled` to `false`.
+```yaml
+...
+service:
+  enabled: false
+...
+```
+
+Add files to the `templates` folder.
+```yaml
+# templates/common.yaml
+{{"{{"}} include "common.all . {{"}}"}}
+
+# templates/NOTES.txt
+{{"{{"}} include "common.notes.defaultNotes" . {{"}}"}}
+```
+
 If testing locally make sure you update the dependencies with:
 
 ```bash

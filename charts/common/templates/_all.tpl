@@ -4,7 +4,6 @@ Main entrypoint for the common library chart. It will render all underlying temp
 {{- define "common.all" -}}
   {{- /* Merge the local chart values and the common chart defaults */ -}}
   {{- include "common.values.setup" . }}
-
   {{- /* Enable OpenVPN VPN add-on if required */ -}}
   {{- if .Values.addons.vpn.enabled }}
     {{- include "common.addon.vpn" . }}
@@ -12,6 +11,10 @@ Main entrypoint for the common library chart. It will render all underlying temp
   {{- /* Build the templates */ -}}
   {{- include "common.pvc" . }}
   {{- print "---" | nindent 0 -}}
+  {{- if .Values.env -}}
+    {{- include "common.configmap" . }}
+    {{- print "---" | nindent 0 -}}
+  {{- end -}}
   {{- if .Values.secret -}}
     {{- include "common.secret" . }}
     {{- print "---" | nindent 0 -}}

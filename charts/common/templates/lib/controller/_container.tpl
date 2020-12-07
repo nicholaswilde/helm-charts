@@ -13,11 +13,9 @@ The main container included in the controller.
     {{- toYaml . | nindent 4 }}
   {{- end }}
   {{- if .Values.env }}
-  env:
-  {{- range $key, $value := .Values.env }}
-  - name: {{ $key }}
-    value: {{ $value | quote }}
-  {{- end }}
+  envFrom:
+    - configMapRef:
+        name: {{ include "common.names.fullname" . }}
   {{- end }}
   {{- if .Values.secret }}
   envFrom:

@@ -1,6 +1,6 @@
 # common
 
-![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: library](https://img.shields.io/badge/Type-library-informational?style=flat-square)
+![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: library](https://img.shields.io/badge/Type-library-informational?style=flat-square)
 
 Function library for nicholaswilde's helm charts
 
@@ -23,7 +23,7 @@ Include this chart as a dependency in your `Chart.yaml` e.g.
 # Chart.yaml
 dependencies:
   - name: common
-    version: 0.1.3
+    version: 0.1.4
     repository: https://nicholaswilde.github.io/helm-charts/
 ```
 Write a `values.yaml` with some basic defaults you want to present to the user e.g.
@@ -57,6 +57,23 @@ persistence:
     enabled: false
     emptyDir: false
     mountPath: /data
+```
+
+If not using a service, set the `service.enabled` to `false`.
+```yaml
+...
+service:
+  enabled: false
+...
+```
+
+Add files to the `templates` folder.
+```yaml
+# templates/common.yaml
+{{ include "common.all . }}
+
+# templates/NOTES.txt
+{{ include "common.notes.defaultNotes" . }}
 ```
 
 If testing locally make sure you update the dependencies with:
