@@ -3,3 +3,4 @@
 *.swp
 *.lock
 *.tgz
+charts/template/*
