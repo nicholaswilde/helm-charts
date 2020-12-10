@@ -7,7 +7,7 @@ image:
   repository: ghcr.io/linuxserver/papermerge
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.5.3-ls15"
+  tag: "v1.5.3-ls16"
 
 secret: {}
 
