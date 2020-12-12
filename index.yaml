@@ -553,6 +553,34 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/diun-0.1.0/diun-0.1.0.tgz
     version: 0.1.0
+  etherpad:
+  - apiVersion: v2
+    appVersion: 1.8.6
+    created: "2020-12-12T08:45:40.46098898Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.4
+    description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
+    digest: 3e16e6b24eb1a5c12f70d77f05a6e464e83872e3ad633a186115f84eb544d4b6
+    icon: https://pbs.twimg.com/profile_images/1336377123964145665/2gTadaDt_400x400.jpg
+    keywords:
+    - etherpad
+    - editor
+    - notepad
+    - pad
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: etherpad
+    sources:
+    - https://etherpad.org/
+    - https://github.com/ether/etherpad-lite
+    - https://hub.docker.com/r/nicholaswilde/etherpad
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/etherpad-0.1.0/etherpad-0.1.0.tgz
+    version: 0.1.0
   gotify:
   - apiVersion: v2
     appVersion: 2.0.20
