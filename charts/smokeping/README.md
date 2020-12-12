@@ -1,6 +1,6 @@
 # smokeping
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 8bf89f91](https://img.shields.io/badge/AppVersion-8bf89f91-informational?style=flat-square)
+![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 8bf89f91](https://img.shields.io/badge/AppVersion-8bf89f91-informational?style=flat-square)
 
 Keep track of your network latency.
 
@@ -8,7 +8,7 @@ Keep track of your network latency.
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://nicholaswilde.github.io/helm-charts/ | common | 0.1.3 |
+| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.4 |
 
 ## TL;DR
 ```console
