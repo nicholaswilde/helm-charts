@@ -12,15 +12,16 @@ The main container included in the controller.
   securityContext:
     {{- toYaml . | nindent 4 }}
   {{- end }}
-  {{- if .Values.env }}
+  {{- if or .Values.env .Values.secret }}
   envFrom:
+  {{- if .Values.env }}
     - configMapRef:
         name: {{ include "common.names.fullname" . }}
   {{- end }}
   {{- if .Values.secret }}
-  envFrom:
     - secretRef:
         name: {{ include "common.names.fullname" . }}
+  {{- end }}
   {{- end }}
   {{- include "common.controller.ports" . | trim | nindent 2 }}
   volumeMounts:

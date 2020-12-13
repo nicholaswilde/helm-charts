@@ -1,6 +1,6 @@
 # common
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: library](https://img.shields.io/badge/Type-library-informational?style=flat-square)
+![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: library](https://img.shields.io/badge/Type-library-informational?style=flat-square)
 
 Function library for nicholaswilde's helm charts
 
@@ -23,7 +23,7 @@ Include this chart as a dependency in your `Chart.yaml` e.g.
 # Chart.yaml
 dependencies:
   - name: common
-    version: 0.1.4
+    version: 0.1.5
     repository: https://nicholaswilde.github.io/helm-charts/
 ```
 Write a `values.yaml` with some basic defaults you want to present to the user e.g.
