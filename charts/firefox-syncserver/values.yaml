@@ -1,0 +1,67 @@
+---
+# Default values for firefox-syncserver.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+image:
+  repository: ghcr.io/crazy-max/firefox-syncserver
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "1.8.0"
+
+secret:
+  FF_SYNCSERVER_SECRET: "5up3rS3kr1t"
+
+env:
+  # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  TZ: "America/Los_Angeles"
+  FF_SYNCSERVER_PUBLIC_URL: "firefox-syncserver.192.168.1.189.nip.io"
+  FF_SYNCSERVER_FORCE_WSGI_ENVIRON: "true"
+  # PUID: "1000"
+  # PGID: "1000"
+  # FF_SYNCSERVER_ACCESSLOG: "false"
+  # FF_SYNCSERVER_LOGLEVEL: info
+  # FF_SYNCSERVER_ALLOW_NEW_USERS: "true"
+  # FF_SYNCSERVER_SQLURI: "sqlite:///data/syncserver.db"
+  # FF_SYNCSERVER_FORWARDED_ALLOW_IPS: *
+
+service:
+  port:
+    port: 5000
+
+ingress:
+  enabled: true
+  annotations:
+    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
+  hosts:
+    - host: "firefox-syncserver.192.168.1.189.nip.io"
+      paths:
+        - path: /
+          # Ignored if not kubeVersion >= 1.14-0
+          pathType: Prefix
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+persistence:
+  data:
+    enabled: false
+    emptyDir: false
+    mountPath: /data
+    ## Template downloads data Persistent Volume Storage Class
+    ## If defined, storageClassName: <storageClass>
+    ## If set to "-", storageClassName: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClassName spec is
+    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+    ##   GKE, AWS & OpenStack)
+    ##
+    # storageClass: "-"
+    ##
+    ## If you want to reuse an existing claim, you can pass the name of the PVC using
+    ## the existingClaim variable
+    # existingClaim: your-claim
+    accessMode: ReadWriteOnce
+    size: 1Gi
+    ## Do not delete the pvc upon helm uninstall
+    skipuninstall: false
