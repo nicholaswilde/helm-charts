@@ -597,6 +597,32 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/etherpad-0.1.0/etherpad-0.1.0.tgz
     version: 0.1.0
+  firefox-syncserver:
+  - apiVersion: v2
+    appVersion: 1.8.0
+    created: "2020-12-13T17:32:35.859471828Z"
+    dependencies:
+    - name: common
+      repository: file://../common/
+      version: ~0.1.5
+    description: This is an all-in-one package for running a self-hosted Firefox Sync server.
+    digest: 261500fd4f8b6f7a8e73bb4f5f32a72bb22a022173e6d96597aaf9addb45879a
+    keywords:
+    - server
+    - sync
+    - syncserver
+    - firefox
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: firefox-syncserver
+    sources:
+    - https://moz-services-docs.readthedocs.io/en/latest/howtos/run-sync-1.5.html
+    - https://hub.docker.com/r/crazymax/firefox-syncserver
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/firefox-syncserver-0.1.0/firefox-syncserver-0.1.0.tgz
+    version: 0.1.0
   gotify:
   - apiVersion: v2
     appVersion: 2.0.20
