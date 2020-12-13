@@ -1,0 +1,23 @@
+---
+apiVersion: v2
+appVersion: 1.12
+version: 0.1.0
+name: syncthing
+description: A continuous file synchronization program.
+type: application
+homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/syncthing"
+icon: "https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png"
+dependencies:
+  - name: common
+    version: ~0.1.4
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - sync
+  - thing
+  - syncronization
+sources:
+  - https://syncthing.net/
+  - https://hub.docker.com/r/syncthing/syncthing
+maintainers:
+  - name: Nicholas Wilde
+    email: ncwilde43@gmail.com
