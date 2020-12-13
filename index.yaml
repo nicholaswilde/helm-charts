@@ -1303,6 +1303,32 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/smokeping-0.1.0/smokeping-0.1.0.tgz
     version: 0.1.0
+  syncthing:
+  - apiVersion: v2
+    appVersion: "1.12"
+    created: "2020-12-13T07:06:50.44703835Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.4
+    description: A continuous file synchronization program.
+    digest: 0b4b0143a63cc7e2bf6fdf521591f765378cb493bc152520f55a9a4c169215f4
+    icon: https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png
+    keywords:
+    - sync
+    - thing
+    - syncronization
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: syncthing
+    sources:
+    - https://syncthing.net/
+    - https://hub.docker.com/r/syncthing/syncthing
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/syncthing-0.1.0/syncthing-0.1.0.tgz
+    version: 0.1.0
   transmission:
   - apiVersion: v2
     appVersion: "3"
