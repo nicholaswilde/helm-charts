@@ -1,13 +1,13 @@
 ---
-# Default values for template.
+# Default values for etherpad.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 image:
-  repository: nicholaswilde/etherpad
+  repository: ghcr.io/nicholaswilde/etherpad
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.8.6-ls1"
+  tag: "1.8.6-ls3"
 
 secret: {}
 
