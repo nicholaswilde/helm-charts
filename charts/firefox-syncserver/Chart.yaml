@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 1.8.0
-version: 0.1.0
+version: 0.1.1
 name: firefox-syncserver
 description: This is an all-in-one package for running a self-hosted Firefox Sync server.
 type: application
@@ -10,8 +10,7 @@ icon: ""
 dependencies:
   - name: common
     version: ~0.1.5
-    repository: file://../common/
-#    repository: https://nicholaswilde.github.io/helm-charts/
+    repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - server
   - sync
