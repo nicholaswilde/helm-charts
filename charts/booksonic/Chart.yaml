@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 1.2
-version: 0.2.2
+version: 0.2.3
 name: booksonic
 description: The selfhosted audiobook server
 type: application
