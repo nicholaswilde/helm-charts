@@ -7,7 +7,7 @@ image:
   repository: ghcr.io/linuxserver/projectsend
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "r1070-ls54"
+  tag: "r1070-ls55"
 
 secret: {}
 
