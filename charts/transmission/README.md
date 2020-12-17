@@ -1,6 +1,6 @@
 # transmission
 
-![Version: 0.2.4](https://img.shields.io/badge/Version-0.2.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.00](https://img.shields.io/badge/AppVersion-3.00-informational?style=flat-square)
+![Version: 0.2.5](https://img.shields.io/badge/Version-0.2.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.00](https://img.shields.io/badge/AppVersion-3.00-informational?style=flat-square)
 
 A Fast, Easy, and Free BitTorrent Client.
 
@@ -8,7 +8,7 @@ A Fast, Easy, and Free BitTorrent Client.
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.3 |
+| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.5 |
 
 ## TL;DR
 ```console
