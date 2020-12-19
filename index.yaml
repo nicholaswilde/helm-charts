@@ -535,6 +535,33 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/cloud9-0.1.0/cloud9-0.1.0.tgz
     version: 0.1.0
+  code-server:
+  - apiVersion: v2
+    appVersion: 3.8.0
+    created: "2020-12-19T06:20:36.285353057Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.5
+    description: Run VS Code on any machine anywhere and access it in the browser.
+    digest: 89ee28a5e505de19a39b1e4a48c8a0e98747436bededf1f170a94e069aa4e883
+    icon: https://pbs.twimg.com/profile_images/1278357302601347072/BGZIBPH9_400x400.jpg
+    keywords:
+    - code
+    - vs
+    - visual studio
+    - vscode
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: code-server
+    sources:
+    - https://github.com/cdr/code-server
+    - https://hub.docker.com/r/linuxserver/code-server
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/code-server-0.1.0/code-server-0.1.0.tgz
+    version: 0.1.0
   common:
   - apiVersion: v2
     created: "2020-12-13T17:29:58.403482405Z"
