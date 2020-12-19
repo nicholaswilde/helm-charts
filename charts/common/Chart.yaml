@@ -2,7 +2,7 @@ apiVersion: v2
 name: common
 description: Function library for nicholaswilde's helm charts
 type: library
-version: 0.1.6
+version: 0.1.7
 keywords:
   - nicholaswilde
   - common
