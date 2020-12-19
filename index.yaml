@@ -3,6 +3,33 @@ entries:
   boinc-client:
   - apiVersion: v2
     appVersion: 7.12.0
+    created: "2020-12-19T23:16:43.626062035Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: A program that lets you donate your idle computer time to science projects like SETI@home, Climateprediction.net, Rosetta@home, World Community Grid, and many others.
+    digest: dd12db164d6c1e0034228a9dc6a25f0a421b5388d1b6145bdc4df05aaf59ee24
+    icon: https://pbs.twimg.com/profile_images/1155837449131692032/0xgZMZeJ_400x400.jpg
+    keywords:
+    - boinc
+    - client
+    - seti
+    - home
+    - rosetta
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: boinc-client
+    sources:
+    - https://boinc.berkeley.edu/
+    - https://hub.docker.com/r/boinc/client
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/boinc-client-0.1.1/boinc-client-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 7.12.0
     created: "2020-12-19T21:31:05.233537945Z"
     dependencies:
     - name: common
