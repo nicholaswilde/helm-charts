@@ -8,6 +8,9 @@ The main container included in the controller.
   {{- with .Values.args }}
   args: {{ . }}
   {{- end }}
+  {{- with .Values.command }}
+  command: {{ . }}
+  {{- end }}
   {{- with .Values.securityContext }}
   securityContext:
     {{- toYaml . | nindent 4 }}

@@ -15,6 +15,8 @@ strategy:
   ## DaemonSets ignore this
   type: RollingUpdate
 
+# Override the default command
+command: []
 # Override the default args
 args: []
 
@@ -105,6 +107,9 @@ service:
     ##
     # nodePort:
   additionalPorts: []
+    # - name: "8080-udp"
+    #   port: 8080
+    #   protocol: UDP
 
   ## Provide any additional annotations which may be required. This can be used to
   ## set the LoadBalancer service type to internal only.

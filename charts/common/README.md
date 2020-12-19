@@ -1,6 +1,6 @@
 # common
 
-![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: library](https://img.shields.io/badge/Type-library-informational?style=flat-square)
+![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: library](https://img.shields.io/badge/Type-library-informational?style=flat-square)
 
 Function library for nicholaswilde's helm charts
 
@@ -23,7 +23,7 @@ Include this chart as a dependency in your `Chart.yaml` e.g.
 # Chart.yaml
 dependencies:
   - name: common
-    version: 0.1.5
+    version: 0.1.6
     repository: https://nicholaswilde.github.io/helm-charts/
 ```
 Write a `values.yaml` with some basic defaults you want to present to the user e.g.
@@ -81,6 +81,9 @@ If testing locally make sure you update the dependencies with:
 ```bash
 helm dependency update
 ```
+
+## Todo
+- [ ] Adde features from [k8s-at-home/common](https://github.com/k8s-at-home/charts/tree/master/charts/common) v2.
 
 ## Author
 This project was started in 2020 by [Nicholas Wilde](https://github.com/nicholaswilde).

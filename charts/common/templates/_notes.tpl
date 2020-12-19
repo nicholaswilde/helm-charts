@@ -3,7 +3,7 @@ Default NOTES.txt content.
 */}}
 {{- define "common.notes.defaultNotes" -}}
 {{- $svcPort := .Values.service.port.port -}}
-1. Get the application URL by running these commands:
+Get the application URL by running these commands:
 {{- if .Values.ingress.enabled }}
 {{- range .Values.ingress.hosts }}
   http{{ if $.Values.ingress.tls }}s{{ end }}://{{ .host }}{{ (first .paths).path }}
@@ -22,4 +22,9 @@ Default NOTES.txt content.
   echo "Visit http://127.0.0.1:8080 to use your application"
   kubectl port-forward $POD_NAME 8080:{{ $svcPort }}
 {{- end }}
+{{- end }}
+{{- define "common.notes.commandNotes" -}}
+Get a shell in the application container by running these commands:
+  export POD_NAME=$(kubectl get pods --namespace {{ .Release.Namespace }} -l "app.kubernetes.io/name={{ include "common.names.name" . }},app.kubernetes.io/instance={{ .Release.Name }}" -o jsonpath="{.items[0].metadata.name}")
+  kubectl --namespace {{ .Release.Namespace }} exec --stdin --tty $POD_NAME -- /bin/bash
 {{- end }}
