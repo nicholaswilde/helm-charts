@@ -564,6 +564,22 @@ entries:
     version: 0.1.0
   common:
   - apiVersion: v2
+    created: "2020-12-19T21:16:00.755477595Z"
+    description: Function library for nicholaswilde's helm charts
+    digest: e35fb9add28b39d2d43e077f2ff75acc3d81d8a620637b69f081f339446a8cf0
+    home: https://github.com/nicholaswilde/helm-charts/tree/master/charts/common
+    keywords:
+    - nicholaswilde
+    - common
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: common
+    type: library
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/common-0.1.6/common-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
     created: "2020-12-13T17:29:58.403482405Z"
     description: Function library for nicholaswilde's helm charts
     digest: 15be426a00210f3a93adce9df406dc5dbb08da1211c20e4b035f6758f0d42717
