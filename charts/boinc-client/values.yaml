@@ -1,0 +1,71 @@
+---
+# Default values for boinc-client.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+image:
+  repository: boinc/client
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "arm32v7"
+
+secret:
+  BOINC_GUI_RPC_PASSWORD: "123"
+
+env:
+  # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  TZ: "America/Los_Angeles"
+  BOINC_CMD_LINE_OPTIONS: "--allow_remote_gui_rpc"
+  # BOINC_REMOTE_HOST: "IP"
+
+command:
+  - "start-boinc.sh"
+
+args:
+  - "--pid=host"
+  - "--net=host"
+  # --device=/dev/vboxdrv:/dev/vboxdrv
+  # --device /dev/dri:/dev/dri
+  # --device /dev/kfd:/dev/kfd
+  # --gpus all
+
+service:
+  port:
+    port: 31416
+
+ingress:
+  enabled: true
+  annotations:
+    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
+  hosts:
+    - host: "boinc-client.192.168.1.203.nip.io"
+      paths:
+        - path: /
+          # Ignored if not kubeVersion >= 1.14-0
+          pathType: Prefix
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+persistence:
+  config:
+    enabled: false
+    emptyDir: false
+    mountPath: /var/lib/boinc
+    ## Template downloads data Persistent Volume Storage Class
+    ## If defined, storageClassName: <storageClass>
+    ## If set to "-", storageClassName: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClassName spec is
+    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+    ##   GKE, AWS & OpenStack)
+    ##
+    # storageClass: "-"
+    ##
+    ## If you want to reuse an existing claim, you can pass the name of the PVC using
+    ## the existingClaim variable
+    # existingClaim: your-claim
+    accessMode: ReadWriteOnce
+    size: 1Gi
+    ## Do not delete the pvc upon helm uninstall
+    skipuninstall: false
