@@ -1327,6 +1327,31 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/installer-0.1.4/installer-0.1.4.tgz
     version: 0.1.4
+  kanboard:
+  - apiVersion: v2
+    appVersion: 1.2.16
+    created: "2020-12-19T07:35:38.422349151Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.5
+    description: A free and open source Kanban project management software.
+    digest: 2bf8c3bcb5e3c23a3590fd8dcf6ef689c27182fac9e58c7b9550f06f19aa3560
+    icon: https://raw.githubusercontent.com/kanboard/kanboard/master/favicon.ico
+    keywords:
+    - kanboard
+    - project management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: kanboard
+    sources:
+    - https://kanboard.org/
+    - https://hub.docker.com/r/kanboard/kanboard
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/kanboard-0.1.0/kanboard-0.1.0.tgz
+    version: 0.1.0
   papermerge:
   - apiVersion: v2
     appVersion: 1.5.3
