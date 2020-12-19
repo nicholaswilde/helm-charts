@@ -1,0 +1,24 @@
+---
+apiVersion: v2
+appVersion: 3.8.0
+version: 0.1.0
+name: code-server
+description: Run VS Code on any machine anywhere and access it in the browser.
+type: application
+homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/code-server"
+icon: "https://pbs.twimg.com/profile_images/1278357302601347072/BGZIBPH9_400x400.jpg"
+dependencies:
+  - name: common
+    version: ~0.1.5
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - code
+  - vs
+  - visual studio
+  - vscode
+sources:
+  - https://github.com/cdr/code-server
+  - https://hub.docker.com/r/linuxserver/code-server
+maintainers:
+  - name: Nicholas Wilde
+    email: ncwilde43@gmail.com
