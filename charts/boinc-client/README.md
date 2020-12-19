@@ -1,6 +1,6 @@
 # boinc-client
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 7.12.0](https://img.shields.io/badge/AppVersion-7.12.0-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 7.12.0](https://img.shields.io/badge/AppVersion-7.12.0-informational?style=flat-square)
 
 A program that lets you donate your idle computer time to science projects like SETI@home, Climateprediction.net, Rosetta@home, World Community Grid, and many others.
 
@@ -47,6 +47,14 @@ For example,
 ```console
 helm install boinc-client nicholaswilde/boinc-client -f values.yaml
 ```
+
+## GPU
+See the following resoures to setup BOINC to work with a GPU
+- [AMD GPU device plugin for Kubernetes](https://github.com/RadeonOpenCompute/k8s-device-plugin)
+- [Schedule GPUs](https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/)
+- [intel-gpu-plugin helm chart](https://artifacthub.io/packages/helm/k8s-at-home/intel-gpu-plugin)
+- [Intel device plugin for kubernetes](https://github.com/intel/intel-device-plugins-for-kubernetes#gpu-device-plugin)
+- [BOINC Client Setup on Kubernetes](https://github.com/jaysgrant/kubernetes_boinc_client_setup)
 
 ## Todo
 - [ ] Add support and instructions for [other architectures](https://github.com/BOINC/boinc-client-docker#supported-architectures-and-tags).

@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 7.12.0
-version: 0.1.0
+version: 0.1.1
 name: boinc-client
 description: A program that lets you donate your idle computer time to science projects like SETI@home, Climateprediction.net, Rosetta@home, World Community Grid, and many others.
 type: application

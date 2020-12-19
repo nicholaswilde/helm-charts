@@ -66,6 +66,16 @@ helm install {{ template "chart.name" . }} {{ template "helm.path" . }} -f value
 ```
 {{- end -}}
 
+{{- define "gpu" -}}
+## GPU
+See the following resoures to setup BOINC to work with a GPU
+- [AMD GPU device plugin for Kubernetes](https://github.com/RadeonOpenCompute/k8s-device-plugin)
+- [Schedule GPUs](https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/)
+- [intel-gpu-plugin helm chart](https://artifacthub.io/packages/helm/k8s-at-home/intel-gpu-plugin)
+- [Intel device plugin for kubernetes](https://github.com/intel/intel-device-plugins-for-kubernetes#gpu-device-plugin)
+- [BOINC Client Setup on Kubernetes](https://github.com/jaysgrant/kubernetes_boinc_client_setup)
+{{- end -}}
+
 {{- define "todo" -}}
 ## Todo
 - [ ] Add support and instructions for [other architectures](https://github.com/BOINC/boinc-client-docker#supported-architectures-and-tags).
@@ -99,6 +109,8 @@ This project was started in 2020 by [Nicholas Wilde](https://github.com/{{ templ
 {{ template "configuration.example.set" . }}
 
 {{ template "configuration.example.file" . }}
+
+{{ template "gpu" . }}
 
 {{ template "todo" . }}
 
