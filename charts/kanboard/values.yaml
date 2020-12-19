@@ -1,0 +1,78 @@
+---
+# Default values for kanboard
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+image:
+  repository: kanboard/kanboard
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "v1.2.16"
+
+secret: {}
+  # MYSQL_ROOT_PASSWORD: secret
+  # MYSQL_USER: kanboard
+  # MYSQL_PASSWORD: kanboard-secret
+
+env: {}
+  # MYSQL_DATABASE: kanboard
+
+service:
+  port:
+    port: 80
+  additionalPorts:
+    - name: "443-tcp"
+      port: 443
+
+ingress:
+  enabled: true
+  annotations:
+    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
+  hosts:
+    - host: "kanboard.192.168.1.203.nip.io"
+      paths:
+        - path: /
+          # Ignored if not kubeVersion >= 1.14-0
+          pathType: Prefix
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+persistence:
+  plugins:
+    enabled: false
+    emptyDir: false
+    mountPath: /var/www/app/plugins
+    ## Template downloads data Persistent Volume Storage Class
+    ## If defined, storageClassName: <storageClass>
+    ## If set to "-", storageClassName: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClassName spec is
+    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+    ##   GKE, AWS & OpenStack)
+    ##
+    # storageClass: "-"
+    ##
+    ## If you want to reuse an existing claim, you can pass the name of the PVC using
+    ## the existingClaim variable
+    # existingClaim: your-claim
+    accessMode: ReadWriteOnce
+    size: 1Gi
+    ## Do not delete the pvc upon helm uninstall
+    skipuninstall: false
+  data:
+    enabled: false
+    emptyDir: false
+    mountPath: /var/www/app/data
+    # storageClass: "-"
+    accessMode: ReadWriteOnce
+    size: 1Gi
+    skipuninstall: false
+  ssl:
+    enabled: false
+    emptyDir: false
+    mountPath: /etc/nginx/ssl
+    # storageClass: "-"
+    accessMode: ReadWriteOnce
+    size: 1Gi
+    skipuninstall: false

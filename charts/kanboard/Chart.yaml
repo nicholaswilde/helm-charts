@@ -1,0 +1,22 @@
+---
+apiVersion: v2
+appVersion: 1.2.16
+version: 0.1.0
+name: kanboard
+description: A free and open source Kanban project management software.
+type: application
+homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/kanboard"
+icon: "https://raw.githubusercontent.com/kanboard/kanboard/master/favicon.ico"
+dependencies:
+  - name: common
+    version: ~0.1.5
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - kanboard
+  - project management
+sources:
+  - https://kanboard.org/
+  - https://hub.docker.com/r/kanboard/kanboard
+maintainers:
+  - name: Nicholas Wilde
+    email: ncwilde43@gmail.com
