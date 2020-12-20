@@ -1,0 +1,22 @@
+---
+apiVersion: v2
+appVersion: 2020.09
+version: 0.1.0
+name: friendica
+description: Welcome to the free social web.
+type: application
+homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/friendica"
+icon: "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-friendica-logo.png"
+dependencies:
+  - name: common
+    version: ~0.1.7
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - friend
+  - social
+sources:
+  - https://friendi.ca/
+  - https://hub.docker.com/_/friendica
+maintainers:
+  - name: Nicholas Wilde
+    email: ncwilde43@gmail.com
