@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 1.8.6
-version: 0.1.1
+appVersion: 1.8.7
+version: 0.1.2
 name: etherpad
 description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
 type: application
@@ -9,7 +9,7 @@ homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/etherpa
 icon: "https://pbs.twimg.com/profile_images/1336377123964145665/2gTadaDt_400x400.jpg"
 dependencies:
   - name: common
-    version: ~0.1.5
+    version: ~0.1.7
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - etherpad
