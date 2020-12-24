@@ -925,6 +925,33 @@ entries:
     version: 0.1.0
   etherpad:
   - apiVersion: v2
+    appVersion: 1.8.7
+    created: "2020-12-24T18:52:19.805197602Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
+    digest: 3e78f5e364483b636d1f1e4d2009a8a04af6df422640128be18daa0b94c11408
+    icon: https://pbs.twimg.com/profile_images/1336377123964145665/2gTadaDt_400x400.jpg
+    keywords:
+    - etherpad
+    - editor
+    - notepad
+    - pad
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: etherpad
+    sources:
+    - https://etherpad.org/
+    - https://github.com/ether/etherpad-lite
+    - https://hub.docker.com/r/nicholaswilde/etherpad
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/etherpad-0.1.2/etherpad-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 1.8.6
     created: "2020-12-13T18:10:56.978293603Z"
     dependencies:
