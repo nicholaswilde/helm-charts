@@ -4,10 +4,10 @@
 # Declare variables to be passed into your templates.
 
 image:
-  repository: crazymax/diun
+  repository: ghcr.io/crazy-max/diun
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "4.9.0"
+  tag: "4.10.0"
 
 secret: {}
   # DIUN_NOTIF_GOTIFY_TOKEN: ""

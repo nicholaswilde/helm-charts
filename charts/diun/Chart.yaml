@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 4.9.0
-version: 0.2.1
+appVersion: 4.10.0
+version: 0.2.2
 name: diun
 description: Docker image update notifier
 type: application
@@ -9,7 +9,7 @@ homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/diun"
 icon: "https://raw.githubusercontent.com/crazy-max/diun/master/.res/diun.png"
 dependencies:
   - name: common
-    version: ~0.1.5
+    version: ~0.1.7
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - docker
