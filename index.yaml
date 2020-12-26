@@ -801,6 +801,33 @@ entries:
     version: 0.1.0
   diun:
   - apiVersion: v2
+    appVersion: 4.10.0
+    created: "2020-12-26T17:35:16.598668309Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: Docker image update notifier
+    digest: b9e24e16f4a235e4386a803aa1cc37c8b5c0eb49439da9299ca52ea75881061e
+    icon: https://raw.githubusercontent.com/crazy-max/diun/master/.res/diun.png
+    keywords:
+    - docker
+    - notifier
+    - notification
+    - image
+    - update
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: diun
+    sources:
+    - https://crazymax.dev/diun/
+    - https://hub.docker.com/r/crazymax/diun
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/diun-0.2.2/diun-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
     appVersion: 4.9.0
     created: "2020-12-13T17:44:28.643411215Z"
     dependencies:
