@@ -48,6 +48,9 @@ For example,
 helm install cryptpad nicholaswilde/cryptpad -f values.yaml
 ```
 
+## Todo
+- [ ] Add support for [traefik annotations](https://github.com/xwiki-labs/cryptpad-docker/blob/master/traefik2.yml)
+
 ## Author
 This project was started in 2020 by [Nicholas Wilde](https://github.com/nicholaswilde).
 

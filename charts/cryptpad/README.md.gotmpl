@@ -68,7 +68,7 @@ helm install {{ template "chart.name" . }} {{ template "helm.path" . }} -f value
 
 {{- define "todo" -}}
 ## Todo
-- [ ] Incorporate Docker secret.
+- [ ] Add support for [traefik annotations](https://github.com/xwiki-labs/cryptpad-docker/blob/master/traefik2.yml)
 {{- end -}}
 
 {{- define "author" -}}
@@ -99,6 +99,8 @@ This project was started in 2020 by [Nicholas Wilde](https://github.com/{{ templ
 {{ template "configuration.example.set" . }}
 
 {{ template "configuration.example.file" . }}
+
+{{ template "todo" . }}
 
 {{ template "author" . }}
 
