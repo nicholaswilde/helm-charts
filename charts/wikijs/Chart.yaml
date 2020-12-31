@@ -1,0 +1,25 @@
+---
+apiVersion: v2
+appVersion: 2.5.170
+version: 0.1.0
+name: wikijs
+description: The most powerful and extensible open source Wiki software.
+type: application
+homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/wikijs"
+icon: "https://pbs.twimg.com/profile_images/1232182631204315136/sa4iIzcf_400x400.jpg"
+dependencies:
+  - name: common
+    version: ~0.1.7
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - wiki
+  - js
+  - javascript
+  - text
+  - editor
+sources:
+  - https://wiki.js.org/
+  - https://hub.docker.com/r/linuxserver/wikijs
+maintainers:
+  - name: Nicholas Wilde
+    email: ncwilde43@gmail.com
