@@ -831,6 +831,33 @@ entries:
   cryptpad:
   - apiVersion: v2
     appVersion: 3.25.0
+    created: "2020-12-31T08:21:00.852797211Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: A Zero Knowledge realtime collaborative editor.
+    digest: 308238caf410a259967814d49268793a52dbc766f5846f824166fe7e55da0f43
+    icon: https://pbs.twimg.com/profile_images/900348888862904321/8YDH3pTe_400x400.jpg
+    keywords:
+    - cryptpad
+    - pad
+    - text
+    - editor
+    - collaborate
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: cryptpad
+    sources:
+    - https://cryptpad.fr/
+    - https://hub.docker.com/r/nicholaswilde/cryptpad
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/cryptpad-0.1.1/cryptpad-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 3.25.0
     created: "2020-12-30T22:14:21.467589702Z"
     dependencies:
     - name: common
