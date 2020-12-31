@@ -1,0 +1,25 @@
+---
+apiVersion: v2
+appVersion: 1.7.0
+version: 0.1.0
+name: hedgedoc
+description: HedgeDoc lets you create real-time collaborative markdown notes.
+type: application
+homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/hedgedoc"
+icon: "https://github.com/hedgedoc/hedgedoc/raw/master/docs/images/hedgedoc_logo_horizontal.png"
+dependencies:
+  - name: common
+    version: ~0.1.7
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - hedgedoc
+  - hedge
+  - doc
+  - markdown
+  - editor
+sources:
+  - https://github.com/hedgedoc/hedgedoc
+  - https://hub.docker.com/r/linuxserver/hedgedoc
+maintainers:
+  - name: Nicholas Wilde
+    email: ncwilde43@gmail.com
