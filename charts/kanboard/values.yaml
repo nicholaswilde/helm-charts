@@ -4,10 +4,10 @@
 # Declare variables to be passed into your templates.
 
 image:
-  repository: kanboard/kanboard
+  repository: ghcr.io/kanboard/kanboard
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.2.16"
+  tag: "v1.2.18"
 
 secret: {}
   # MYSQL_ROOT_PASSWORD: secret

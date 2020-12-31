@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 1.2.16
-version: 0.1.1
+appVersion: 1.2.18
+version: 0.1.2
 name: kanboard
 description: A free and open source Kanban project management software.
 type: application
