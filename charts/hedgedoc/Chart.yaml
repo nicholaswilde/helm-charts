@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 1.7.0
-version: 0.1.1
+appVersion: 1.7.1
+version: 0.1.2
 name: hedgedoc
 description: HedgeDoc lets you create real-time collaborative markdown notes.
 type: application
