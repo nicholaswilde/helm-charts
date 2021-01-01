@@ -1,0 +1,24 @@
+---
+apiVersion: v2
+appVersion: 5.0.11
+version: 0.1.0
+name: snipe-it
+description: Open source asset management
+type: application
+homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/snipe-it"
+icon: "https://pbs.twimg.com/profile_images/976748875733020672/K-HnZCCK_400x400.jpg"
+dependencies:
+  - name: common
+    version: ~0.1.7
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - snipeit
+  - snipe
+  - asset
+  - management
+sources:
+  - https://snipeitapp.com/
+  - https://hub.docker.com/r/linuxserver/
+maintainers:
+  - name: Nicholas Wilde
+    email: ncwilde43@gmail.com

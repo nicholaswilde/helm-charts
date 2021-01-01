@@ -1,0 +1,65 @@
+---
+# Default values for snipe-it.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+image:
+  repository: ghcr.io/linuxserver/snipe-it
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "v5.0.11-ls115"
+
+secret: {}
+  # MYSQL_ROOT_PASSWORD: ""
+  # MYSQL_USER: "snipe"
+  # MYSQL_PASSWORD: ""
+
+
+env: {}
+  # PUID: "1000"
+  # PGID: "1000"
+  # MYSQL_DATABASE: "snipe"
+  # APP_URL: "< your application URL IE 192.168.10.1:8080>" 
+  # MYSQL_PORT_3306_TCP_ADDR: "mysql"
+  # MYSQL_PORT_3306_TCP_PORT: "3306"
+
+service:
+  port:
+    port: 80
+
+ingress:
+  enabled: true
+  annotations:
+    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
+  hosts:
+    - host: "snipeit.192.168.1.203.nip.io"
+      paths:
+        - path: /
+          # Ignored if not kubeVersion >= 1.14-0
+          pathType: Prefix
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+persistence:
+  data:
+    enabled: false
+    emptyDir: false
+    mountPath: /var/lib/mysql
+    ## Template downloads data Persistent Volume Storage Class
+    ## If defined, storageClassName: <storageClass>
+    ## If set to "-", storageClassName: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClassName spec is
+    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+    ##   GKE, AWS & OpenStack)
+    ##
+    # storageClass: "-"
+    ##
+    ## If you want to reuse an existing claim, you can pass the name of the PVC using
+    ## the existingClaim variable
+    # existingClaim: your-claim
+    accessMode: ReadWriteOnce
+    size: 1Gi
+    ## Do not delete the pvc upon helm uninstall
+    skipuninstall: false
