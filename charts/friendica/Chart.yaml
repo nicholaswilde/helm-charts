@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 2020.09
-version: 0.1.0
+appVersion: 2021.09
+version: 0.1.1
 name: friendica
 description: Welcome to the free social web.
 type: application

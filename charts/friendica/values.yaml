@@ -7,7 +7,7 @@ image:
   repository: friendica
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "2020.09"
+  tag: "2021.01"
 
 secret:
   MYSQL_USER: "friendica"
