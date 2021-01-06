@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 1.12
-version: 0.1.0
+appVersion: 1.12.1
+version: 0.1.1
 name: syncthing
 description: A continuous file synchronization program.
 type: application
@@ -9,7 +9,7 @@ homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/syncthi
 icon: "https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png"
 dependencies:
   - name: common
-    version: ~0.1.4
+    version: ~0.1.7
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - sync
