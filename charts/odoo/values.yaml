@@ -1,0 +1,72 @@
+---
+# Default values for odoo.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+image:
+  repository: ghcr.io/nicholaswilde/odoo
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "14.0-ls1"
+
+secret: {}
+  # USER: "odoo"
+  # PASSWORD: "myodoo"
+
+env: {}
+  # HOST: "mydb"
+
+service:
+  port:
+    port: 8069
+  additionalPorts:
+    - name: "8071-tcp"
+      port: 8071
+      protocol: TCP
+    - name: "8072-tcp"
+      port: 8072
+      protocol: TCP
+
+ingress:
+  enabled: true
+  annotations:
+    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
+  hosts:
+    - host: "odoo.192.168.1.203.nip.io"
+      paths:
+        - path: /
+          # Ignored if not kubeVersion >= 1.14-0
+          pathType: Prefix
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+persistence:
+  odoo:
+    enabled: false
+    emptyDir: false
+    mountPath: /var/lib/odoo
+    ## Template downloads data Persistent Volume Storage Class
+    ## If defined, storageClassName: <storageClass>
+    ## If set to "-", storageClassName: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClassName spec is
+    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+    ##   GKE, AWS & OpenStack)
+    ##
+    # storageClass: "-"
+    ##
+    ## If you want to reuse an existing claim, you can pass the name of the PVC using
+    ## the existingClaim variable
+    # existingClaim: your-claim
+    accessMode: ReadWriteOnce
+    size: 1Gi
+    ## Do not delete the pvc upon helm uninstall
+    skipuninstall: false
+  addons:
+    enabled: false
+    emptyDir: false
+    mountPath: /mnt/extra-addons
+    accessMode: ReadWriteOnce
+    size: 1Gi
+    skipuninstall: false
