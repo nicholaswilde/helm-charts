@@ -6,7 +6,7 @@ image:
   repository: gotify/server-arm7
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "2.0.20"
+  tag: "2.0.21"
 
 secret:
   user: "admin"

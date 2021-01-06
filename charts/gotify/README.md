@@ -1,6 +1,6 @@
 # gotify
 
-![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.0.20](https://img.shields.io/badge/AppVersion-2.0.20-informational?style=flat-square)
+![Version: 0.2.3](https://img.shields.io/badge/Version-0.2.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.0.21](https://img.shields.io/badge/AppVersion-2.0.21-informational?style=flat-square)
 
 a simple server for sending and receiving messages
 
@@ -8,7 +8,7 @@ a simple server for sending and receiving messages
 
 | Repository | Name | Version |
 |------------|------|---------|
-| http://nicholaswilde.github.io/helm-charts/ | common | ~0.1.5 |
+| http://nicholaswilde.github.io/helm-charts/ | common | ~0.1.7 |
 
 ## TL;DR
 ```console
