@@ -2465,6 +2465,36 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/syncthing-0.1.0/syncthing-0.1.0.tgz
     version: 0.1.0
+  template:
+  - apiVersion: v2
+    appVersion: "14"
+    created: "2021-01-06T03:45:53.151133804Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: All-in-one business software. Beautiful. Easy-to-use. CRM, Accounting, PM, HR, Procurement, Point of Sale, MRP, Marketing, etc.
+    digest: 63a018a5dbc962a546bdc5e7041611e18ebe6eacbe41e047441d239f6bd3d586
+    icon: https://pbs.twimg.com/profile_images/970608340014419969/1bpCWJhS_400x400.jpg
+    keywords:
+    - odoo
+    - crm
+    - pm
+    - hr
+    - accounting
+    - mrp
+    - marketing
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: template
+    sources:
+    - https://www.odoo.com/
+    - https://hub.docker.com/repository/docker/nicholaswilde/odoo
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/template-0.1.0/template-0.1.0.tgz
+    version: 0.1.0
   transmission:
   - apiVersion: v2
     appVersion: "3"
