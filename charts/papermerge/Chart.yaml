@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 1.5.5
-version: 0.2.7
+version: 0.2.8
 name: papermerge
 description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
 type: application
