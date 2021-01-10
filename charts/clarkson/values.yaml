@@ -3,7 +3,7 @@
 image:
   repository: ghcr.io/linuxserver/clarkson
   pullPolicy: IfNotPresent
-  tag: "v1.1.2-ls6"
+  tag: "v1.1.2-ls7"
 
 strategy:
   type: Recreate
