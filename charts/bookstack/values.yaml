@@ -7,7 +7,7 @@ image:
   repository: ghcr.io/linuxserver/bookstack
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v0.31.1-ls118"
+  tag: "v0.31.2-ls119"
 
 secret: {}
   # DB_USER: bookstack
