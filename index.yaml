@@ -350,6 +350,34 @@ entries:
     version: 0.1.0
   bookstack:
   - apiVersion: v2
+    appVersion: 0.31.3
+    created: "2021-01-11T01:16:27.327140308Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: A simple, self-hosted, easy-to-use platform for organising and storing information.
+    digest: 69fbbffb8430161a8d0798dc55aa41f594ac1ee6963450ddbef9220941f09064
+    icon: https://avatars3.githubusercontent.com/u/20912696
+    keywords:
+    - bookstack
+    - book
+    - stack
+    - organizer
+    - server
+    - hosted
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: bookstack
+    sources:
+    - https://www.bookstackapp.com/
+    - https://hub.docker.com/r/linuxserver/bookstack
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/bookstack-0.1.5/bookstack-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
     appVersion: 0.31.2
     created: "2021-01-10T21:53:12.815943352Z"
     dependencies:
