@@ -2372,6 +2372,32 @@ entries:
   projectsend:
   - apiVersion: v2
     appVersion: r1070
+    created: "2021-01-11T15:37:10.749885592Z"
+    dependencies:
+    - name: common
+      repository: http://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    digest: 2c762d73b56726f2a7ea1b35f50980dd324b5cb86ba4936053b9ddfecbba5902
+    icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg
+    keywords:
+    - project
+    - send
+    - upload
+    - files
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: projectsend
+    sources:
+    - https://www.projectsend.org/
+    - https://hub.docker.com/r/linuxserver/projectsend
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/projectsend-0.2.5/projectsend-0.2.5.tgz
+    version: 0.2.5
+  - apiVersion: v2
+    appVersion: r1070
     created: "2020-12-17T04:44:07.01600178Z"
     dependencies:
     - name: common
