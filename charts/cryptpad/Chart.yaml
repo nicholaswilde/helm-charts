@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 3.25.0
-version: 0.1.1
+appVersion: 3.25.1
+version: 0.1.2
 name: cryptpad
 description: A Zero Knowledge realtime collaborative editor.
 type: application

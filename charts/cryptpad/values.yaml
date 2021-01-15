@@ -7,7 +7,7 @@ image:
   repository: ghcr.io/nicholaswilde/cryptpad
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "3.25.0-ls3"
+  tag: "3.25.1-ls4"
 
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
