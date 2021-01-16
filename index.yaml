@@ -1731,6 +1731,33 @@ entries:
     version: 0.1.0
   hedgedoc:
   - apiVersion: v2
+    appVersion: 1.7.2
+    created: "2021-01-16T01:57:58.769212951Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: HedgeDoc lets you create real-time collaborative markdown notes.
+    digest: 67483d839a347fadc761c2285a43b2357d847831cf86bbb342d3a43b76ad9d43
+    icon: https://avatars1.githubusercontent.com/u/67865462
+    keywords:
+    - hedgedoc
+    - hedge
+    - doc
+    - markdown
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: hedgedoc
+    sources:
+    - https://github.com/hedgedoc/hedgedoc
+    - https://hub.docker.com/r/linuxserver/hedgedoc
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/hedgedoc-0.1.5/hedgedoc-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
     appVersion: 1.7.1
     created: "2021-01-09T17:00:37.454109823Z"
     dependencies:
