@@ -520,6 +520,34 @@ entries:
   clarkson:
   - apiVersion: v2
     appVersion: v1.1.2
+    created: "2021-01-17T04:51:27.093412944Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
+    digest: ec72ea17cce2e834a16ac0ed41c60eb2c69755a97bd570c2796bb7339b2c9568
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
+    icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
+    keywords:
+    - fuel
+    - car
+    - log
+    - fill-up
+    - vehicle
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: clarkson
+    sources:
+    - https://github.com/linuxserver/Clarkson
+    - https://hub.docker.com/r/linuxserver/clarkson
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/clarkson-0.1.5/clarkson-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: v1.1.2
     created: "2021-01-10T21:50:48.579408743Z"
     dependencies:
     - name: common
