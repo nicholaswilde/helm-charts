@@ -1,6 +1,6 @@
 apiVersion: v2
 appVersion: 3.00
-version: 0.2.6
+version: 0.2.7
 name: transmission
 description: A Fast, Easy, and Free BitTorrent Client.
 type: application
