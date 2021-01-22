@@ -2329,6 +2329,33 @@ entries:
   papermerge:
   - apiVersion: v2
     appVersion: 1.5.5
+    created: "2021-01-22T15:36:35.022900163Z"
+    dependencies:
+    - name: common
+      repository: http://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    digest: 797bdafea7ae74610c1047038ce3dc8c18047d776e8b437ed9f2f71702998ea0
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
+    keywords:
+    - paper
+    - merge
+    - document
+    - scan
+    - scanner
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: papermerge
+    sources:
+    - https://www.papermerge.com/
+    - https://hub.docker.com/r/linuxserver/papermerge
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/papermerge-0.2.10/papermerge-0.2.10.tgz
+    version: 0.2.10
+  - apiVersion: v2
+    appVersion: 1.5.5
     created: "2021-01-15T15:22:21.217381858Z"
     dependencies:
     - name: common
