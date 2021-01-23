@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
 appVersion: 2.14
-version: 0.1.0
+version: 0.1.1
 name: fossil
-description: A Helm chart for Kubernetes
+description: A simple, high-reliability, distributed software configuration management system
 type: application
 homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/fossil"
 icon: "https://fossil-scm.org/home/doc/trunk/www/fossil3.gif"
