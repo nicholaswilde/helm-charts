@@ -1576,6 +1576,30 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/firefox-syncserver-0.1.0/firefox-syncserver-0.1.0.tgz
     version: 0.1.0
+  fossil:
+  - apiVersion: v2
+    appVersion: "2.14"
+    created: "2021-01-23T01:55:31.121135023Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: A Helm chart for Kubernetes
+    digest: 7547711d8905a94af6ef71c0b2de22f5a3712089771ed56ffbbc6a355c72212f
+    icon: https://fossil-scm.org/home/doc/trunk/www/fossil3.gif
+    keywords:
+    - fossil
+    - scm
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: fossil
+    sources:
+    - https://fossil-scm.org/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/fossil-0.1.0/fossil-0.1.0.tgz
+    version: 0.1.0
   friendica:
   - apiVersion: v2
     appVersion: "2021.09"
