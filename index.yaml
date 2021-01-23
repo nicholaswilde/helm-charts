@@ -2350,6 +2350,32 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/kanboard-0.1.0/kanboard-0.1.0.tgz
     version: 0.1.0
+  novnc:
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2021-01-23T17:18:51.207442367Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: The open source VNC client
+    digest: 30ca32954047cd00d4647b315b51f7eb575fbee6f50a15d72fc433ac2b638ed8
+    icon: https://twitter.com/noVNC/photo
+    keywords:
+    - novnc
+    - vnc
+    - remote
+    - desktop
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: novnc
+    sources:
+    - https://novnc.com/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/novnc-0.1.0/novnc-0.1.0.tgz
+    version: 0.1.0
   papermerge:
   - apiVersion: v2
     appVersion: 1.5.5
