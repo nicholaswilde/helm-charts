@@ -1,0 +1,21 @@
+---
+apiVersion: v2
+appVersion: 2.14
+version: 0.1.0
+name: fossil
+description: A Helm chart for Kubernetes
+type: application
+homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/fossil"
+icon: "https://fossil-scm.org/home/doc/trunk/www/fossil3.gif"
+dependencies:
+  - name: common
+    version: ~0.1.7
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - fossil
+  - scm
+sources:
+  - https://fossil-scm.org/
+maintainers:
+  - name: Nicholas Wilde
+    email: ncwilde43@gmail.com
