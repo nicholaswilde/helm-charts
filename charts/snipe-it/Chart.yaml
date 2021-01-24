@@ -1,11 +1,11 @@
 ---
 apiVersion: v2
-appVersion: 5.0.11
-version: 0.1.0
+appVersion: 5.0.12
+version: 0.1.1
 name: snipe-it
 description: Open source asset management
 type: application
-homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/snipe-it"
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/snipe-it"
 icon: "https://pbs.twimg.com/profile_images/976748875733020672/K-HnZCCK_400x400.jpg"
 dependencies:
   - name: common
@@ -22,3 +22,9 @@ sources:
 maintainers:
   - name: Nicholas Wilde
     email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Bumped tag to v5.0.12-ls117
+  artifacthub.io/images: |
+    - name: snipe-it
+      image: ghcr.io/linuxserver/snipe-it:v5.0.12-ls117
