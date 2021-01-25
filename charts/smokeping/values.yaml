@@ -3,7 +3,7 @@
 image:
   repository: ghcr.io/linuxserver/smokeping
   pullPolicy: IfNotPresent
-  tag: "9e30fdd7-ls110"
+  tag: "9e30fdd7-ls111"
 
 strategy:
   type: Recreate
