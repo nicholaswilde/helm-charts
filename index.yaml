@@ -3097,6 +3097,38 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/projectsend-0.1.0/projectsend-0.1.0.tgz
     version: 0.1.0
   smokeping:
+  - annotations:
+      artifacthub.io/changes: |
+        - Bumped tag to 9e30fdd7-ls111
+      artifacthub.io/images: |
+        - name: smokeping
+          image: ghcr.io/linuxserver/smokeping:9e30fdd7-ls111
+    apiVersion: v2
+    appVersion: 9e30fdd7
+    created: "2021-01-25T00:12:52.797127411Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: Keep track of your network latency.
+    digest: 5f6879892ff03774264dbafc9f9c27c4148e2b802d44dfb9bf0776a461c4481b
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/smokeping
+    icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/smokeping/img/smokeping-icon.jpg
+    keywords:
+    - smokeping
+    - network
+    - latency
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: smokeping
+    sources:
+    - https://oss.oetiker.ch/smokeping/
+    - https://hub.docker.com/r/linuxserver/smokeping
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/smokeping-0.1.6/smokeping-0.1.6.tgz
+    version: 0.1.6
   - apiVersion: v2
     appVersion: 9e30fdd7
     created: "2021-01-13T15:52:55.031743833Z"
