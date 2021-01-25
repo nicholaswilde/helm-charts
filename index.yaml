@@ -3371,6 +3371,38 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/syncthing-0.1.0/syncthing-0.1.0.tgz
     version: 0.1.0
   transmission:
+  - annotations:
+      artifacthub.io/changes: |
+        - Bumped tag to 3.00-r0-ls74
+      artifacthub.io/images: |
+        - name: transmission
+          image: ghcr.io/linuxserver/transmission:3.00-r0-ls74
+    apiVersion: v2
+    appVersion: "3"
+    created: "2021-01-25T00:15:17.541337023Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.7
+    description: A Fast, Easy, and Free BitTorrent Client.
+    digest: be8a15918eb2b650c245575bf40fca6e79e46e58ce7565529c1b26a41fe609ee
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/transmission
+    icon: https://raw.githubusercontent.com/transmission/transmission/master/web/public_html/images/webclip-icon.png
+    keywords:
+    - transmission
+    - bittorrent
+    - torrent
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: Nicholas Wilde
+    name: transmission
+    sources:
+    - https://transmissionbt.com/
+    - https://hub.docker.com/r/linuxserver/transmission
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/transmission-0.2.8/transmission-0.2.8.tgz
+    version: 0.2.8
   - apiVersion: v2
     appVersion: "3"
     created: "2021-01-18T15:27:33.573445121Z"
