@@ -11,3 +11,11 @@ repos:
         entry: -u 0 quay.io/helmpack/chart-testing:v3.3.1 ct
         args:
           - lint
+      - id: shellcheck
+        name: Test shell scripts with shellcheck
+        description: Shell scripts conform to shellcheck
+        entry: koalaman/shellcheck:latest
+        language: docker_image
+        types: [shell]
+        args: []
+        additional_dependencies: [shellcheck]
