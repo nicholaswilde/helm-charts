@@ -1,15 +1,16 @@
+---
 apiVersion: v2
-appVersion: 3.00
-version: 0.2.8
+appVersion: "3.00"
+version: 0.2.9
 name: transmission
 description: A Fast, Easy, and Free BitTorrent Client.
 type: application
-home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/transmission"
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/transmission/transmission"
 icon: "https://raw.githubusercontent.com/transmission/transmission/master/web/public_html/images/webclip-icon.png"
 dependencies:
-- name: common
-  version: ~0.1.7
-  repository: https://nicholaswilde.github.io/helm-charts/
+  - name: common
+    version: ~0.1.7
+    repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - transmission
   - bittorrent
@@ -22,7 +23,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 3.00-r0-ls74
+    - Bumped tag to 3.00-r0-ls75
   artifacthub.io/images: |
     - name: transmission
-      image: ghcr.io/linuxserver/transmission:3.00-r0-ls74
+      image: ghcr.io/linuxserver/transmission:3.00-r0-ls75

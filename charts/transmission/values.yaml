@@ -3,11 +3,9 @@
 image:
   repository: ghcr.io/linuxserver/transmission
   pullPolicy: IfNotPresent
-  tag: "3.00-r0-ls74"
-
+  tag: "3.00-r0-ls75"
 strategy:
   type: Recreate
-
 service:
   port:
     port: 9091
@@ -17,17 +15,14 @@ service:
     - name: "51413-udp"
       port: 51413
       protocol: UDP
-
 secret:
   user: "pirate"
   pass: "hypriot"
-
 env:
   TZ: "America/Los_Angeles"
   TRANSMISSION_WEB_HOME: "/kettu/"
   # PUID: "1001"
   # PGID: "1001"
-
 ingress:
   enabled: true
   annotations:
@@ -41,7 +36,6 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
-
 persistence:
   downloads:
     enabled: false
