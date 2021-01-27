@@ -2005,6 +2005,37 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/formalms-0.1.2/formalms-0.1.2.tgz
     version: 0.1.2
   fossil:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues
+        - Bumped common to ~0.1.8
+      artifacthub.io/images: |
+        - name: fossil
+          image: ghcr.io/nicholaswilde/fossil:2.14-ls1
+    apiVersion: v2
+    appVersion: "2.14"
+    created: "2021-01-27T17:17:45.444689331Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A simple, high-reliability, distributed software configuration management system
+    digest: b230d52a4daf57d7ee7b3716dd3bd38c480ee183ff3f88d97c08553a3ef05c4f
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/fossil
+    icon: https://fossil-scm.org/home/doc/trunk/www/fossil3.gif
+    keywords:
+    - fossil
+    - scm
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: fossil
+    sources:
+    - https://fossil-scm.org/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/fossil-0.1.2/fossil-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v2
     appVersion: "2.14"
     created: "2021-01-23T18:06:06.828484678Z"
