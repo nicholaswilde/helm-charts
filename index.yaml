@@ -1555,6 +1555,41 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/cryptpad-0.1.0/cryptpad-0.1.0.tgz
     version: 0.1.0
   diun:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+      artifacthub.io/images: |
+        - name: diun
+          image: ghcr.io/crazy-max/diun:4.11.0
+    apiVersion: v2
+    appVersion: 4.11.0
+    created: "2021-01-27T16:36:53.181170201Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Docker image update notifier
+    digest: b84fc4d0af44402d223aa9d8bd8542af2571b3b6e2169f47046be7947821879a
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/diun
+    icon: https://raw.githubusercontent.com/crazy-max/diun/master/.res/diun.png
+    keywords:
+    - docker
+    - notifier
+    - notification
+    - image
+    - update
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: diun
+    sources:
+    - https://crazymax.dev/diun/
+    - https://hub.docker.com/r/crazymax/diun
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/diun-0.2.5/diun-0.2.5.tgz
+    version: 0.2.5
   - apiVersion: v2
     appVersion: 4.11.0
     created: "2021-01-05T00:34:54.585354738Z"
