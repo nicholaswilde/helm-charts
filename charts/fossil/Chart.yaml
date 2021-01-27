@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "2.14"
-version: 0.1.1
+version: 0.1.2
 name: fossil
 description: A simple, high-reliability, distributed software configuration management system
 type: application
