@@ -2,11 +2,14 @@ apiVersion: v2
 name: common
 description: Function library for nicholaswilde's helm charts
 type: library
-version: 0.1.7
+version: 0.1.8
 keywords:
   - nicholaswilde
   - common
 home: https://github.com/nicholaswilde/helm-charts/tree/master/charts/common
 maintainers:
-  - name: Nicholas Wilde
+  - name: nicholaswilde
     email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Fixed linting issues.
