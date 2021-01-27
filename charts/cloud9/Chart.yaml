@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 1.28.2
-version: 0.2.9
+version: 0.2.10
 name: cloud9
 description: A complete web based IDE with terminal access
 type: application
