@@ -3774,6 +3774,42 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/transmission-0.1.4/transmission-0.1.4.tgz
     version: 0.1.4
   wikijs:
+  - annotations:
+      artifacthub.io/changes: |
+        - Bumped tag to 2.5.170-ls19
+        - Bumped common to ~0.1.8
+        - Fixed linting issues.
+      artifacthub.io/images: |
+        - name: wikijs
+          image: ghcr.io/linuxserver/wikijs:2.5.170-ls19
+    apiVersion: v2
+    appVersion: 2.5.170
+    created: "2021-01-27T09:58:44.043698607Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: The most powerful and extensible open source Wiki software.
+    digest: 5bc37160b6f85a2e38926012674244a1fb7a15251ed5623ca8d5c9c2e17f7d62
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/wikijs
+    icon: https://pbs.twimg.com/profile_images/1232182631204315136/sa4iIzcf_400x400.jpg
+    keywords:
+    - wiki
+    - js
+    - javascript
+    - text
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: wikijs
+    sources:
+    - https://wiki.js.org/
+    - https://hub.docker.com/r/linuxserver/wikijs
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.1/wikijs-0.1.1.tgz
+    version: 0.1.1
   - apiVersion: v2
     appVersion: 2.5.170
     created: "2020-12-31T02:11:15.792194499Z"
