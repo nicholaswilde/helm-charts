@@ -1885,6 +1885,41 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/etherpad-0.1.0/etherpad-0.1.0.tgz
     version: 0.1.0
   firefox-syncserver:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+        - Added icon
+      artifacthub.io/images: |
+        - name: firefox-syncserver
+          image: ghcr.io/crazy-max/firefox-syncserver:1.8.0
+    apiVersion: v2
+    appVersion: 1.8.0
+    created: "2021-01-27T16:44:05.672398988Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: This is an all-in-one package for running a self-hosted Firefox Sync server.
+    digest: 47604cfb0574209e82a10482d3c925cf3af90403c249ee86efdf2b3b580bdf2f
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/firefox-syncserver
+    icon: https://upload.wikimedia.org/wikipedia/en/0/01/Firefox_Sync_logo.png
+    keywords:
+    - server
+    - sync
+    - syncserver
+    - firefox
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: firefox-syncserver
+    sources:
+    - https://moz-services-docs.readthedocs.io/en/latest/howtos/run-sync-1.5.html
+    - https://hub.docker.com/r/crazymax/firefox-syncserver
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/firefox-syncserver-0.1.3/firefox-syncserver-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: 1.8.0
     created: "2020-12-13T17:35:46.276048318Z"
