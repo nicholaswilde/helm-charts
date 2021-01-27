@@ -2083,6 +2083,38 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/fossil-0.1.0/fossil-0.1.0.tgz
     version: 0.1.0
   friendica:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+      artifacthub.io/images: |
+        - name: friendica
+          image: friendica:2021.01
+    apiVersion: v2
+    appVersion: "2021.09"
+    created: "2021-01-27T17:18:41.270376674Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Welcome to the free social web.
+    digest: 53b0667b4c1fed1b8007890026931da5dcd2991ee26856a7d51c200634c54233
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/friendica
+    icon: https://d1q6f0aelx0por.cloudfront.net/product-logos/library-friendica-logo.png
+    keywords:
+    - friend
+    - social
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: friendica
+    sources:
+    - https://friendi.ca/
+    - https://hub.docker.com/_/friendica
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/friendica-0.1.3/friendica-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: "2021.09"
     created: "2021-01-06T04:04:27.900250725Z"
