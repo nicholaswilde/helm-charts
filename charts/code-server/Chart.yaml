@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 3.8.0
-version: 0.1.1
+version: 0.1.2
 name: code-server
 description: Run VS Code on any machine anywhere and access it in the browser.
 type: application
