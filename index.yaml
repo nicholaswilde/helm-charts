@@ -468,6 +468,41 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/booksonic-0.1.0/booksonic-0.1.0.tgz
     version: 0.1.0
   bookstack:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+      artifacthub.io/images: |
+        - name: bookstack
+          image: ghcr.io/linuxserver/bookstack:v0.31.4-ls121
+    apiVersion: v2
+    appVersion: 0.31.4
+    created: "2021-01-27T15:38:17.389079313Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A simple, self-hosted, easy-to-use platform for organising and storing information.
+    digest: fd2f89eaa7e0126f128b50b2657fb60192c1c7a2ce36afbfcf6bbcb525557859
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/bookstack
+    icon: https://avatars3.githubusercontent.com/u/20912696
+    keywords:
+    - bookstack
+    - book
+    - stack
+    - organizer
+    - server
+    - hosted
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: bookstack
+    sources:
+    - https://www.bookstackapp.com/
+    - https://hub.docker.com/r/linuxserver/bookstack
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/bookstack-0.1.9/bookstack-0.1.9.tgz
+    version: 0.1.9
   - apiVersion: v2
     appVersion: 0.31.4
     created: "2021-01-17T02:10:32.678006795Z"
