@@ -1768,6 +1768,41 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/diun-0.1.0/diun-0.1.0.tgz
     version: 0.1.0
   etherpad:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+      artifacthub.io/images: |
+        - name: etherpad
+          image: ghcr.io/nicholaswilde/etherpad:1.8.7-ls1
+    apiVersion: v2
+    appVersion: 1.8.7
+    created: "2021-01-27T16:41:06.588223008Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
+    digest: 8e28e966c2bdb5c52e824951f6f40f5eb38091e4327ad00b2e542890981ed408
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/etherpad
+    icon: https://pbs.twimg.com/profile_images/1336377123964145665/2gTadaDt_400x400.jpg
+    keywords:
+    - etherpad
+    - editor
+    - notepad
+    - pad
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: etherpad
+    sources:
+    - https://etherpad.org/
+    - https://github.com/ether/etherpad-lite
+    - https://hub.docker.com/r/nicholaswilde/etherpad
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/etherpad-0.1.4/etherpad-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 1.8.7
     created: "2020-12-24T18:52:19.805197602Z"
