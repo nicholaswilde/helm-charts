@@ -19,7 +19,7 @@ env: {}
   # PUID: "1000"
   # PGID: "1000"
   # MYSQL_DATABASE: "snipe"
-  # APP_URL: "< your application URL IE 192.168.10.1:8080>" 
+  # APP_URL: "< your application URL IE 192.168.10.1:8080>"
   # MYSQL_PORT_3306_TCP_ADDR: "mysql"
   # MYSQL_PORT_3306_TCP_PORT: "3306"
 

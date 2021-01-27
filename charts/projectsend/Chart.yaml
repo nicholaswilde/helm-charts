@@ -1,16 +1,16 @@
 ---
 apiVersion: v2
 appVersion: r1070
-version: 0.2.6
+version: 0.2.7
 name: projectsend
 description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
 type: application
-homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/projectsend"
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/projectsend"
 icon: "https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg"
 dependencies:
   - name: common
-    version: ~0.1.7
-    repository: http://nicholaswilde.github.io/helm-charts/
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - project
   - send
@@ -20,5 +20,12 @@ sources:
   - https://www.projectsend.org/
   - https://hub.docker.com/r/linuxserver/projectsend
 maintainers:
-  - name: Nicholas Wilde
+  - name: nicholaswilde
     email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Fixed linting issues.
+    - Bumped common to ~0.1.8
+  artifacthub.io/images: |
+    - name: projectsend
+      image: ghcr.io/linuxserver/projectsend:r1070-ls57

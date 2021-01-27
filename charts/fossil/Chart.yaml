@@ -1,15 +1,15 @@
 ---
 apiVersion: v2
-appVersion: 2.14
+appVersion: "2.14"
 version: 0.1.1
 name: fossil
 description: A simple, high-reliability, distributed software configuration management system
 type: application
-homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/fossil"
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/fossil"
 icon: "https://fossil-scm.org/home/doc/trunk/www/fossil3.gif"
 dependencies:
   - name: common
-    version: ~0.1.7
+    version: ~0.1.8
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - fossil
@@ -17,5 +17,12 @@ keywords:
 sources:
   - https://fossil-scm.org/
 maintainers:
-  - name: Nicholas Wilde
+  - name: nicholaswilde
     email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Fixed linting issues
+    - Bumped common to ~0.1.8
+  artifacthub.io/images: |
+    - name: fossil
+      image: ghcr.io/nicholaswilde/fossil:2.14-ls1

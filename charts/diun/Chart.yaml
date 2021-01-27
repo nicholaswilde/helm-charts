@@ -1,15 +1,15 @@
 ---
 apiVersion: v2
 appVersion: 4.11.0
-version: 0.2.3
+version: 0.2.4
 name: diun
 description: Docker image update notifier
 type: application
-homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/diun"
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/diun"
 icon: "https://raw.githubusercontent.com/crazy-max/diun/master/.res/diun.png"
 dependencies:
   - name: common
-    version: ~0.1.7
+    version: ~0.1.8
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - docker
@@ -21,5 +21,12 @@ sources:
   - https://crazymax.dev/diun/
   - https://hub.docker.com/r/crazymax/diun
 maintainers:
-  - name: Nicholas Wilde
+  - name: nicholaswilde
     email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Fixed linting issues.
+    - Bumped common to ~0.1.8
+  artifacthub.io/images: |
+    - name: diun
+      image: ghcr.io/crazy-max/diun:4.11.0

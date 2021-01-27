@@ -31,4 +31,3 @@ annotations:
   artifacthub.io/images: |
     - name: wikijs
       image: ghcr.io/linuxserver/wikijs:2.5.170-ls19
-

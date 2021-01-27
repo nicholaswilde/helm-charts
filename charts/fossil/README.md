@@ -8,7 +8,7 @@ A simple, high-reliability, distributed software configuration management system
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.7 |
+| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.8 |
 
 ## TL;DR
 ```console

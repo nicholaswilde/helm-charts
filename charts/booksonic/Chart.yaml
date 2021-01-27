@@ -1,15 +1,15 @@
 ---
 apiVersion: v2
-appVersion: 1.2
-version: 0.2.8
+appVersion: "1.2"
+version: 0.2.9
 name: booksonic
 description: The selfhosted audiobook server
 type: application
-homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/booksonic"
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/booksonic"
 icon: "http://booksonic.org/assets/img/booksonic.png"
 dependencies:
   - name: common
-    version: ~0.1.7
+    version: ~0.1.8
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - audio
@@ -20,5 +20,11 @@ sources:
   - http://booksonic.org/
   - https://hub.docker.com/r/linuxserver/booksonic
 maintainers:
-  - name: Nicholas Wilde
+  - name: nicholaswilde
     email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Fixed linting issues.
+  artifacthub.io/images: |
+    - name: booksonic
+      image: ghcr.io/linuxserver/booksonic:1.2-ls97

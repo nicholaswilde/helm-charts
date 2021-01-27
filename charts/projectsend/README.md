@@ -1,6 +1,6 @@
 # projectsend
 
-![Version: 0.2.6](https://img.shields.io/badge/Version-0.2.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: r1070](https://img.shields.io/badge/AppVersion-r1070-informational?style=flat-square)
+![Version: 0.2.7](https://img.shields.io/badge/Version-0.2.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: r1070](https://img.shields.io/badge/AppVersion-r1070-informational?style=flat-square)
 
 A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
 
@@ -8,7 +8,7 @@ A self-hosted application that lets you upload files and assign them to specific
 
 | Repository | Name | Version |
 |------------|------|---------|
-| http://nicholaswilde.github.io/helm-charts/ | common | ~0.1.7 |
+| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.8 |
 
 ## TL;DR
 ```console

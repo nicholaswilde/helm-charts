@@ -2,17 +2,17 @@
 repos:
   - repo: local
     hooks:
-      - id: ct-lint
-        name: "Chart Test: Lint"
-        language: docker_image
-        pass_filenames: false
-        types: ['file']
-        files: '^charts/.*(\.ya?ml|\.tpl|\.helmignore|NOTES.txt)'
-        entry: -u 0 quay.io/helmpack/chart-testing:v3.3.1 ct
-        args:
-          - lint
-          - --config
-          - .ct.yaml
+      #- id: ct-lint
+        #name: "Chart Test: Lint"
+        #language: docker_image
+        #pass_filenames: false
+        #types: ['file']
+        #files: '^charts/.*(\.ya?ml|\.tpl|\.helmignore|NOTES.txt)'
+        #entry: -u 0 quay.io/helmpack/chart-testing:v3.3.1 ct
+        #args:
+        #  - lint
+        #  - --config
+        #  - .ct.yaml
       - id: shellcheck
         name: Test shell scripts with shellcheck
         description: Shell scripts conform to shellcheck

@@ -1,20 +1,31 @@
 ---
 apiVersion: v2
 appVersion: 0.2.9
-version: 0.2.3
+version: 0.2.4
 name: installer
 description: Quickly install pre-compiled binaries from Github releases.
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/installer"
+icon: ""
 type: application
 dependencies:
   - name: common
-    version: ~0.1.5
-    repository: http://nicholaswilde.github.io/helm-charts/
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - installer
+  - binary
+  - binaries
+  - compiled
 sources:
   - https://github.com/jpillora/installer
   - https://hub.docker.com/r/nicholaswilde/installer
 maintainers:
-  - name: Nicholas Wilde
+  - name: nicholaswilde
     email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Fixed linting issues.
+    - Bumped common to ~0.1.8
+  artifacthub.io/images: |
+    - name: installer
+      image: ghcr.io/nicholaswilde/installer:0.2.9-ls21

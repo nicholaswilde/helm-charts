@@ -1,15 +1,15 @@
 ---
 apiVersion: v2
 appVersion: 1.28.2
-version: 0.2.10
+version: 0.2.11
 name: cloud9
 description: A complete web based IDE with terminal access
 type: application
-homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/cloud9"
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/cloud9"
 icon: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cloud9.png"
 dependencies:
   - name: common
-    version: ~0.1.7
+    version: ~0.1.8
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - cloud9
@@ -21,11 +21,12 @@ sources:
   - https://github.com/c9/core
   - https://hub.docker.com/r/linuxserver/cloud9
 maintainers:
-  - name: Nicholas Wilde
+  - name: nicholaswilde
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 1.28.2-ls65
+    - Fixed linting issues.
+    - Bumped common to ~0.1.8
   artifacthub.io/images: |
     - name: cloud9
       image: ghcr.io/linuxserver/cloud9:1.28.2-ls65

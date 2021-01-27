@@ -1,15 +1,15 @@
 ---
 apiVersion: v2
 appVersion: 1.2.18
-version: 0.1.2
+version: 0.1.3
 name: kanboard
 description: A free and open source Kanban project management software.
 type: application
-homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/kanboard"
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/kanboard"
 icon: "https://pbs.twimg.com/profile_images/467625861886136320/YCKwOCXw_400x400.png"
 dependencies:
   - name: common
-    version: ~0.1.5
+    version: ~0.1.8
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - kanboard
@@ -18,5 +18,12 @@ sources:
   - https://kanboard.org/
   - https://hub.docker.com/r/kanboard/kanboard
 maintainers:
-  - name: Nicholas Wilde
+  - name: nicholaswilde
     email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Fixed linting issues.
+    - Bumped common to ~0.1.8
+  artifacthub.io/images: |
+    - name: kanboard
+      image: ghcr.io/kanboard/kanboard:v1.2.18

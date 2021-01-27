@@ -1,15 +1,15 @@
 ---
 apiVersion: v2
 appVersion: 1.12.1
-version: 0.1.1
+version: 0.1.2
 name: syncthing
 description: A continuous file synchronization program.
 type: application
-homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/syncthing"
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/syncthing"
 icon: "https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png"
 dependencies:
   - name: common
-    version: ~0.1.7
+    version: ~0.1.8
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - sync
@@ -19,5 +19,12 @@ sources:
   - https://syncthing.net/
   - https://hub.docker.com/r/syncthing/syncthing
 maintainers:
-  - name: Nicholas Wilde
+  - name: nicholaswilde
     email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Fixed linting issues.
+    - Bumped common to ~0.1.8
+  artifacthub.io/images: |
+    - name: syncthing
+      image: syncthing/syncthing:1.12.1

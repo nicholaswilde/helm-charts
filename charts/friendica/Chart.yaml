@@ -1,15 +1,15 @@
 ---
 apiVersion: v2
-appVersion: 2021.09
-version: 0.1.1
+appVersion: "2021.09"
+version: 0.1.2
 name: friendica
 description: Welcome to the free social web.
 type: application
-homepage: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/friendica"
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/friendica"
 icon: "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-friendica-logo.png"
 dependencies:
   - name: common
-    version: ~0.1.7
+    version: ~0.1.8
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - friend
@@ -18,5 +18,12 @@ sources:
   - https://friendi.ca/
   - https://hub.docker.com/_/friendica
 maintainers:
-  - name: Nicholas Wilde
+  - name: nicholaswilde
     email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Fixed linting issues.
+    - Bumped common to ~0.1.8
+  artifacthub.io/images: |
+    - name: friendica
+      image: friendica:2021.01
