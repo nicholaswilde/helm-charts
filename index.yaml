@@ -1197,6 +1197,40 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/cloud9-0.1.0/cloud9-0.1.0.tgz
     version: 0.1.0
   code-server:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+      artifacthub.io/images: |
+        - name: code-server
+          image: ghcr.io/linuxserver/code-server:v3.8.0-ls62
+    apiVersion: v2
+    appVersion: 3.8.0
+    created: "2021-01-27T15:55:54.48438504Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Run VS Code on any machine anywhere and access it in the browser.
+    digest: d816a35578493e9ad0855d57bd570cc90ac97299d762fb57d1570ee7b44558c4
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/code-server
+    icon: https://pbs.twimg.com/profile_images/1278357302601347072/BGZIBPH9_400x400.jpg
+    keywords:
+    - code
+    - vs
+    - visual studio
+    - vscode
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: code-server
+    sources:
+    - https://github.com/cdr/code-server
+    - https://hub.docker.com/r/linuxserver/code-server
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/code-server-0.1.2/code-server-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v2
     appVersion: 3.8.0
     created: "2020-12-19T06:20:36.285353057Z"
