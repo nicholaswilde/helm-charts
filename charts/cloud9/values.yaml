@@ -2,16 +2,14 @@
 # Default values for Cloud9.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
 image:
   repository: ghcr.io/linuxserver/cloud9
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.28.0-ls64"
-
+  tag: "1.28.2-ls65"
 secret: {}
-  # USERNAME="" #optional
-  # PASSWORD="" #optional
+# USERNAME="" #optional
+# PASSWORD="" #optional
 
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -19,11 +17,9 @@ env:
   # PUID: "1000"
   # PGID: "1000"
   # GITURL=https://github.com/linuxserver/docker-cloud9.git #optional
-
 service:
   port:
     port: 8000
-
 ingress:
   enabled: true
   annotations:
@@ -37,7 +33,6 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
-
 persistence:
   code:
     enabled: false
@@ -67,7 +62,6 @@ persistence:
     size: 1Gi
     ## Do not delete the pvc upon helm uninstall
     skipuninstall: false
-
 livenessProbe:
   enabled: false
 readinessProbe:
