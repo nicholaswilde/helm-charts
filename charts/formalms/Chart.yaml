@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 2.3.0.2
-version: 0.1.1
+version: 0.1.2
 name: formalms
 description: A Helm chart for Kubernetes
 type: application
