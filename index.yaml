@@ -90,6 +90,39 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/boinc-client-0.1.0/boinc-client-0.1.0.tgz
     version: 0.1.0
   booksonic:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+      artifacthub.io/images: |
+        - name: booksonic
+          image: ghcr.io/linuxserver/booksonic:1.2-ls97
+    apiVersion: v2
+    appVersion: "1.2"
+    created: "2021-01-27T15:36:09.456021294Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: The selfhosted audiobook server
+    digest: 0c0eea019e623387e0930e302aaa557a69513bf949b27e3a6aa00458f3364156
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/booksonic
+    icon: http://booksonic.org/assets/img/booksonic.png
+    keywords:
+    - audio
+    - audiobook
+    - server
+    - book
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: booksonic
+    sources:
+    - http://booksonic.org/
+    - https://hub.docker.com/r/linuxserver/booksonic
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/booksonic-0.2.10/booksonic-0.2.10.tgz
+    version: 0.2.10
   - apiVersion: v2
     appVersion: "1.2"
     created: "2021-01-22T15:35:23.200398665Z"
