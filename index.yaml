@@ -2465,6 +2465,41 @@ entries:
     version: 0.1.0
   hedgedoc:
   - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+      artifacthub.io/images: |
+        - name: hedgedoc
+          image: ghcr.io/linuxserver/hedgedoc:1.7.2-ls4
+    apiVersion: v2
+    appVersion: 1.7.2
+    created: "2021-01-28T00:23:36.014770001Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: HedgeDoc lets you create real-time collaborative markdown notes.
+    digest: 2acc63da99bda0893b63a3ae0d89f2f4f3e65647a427b355432c6f36a188f8b6
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/hedgedoc
+    icon: https://avatars1.githubusercontent.com/u/67865462
+    keywords:
+    - hedgedoc
+    - hedge
+    - doc
+    - markdown
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: hedgedoc
+    sources:
+    - https://github.com/hedgedoc/hedgedoc
+    - https://hub.docker.com/r/linuxserver/hedgedoc
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/hedgedoc-0.1.9/hedgedoc-0.1.9.tgz
+    version: 0.1.9
+  - annotations:
       artifacthub.io/images: |
         - name: hedgedoc
           image: ghcr.io/linuxserver/hedgedoc:1.7.2-ls4
