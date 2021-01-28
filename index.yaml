@@ -4027,6 +4027,40 @@ entries:
   snipe-it:
   - annotations:
       artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+      artifacthub.io/images: |
+        - name: snipe-it
+          image: ghcr.io/linuxserver/snipe-it:v5.0.12-ls117
+    apiVersion: v2
+    appVersion: 5.0.12
+    created: "2021-01-28T00:43:23.893437584Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Open source asset management
+    digest: 6d1ded60d8a6128defae0e03da2d9070608ba30288527afbb748c3c567eaf24a
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/snipe-it
+    icon: https://pbs.twimg.com/profile_images/976748875733020672/K-HnZCCK_400x400.jpg
+    keywords:
+    - snipeit
+    - snipe
+    - asset
+    - management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: snipe-it
+    sources:
+    - https://snipeitapp.com/
+    - https://hub.docker.com/r/linuxserver/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/snipe-it-0.1.3/snipe-it-0.1.3.tgz
+    version: 0.1.3
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to v5.0.12-ls117
       artifacthub.io/images: |
         - name: snipe-it
