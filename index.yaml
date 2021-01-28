@@ -3590,6 +3590,40 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/papermerge-0.1.0/papermerge-0.1.0.tgz
     version: 0.1.0
   projectsend:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+      artifacthub.io/images: |
+        - name: projectsend
+          image: ghcr.io/linuxserver/projectsend:r1070-ls57
+    apiVersion: v2
+    appVersion: r1070
+    created: "2021-01-28T00:41:27.067026934Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    digest: 4782501b8cfffc463ee40883bf674d3760665cfebece18ffc02a54feb5bb2674
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/projectsend
+    icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg
+    keywords:
+    - project
+    - send
+    - upload
+    - files
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: projectsend
+    sources:
+    - https://www.projectsend.org/
+    - https://hub.docker.com/r/linuxserver/projectsend
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/projectsend-0.2.8/projectsend-0.2.8.tgz
+    version: 0.2.8
   - apiVersion: v2
     appVersion: r1070
     created: "2021-01-18T15:26:29.927140946Z"
