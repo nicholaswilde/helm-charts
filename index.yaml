@@ -2164,6 +2164,40 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/friendica-0.1.0/friendica-0.1.0.tgz
     version: 0.1.0
   gotify:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+      artifacthub.io/images: |
+        - name: gotify
+          image: gotify/server-arm7:2.0.21
+    apiVersion: v2
+    appVersion: 2.0.21
+    created: "2021-01-28T00:13:56.423664527Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: a simple server for sending and receiving messages
+    digest: dfbbf8acf19fc2a26ee1a92d5b18a9b2794a5c785f68378f9cafa138146d132d
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/gotify
+    icon: https://gotify.net/img/logo.png
+    keywords:
+    - server
+    - gotify
+    - messages
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: gotify
+    sources:
+    - https://gotify.net/
+    - https://github.com/gotify/server
+    - https://hub.docker.com/r/gotify/server
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/gotify-0.2.5/gotify-0.2.5.tgz
+    version: 0.2.5
   - apiVersion: v2
     appVersion: 2.0.21
     created: "2021-01-06T20:44:56.145700993Z"
