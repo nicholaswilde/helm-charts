@@ -4205,6 +4205,39 @@ entries:
   transmission:
   - annotations:
       artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+      artifacthub.io/images: |
+        - name: transmission
+          image: ghcr.io/linuxserver/transmission:3.00-r0-ls75
+    apiVersion: v2
+    appVersion: "3.00"
+    created: "2021-01-28T00:45:06.57095548Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A Fast, Easy, and Free BitTorrent Client.
+    digest: c37c2538ee817af9629ed3cb165c51cd601f107fcba773ea490b491e9301ee3e
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/transmission/transmission
+    icon: https://raw.githubusercontent.com/transmission/transmission/master/web/public_html/images/webclip-icon.png
+    keywords:
+    - transmission
+    - bittorrent
+    - torrent
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: transmission
+    sources:
+    - https://transmissionbt.com/
+    - https://hub.docker.com/r/linuxserver/transmission
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/transmission-0.2.11/transmission-0.2.11.tgz
+    version: 0.2.11
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 3.00-r0-ls75
       artifacthub.io/images: |
         - name: transmission
