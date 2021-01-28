@@ -3148,6 +3148,43 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/novnc-0.1.0/novnc-0.1.0.tgz
     version: 0.1.0
   odoo:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+      artifacthub.io/images: |
+        - name: odoo
+          image: ghcr.io/nicholaswilde/odoo:14.0-ls1
+    apiVersion: v2
+    appVersion: "14.0"
+    created: "2021-01-28T00:39:54.74732719Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: All-in-one business software. Beautiful. Easy-to-use. CRM, Accounting, PM, HR, Procurement, Point of Sale, MRP, Marketing, etc.
+    digest: f91685ce0b4f031af94cc95292cc3765a68b1aeeca42a89eaf1c24c5c6482123
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/odoo
+    icon: https://pbs.twimg.com/profile_images/970608340014419969/1bpCWJhS_400x400.jpg
+    keywords:
+    - odoo
+    - crm
+    - pm
+    - hr
+    - accounting
+    - mrp
+    - marketing
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: odoo
+    sources:
+    - https://www.odoo.com/
+    - https://hub.docker.com/repository/docker/nicholaswilde/odoo
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/odoo-0.1.3/odoo-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: "14"
     created: "2021-01-23T18:02:23.260966158Z"
