@@ -4119,6 +4119,39 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/snipe-it-0.1.0/snipe-it-0.1.0.tgz
     version: 0.1.0
   syncthing:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+      artifacthub.io/images: |
+        - name: syncthing
+          image: syncthing/syncthing:1.12.1
+    apiVersion: v2
+    appVersion: 1.12.1
+    created: "2021-01-28T00:44:12.177786565Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A continuous file synchronization program.
+    digest: 7a69e5c6e3c7e99414c4109debe5d0bc3c75b7a2fc069a083cd802b85ad1cdf5
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/syncthing
+    icon: https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png
+    keywords:
+    - sync
+    - thing
+    - syncronization
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: syncthing
+    sources:
+    - https://syncthing.net/
+    - https://hub.docker.com/r/syncthing/syncthing
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/syncthing-0.1.3/syncthing-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: 1.12.1
     created: "2021-01-06T20:48:45.489616737Z"
