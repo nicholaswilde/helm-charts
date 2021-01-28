@@ -1,6 +1,6 @@
 apiVersion: v2
 appVersion: 9e30fdd7
-version: 0.1.7
+version: 0.1.8
 name: smokeping
 description: Keep track of your network latency.
 type: application
