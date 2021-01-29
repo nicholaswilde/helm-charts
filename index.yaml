@@ -92,6 +92,39 @@ entries:
   booksonic:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to 1.2-ls98
+      artifacthub.io/images: |
+        - name: booksonic
+          image: ghcr.io/linuxserver/booksonic:1.2-ls98
+    apiVersion: v2
+    appVersion: "1.2"
+    created: "2021-01-29T15:31:28.144516978Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: The selfhosted audiobook server
+    digest: 960d7811e34001206990780e3d1f53b64c342a8bcdcb01d55d5d9e912e6769ed
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/booksonic
+    icon: http://booksonic.org/assets/img/booksonic.png
+    keywords:
+    - audio
+    - audiobook
+    - server
+    - book
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: booksonic
+    sources:
+    - http://booksonic.org/
+    - https://hub.docker.com/r/linuxserver/booksonic
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/booksonic-0.2.11/booksonic-0.2.11.tgz
+    version: 0.2.11
+  - annotations:
+      artifacthub.io/changes: |
         - Fixed linting issues.
       artifacthub.io/images: |
         - name: booksonic
@@ -3215,6 +3248,40 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/odoo-0.1.1/odoo-0.1.1.tgz
     version: 0.1.1
   papermerge:
+  - annotations:
+      artifacthub.io/changes: |
+        - Bumped tag to v1.5.5-ls22
+      artifacthub.io/images: |
+        - name: papermerge
+          image: ghcr.io/linuxserver/papermerge:v1.5.5-ls22
+    apiVersion: v2
+    appVersion: 1.5.5
+    created: "2021-01-29T15:31:28.395445918Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    digest: fa115b0ec79293d185bc2398a12476e4a50e386bce9fcb14b39323ae14cb4236
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
+    keywords:
+    - paper
+    - merge
+    - document
+    - scan
+    - scanner
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: papermerge
+    sources:
+    - https://www.papermerge.com/
+    - https://hub.docker.com/r/linuxserver/papermerge
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/papermerge-0.2.13/papermerge-0.2.13.tgz
+    version: 0.2.13
   - annotations:
       artifacthub.io/changes: |
         - Fixed linting issues.
