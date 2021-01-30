@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 0.2.9
-version: 0.2.5
+appVersion: "0.2.9"
+version: 0.2.6
 name: installer
 description: Quickly install pre-compiled binaries from Github releases.
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/installer"
@@ -24,8 +24,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Fixed linting issues.
-    - Bumped common to ~0.1.8
+    - Bumped tag to 0.2.9-ls3
   artifacthub.io/images: |
     - name: installer
-      image: ghcr.io/nicholaswilde/installer:0.2.9-ls21
+      image: ghcr.io/nicholaswilde/installer:0.2.9-ls23

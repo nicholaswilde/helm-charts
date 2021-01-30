@@ -2,20 +2,18 @@
 # Default values for installer.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
 image:
   repository: ghcr.io/nicholaswilde/installer
   pullPolicy: IfNotPresent
-  tag: "0.2.9-ls2"
+  tag: "0.2.9-ls3"
 
 secret: {}
-  # USER: ""
-  # GH_TOKEN: ""
+# USER: ""
+# GH_TOKEN: ""
 
 service:
   port:
     port: 3000
-
 ingress:
   enabled: true
   annotations:
