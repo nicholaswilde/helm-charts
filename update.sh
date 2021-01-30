@@ -5,7 +5,7 @@
 #   - Update artifact.io annotations in Chart.yaml
 #   - Add helm-docs and git commit
 
-SCRIPT_VERSION="0.1.0"
+SCRIPT_VERSION="0.1.1"
 CHARTS_DIR="charts"
 
 # Get the directory the script is in.
@@ -40,7 +40,7 @@ function is_set(){
 }
 
 function show_usage(){
-  printf "show_usage: %s REPOSITORY:TAG [<patch>|minor|major] [-h|-v]\n" "${SCRIPT_NAME}"
+  printf "Usage: %s [<patch>|minor|major] [-h|-v] REPOSITORY:TAG\n" "${SCRIPT_NAME}"
 }
 
 function script_desc(){
@@ -48,7 +48,7 @@ function script_desc(){
 }
 
 # Show the help
-function help(){
+function show_help(){
   show_usage
   script_desc
   printf "Mandatory arguments:\n"
@@ -72,6 +72,7 @@ function usage_error() {
   exit 1
 }
 
+# Parse
 function parse(){
   printf "Parsing inputs\n"
   eval REPOSITORY="$(echo "$1" | awk -F ":" '{print $1}')"
@@ -79,12 +80,12 @@ function parse(){
   eval CHART_PATH="${CHARTS_PATH}/${CHART_NAME}"
   eval TAG="$(basename "$1"|awk -F ":" '{print $2}')"
   eval APP_VERSION="$(echo "${TAG}"|awk -F "-" '{print $1}')"
-  is_null "${REPOSITORY}" && printf "%s: missing repository\n" "${SCRIPT_NAME}" && usage_error
-  is_null "${CHART_NAME}" && printf "%s: missing chart name\n" "${SCRIPT_NAME}" && usage_error
-  is_null "${TAG}"        && printf "%s: missing tag\n" "${SCRIPT_NAME}"        && usage_error
+  is_null "${REPOSITORY}" 	&& printf "%s: missing repository\n" "${SCRIPT_NAME}" 	&& usage_error
+  is_null "${CHART_NAME}" 	&& printf "%s: missing chart name\n" "${SCRIPT_NAME}" 	&& usage_error
+  is_null "${TAG}"        	&& printf "%s: missing tag\n" "${SCRIPT_NAME}"        	&& usage_error
   # shellcheck disable=SC2153
-  is_null "${CHART_PATH}" && printf "%s: missing chart path\n" "${SCRIPT_NAME}" && usage_error
-  is_null "${APP_VERSION}"    s&& printf "%s: missing app version\n" "${SCRIPT_NAME}"    && usage_error
+  is_null "${CHART_PATH}" 	&& printf "%s: missing chart path\n" "${SCRIPT_NAME}" 	&& usage_error
+  is_null "${APP_VERSION}" 	&& printf "%s: missing app version\n" "${SCRIPT_NAME}"  && usage_error
   printf "  REPOSITORY:   %s\n" "${REPOSITORY}"
   printf "  CHART_NAME:   %s\n" "${CHART_NAME}"
   printf "  CHART_PATH:   %s\n" "${CHART_PATH}"
@@ -96,19 +97,17 @@ function parse(){
 # Do a bunch of checks
 function checks(){
   printf "Doing checks\n"
-  # Check if chart dir exists
   ! dir_exists  "${CHART_PATH}" && printf "Chart does not exist, %s\n" "${CHART_NAME}" >&2 && exit 1
-
-  # Check if yq is installed
   ! command_exists yq     && printf "yq is not installed\n" && exit 1
   ! command_exists semver && printf "semver is not installed\n" >&2 && exit 1
 }
 
-function updatechart(){
+# Update the Chart.yaml
+function update_chart(){
   printf "Updating Chart.yaml\n"
   local chart_file_path="${CHART_PATH}/Chart.yaml"
   # appVersion
-  yq e ".appVersion=\"${VERSION}\"" -i "${chart_file_path}"
+  yq e ".appVersion=\"${APP_VERSION}\"" -i "${chart_file_path}"
   bump_ver "${chart_file_path}"
   # Add the three hyphens to the top of the file
   sed  -i '1i ---' "${chart_file_path}"
@@ -127,7 +126,8 @@ function bump_ver(){
   yq e ".version=\"${new_chart_version}\"" -i "${chart_file_path}"
 }
 
-function updatevalues(){
+# Update values.yaml
+function update_values(){
   printf "Updating values.yaml\n"
   local VALUES_PATH="${CHART_PATH}/values.yaml"
   yq e ".image.repository=\"${REPOSITORY}\"" -i "${VALUES_PATH}"
@@ -136,11 +136,12 @@ function updatevalues(){
   sed -i '1i ---' "${VALUES_PATH}"
 }
 
+# Main functions
 function main(){
   parse "$@"
   checks "$@"
-  updatechart
-  updatevalues
+  update_chart
+  update_values
 }
 
 case "$#" in
@@ -152,7 +153,7 @@ esac
 # Get the options
 while getopts ":hv" o; do
   case "${o}" in
-    h)  help;;
+    h)  show_help;;
     v)  show_version;;
     \?) usage_error;;
   esac
@@ -161,8 +162,8 @@ done
 # https://unix.stackexchange.com/a/214151/93726
 shift "$((OPTIND-1))"
 case "${2}" in
-  "patch"|"minor"|"major") BUMP="${2}";;
-  "") BUMP="patch" ;;
-  *)  usage_error;;
+  "patch"|"minor"|"major")  BUMP="${2}";;
+  "")                       BUMP="patch" ;;
+  *)                        usage_error;;
 esac
 main "$1"
