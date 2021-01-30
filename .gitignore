@@ -3,4 +3,5 @@
 *.swp
 *.lock
 *.tgz
+*.save*
 charts/template/
