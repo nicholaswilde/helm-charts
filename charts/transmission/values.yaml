@@ -3,7 +3,7 @@
 image:
   repository: ghcr.io/linuxserver/transmission
   pullPolicy: IfNotPresent
-  tag: "3.00-r0-ls75"
+  tag: "3.00-r2-ls76"
 strategy:
   type: Recreate
 service:
