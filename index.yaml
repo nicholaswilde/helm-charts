@@ -4286,6 +4286,38 @@ entries:
   syncthing:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to 1.13.0
+      artifacthub.io/images: |
+        - name: syncthing
+          image: syncthing/syncthing:1.13.0
+    apiVersion: v2
+    appVersion: 1.13.0
+    created: "2021-02-03T05:00:53.261609814Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A continuous file synchronization program.
+    digest: 4309ce0c4ad358e3f27eddca14d235d543c21cf9d43d34410413493142aed002
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/syncthing
+    icon: https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png
+    keywords:
+    - sync
+    - thing
+    - syncronization
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: syncthing
+    sources:
+    - https://syncthing.net/
+    - https://hub.docker.com/r/syncthing/syncthing
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/syncthing-0.1.4/syncthing-0.1.4.tgz
+    version: 0.1.4
+  - annotations:
+      artifacthub.io/changes: |
         - Fixed linting issues.
         - Bumped common to ~0.1.8
       artifacthub.io/images: |
