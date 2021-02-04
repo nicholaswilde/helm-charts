@@ -2,31 +2,27 @@
 # Default values for snipe-it.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
 image:
   repository: ghcr.io/linuxserver/snipe-it
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v5.0.12-ls117"
-
+  tag: "v5.1.0-ls117"
 secret: {}
-  # MYSQL_ROOT_PASSWORD: ""
-  # MYSQL_USER: "snipe"
-  # MYSQL_PASSWORD: ""
-
+# MYSQL_ROOT_PASSWORD: ""
+# MYSQL_USER: "snipe"
+# MYSQL_PASSWORD: ""
 
 env: {}
-  # PUID: "1000"
-  # PGID: "1000"
-  # MYSQL_DATABASE: "snipe"
-  # APP_URL: "< your application URL IE 192.168.10.1:8080>"
-  # MYSQL_PORT_3306_TCP_ADDR: "mysql"
-  # MYSQL_PORT_3306_TCP_PORT: "3306"
+# PUID: "1000"
+# PGID: "1000"
+# MYSQL_DATABASE: "snipe"
+# APP_URL: "< your application URL IE 192.168.10.1:8080>"
+# MYSQL_PORT_3306_TCP_ADDR: "mysql"
+# MYSQL_PORT_3306_TCP_PORT: "3306"
 
 service:
   port:
     port: 80
-
 ingress:
   enabled: true
   annotations:
@@ -41,7 +37,6 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
-
 persistence:
   data:
     enabled: false
