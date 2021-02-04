@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 1.28.2
-version: 0.2.12
+version: 0.2.13
 name: cloud9
 description: A complete web based IDE with terminal access
 type: application
@@ -25,8 +25,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Fixed linting issues.
-    - Bumped common to ~0.1.8
+    - Bumped tag to 1.28.2-ls66
   artifacthub.io/images: |
     - name: cloud9
-      image: ghcr.io/linuxserver/cloud9:1.28.2-ls65
+      image: ghcr.io/linuxserver/cloud9:1.28.2-ls66
