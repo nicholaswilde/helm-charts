@@ -2,28 +2,25 @@
 # Default values for bookstack.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
 image:
   repository: ghcr.io/linuxserver/bookstack
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v0.31.4-ls121"
-
+  tag: "v0.31.5-ls121"
 secret: {}
-  # DB_USER: bookstack
-  # DB_PASS: <yourdbpass>
+# DB_USER: bookstack
+# DB_PASS: <yourdbpass>
 
 env: {}
-  # PUID: "1000"
-  # PGID: "1000"
-  # APP_URL: ""
-  # DB_HOST: bookstack_db
-  # DB_DATABASE: bookstackapp
+# PUID: "1000"
+# PGID: "1000"
+# APP_URL: ""
+# DB_HOST: bookstack_db
+# DB_DATABASE: bookstackapp
 
 service:
   port:
     port: 80
-
 ingress:
   enabled: true
   annotations:
@@ -38,7 +35,6 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
-
 persistence:
   config:
     enabled: false
