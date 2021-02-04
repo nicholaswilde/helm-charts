@@ -6,7 +6,7 @@ image:
   repository: syncthing/syncthing
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.13.0"
+  tag: "1.13.1"
 secret: {}
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
