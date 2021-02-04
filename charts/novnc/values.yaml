@@ -2,18 +2,19 @@
 # Default values for template.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
 image:
   repository: ghcr.io/nicholaswilde/novnc
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.2.0-ls1"
+  tag: "1.2.0-ls2"
 
 secret: {}
 
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "America/Los_Angeles"
+  REMOTE_HOST: "localhost"
+  REMOTE_PORT: "5900"
   # PUID: "1000"
   # PGID: "1000"
 
@@ -28,7 +29,7 @@ ingress:
   hosts:
     - host: "novnc.192.168.1.203.nip.io"
       paths:
-        - path: /vnc.html
+        - path: /
           # Ignored if not kubeVersion >= 1.14-0
           pathType: Prefix
   tls: []
