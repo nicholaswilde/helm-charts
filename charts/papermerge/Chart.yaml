@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 1.5.5
-version: 0.2.13
+appVersion: v1.5.5
+version: 0.2.14
 name: papermerge
 description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
 type: application
@@ -25,7 +25,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to v1.5.5-ls22
+    - Bumped tag to v1.5.5-ls23
   artifacthub.io/images: |
     - name: papermerge
-      image: ghcr.io/linuxserver/papermerge:v1.5.5-ls22
+      image: ghcr.io/linuxserver/papermerge:v1.5.5-ls23

@@ -3,10 +3,10 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 image:
-  repository: papermerge
+  repository: ghcr.io/linuxserver/papermerge
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.5.5-ls22"
+  tag: "v1.5.5-ls23"
 secret: {}
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
