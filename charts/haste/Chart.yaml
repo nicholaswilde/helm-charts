@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
 appVersion: "8ad9278"
-version: 0.1.0
+version: 0.1.1
 name: haste
-description: A Helm chart for Kubernetes
+description: An open-source pastebin software written in Node.JS, which is easily installable in any network.
 type: application
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/haste"
 icon: "https://pbs.twimg.com/profile_images/1664989409/twitter_400x400.png"
@@ -22,7 +22,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Initial release.
+    - Updated chart description and annotation image name.
   artifacthub.io/images: |
-    - name: template
+    - name: haste
       image: ghcr.io/linuxserver/haste:8ad9278-ls1
