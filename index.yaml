@@ -2565,6 +2565,38 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/gotify-0.1.0/gotify-0.1.0.tgz
     version: 0.1.0
+  haste:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: template
+          image: ghcr.io/linuxserver/haste:8ad9278-ls1
+    apiVersion: v2
+    appVersion: 8ad9278
+    created: "2021-02-05T07:03:47.742347614Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A Helm chart for Kubernetes
+    digest: 36379a748eeee6a35bc88eb9969eb938a74a09c47ff4d06fd2abc831de160a59
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/haste
+    icon: https://pbs.twimg.com/profile_images/1664989409/twitter_400x400.png
+    keywords:
+    - haste
+    - pastebin
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: haste
+    sources:
+    - https://github.com/zneix/haste-server
+    - https://hub.docker.com/r/nicholaswilde/haste
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/haste-0.1.0/haste-0.1.0.tgz
+    version: 0.1.0
   hedgedoc:
   - annotations:
       artifacthub.io/changes: |
