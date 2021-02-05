@@ -2568,6 +2568,37 @@ entries:
   haste:
   - annotations:
       artifacthub.io/changes: |
+        - Updated chart description and annotation image name.
+      artifacthub.io/images: |
+        - name: haste
+          image: ghcr.io/linuxserver/haste:8ad9278-ls1
+    apiVersion: v2
+    appVersion: 8ad9278
+    created: "2021-02-05T15:15:38.636010853Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: An open-source pastebin software written in Node.JS, which is easily installable in any network.
+    digest: 35439a047caac8d2a00cfc939898890415b9d2cbf3fc33538dbe27365b6e80c3
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/haste
+    icon: https://pbs.twimg.com/profile_images/1664989409/twitter_400x400.png
+    keywords:
+    - haste
+    - pastebin
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: haste
+    sources:
+    - https://github.com/zneix/haste-server
+    - https://hub.docker.com/r/nicholaswilde/haste
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/haste-0.1.1/haste-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |
         - Initial release.
       artifacthub.io/images: |
         - name: template
