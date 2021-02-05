@@ -16,8 +16,6 @@ readonly BRANCH=main
 readonly NAMESPACE=nicholaswilde
 readonly CHARTS_DIR=charts
 
-readonly NAT='0|[1-9][0-9]*'
-
 # Get the directory the script is in.
 # https://stackoverflow.com/a/246128/1061279
 CHARTS_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )/${CHARTS_DIR}"
@@ -26,6 +24,22 @@ readonly CHARTS_PATH
 readonly SCRIPT_NAME
 readonly URL="https://github.com/${NAMESPACE}/${REPO_NAME}/archive/${BRANCH}.tar.gz"
 readonly SCRIPT_DESC="Init a helm chart from a template."
+
+
+# to int
+function to_int() {
+    local -i num="10#${1}"
+    echo "${num}"
+}
+
+# Check if the port is not okay
+# https://docwhat.org/bash-checking-a-port-number
+function port_not_ok() {
+    local port="$1"
+    local -i port_num
+    port_num=$(to_int "${port}" 2>/dev/null)
+    (( "${port_num}" < 1 || "${port_num}" > 65535 ))
+}
 
 # Check if variable is null
 # Returns true if empty
@@ -47,10 +61,6 @@ function command_exists(){
 # Returns false if empty
 function is_set(){
   [ -n "${1}" ]
-}
-
-function is_nat {
-  [[ "$1" =~ ^($NAT)$ ]]
 }
 
 function show_usage(){
@@ -198,9 +208,7 @@ while getopts "p:hv" o; do
     h)  help;;
     v)  show_version;;
     p)  PORT="${OPTARG}"
-        ! is_nat "${PORT}"
-        printf "Invalid port number, %s\n" "${PORT}"
-        usage_error;;
+        port_not_ok "${PORT}" && printf "Invalid port number, %s\n" "${PORT}" && usage_error;;
     \?) usage_error;;
   esac
 done
