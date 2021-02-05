@@ -1,0 +1,28 @@
+---
+apiVersion: v2
+appVersion: "8ad9278"
+version: 0.1.0
+name: haste
+description: A Helm chart for Kubernetes
+type: application
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/haste"
+icon: "https://pbs.twimg.com/profile_images/1664989409/twitter_400x400.png"
+dependencies:
+  - name: common
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - haste
+  - pastebin
+sources:
+  - https://github.com/zneix/haste-server
+  - https://hub.docker.com/r/nicholaswilde/haste
+maintainers:
+  - name: nicholaswilde
+    email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Initial release.
+  artifacthub.io/images: |
+    - name: template
+      image: ghcr.io/linuxserver/haste:8ad9278-ls1
