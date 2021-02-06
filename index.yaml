@@ -4425,6 +4425,39 @@ entries:
   snipe-it:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to v5.1.1-ls117
+      artifacthub.io/images: |
+        - name: snipe-it
+          image: ghcr.io/linuxserver/snipe-it:v5.1.1-ls117
+    apiVersion: v2
+    appVersion: v5.1.1
+    created: "2021-02-06T05:45:02.646397463Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Open source asset management
+    digest: 4a8fbbb2be726b461ec25e4658f0be738741528b05ede80426dbf4b5a6aa0507
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/snipe-it
+    icon: https://pbs.twimg.com/profile_images/976748875733020672/K-HnZCCK_400x400.jpg
+    keywords:
+    - snipeit
+    - snipe
+    - asset
+    - management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: snipe-it
+    sources:
+    - https://snipeitapp.com/
+    - https://hub.docker.com/r/linuxserver/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/snipe-it-0.2.1/snipe-it-0.2.1.tgz
+    version: 0.2.1
+  - annotations:
+      artifacthub.io/changes: |
         - BREAKING CHANGE This release requires PHP 7.2.5 or greater. See https://github.com/linuxserver/docker-snipe-it/releases/tag/v5.1.0-ls117.
         - Bumped tag to v5.1.0-ls117
       artifacthub.io/images: |
