@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: v5.1.0
-version: 0.2.0
+appVersion: v5.1.1
+version: 0.2.1
 name: snipe-it
 description: Open source asset management
 type: application
@@ -24,8 +24,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - BREAKING CHANGE This release requires PHP 7.2.5 or greater. See https://github.com/linuxserver/docker-snipe-it/releases/tag/v5.1.0-ls117.
-    - Bumped tag to v5.1.0-ls117
+    - Bumped tag to v5.1.1-ls117
   artifacthub.io/images: |
     - name: snipe-it
-      image: ghcr.io/linuxserver/snipe-it:v5.1.0-ls117
+      image: ghcr.io/linuxserver/snipe-it:v5.1.1-ls117
