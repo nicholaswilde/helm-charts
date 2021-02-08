@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/papermerge
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.5.5-ls23"
+  tag: "v1.5.5-ls24"
 secret: {}
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
