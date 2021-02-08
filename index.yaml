@@ -3617,6 +3617,40 @@ entries:
   papermerge:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to v1.5.5-ls24
+      artifacthub.io/images: |
+        - name: papermerge
+          image: ghcr.io/linuxserver/papermerge:v1.5.5-ls24
+    apiVersion: v2
+    appVersion: v1.5.5
+    created: "2021-02-08T05:01:25.152285197Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    digest: 2cc17acfe81da7bfec18608536e0eceb415b49533f1f3e39cc744a2c66eaf959
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
+    keywords:
+    - paper
+    - merge
+    - document
+    - scan
+    - scanner
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: papermerge
+    sources:
+    - https://www.papermerge.com/
+    - https://hub.docker.com/r/linuxserver/papermerge
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/papermerge-0.2.15/papermerge-0.2.15.tgz
+    version: 0.2.15
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to v1.5.5-ls23
       artifacthub.io/images: |
         - name: papermerge
