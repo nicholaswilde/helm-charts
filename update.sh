@@ -40,7 +40,7 @@ function is_set(){
 }
 
 function show_usage(){
-  printf "Usage: %s [<patch>|minor|major] [-h|-v] REPOSITORY:TAG\n" "${SCRIPT_NAME}"
+  printf "Usage: %s [-h|-v] REPOSITORY:TAG [<patch>|minor|major]\n" "${SCRIPT_NAME}"
 }
 
 function script_desc(){
