@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/hedgedoc
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.7.2-ls6"
+  tag: "1.7.2-ls7"
 secret: {}
 # DB_USER: "hedgedoc"
 # DB_PASS: "<secret password>"
@@ -24,8 +24,6 @@ service:
     port: 3000
 ingress:
   enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
   hosts:
     - host: "hedgedoc.192.168.1.203.nip.io"
       paths:
