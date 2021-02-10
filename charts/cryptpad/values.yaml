@@ -17,8 +17,6 @@ service:
     port: 3000
 ingress:
   enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
   hosts:
     - host: "cryptpad.192.168.1.203.nip.io"
       paths:
