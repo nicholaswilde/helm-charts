@@ -14,6 +14,10 @@
     {{ template "repository.organization" . }}/{{ template "chart.name" . }}
 {{- end -}}
 
+{{- define "dependenciesHeader" -}}
+## Dependencies
+{{- end -}}
+
 {{- define "install.tldr" -}}
 ## TL;DR
 ```console
@@ -71,6 +75,11 @@ helm install {{ template "chart.name" . }} {{ template "helm.path" . }} -f value
 - [ ] Incorporate Docker secret.
 {{- end -}}
 
+{{- define "troubleshooting" -}}
+## Troubleshooting
+See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
+{{- end -}}
+
 {{- define "author" -}}
 ## Author
 This project was started in 2020 by [Nicholas Wilde](http://github.com/{{ template "repository.organization" . }}).
@@ -82,7 +91,9 @@ This project was started in 2020 by [Nicholas Wilde](http://github.com/{{ templa
 
 {{ template "chart.description" . }}
 
-{{ template "chart.requirementsSection" . }}
+{{ template "dependenciesHeader" . }}
+
+{{ template "chart.requirementsTable" . }}
 
 {{ template "chart.kubeVersionLine" . }}
 
@@ -99,6 +110,8 @@ This project was started in 2020 by [Nicholas Wilde](http://github.com/{{ templa
 {{ template "configuration.example.set" . }}
 
 {{ template "configuration.example.file" . }}
+
+{{ template "troubleshooting" . }}
 
 {{ template "author" . }}
 
