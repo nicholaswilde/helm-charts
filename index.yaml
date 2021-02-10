@@ -2800,6 +2800,40 @@ entries:
   hedgedoc:
   - annotations:
       artifacthub.io/changes: |
+        - Removed nginx ingress annotation
+      artifacthub.io/images: |
+        - name: hedgedoc
+          image: ghcr.io/linuxserver/hedgedoc:1.7.2-ls7
+    apiVersion: v2
+    appVersion: 1.7.2
+    created: "2021-02-10T15:36:31.6537616Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: HedgeDoc lets you create real-time collaborative markdown notes.
+    digest: a3e1ddfbccbe1c3b09049f9782309c9b20d19a02c109039d02c3274776b9c426
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/hedgedoc
+    icon: https://avatars1.githubusercontent.com/u/67865462
+    keywords:
+    - hedgedoc
+    - hedge
+    - doc
+    - markdown
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: hedgedoc
+    sources:
+    - https://github.com/hedgedoc/hedgedoc
+    - https://hub.docker.com/r/linuxserver/hedgedoc
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/hedgedoc-0.1.12/hedgedoc-0.1.12.tgz
+    version: 0.1.12
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 1.7.2-ls6
       artifacthub.io/images: |
         - name: hedgedoc
