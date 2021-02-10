@@ -3,26 +3,21 @@
 image:
   repository: ghcr.io/linuxserver/clarkson
   pullPolicy: IfNotPresent
-  tag: "v1.1.2-ls8"
-
+  tag: "v1.1.2-ls9"
 strategy:
   type: Recreate
-
 service:
   port:
     port: 3000
-
 secret:
   MYSQL_USERNAME: admin
   MYSQL_PASSWORD: admin
-
 env:
   TZ: "America/Los_Angeles"
   ENABLE_REGISTRATIONS: true
   MYSQL_HOST: mysql_host
   # PUID: "1001"
   # PGID: "1001"
-
 ingress:
   enabled: true
   annotations:
