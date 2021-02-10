@@ -31,10 +31,17 @@ to your project. Then run:
 pre-commit install
 pre-commit install-hooks
 ```
-
 ## Charts
 
 See [artifact hub](https://artifacthub.io/packages/search?repo=nicholaswilde) for a complete list.
+
+## Development
+
+See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Development).
+
+## Troubleshooting
+
+See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
 
 ## Inspiration
 
