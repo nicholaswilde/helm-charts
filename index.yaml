@@ -4534,6 +4534,38 @@ entries:
   smokeping:
   - annotations:
       artifacthub.io/changes: |
+        - Moved icon location.
+      artifacthub.io/images: |
+        - name: smokeping
+          image: ghcr.io/linuxserver/smokeping:d7de00c7-ls112
+    apiVersion: v2
+    appVersion: d7de00c7
+    created: "2021-02-11T01:08:26.622755009Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Keep track of your network latency.
+    digest: 8128ec3da20e363ef80133ecb0959a86dc901be50344802f8ef5587b43bfeb9c
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/smokeping
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/smokeping.png
+    keywords:
+    - smokeping
+    - network
+    - latency
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: smokeping
+    sources:
+    - https://oss.oetiker.ch/smokeping/
+    - https://hub.docker.com/r/linuxserver/smokeping
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/smokeping-0.1.10/smokeping-0.1.10.tgz
+    version: 0.1.10
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 0.1.9
       artifacthub.io/images: |
         - name: smokeping
