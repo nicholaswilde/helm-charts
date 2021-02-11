@@ -5462,6 +5462,40 @@ entries:
           image: ghcr.io/linuxserver/wikijs:2.5.170-ls19
     apiVersion: v2
     appVersion: 2.5.170
+    created: "2021-02-11T01:03:08.589814542Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: The most powerful and extensible open source Wiki software.
+    digest: ebf6adcf82cdbb4a733e2a16ef680c6a0a5c2d334cf72feb3c6d1534ee374fa6
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/wikijs
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/wikijs.jpg
+    keywords:
+    - wiki
+    - js
+    - javascript
+    - text
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: wikijs
+    sources:
+    - https://wiki.js.org/
+    - https://hub.docker.com/r/linuxserver/wikijs
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.5/wikijs-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/changes: |
+        - Updated icon
+      artifacthub.io/images: |
+        - name: wikijs
+          image: ghcr.io/linuxserver/wikijs:2.5.170-ls19
+    apiVersion: v2
+    appVersion: 2.5.170
     created: "2021-01-28T00:45:47.514380779Z"
     dependencies:
     - name: common
