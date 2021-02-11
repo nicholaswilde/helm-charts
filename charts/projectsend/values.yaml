@@ -2,26 +2,21 @@
 # Default values for template.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
 image:
   repository: ghcr.io/linuxserver/projectsend
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "r1070-ls57"
-
+  tag: "r1070-ls58"
 secret: {}
-
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "America/Los_Angeles"
   MAX_UPLOAD: <5000>
   # PUID: "1000"
   # PGID: "1000"
-
 service:
   port:
     port: 80
-
 ingress:
   enabled: true
   annotations:
@@ -35,7 +30,6 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
-
 persistence:
   config:
     enabled: false
