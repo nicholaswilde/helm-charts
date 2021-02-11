@@ -43,13 +43,17 @@ See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Development).
 
 See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
 
-## Inspiration
-
-Inspiration for this repository has been taken from [k8s-at-home/charts](https://github.com/k8s-at-home/charts).
-
 ## Contributing
 
 See [Contributing](./CONTRIBUTING.md)
+
+## Code of Conduct
+
+See [Code of Conduct](./CODE_OF_CONDUCT.md)
+
+## Inspiration
+
+Inspiration for this repository has been taken from [k8s-at-home/charts](https://github.com/k8s-at-home/charts).
 
 ## License
 
