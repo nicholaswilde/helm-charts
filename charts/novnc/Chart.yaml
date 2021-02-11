@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 1.2.0
-version: 0.1.4
+version: 0.1.5
 name: novnc
 description: The open source VNC client
 type: application
