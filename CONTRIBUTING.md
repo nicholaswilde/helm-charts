@@ -1,10 +1,10 @@
 # Contributing Guide
 
-The Artifact Hub accepts change requests using [GitHub pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests). This document outlines the process so you know what to expect.
+helm-charts accepts change requests using [GitHub pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests). This document outlines the process so you know what to expect.
 
 ## Developer Certificate of Origin
 
-The Artifact Hub uses a [Developers Certificate of Origin (DCO)](https://developercertificate.org/) to sign-off that you have the right to contribute the code being contributed. The full text of the DCO reads:
+helm-charts uses a [Developers Certificate of Origin (DCO)](https://developercertificate.org/) to sign-off that you have the right to contribute the code being contributed. The full text of the DCO reads:
 
 ```
 Developer Certificate of Origin
@@ -73,7 +73,7 @@ If more than one person contributed to a commit than there can be more than one 
 
 ## Issues
 
-Feature requests, bug reports, and support requests all occur through GitHub issues. If you would like to file an issue, view existing issues, or comment on an issue please engage with issues at https://github.com/artifacthub/hub/issues
+Feature requests, bug reports, and support requests all occur through GitHub issues. If you would like to file an issue, view existing issues, or comment on an issue please engage with issues at https://github.com/nicholaswilde/helm-charts/issues
 
 ## Pull Request
 
@@ -81,4 +81,4 @@ All changes to the source code are made through GitHub [pull requests](https://h
 
 If you are unsure if the change will be welcome you may want to file an issue first. The issue can detail the change and you can get feedback from the maintainers prior to starting to make the change.
 
-You can find the existing pull requests at https://github.com/artifacthub/hub/pulls
+You can find the existing pull requests at https://github.com/nicholaswilde/helm-charts/pulls
