@@ -3629,6 +3629,39 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/kanboard-0.1.0/kanboard-0.1.0.tgz
     version: 0.1.0
+  leantime:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: template
+          image: ghcr.io/nicholaswilde/leantime:2.1.7-ls1
+    apiVersion: v2
+    appVersion: 2.1.7
+    created: "2021-02-11T05:43:00.958972436Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Straightforward open source project management system to make your ideas reality.
+    digest: eb061c33deaf1584c21e836cf9b7d7aa1539652023a05c5edbac39793de07ed3
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/leantime
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/leantime.jpg
+    keywords:
+    - leantime
+    - project
+    - management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: leantime
+    sources:
+    - https://leantime.io/
+    - https://hub.docker.com/r/nicholaswilde/leantime
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/leantime-0.1.0/leantime-0.1.0.tgz
+    version: 0.1.0
   novnc:
   - annotations:
       artifacthub.io/changes: |
