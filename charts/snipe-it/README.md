@@ -1,10 +1,10 @@
 # snipe-it
 
-![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v5.1.1](https://img.shields.io/badge/AppVersion-v5.1.1-informational?style=flat-square)
+![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v5.1.1](https://img.shields.io/badge/AppVersion-v5.1.1-informational?style=flat-square)
 
 Open source asset management
 
-## Requirements
+## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
@@ -47,6 +47,9 @@ For example,
 ```console
 helm install snipe-it nicholaswilde/snipe-it -f values.yaml
 ```
+
+## Troubleshooting
+See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
 
 ## Author
 This project was started in 2020 by [Nicholas Wilde](https://github.com/nicholaswilde).
