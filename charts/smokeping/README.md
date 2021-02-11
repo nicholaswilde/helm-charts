@@ -1,10 +1,10 @@
 # smokeping
 
-![Version: 0.1.9](https://img.shields.io/badge/Version-0.1.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: d7de00c7](https://img.shields.io/badge/AppVersion-d7de00c7-informational?style=flat-square)
+![Version: 0.1.10](https://img.shields.io/badge/Version-0.1.10-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: d7de00c7](https://img.shields.io/badge/AppVersion-d7de00c7-informational?style=flat-square)
 
 Keep track of your network latency.
 
-## Requirements
+## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
@@ -47,6 +47,9 @@ For example,
 ```console
 helm install smokeping nicholaswilde/smokeping -f values.yaml
 ```
+
+## Troubleshooting
+See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
 
 ## Author
 This project was started in 2020 by [Nicholas Wilde](https://github.com/nicholaswilde).

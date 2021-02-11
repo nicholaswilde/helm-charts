@@ -1,12 +1,12 @@
 ---
 apiVersion: v2
 appVersion: "d7de00c7"
-version: 0.1.9
+version: 0.1.10
 name: smokeping
 description: Keep track of your network latency.
 type: application
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/smokeping"
-icon: "https://github.com/nicholaswilde/helm-charts/raw/main/charts/smokeping/img/smokeping-icon.png"
+icon: "https://github.com/nicholaswilde/helm-charts/raw/main/images/smokeping.png"
 dependencies:
   - name: common
     version: ~0.1.8
@@ -23,7 +23,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 0.1.9
+    - Moved icon location.
   artifacthub.io/images: |
     - name: smokeping
       image: ghcr.io/linuxserver/smokeping:d7de00c7-ls112
