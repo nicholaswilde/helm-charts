@@ -4892,6 +4892,40 @@ entries:
   snipe-it:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to v5.1.1-ls118
+        - Changed the icon location
+      artifacthub.io/images: |
+        - name: snipe-it
+          image: ghcr.io/linuxserver/snipe-it:v5.1.1-ls118
+    apiVersion: v2
+    appVersion: v5.1.1
+    created: "2021-02-11T18:07:27.380703883Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Open source asset management
+    digest: 6952e6fff2ccf1b36684cb655eb31990301f2ff9d333c4de9501ef5ec7a4905e
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/snipe-it
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/snipe-it.jpg
+    keywords:
+    - snipeit
+    - snipe
+    - asset
+    - management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: snipe-it
+    sources:
+    - https://snipeitapp.com/
+    - https://hub.docker.com/r/linuxserver/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/snipe-it-0.2.2/snipe-it-0.2.2.tgz
+    version: 0.2.2
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to v5.1.1-ls117
       artifacthub.io/images: |
         - name: snipe-it
