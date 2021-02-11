@@ -47,6 +47,10 @@ See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
 
 Inspiration for this repository has been taken from [k8s-at-home/charts](https://github.com/k8s-at-home/charts).
 
+## Contributing
+
+See [Contributing](./CONTRIBUTING.md)
+
 ## License
 
 [Apache 2.0 License](./LICENSE)
