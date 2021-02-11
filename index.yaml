@@ -3632,6 +3632,38 @@ entries:
   novnc:
   - annotations:
       artifacthub.io/changes: |
+        - Changed icon location
+      artifacthub.io/images: |
+        - name: novnc
+          image: ghcr.io/nicholaswilde/novnc:1.2.0-ls2
+    apiVersion: v2
+    appVersion: 1.2.0
+    created: "2021-02-11T02:28:28.499814678Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: The open source VNC client
+    digest: 4c468c73ee1bc825a3f1f8d3307f538e214d9b119f967c503168b63a1bfceafc
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/novnc
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/novnc.png
+    keywords:
+    - novnc
+    - vnc
+    - remote
+    - desktop
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: novnc
+    sources:
+    - https://novnc.com/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/novnc-0.1.5/novnc-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/changes: |
         - Changed ingress pathtype to /
         - Added REMOTE_HOST and REMOTE_PORT environmental variables.
         - Bumped tag to 1.2.0-ls2
