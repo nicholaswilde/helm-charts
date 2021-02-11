@@ -4,7 +4,7 @@
 
 The open source VNC client
 
-## Requirements
+## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
@@ -47,6 +47,9 @@ For example,
 ```console
 helm install novnc nicholaswilde/novnc -f values.yaml
 ```
+
+## Troubleshooting
+See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
 
 ## Author
 This project was started in 2020 by [Nicholas Wilde](https://github.com/nicholaswilde).
