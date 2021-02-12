@@ -1,10 +1,10 @@
 # papermerge
 
-![Version: 0.2.15](https://img.shields.io/badge/Version-0.2.15-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.5.5](https://img.shields.io/badge/AppVersion-v1.5.5-informational?style=flat-square)
+![Version: 0.2.16](https://img.shields.io/badge/Version-0.2.16-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.5.5](https://img.shields.io/badge/AppVersion-v1.5.5-informational?style=flat-square)
 
 Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
 
-## Requirements
+## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
@@ -47,6 +47,9 @@ For example,
 ```console
 helm install papermerge nicholaswilde/papermerge -f values.yaml
 ```
+
+## Troubleshooting
+See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
 
 ## Author
 This project was started in 2020 by [Nicholas Wilde](https://github.com/nicholaswilde).

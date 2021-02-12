@@ -26,8 +26,8 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - Bumped tag to v1.5.5-ls25
-		- Added env.REDIS_URL
-		- Removed nginx annotation
+    - Added env.REDIS_URL
+    - Removed nginx annotation
   artifacthub.io/images: |
     - name: papermerge
       image: ghcr.io/linuxserver/papermerge:v1.5.5-ls25

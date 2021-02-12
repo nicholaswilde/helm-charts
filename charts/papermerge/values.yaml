@@ -13,7 +13,7 @@ env:
   TZ: "America/Los_Angeles"
   # PUID: "1000"
   # PGID: "1000"
-	# REDIS_URL: ""
+  # REDIS_URL: ""
 
 service:
   port:
