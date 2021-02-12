@@ -3951,6 +3951,42 @@ entries:
   papermerge:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to v1.5.5-ls25
+        - Added env.REDIS_URL
+        - Removed nginx annotation
+      artifacthub.io/images: |
+        - name: papermerge
+          image: ghcr.io/linuxserver/papermerge:v1.5.5-ls25
+    apiVersion: v2
+    appVersion: v1.5.5
+    created: "2021-02-12T16:54:55.118222618Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    digest: 1c75afafb158da6bdae20a0c7b1f6469832344f090a6ebeab1268cae0db9b133
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
+    keywords:
+    - paper
+    - merge
+    - document
+    - scan
+    - scanner
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: papermerge
+    sources:
+    - https://www.papermerge.com/
+    - https://hub.docker.com/r/linuxserver/papermerge
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/papermerge-0.2.16/papermerge-0.2.16.tgz
+    version: 0.2.16
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to v1.5.5-ls24
       artifacthub.io/images: |
         - name: papermerge
@@ -5717,6 +5753,40 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/transmission-0.1.4/transmission-0.1.4.tgz
     version: 0.1.4
   wikijs:
+  - annotations:
+      artifacthub.io/changes: |
+        - Bumped tag to 2.5.170-ls20
+      artifacthub.io/images: |
+        - name: wikijs
+          image: ghcr.io/linuxserver/wikijs:2.5.170-ls20
+    apiVersion: v2
+    appVersion: 2.5.170
+    created: "2021-02-12T16:54:55.219801474Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: The most powerful and extensible open source Wiki software.
+    digest: 508817d16ed7511f080733d455501901b623a3a0ca7a8bc4b6ee276b1a3e93a5
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/wikijs
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/wikijs.jpg
+    keywords:
+    - wiki
+    - js
+    - javascript
+    - text
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: wikijs
+    sources:
+    - https://wiki.js.org/
+    - https://hub.docker.com/r/linuxserver/wikijs
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.6/wikijs-0.1.6.tgz
+    version: 0.1.6
   - annotations:
       artifacthub.io/changes: |
         - Updated icon
