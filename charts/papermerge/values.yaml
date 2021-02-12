@@ -6,20 +6,21 @@ image:
   repository: ghcr.io/linuxserver/papermerge
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.5.5-ls24"
+  tag: "v1.5.5-ls25"
 secret: {}
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "America/Los_Angeles"
   # PUID: "1000"
   # PGID: "1000"
+	# REDIS_URL: ""
+
 service:
   port:
     port: 8000
+
 ingress:
   enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
   hosts:
     - host: "papermerge.192.168.1.193.nip.io"
       paths:
@@ -29,6 +30,7 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
 persistence:
   config:
     enabled: false
