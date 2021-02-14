@@ -874,6 +874,44 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/bookstack-0.1.0/bookstack-0.1.0.tgz
     version: 0.1.0
+  chyrp-lite:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: chyrp-lite
+          image: ghcr.io/nicholaswilde/chyrp-lite:v2021.01
+    apiVersion: v2
+    appVersion: v2021.01
+    created: "2021-02-14T20:13:30.077851868Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: An ultra-lightweight blogging engine, written in PHP.
+    digest: 04f4aa52d99d3bdef09fc7fe793304f5428fb079ec76275ca724c01e595a13b5
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/chyrp-lite
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/chyrp-lite.svg
+    keywords:
+    - docker
+    - chyrp
+    - lite
+    - blog
+    - engine
+    - php
+    - twig
+    - html5
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: chyrp-lite
+    sources:
+    - https://github.com/xenocrat/chyrp-lite
+    - https://github.com/nicholaswilde/docker-chyrp-lite
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/chyrp-lite-0.1.0/chyrp-lite-0.1.0.tgz
+    version: 0.1.0
   clarkson:
   - annotations:
       artifacthub.io/changes: |
