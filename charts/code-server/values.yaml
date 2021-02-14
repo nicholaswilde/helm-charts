@@ -6,10 +6,12 @@ image:
   repository: ghcr.io/linuxserver/code-server
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v3.8.1-ls68"
+  tag: "v3.9.0-ls69"
+
 secret: {}
 # PASSWORD: password
 # SUDO_PASSWORD: password
+# HASHED_PASSWORD
 
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -17,15 +19,15 @@ env:
   # PUID: 1000
   # PGID: 1000
   # PROXY_DOMAIN: code-server.my.domain
+
 service:
   port:
     port: 8443
+
 ingress:
   enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
   hosts:
-    - host: "code-server.192.168.1.201.nip.io"
+    - host: "code-server.192.168.1.203.nip.io"
       paths:
         - path: /
           # Ignored if not kubeVersion >= 1.14-0
@@ -34,9 +36,10 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
 persistence:
   config:
-    enabled: true
+    enabled: false
     emptyDir: false
     mountPath: /config
     ## Template downloads data Persistent Volume Storage Class

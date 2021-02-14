@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: v3.8.1
-version: 0.1.3
+appVersion: v3.9.0
+version: 0.1.4
 name: code-server
 description: Run VS Code on any machine anywhere and access it in the browser.
 type: application
@@ -24,7 +24,10 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to v3.8.1-ls68
+    - Bumped tag to v3.9.0-ls69
+    - Allow setting gui password via hash using env var HASHED_PASSWORD.
+    - Removed nginx annotation.
+    - Disabled config persistent volume by default.
   artifacthub.io/images: |
     - name: code-server
-      image: ghcr.io/linuxserver/code-server:v3.8.1-ls68
+      image: ghcr.io/linuxserver/code-server:v3.9.0-ls69
