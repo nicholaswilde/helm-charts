@@ -1,5 +1,39 @@
 apiVersion: v1
 entries:
+  blog:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: blog
+          image: ghcr.io/nicholaswilde/blog:v1.3-ls1
+    apiVersion: v2
+    appVersion: v1.3
+    created: "2021-02-14T13:49:01.906515585Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Lightweight self-hosted facebook-styled PHP blog.
+    digest: 924573ff8502119a395a5250fda91dc1597dceb76c68bc848089ebdbbff1b42e
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/blog
+    keywords:
+    - blog
+    - php
+    - self
+    - hosted
+    - facebook
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: blog
+    sources:
+    - https://github.com/m1k1o/blog
+    - https://github.com/nicholaswilde/docker-blog
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/blog-0.1.1/blog-0.1.1.tgz
+    version: 0.1.1
   boinc-client:
   - annotations:
       artifacthub.io/changes: |
