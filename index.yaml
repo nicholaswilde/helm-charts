@@ -4461,6 +4461,39 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/papermerge-0.1.0/papermerge-0.1.0.tgz
     version: 0.1.0
+  podgrab:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: podgrab
+          image: ghcr.io/akhilrex/podgrab:1.0.0
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2021-02-14T10:44:49.548694578Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A self-hosted podcast manager/downloader/archiver tool to download podcast episodes as soon as they become live with an integrated player.
+    digest: deda8b85998adf900e8d769b16c68739cfd6d07e089c81f0ca182a3248993221
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/podgrab
+    keywords:
+    - podcast
+    - downloader
+    - archiver
+    - player
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: podgrab
+    sources:
+    - https://github.com/akhilrex/podgrab
+    - https://hub.docker.com/r/akhilrex/podgrab
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
+    version: 0.1.0
   projectsend:
   - annotations:
       artifacthub.io/changes: |
