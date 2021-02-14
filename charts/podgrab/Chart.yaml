@@ -1,0 +1,30 @@
+---
+apiVersion: v2
+appVersion: "1.0.0"
+version: 0.1.0
+name: podgrab
+description: A self-hosted podcast manager/downloader/archiver tool to download podcast episodes as soon as they become live with an integrated player.
+type: application
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/podgrab"
+icon: ""
+dependencies:
+  - name: common
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - podcast
+  - downloader
+  - archiver
+  - player
+sources:
+  - https://github.com/akhilrex/podgrab
+  - https://hub.docker.com/r/akhilrex/podgrab
+maintainers:
+  - name: nicholaswilde
+    email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Initial release.
+  artifacthub.io/images: |
+    - name: podgrab
+      image: ghcr.io/akhilrex/podgrab:1.0.0
