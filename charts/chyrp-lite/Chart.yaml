@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "v2021.01"
-version: 0.1.1
+version: 0.1.0
 name: chyrp-lite
 description: An ultra-lightweight blogging engine, written in PHP.
 type: application
@@ -28,7 +28,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Updated Installation section in README.md
+    - Initial release.
   artifacthub.io/images: |
     - name: chyrp-lite
       image: ghcr.io/nicholaswilde/chyrp-lite:v2021.01
