@@ -14,6 +14,15 @@
     {{ template "repository.organization" . }}/{{ template "chart.name" . }}
 {{- end -}}
 
+{{- define "requirements" -}}
+## Requirements
+* [mysql](https://github.com/nicholaswilde/helm-charts/wiki/Databases)
+{{- end -}}
+
+{{- define "dependenciesHeader" -}}
+## Dependencies
+{{- end -}}
+
 {{- define "install.tldr" -}}
 ## TL;DR
 ```console
@@ -66,9 +75,20 @@ helm install {{ template "chart.name" . }} {{ template "helm.path" . }} -f value
 ```
 {{- end -}}
 
+{{- define "user" -}}
+|   user   | uid |
+|:--------:|:---:|
+| www-data |  33 |
+{{- end -}}
+
 {{- define "todo" -}}
 ## Todo
 - [ ] Incorporate Docker secret.
+{{- end -}}
+
+{{- define "troubleshooting" -}}
+## Troubleshooting
+See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
 {{- end -}}
 
 {{- define "author" -}}
@@ -82,7 +102,9 @@ This project was started in 2020 by [Nicholas Wilde](https://github.com/{{ templ
 
 {{ template "chart.description" . }}
 
-{{ template "chart.requirementsSection" . }}
+{{ template "dependenciesHeader" . }}
+
+{{ template "chart.requirementsTable" . }}
 
 {{ template "chart.kubeVersionLine" . }}
 
@@ -99,6 +121,8 @@ This project was started in 2020 by [Nicholas Wilde](https://github.com/{{ templ
 {{ template "configuration.example.set" . }}
 
 {{ template "configuration.example.file" . }}
+
+{{ template "troubleshooting" . }}
 
 {{ template "author" . }}
 

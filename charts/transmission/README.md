@@ -1,10 +1,10 @@
 # transmission
 
-![Version: 0.2.12](https://img.shields.io/badge/Version-0.2.12-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.00](https://img.shields.io/badge/AppVersion-3.00-informational?style=flat-square)
+![Version: 0.2.13](https://img.shields.io/badge/Version-0.2.13-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.00](https://img.shields.io/badge/AppVersion-3.00-informational?style=flat-square)
 
 A Fast, Easy, and Free BitTorrent Client.
 
-## Requirements
+## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
@@ -47,6 +47,9 @@ For example,
 ```console
 helm install transmission nicholaswilde/transmission -f values.yaml
 ```
+
+## Troubleshooting
+See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
 
 ## Author
 This project was started in 2020 by [Nicholas Wilde](https://github.com/nicholaswilde).

@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "3.00"
-version: 0.2.12
+version: 0.2.13
 name: transmission
 description: A Fast, Easy, and Free BitTorrent Client.
 type: application
@@ -23,7 +23,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 3.00-r2-ls76
+    - Bumped tag to 3.00-r2-ls77
   artifacthub.io/images: |
     - name: transmission
-      image: ghcr.io/linuxserver/transmission:3.00-r2-ls76
+      image: ghcr.io/linuxserver/transmission:3.00-r2-ls77
