@@ -1,0 +1,30 @@
+---
+apiVersion: v2
+appVersion: "v0.1.0"
+version: 0.1.0
+name: shorturl
+description: Self hosted web app for shortening urls (URL shortener)
+type: application
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/shorturl"
+icon: ""
+dependencies:
+  - name: common
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - url
+  - shortener
+  - shorten
+  - shorturl
+sources:
+  - https://github.com/prologic/shorturl
+  - https://github.com/nicholaswilde/docker-shorturl
+maintainers:
+  - name: nicholaswilde
+    email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Initial release.
+  artifacthub.io/images: |
+    - name: shorturl
+      image: ghcr.io/linuxserver/shorturl:0.1.0-ls1
