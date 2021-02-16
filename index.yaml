@@ -4947,6 +4947,39 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/projectsend-0.1.0/projectsend-0.1.0.tgz
     version: 0.1.0
+  shorturl:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: shorturl
+          image: ghcr.io/linuxserver/shorturl:0.1.0-ls1
+    apiVersion: v2
+    appVersion: v0.1.0
+    created: "2021-02-16T16:56:27.426809364Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Self hosted web app for shortening urls (URL shortener)
+    digest: 3e6b8dd7193099787e8b9ef41c7b3abaf4fb7725f4fdc8f6d353f42bbe6970be
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/shorturl
+    keywords:
+    - url
+    - shortener
+    - shorten
+    - shorturl
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: shorturl
+    sources:
+    - https://github.com/prologic/shorturl
+    - https://github.com/nicholaswilde/docker-shorturl
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/shorturl-0.1.0/shorturl-0.1.0.tgz
+    version: 0.1.0
   smokeping:
   - annotations:
       artifacthub.io/changes: |
