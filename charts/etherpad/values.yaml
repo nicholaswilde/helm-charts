@@ -2,27 +2,23 @@
 # Default values for etherpad.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
 image:
   repository: ghcr.io/nicholaswilde/etherpad
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.8.7-ls1"
+  tag: "1.8.8-ls2"
 
 secret: {}
 
 env: {}
-
 service:
   port:
     port: 9001
 
 ingress:
   enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
   hosts:
-    - host: "etherpad.192.168.1.189.nip.io"
+    - host: "etherpad.192.168.1.203.nip.io"
       paths:
         - path: /
           # Ignored if not kubeVersion >= 1.14-0
@@ -52,4 +48,11 @@ persistence:
     accessMode: ReadWriteOnce
     size: 1Gi
     ## Do not delete the pvc upon helm uninstall
+    skipuninstall: false
+  app:
+    enabled: false
+    emptyDir: false
+    mountPath: /opt/etherpad-lite/app
+    accessMode: ReadWriteOnce
+    size: 1Gi
     skipuninstall: false

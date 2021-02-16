@@ -1,12 +1,12 @@
 ---
 apiVersion: v2
-appVersion: 1.8.7
-version: 0.1.4
+appVersion: 1.8.8
+version: 0.1.5
 name: etherpad
 description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
 type: application
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/etherpad"
-icon: "https://pbs.twimg.com/profile_images/1336377123964145665/2gTadaDt_400x400.jpg"
+icon: "https://github.com/nicholaswilde/helm-charts/raw/main/images/etherpad.jpg"
 dependencies:
   - name: common
     version: ~0.1.8
@@ -25,8 +25,9 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Fixed linting issues.
-    - Bumped common to ~0.1.8
+    - Bumped tag to 1.8.8-ls2
+    - Added app volume.
+    - Changed icon location.
   artifacthub.io/images: |
     - name: etherpad
-      image: ghcr.io/nicholaswilde/etherpad:1.8.7-ls1
+      image: ghcr.io/nicholaswilde/etherpad:1.8.8-ls2
