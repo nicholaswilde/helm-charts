@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: v1.1.2
-version: 0.1.8
+version: 0.1.9
 name: clarkson
 description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
 type: application
@@ -25,7 +25,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to v1.1.2-ls9
+    - Bumped tag to v1.1.2-ls10
+    - Removed ingress nginx annotation.
   artifacthub.io/images: |
     - name: clarkson
-      image: ghcr.io/linuxserver/clarkson:v1.1.2-ls9
+      image: ghcr.io/linuxserver/clarkson:v1.1.2-ls10

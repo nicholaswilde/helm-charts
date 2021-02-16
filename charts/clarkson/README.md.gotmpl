@@ -14,6 +14,11 @@
     {{ template "repository.organization" . }}/{{ template "chart.name" . }}
 {{- end -}}
 
+{{- define "requirements" -}}
+## Requirements
+* [mysql](https://github.com/nicholaswilde/helm-charts/wiki/Databases)
+{{- end -}}
+
 {{- define "dependenciesHeader" -}}
 ## Dependencies
 {{- end -}}
@@ -68,6 +73,12 @@ For example,
 ```console
 helm install {{ template "chart.name" . }} {{ template "helm.path" . }} -f values.yaml
 ```
+{{- end -}}
+
+{{- define "user" -}}
+|   user   | uid |
+|:--------:|:---:|
+| www-data |  33 |
 {{- end -}}
 
 {{- define "todo" -}}
