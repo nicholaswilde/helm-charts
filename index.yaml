@@ -1231,6 +1231,40 @@ entries:
   cloud9:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to 1.28.4-ls67
+      artifacthub.io/images: |
+        - name: cloud9
+          image: ghcr.io/linuxserver/cloud9:1.28.4-ls67
+    apiVersion: v2
+    appVersion: 1.28.4
+    created: "2021-02-18T23:48:07.573130317Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A complete web based IDE with terminal access
+    digest: b9a5ded71ada72c5be527e6dc44e6822b0a53fd71b1f2636bec545e1afd7d42a
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/cloud9
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cloud9.png
+    keywords:
+    - cloud9
+    - ide
+    - terminal
+    - web
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: cloud9
+    sources:
+    - https://aws.amazon.com/cloud9/
+    - https://github.com/c9/core
+    - https://hub.docker.com/r/linuxserver/cloud9
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/cloud9-0.2.15/cloud9-0.2.15.tgz
+    version: 0.2.15
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 1.28.3-ls67
       artifacthub.io/images: |
         - name: cloud9
