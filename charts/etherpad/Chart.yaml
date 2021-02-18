@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 1.8.8
-version: 0.1.5
+appVersion: 1.8.9
+version: 0.1.6
 name: etherpad
 description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
 type: application
@@ -25,9 +25,9 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 1.8.8-ls2
+    - Bumped tag to 1.8.9-ls3
     - Added app volume.
     - Changed icon location.
   artifacthub.io/images: |
     - name: etherpad
-      image: ghcr.io/nicholaswilde/etherpad:1.8.8-ls2
+      image: ghcr.io/nicholaswilde/etherpad:1.8.9-ls3

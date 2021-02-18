@@ -6,15 +6,12 @@ image:
   repository: ghcr.io/nicholaswilde/etherpad
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.8.8-ls2"
-
+  tag: "1.8.9-ls3"
 secret: {}
-
 env: {}
 service:
   port:
     port: 9001
-
 ingress:
   enabled: true
   hosts:
@@ -27,7 +24,6 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
-
 persistence:
   data:
     enabled: false
