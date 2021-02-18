@@ -1,6 +1,6 @@
 # cloud9
 
-![Version: 0.2.13](https://img.shields.io/badge/Version-0.2.13-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.28.2](https://img.shields.io/badge/AppVersion-1.28.2-informational?style=flat-square)
+![Version: 0.2.14](https://img.shields.io/badge/Version-0.2.14-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.28.3](https://img.shields.io/badge/AppVersion-1.28.3-informational?style=flat-square)
 
 A complete web based IDE with terminal access
 
