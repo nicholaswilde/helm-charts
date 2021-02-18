@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/cloud9
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.28.3-ls67"
+  tag: "1.28.4-ls67"
 secret: {}
 # USERNAME="" #optional
 # PASSWORD="" #optional
