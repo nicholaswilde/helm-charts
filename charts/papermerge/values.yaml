@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/papermerge
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.5.5-ls25"
+  tag: "v1.5.5-ls26"
 secret: {}
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -14,11 +14,9 @@ env:
   # PUID: "1000"
   # PGID: "1000"
   # REDIS_URL: ""
-
 service:
   port:
     port: 8000
-
 ingress:
   enabled: true
   hosts:
@@ -30,7 +28,6 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
-
 persistence:
   config:
     enabled: false
