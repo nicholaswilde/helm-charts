@@ -1718,6 +1718,39 @@ entries:
   code-server:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to v3.9.0-ls70
+      artifacthub.io/images: |
+        - name: code-server
+          image: ghcr.io/linuxserver/code-server:v3.9.0-ls70
+    apiVersion: v2
+    appVersion: v3.9.0
+    created: "2021-02-22T04:53:52.930736367Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Run VS Code on any machine anywhere and access it in the browser.
+    digest: be2e01216f66505781a540223307aea75c5e854690202d7ed5475b0940991cd0
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/code-server
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/code-server.jpg
+    keywords:
+    - code
+    - vs
+    - visual studio
+    - vscode
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: code-server
+    sources:
+    - https://github.com/cdr/code-server
+    - https://hub.docker.com/r/linuxserver/code-server
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/code-server-0.1.5/code-server-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to v3.9.0-ls69
         - Allow setting gui password via hash using env var HASHED_PASSWORD.
         - Removed nginx annotation.
