@@ -6,8 +6,7 @@ image:
   repository: ghcr.io/linuxserver/code-server
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v3.9.0-ls69"
-
+  tag: "v3.9.0-ls70"
 secret: {}
 # PASSWORD: password
 # SUDO_PASSWORD: password
@@ -19,11 +18,9 @@ env:
   # PUID: 1000
   # PGID: 1000
   # PROXY_DOMAIN: code-server.my.domain
-
 service:
   port:
     port: 8443
-
 ingress:
   enabled: true
   hosts:
@@ -36,7 +33,6 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
-
 persistence:
   config:
     enabled: false
