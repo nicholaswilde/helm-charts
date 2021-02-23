@@ -1,5 +1,40 @@
 apiVersion: v1
 entries:
+  babybuddy:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: babybuddy
+          image: ghcr.io/nicholaswilde/babybuddy:v1.5.0-ls2
+    apiVersion: v2
+    appVersion: v1.5.0
+    created: "2021-02-23T08:41:27.502158239Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work.
+    digest: a0a50358f783f90fadf698990045f197f384a9cd003dc04613d2a98a93f56a90
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/babybuddy
+    icon: https://github.com/babybuddy/babybuddy/blob/master/babybuddy/static_src/logo/icon.png
+    keywords:
+    - baby
+    - buddy
+    - tracker
+    - parents
+    - parenting
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: babybuddy
+    sources:
+    - https://github.com/babybuddy/babybuddy
+    - https://github.com/nicholaswilde/docker-babybuddy
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/babybuddy-0.1.0/babybuddy-0.1.0.tgz
+    version: 0.1.0
   blog:
   - annotations:
       artifacthub.io/changes: |
