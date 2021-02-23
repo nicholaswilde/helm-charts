@@ -3,7 +3,7 @@ name: Chart request
 about: Suggest a chart for this project
 title: ''
 labels: chart request
-assignees: ''
+assignees: 'nicholaswilde'
 ---
 
 # Details
