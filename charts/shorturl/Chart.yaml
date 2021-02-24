@@ -27,4 +27,4 @@ annotations:
     - Updated artifacthub.io/images[0].image.
   artifacthub.io/images: |
     - name: shorturl
-      image: ghcr.io/nicholaswilde/shorturl:0.1.0-ls1
+      image: ghcr.io/nicholaswilde/shorturl:v0.1.0-ls1
