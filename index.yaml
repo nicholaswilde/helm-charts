@@ -1056,6 +1056,40 @@ entries:
   clarkson:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to v1.1.2-ls11
+      artifacthub.io/images: |
+        - name: clarkson
+          image: ghcr.io/linuxserver/clarkson:v1.1.2-ls11
+    apiVersion: v2
+    appVersion: v1.1.2
+    created: "2021-02-24T15:57:50.759939942Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
+    digest: c68c4719c1a8e71888bb28fe7a84f06373e5e478649a94679768b6ba0d92a9f3
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
+    icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
+    keywords:
+    - fuel
+    - car
+    - log
+    - fill-up
+    - vehicle
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: clarkson
+    sources:
+    - https://github.com/linuxserver/Clarkson
+    - https://hub.docker.com/r/linuxserver/clarkson
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/clarkson-0.1.10/clarkson-0.1.10.tgz
+    version: 0.1.10
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to v1.1.2-ls10
         - Removed ingress nginx annotation.
       artifacthub.io/images: |
