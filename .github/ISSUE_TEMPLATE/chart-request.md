@@ -1,7 +1,7 @@
 ---
 name: Chart request
 about: Suggest a chart for this project
-title: ''
+title: '[chart name] new chart'
 labels: chart request
 assignees: 'nicholaswilde'
 ---
@@ -17,6 +17,9 @@ assignees: 'nicholaswilde'
 <!-- Note: Is there a container image that already exist? This can be docker.io, ghcr.io, or quay.io. -->
 
 **Existing image architectures:"**
+* [ ] `armv7`
+* [ ] `arm64`
+* [ ] `amd64`
 
 <!-- Note: Does the container image already support arm64, armv7, and amd64 architectures? -->
 
