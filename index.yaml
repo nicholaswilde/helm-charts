@@ -5330,6 +5330,38 @@ entries:
         - Updated artifacthub.io/images[0].image.
       artifacthub.io/images: |
         - name: shorturl
+          image: ghcr.io/nicholaswilde/shorturl:v0.1.0-ls1
+    apiVersion: v2
+    appVersion: v0.1.0
+    created: "2021-02-24T04:56:58.77897129Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Self hosted web app for shortening urls (URL shortener)
+    digest: 642e81763c813064ca62aa5e008ac779dc3ca9178587f14fb7e3ff6e01831e29
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/shorturl
+    keywords:
+    - url
+    - shortener
+    - shorten
+    - shorturl
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: shorturl
+    sources:
+    - https://github.com/prologic/shorturl
+    - https://github.com/nicholaswilde/docker-shorturl
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/shorturl-0.1.2/shorturl-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |
+        - Updated artifacthub.io/images[0].image.
+      artifacthub.io/images: |
+        - name: shorturl
           image: ghcr.io/nicholaswilde/shorturl:0.1.0-ls1
     apiVersion: v2
     appVersion: v0.1.0
