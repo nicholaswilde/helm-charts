@@ -5257,6 +5257,40 @@ entries:
   projectsend:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to r1070-ls60
+        - Removed ngnix ingress annotation.
+      artifacthub.io/images: |
+        - name: projectsend
+          image: ghcr.io/linuxserver/projectsend:r1070-ls60
+    apiVersion: v2
+    appVersion: r1070
+    created: "2021-02-25T18:37:12.637983798Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    digest: 728f0814bff6bace99998b5a4ace90f83f812187a7b142289377682b23a3d354
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/projectsend
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/projectsend.jpg
+    keywords:
+    - project
+    - send
+    - upload
+    - files
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: projectsend
+    sources:
+    - https://www.projectsend.org/
+    - https://hub.docker.com/r/linuxserver/projectsend
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/projectsend-0.2.11/projectsend-0.2.11.tgz
+    version: 0.2.11
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to r1070-ls59
       artifacthub.io/images: |
         - name: projectsend
