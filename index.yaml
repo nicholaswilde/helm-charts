@@ -2699,6 +2699,40 @@ entries:
   etherpad:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to 1.8.10-ls4
+      artifacthub.io/images: |
+        - name: etherpad
+          image: ghcr.io/nicholaswilde/etherpad:1.8.10-ls4
+    apiVersion: v2
+    appVersion: 1.8.9
+    created: "2021-02-25T23:21:41.828636462Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
+    digest: c1d62a1ea17cadd86525f1a9b5096d28c2a39ec24ca285a64bce462ea0c0bec0
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/etherpad
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/etherpad.jpg
+    keywords:
+    - etherpad
+    - editor
+    - notepad
+    - pad
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: etherpad
+    sources:
+    - https://etherpad.org/
+    - https://github.com/ether/etherpad-lite
+    - https://hub.docker.com/r/nicholaswilde/etherpad
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/etherpad-0.1.7/etherpad-0.1.7.tgz
+    version: 0.1.7
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 1.8.9-ls3
         - Added app volume.
         - Changed icon location.
