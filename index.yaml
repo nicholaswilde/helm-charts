@@ -3928,6 +3928,38 @@ entries:
   installer:
   - annotations:
       artifacthub.io/changes: |
+        - Updated artifacthub.io/images[0].image
+      artifacthub.io/images: |
+        - name: installer
+          image: ghcr.io/nicholaswilde/installer:0.2.9-ls3
+    apiVersion: v2
+    appVersion: 0.2.9
+    created: "2021-02-25T18:27:27.256669475Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Quickly install pre-compiled binaries from Github releases.
+    digest: 10101e8fe8c328f020db3deae42358b39b80ed65fa9f9abb90137170d6316a1f
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/installer
+    keywords:
+    - installer
+    - binary
+    - binaries
+    - compiled
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: installer
+    sources:
+    - https://github.com/jpillora/installer
+    - https://hub.docker.com/r/nicholaswilde/installer
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/installer-0.2.7/installer-0.2.7.tgz
+    version: 0.2.7
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 0.2.9-ls3
       artifacthub.io/images: |
         - name: installer
