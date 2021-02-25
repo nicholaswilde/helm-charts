@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: v0.31.6
-version: 0.1.13
+version: 0.1.14
 name: bookstack
 description: A simple, self-hosted, easy-to-use platform for organising and storing information.
 type: application
@@ -26,7 +26,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to v0.31.6-ls124
+    - Bumped tag to v0.31.6-ls125
   artifacthub.io/images: |
     - name: bookstack
-      image: ghcr.io/linuxserver/bookstack:v0.31.6-ls124
+      image: ghcr.io/linuxserver/bookstack:v0.31.6-ls125
