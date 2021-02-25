@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "v1.5.0"
-version: 0.1.1
+appVersion: "v1.5.1"
+version: 0.1.2
 name: babybuddy
 description: Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work.
 type: application
@@ -25,7 +25,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Updated icon location.
+    - Bumped tag to v1.5.1-ls3
   artifacthub.io/images: |
     - name: babybuddy
-      image: ghcr.io/nicholaswilde/babybuddy:v1.5.0-ls2
+      image: ghcr.io/nicholaswilde/babybuddy:v1.5.1-ls3
