@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "2.1.7"
-version: 0.1.0
+version: 0.1.1
 name: leantime
 description: Straightforward open source project management system to make your ideas reality.
 type: application
@@ -23,7 +23,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Initial release.
+    - Updated artifacthub.io/images[0].image
   artifacthub.io/images: |
     - name: template
-      image: ghcr.io/nicholaswilde/leantime:2.1.7-ls1
+      image: ghcr.io/nicholaswilde/leantime:2.1.7-ls5
