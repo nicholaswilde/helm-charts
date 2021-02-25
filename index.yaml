@@ -4328,6 +4328,38 @@ entries:
   leantime:
   - annotations:
       artifacthub.io/changes: |
+        - Updated artifacthub.io/images[0].image
+      artifacthub.io/images: |
+        - name: template
+          image: ghcr.io/nicholaswilde/leantime:2.1.7-ls5
+    apiVersion: v2
+    appVersion: 2.1.7
+    created: "2021-02-25T18:26:02.992869Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Straightforward open source project management system to make your ideas reality.
+    digest: 98ad1db227ab1ede80e68c7350a6a922f2d156ea2cb968629ab6b434f02339fc
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/leantime
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/leantime.jpg
+    keywords:
+    - leantime
+    - project
+    - management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: leantime
+    sources:
+    - https://leantime.io/
+    - https://hub.docker.com/r/nicholaswilde/leantime
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/leantime-0.1.1/leantime-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |
         - Initial release.
       artifacthub.io/images: |
         - name: template
