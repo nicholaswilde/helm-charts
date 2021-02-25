@@ -6,8 +6,10 @@ image:
   repository: ghcr.io/linuxserver/projectsend
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "r1070-ls59"
+  tag: "r1070-ls60"
+
 secret: {}
+
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "America/Los_Angeles"
@@ -19,8 +21,6 @@ service:
     port: 80
 ingress:
   enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
   hosts:
     - host: "projectsend.192.168.1.203.nip.io"
       paths:
@@ -30,6 +30,7 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
 persistence:
   config:
     enabled: false
