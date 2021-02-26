@@ -8,7 +8,7 @@
 
 My collection of [Helm](https://helm.sh/) charts.
 
-## Usage
+## :book: Usage
 
 [Helm](https://helm.sh) must be installed to use the charts.
 Please refer to Helm's [documentation](https://helm.sh/docs/) to get started.
@@ -31,15 +31,15 @@ to your project. Then run:
 pre-commit install
 pre-commit install-hooks
 ```
-## Charts
+## :chart_with_upwards_trend: Charts
 
 See [artifact hub](https://artifacthub.io/packages/search?repo=nicholaswilde) for a complete list.
 
-## Development
+## :gear: Development
 
 See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Development).
 
-## Troubleshooting
+## :wrench: Troubleshooting
 
 See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
 
@@ -51,13 +51,13 @@ See [Contributing](./CONTRIBUTING.md)
 
 See [Code of Conduct](./CODE_OF_CONDUCT.md)
 
-## Inspiration
+## :bulb: Inspiration
 
 Inspiration for this repository has been taken from [k8s-at-home/charts](https://github.com/k8s-at-home/charts).
 
-## License
+## :postal_horn: License
 
 [Apache 2.0 License](./LICENSE)
 
-## Author
+## :pencil: Author
 This project was started in 2020 by [Nicholas Wilde](https://github.com/nicholaswilde/).
