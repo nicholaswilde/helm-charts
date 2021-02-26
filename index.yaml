@@ -6557,6 +6557,42 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/syncthing-0.1.0/syncthing-0.1.0.tgz
     version: 0.1.0
+  todo:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: template
+          image: ghcr.io/nicholaswilde/todo:941c0d3-ls1
+    apiVersion: v2
+    appVersion: 941c0d3
+    created: "2021-02-26T23:01:52.492163314Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A simple self-hosted todo manager
+    digest: 5dc2fcecbd97e4414578bb58bcb0e5eff3faf3cc12ad014328e82e99b490c556
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/todo
+    icon: https://github.com/prologic/todo/raw/master/static/icons/android-chrome-512x512.png
+    keywords:
+    - todo
+    - list
+    - self-hosted
+    - web
+    - webapp
+    - todoapp
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: todo
+    sources:
+    - https://github.com/prologic/todo
+    - https://github.com/nicholaswilde/docker-todo
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/todo-0.1.0/todo-0.1.0.tgz
+    version: 0.1.0
   transmission:
   - annotations:
       artifacthub.io/changes: |
