@@ -3198,6 +3198,40 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/friendica-0.1.0/friendica-0.1.0.tgz
     version: 0.1.0
+  golinks:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: golinks
+          image: ghcr.io/nicholaswilde/golinks:154c581-ls1
+    apiVersion: v2
+    appVersion: 154c581
+    created: "2021-02-26T06:23:07.335287529Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A web app that allows you to create smart bookmarks, commands and aliases by pointing your web browser's default search engine at a running instance.
+    digest: 0ebedd098ee5d752c01160d3fff39e21ef5f350950c47e661b55cded6dc3255e
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/golinks
+    keywords:
+    - search
+    - browser
+    - bookmarks
+    - smart-bookmarks
+    - golinks
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: golinks
+    sources:
+    - https://github.com/prologic/golinks
+    - https://github.com/nicholaswilde/docker-golinks
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/golinks-0.1.0/golinks-0.1.0.tgz
+    version: 0.1.0
   gotify:
   - annotations:
       artifacthub.io/changes: |
