@@ -43,7 +43,7 @@ See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Development).
 
 See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
 
-## Contributing
+## :star: Contributing
 
 See [Contributing](./CONTRIBUTING.md)
 
