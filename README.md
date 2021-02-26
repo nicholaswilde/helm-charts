@@ -8,6 +8,8 @@
 
 My collection of [Helm](https://helm.sh/) charts.
 
+---
+ 
 ## :book: Usage
 
 [Helm](https://helm.sh) must be installed to use the charts.
@@ -21,6 +23,8 @@ helm repo update
 ```
 You can then run `helm search repo nicholaswilde` to see the charts.
 
+---
+
 <h2><img src="https://github.com/pre-commit/pre-commit.com/raw/master/logo.svg" width="32" />Pre-commit hook</h2>
 
 If you want to automatically generate `README.md` files with a pre-commit hook, make sure you
@@ -31,33 +35,51 @@ to your project. Then run:
 pre-commit install
 pre-commit install-hooks
 ```
+
+---
+
 ## :chart_with_upwards_trend: Charts
 
 See [artifact hub](https://artifacthub.io/packages/search?repo=nicholaswilde) for a complete list.
+
+---
 
 ## :gear: Development
 
 See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Development).
 
+---
+
 ## :wrench: Troubleshooting
 
 See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
+
+---
 
 ## :star: Contributing
 
 See [Contributing](./CONTRIBUTING.md)
 
+---
+
 ## Code of Conduct
 
 See [Code of Conduct](./CODE_OF_CONDUCT.md)
+
+---
 
 ## :bulb: Inspiration
 
 Inspiration for this repository has been taken from [k8s-at-home/charts](https://github.com/k8s-at-home/charts).
 
+---
+
 ## :closed_book: License
 
 [Apache 2.0 License](./LICENSE)
 
+---
+
 ## :pencil: Author
+
 This project was started in 2020 by [Nicholas Wilde](https://github.com/nicholaswilde/).
