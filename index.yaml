@@ -4635,6 +4635,41 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/leantime-0.1.0/leantime-0.1.0.tgz
     version: 0.1.0
+  notes:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: notes
+          image: ghcr.io/nicholaswilde/notes:ee287b9-ls1
+    apiVersion: v2
+    appVersion: ee287b9
+    created: "2021-02-27T07:57:29.006540461Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A self-hosted note taking web app that lets you keep track of your
+      notes and search them in a easy and minimal way.
+    digest: 25a54420fb2c1bac70cf42d6abe8f45549712e03e6c6b9dc4deb9e3aa36a9f61
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/notes
+    keywords:
+    - markdown
+    - notes
+    - app
+    - web
+    - webapp
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: notes
+    sources:
+    - https://github.com/prologic/notes
+    - https://github.com/nicholaswilde/docker-notes
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/notes-0.1.0/notes-0.1.0.tgz
+    version: 0.1.0
   novnc:
   - annotations:
       artifacthub.io/changes: |
@@ -7693,4 +7728,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-02-27T06:11:17.041011949Z"
+generated: "2021-02-27T07:57:29.01490794Z"
