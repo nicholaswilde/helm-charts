@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/wikijs
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "2.5.170-ls22"
+  tag: "2.5.170-ls23"
 secret: {}
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -18,8 +18,6 @@ service:
     port: 3000
 ingress:
   enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
   hosts:
     - host: "wikijs.192.168.1.203.nip.io"
       paths:
