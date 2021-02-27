@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "1.2"
-version: 0.2.13
+version: 0.2.14
 name: booksonic
 description: The selfhosted audiobook server
 type: application
@@ -24,7 +24,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 1.2-ls100
+    - Bumped tag to 1.2-ls101
   artifacthub.io/images: |
     - name: booksonic
-      image: ghcr.io/linuxserver/booksonic:1.2-ls100
+      image: ghcr.io/linuxserver/booksonic:1.2-ls101
