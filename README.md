@@ -58,13 +58,13 @@ See [Wiki](https://github.com/nicholaswilde/helm-charts/wiki/Troubleshooting).
 
 ## :star: Contributing
 
-See [Contributing](./CONTRIBUTING.md)
+See [Contributing](./.github/CONTRIBUTING.md)
 
 ---
 
 ## Code of Conduct
 
-See [Code of Conduct](./CODE_OF_CONDUCT.md)
+See [Code of Conduct](./.github/CODE_OF_CONDUCT.md)
 
 ---
 
