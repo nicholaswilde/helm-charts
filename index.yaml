@@ -14,7 +14,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work.
+    description: Helps caregivers track sleep, feedings, diaper changes, tummy time
+      and more to learn about and predict baby's needs without (as much) guess work.
     digest: b20090f54cd33677ec52a56b64f42bd9359dac7b7fea1e49e8072f1de632126a
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/babybuddy
     icon: https://github.com/babybuddy/babybuddy/raw/master/babybuddy/static_src/logo/icon.png
@@ -48,7 +49,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work.
+    description: Helps caregivers track sleep, feedings, diaper changes, tummy time
+      and more to learn about and predict baby's needs without (as much) guess work.
     digest: 186b45c5a6bc48c2b33a899e77975be326f5190c8d4da5678cf981a0735ba142
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/babybuddy
     icon: https://github.com/babybuddy/babybuddy/raw/master/babybuddy/static_src/logo/icon.png
@@ -82,7 +84,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work.
+    description: Helps caregivers track sleep, feedings, diaper changes, tummy time
+      and more to learn about and predict baby's needs without (as much) guess work.
     digest: a0a50358f783f90fadf698990045f197f384a9cd003dc04613d2a98a93f56a90
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/babybuddy
     icon: https://github.com/babybuddy/babybuddy/blob/master/babybuddy/static_src/logo/icon.png
@@ -151,7 +154,9 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A program that lets you donate your idle computer time to science projects like SETI@home, Climateprediction.net, Rosetta@home, World Community Grid, and many others.
+    description: A program that lets you donate your idle computer time to science
+      projects like SETI@home, Climateprediction.net, Rosetta@home, World Community
+      Grid, and many others.
     digest: 44e0874f3becaf58664beb5e7f0930c9515dcfa18869e1bcc86c23af8cb916c0
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/boinc-client
     icon: https://pbs.twimg.com/profile_images/1155837449131692032/0xgZMZeJ_400x400.jpg
@@ -179,7 +184,9 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A program that lets you donate your idle computer time to science projects like SETI@home, Climateprediction.net, Rosetta@home, World Community Grid, and many others.
+    description: A program that lets you donate your idle computer time to science
+      projects like SETI@home, Climateprediction.net, Rosetta@home, World Community
+      Grid, and many others.
     digest: dd12db164d6c1e0034228a9dc6a25f0a421b5388d1b6145bdc4df05aaf59ee24
     icon: https://pbs.twimg.com/profile_images/1155837449131692032/0xgZMZeJ_400x400.jpg
     keywords:
@@ -206,7 +213,9 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A program that lets you donate your idle computer time to science projects like SETI@home, Climateprediction.net, Rosetta@home, World Community Grid, and many others.
+    description: A program that lets you donate your idle computer time to science
+      projects like SETI@home, Climateprediction.net, Rosetta@home, World Community
+      Grid, and many others.
     digest: e4ff6cdbea02645150780af95c83d9a84241d5fa838424c7c53c826ae410907f
     icon: https://pbs.twimg.com/profile_images/1155837449131692032/0xgZMZeJ_400x400.jpg
     keywords:
@@ -750,7 +759,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A simple, self-hosted, easy-to-use platform for organising and storing information.
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
     digest: e4cc325d48cca587fdb7eb29b32c47a5c61007a6996fc5e25f70e900cbcbd8ea
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/bookstack
     icon: https://avatars3.githubusercontent.com/u/20912696
@@ -785,7 +795,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A simple, self-hosted, easy-to-use platform for organising and storing information.
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
     digest: 065378bd4445326f551607d9d3e031ca51b0a45bc0490b962ac13894d1f000fb
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/bookstack
     icon: https://avatars3.githubusercontent.com/u/20912696
@@ -820,7 +831,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A simple, self-hosted, easy-to-use platform for organising and storing information.
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
     digest: 1efe104ee69087e6698c66d6d34a198640b3a85f69ee66d445c3ad827a325f3e
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/bookstack
     icon: https://avatars3.githubusercontent.com/u/20912696
@@ -855,7 +867,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A simple, self-hosted, easy-to-use platform for organising and storing information.
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
     digest: f531b28bec1e35b49ff35ab0097608d1e38895cbe1ce63648a8a578c653aae58
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/bookstack
     icon: https://avatars3.githubusercontent.com/u/20912696
@@ -890,7 +903,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A simple, self-hosted, easy-to-use platform for organising and storing information.
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
     digest: dd57d15501fbf41f2a84a3d86ce72a11e1abbc40119d2003c6bac09860fa3170
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/bookstack
     icon: https://avatars3.githubusercontent.com/u/20912696
@@ -919,7 +933,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A simple, self-hosted, easy-to-use platform for organising and storing information.
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
     digest: d9d4b7ae8f982004a06f5da5b8fea5ad62a5b5e2012693bd4d28c225d99c13ff
     icon: https://avatars3.githubusercontent.com/u/20912696
     keywords:
@@ -947,7 +962,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A simple, self-hosted, easy-to-use platform for organising and storing information.
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
     digest: 69fbbffb8430161a8d0798dc55aa41f594ac1ee6963450ddbef9220941f09064
     icon: https://avatars3.githubusercontent.com/u/20912696
     keywords:
@@ -975,7 +991,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A simple, self-hosted, easy-to-use platform for organising and storing information.
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
     digest: 246542df3ca6724f49e2b4363b647fe5e81508c711bf678137a623e92c2ea8fa
     icon: https://avatars3.githubusercontent.com/u/20912696
     keywords:
@@ -1003,7 +1020,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A simple, self-hosted, easy-to-use platform for organising and storing information.
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
     digest: 5d6d0176faf6404058969cb7eeff05096fdda0b13b7540db7531caef8a0b27c0
     icon: https://avatars3.githubusercontent.com/u/20912696
     keywords:
@@ -1031,7 +1049,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A simple, self-hosted, easy-to-use platform for organising and storing information.
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
     digest: 26a3de6b407c869edfb4a7b46667e0d5b78620c17cc90fc6a16142765f8b3625
     icon: https://avatars3.githubusercontent.com/u/20912696
     keywords:
@@ -1059,7 +1078,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A simple, self-hosted, easy-to-use platform for organising and storing information.
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
     digest: a2831044bbc73b65dc568dfab0aee61ba5bc26f0684b10e53f71e7ed2aac83e5
     icon: https://avatars3.githubusercontent.com/u/20912696
     keywords:
@@ -1169,7 +1189,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
+    description: A web-based dashboard application that gives you a neat and clean
+      interface for logging your fuel fill-ups for all of your vehicles.
     digest: c68c4719c1a8e71888bb28fe7a84f06373e5e478649a94679768b6ba0d92a9f3
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
     icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
@@ -1204,7 +1225,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
+    description: A web-based dashboard application that gives you a neat and clean
+      interface for logging your fuel fill-ups for all of your vehicles.
     digest: e46e4d4fd951012e2ae8e617b79b2197b468946533fea7f6d64a2deba5074402
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
     icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
@@ -1238,7 +1260,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
+    description: A web-based dashboard application that gives you a neat and clean
+      interface for logging your fuel fill-ups for all of your vehicles.
     digest: 8757f817ecc9c792703c550cc9a33014607f119a643d857d96ea65b14f348594
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
     icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
@@ -1272,7 +1295,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
+    description: A web-based dashboard application that gives you a neat and clean
+      interface for logging your fuel fill-ups for all of your vehicles.
     digest: ee94e1ea5c244d46619cb7f68c0bf99e10ec47391a9608610f7dc7618a884975
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
     icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
@@ -1300,7 +1324,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
+    description: A web-based dashboard application that gives you a neat and clean
+      interface for logging your fuel fill-ups for all of your vehicles.
     digest: ec72ea17cce2e834a16ac0ed41c60eb2c69755a97bd570c2796bb7339b2c9568
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
     icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
@@ -1328,7 +1353,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
+    description: A web-based dashboard application that gives you a neat and clean
+      interface for logging your fuel fill-ups for all of your vehicles.
     digest: b594868352911ccafeddeef70a5f7d8d5b140945a9c64e862ecd13c7b0ad48ef
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
     icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
@@ -1356,7 +1382,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.5
-    description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
+    description: A web-based dashboard application that gives you a neat and clean
+      interface for logging your fuel fill-ups for all of your vehicles.
     digest: b3bd13b4ee7d341aa7f5b4a4237cc6a1e82dcea5677f29fdbe02aa5f570af2ab
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
     icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
@@ -1384,7 +1411,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: 0.1.3
-    description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
+    description: A web-based dashboard application that gives you a neat and clean
+      interface for logging your fuel fill-ups for all of your vehicles.
     digest: 0ddf273bf524da23d5ecc98334ba637ae3567b79816e16fbc67f90babdf9c100
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
     icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
@@ -1412,7 +1440,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: 0.1.2
-    description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
+    description: A web-based dashboard application that gives you a neat and clean
+      interface for logging your fuel fill-ups for all of your vehicles.
     digest: 48b22e421c286b0eb09396819bda4aa688a83c37559f443f07834b73cbab456f
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
     icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
@@ -2777,7 +2806,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
+    description: A real-time collaborative editor scalable to thousands of simultaneous
+      real time users.
     digest: c1d62a1ea17cadd86525f1a9b5096d28c2a39ec24ca285a64bce462ea0c0bec0
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/etherpad
     icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/etherpad.jpg
@@ -2813,7 +2843,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
+    description: A real-time collaborative editor scalable to thousands of simultaneous
+      real time users.
     digest: 7adf2a5d483affe5eb88724776d5e800511ff5d4ff1c32ca21fb353bf5ff9892
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/etherpad
     icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/etherpad.jpg
@@ -2849,7 +2880,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
+    description: A real-time collaborative editor scalable to thousands of simultaneous
+      real time users.
     digest: beaec0e107b835b586f193ddb2350d4bde708c4f555ea1f4221f36889d102960
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/etherpad
     icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/etherpad.jpg
@@ -2884,7 +2916,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
+    description: A real-time collaborative editor scalable to thousands of simultaneous
+      real time users.
     digest: 8e28e966c2bdb5c52e824951f6f40f5eb38091e4327ad00b2e542890981ed408
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/etherpad
     icon: https://pbs.twimg.com/profile_images/1336377123964145665/2gTadaDt_400x400.jpg
@@ -2912,7 +2945,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
+    description: A real-time collaborative editor scalable to thousands of simultaneous
+      real time users.
     digest: 3e78f5e364483b636d1f1e4d2009a8a04af6df422640128be18daa0b94c11408
     icon: https://pbs.twimg.com/profile_images/1336377123964145665/2gTadaDt_400x400.jpg
     keywords:
@@ -2939,7 +2973,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.5
-    description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
+    description: A real-time collaborative editor scalable to thousands of simultaneous
+      real time users.
     digest: 6823d451c440a0a27eba6733ab104339539a38a78b2d0e20b35d4ac0e4237f88
     icon: https://pbs.twimg.com/profile_images/1336377123964145665/2gTadaDt_400x400.jpg
     keywords:
@@ -2966,7 +3001,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.4
-    description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
+    description: A real-time collaborative editor scalable to thousands of simultaneous
+      real time users.
     digest: 3e16e6b24eb1a5c12f70d77f05a6e464e83872e3ad633a186115f84eb544d4b6
     icon: https://pbs.twimg.com/profile_images/1336377123964145665/2gTadaDt_400x400.jpg
     keywords:
@@ -3002,7 +3038,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: This is an all-in-one package for running a self-hosted Firefox Sync server.
+    description: This is an all-in-one package for running a self-hosted Firefox Sync
+      server.
     digest: 47604cfb0574209e82a10482d3c925cf3af90403c249ee86efdf2b3b580bdf2f
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/firefox-syncserver
     icon: https://upload.wikimedia.org/wikipedia/en/0/01/Firefox_Sync_logo.png
@@ -3029,7 +3066,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.5
-    description: This is an all-in-one package for running a self-hosted Firefox Sync server.
+    description: This is an all-in-one package for running a self-hosted Firefox Sync
+      server.
     digest: 269538563a1a09c2b8a14b57a2a35262a7e34cddcdd78aa4d977283a798e470b
     keywords:
     - server
@@ -3054,7 +3092,8 @@ entries:
     - name: common
       repository: file://../common/
       version: ~0.1.5
-    description: This is an all-in-one package for running a self-hosted Firefox Sync server.
+    description: This is an all-in-one package for running a self-hosted Firefox Sync
+      server.
     digest: 261500fd4f8b6f7a8e73bb4f5f32a72bb22a022173e6d96597aaf9addb45879a
     keywords:
     - server
@@ -3121,7 +3160,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A simple, high-reliability, distributed software configuration management system
+    description: A simple, high-reliability, distributed software configuration management
+      system
     digest: b230d52a4daf57d7ee7b3716dd3bd38c480ee183ff3f88d97c08553a3ef05c4f
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/fossil
     icon: https://fossil-scm.org/home/doc/trunk/www/fossil3.gif
@@ -3145,7 +3185,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A simple, high-reliability, distributed software configuration management system
+    description: A simple, high-reliability, distributed software configuration management
+      system
     digest: 1dc739ce38b4c4f99a8128fccf9c1c369bb21529d6af732814c5528640940260
     icon: https://fossil-scm.org/home/doc/trunk/www/fossil3.gif
     keywords:
@@ -3279,7 +3320,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A web app that allows you to create smart bookmarks, commands and aliases by pointing your web browser's default search engine at a running instance.
+    description: A web app that allows you to create smart bookmarks, commands and
+      aliases by pointing your web browser's default search engine at a running instance.
     digest: 0ebedd098ee5d752c01160d3fff39e21ef5f350950c47e661b55cded6dc3255e
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/golinks
     keywords:
@@ -3614,7 +3656,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: An open-source pastebin software written in Node.JS, which is easily installable in any network.
+    description: An open-source pastebin software written in Node.JS, which is easily
+      installable in any network.
     digest: df61e7fe577a358d00eec2b4a377ad2e6001e34afe7c6fc16e14e5103aa656b5
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/haste
     icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/haste.png
@@ -3645,7 +3688,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: An open-source pastebin software written in Node.JS, which is easily installable in any network.
+    description: An open-source pastebin software written in Node.JS, which is easily
+      installable in any network.
     digest: 35439a047caac8d2a00cfc939898890415b9d2cbf3fc33538dbe27365b6e80c3
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/haste
     icon: https://pbs.twimg.com/profile_images/1664989409/twitter_400x400.png
@@ -4538,7 +4582,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: Straightforward open source project management system to make your ideas reality.
+    description: Straightforward open source project management system to make your
+      ideas reality.
     digest: 98ad1db227ab1ede80e68c7350a6a922f2d156ea2cb968629ab6b434f02339fc
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/leantime
     icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/leantime.jpg
@@ -4570,7 +4615,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: Straightforward open source project management system to make your ideas reality.
+    description: Straightforward open source project management system to make your
+      ideas reality.
     digest: eb061c33deaf1584c21e836cf9b7d7aa1539652023a05c5edbac39793de07ed3
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/leantime
     icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/leantime.jpg
@@ -4755,7 +4801,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: All-in-one business software. Beautiful. Easy-to-use. CRM, Accounting, PM, HR, Procurement, Point of Sale, MRP, Marketing, etc.
+    description: All-in-one business software. Beautiful. Easy-to-use. CRM, Accounting,
+      PM, HR, Procurement, Point of Sale, MRP, Marketing, etc.
     digest: f91685ce0b4f031af94cc95292cc3765a68b1aeeca42a89eaf1c24c5c6482123
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/odoo
     icon: https://pbs.twimg.com/profile_images/970608340014419969/1bpCWJhS_400x400.jpg
@@ -4785,7 +4832,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: All-in-one business software. Beautiful. Easy-to-use. CRM, Accounting, PM, HR, Procurement, Point of Sale, MRP, Marketing, etc.
+    description: All-in-one business software. Beautiful. Easy-to-use. CRM, Accounting,
+      PM, HR, Procurement, Point of Sale, MRP, Marketing, etc.
     digest: 72ffdc0bd485bb2b9ee3f2ab37e0bdd4ae2bbefa34cab4a02d91e0640c7df785
     icon: https://pbs.twimg.com/profile_images/970608340014419969/1bpCWJhS_400x400.jpg
     keywords:
@@ -4821,7 +4869,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: e346ebcd0e5b3a684e32d069cb90544482bd715b800fc8c19405ab6892836490
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
@@ -4855,7 +4904,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: 2e21e8235655af3a5186b7cff8db3312dd1a9cfd03a2bfbe4c9a11604fe28021
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
@@ -4889,7 +4939,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: f995869354d2f9b6cae51dda600fdcb19e3482b441af99a625bd27941b0f0368
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
@@ -4925,7 +4976,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: 1c75afafb158da6bdae20a0c7b1f6469832344f090a6ebeab1268cae0db9b133
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
@@ -4959,7 +5011,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: 2cc17acfe81da7bfec18608536e0eceb415b49533f1f3e39cc744a2c66eaf959
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
@@ -4993,7 +5046,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: 928f6478901c5642d95f72e9e2977a3a07deb45d8fcc851422717466427a2994
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
@@ -5027,7 +5081,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: fa115b0ec79293d185bc2398a12476e4a50e386bce9fcb14b39323ae14cb4236
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
@@ -5062,7 +5117,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: 7ca45de1c0609becdccb9b6d908e45d8fd6f50776cf157bf7f51813eb9da4bb6
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
@@ -5090,7 +5146,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: 797bdafea7ae74610c1047038ce3dc8c18047d776e8b437ed9f2f71702998ea0
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
     keywords:
@@ -5117,7 +5174,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: b47169dd6bbc0043f03cc3d3d54a7015c03623193ea6c3c7a7fb3ed6ea0c2112
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
     keywords:
@@ -5144,7 +5202,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: 55c80191404cef5cb7c1a3a768fc69509a03473d012d3710f5289d49dc838a0d
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
     keywords:
@@ -5171,7 +5230,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: cf3c4f55e098dc88392725355fb561ebd232cdebcf1930cbe1f74bb8272ca751
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
     keywords:
@@ -5198,7 +5258,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: 11b4c8569c9dd32074cb58e92b4c464288c445dfc60362257b3aedcbab81a20e
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
     keywords:
@@ -5225,7 +5286,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: ~0.1.5
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: d89cd6566c1e678e806028d37e367f4ecf17e6417e6f4441e9a15db9a4415fb7
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
     keywords:
@@ -5252,7 +5314,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: ~0.1.5
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: f9e71c63fe33bc2441773dbe9a3fd637c2a8802180da469f325bca9ffb331ea6
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
     keywords:
@@ -5279,7 +5342,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: ~0.1.4
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: f97f613591844cf6f5bfb502432f96b38ca0d438b1cd6c9f4b6554fc19060d96
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
     keywords:
@@ -5306,7 +5370,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: 0.1.2
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: 7de400417f3ebf4347f82c4005a835d906909997f1f7cc2811b2345a9fda7ba1
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
     keywords:
@@ -5333,7 +5398,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: 0.1.0
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: cfc1653c64e9f434de3cb0e8dda5bf9616db1b69f1fc923d9ead1285648f634b
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
     keywords:
@@ -5356,7 +5422,8 @@ entries:
   - apiVersion: v2
     appVersion: 1.5.3
     created: "2020-12-02T04:59:18.092779699Z"
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: b79e52fbee9f43cf86b80ab709ff2675ed710e1ece786cd4d3215313951d202f
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
     keywords:
@@ -5379,7 +5446,8 @@ entries:
   - apiVersion: v2
     appVersion: 1.5.3
     created: "2020-12-02T04:45:40.466651537Z"
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: 00e9c46ed8dbce286b0f379a9395e79d3ae8c2a91746090b0e82e68b0b6beb3b
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
     keywords:
@@ -5402,7 +5470,8 @@ entries:
   - apiVersion: v2
     appVersion: 1.5.3
     created: "2020-12-02T04:30:49.920561147Z"
-    description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
     digest: c92f56b5cf1057154a6520c17c3899799225bf86e1862252b4cec259942a7b9f
     icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
     keywords:
@@ -5436,7 +5505,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A self-hosted podcast manager/downloader/archiver tool to download podcast episodes as soon as they become live with an integrated player.
+    description: A self-hosted podcast manager/downloader/archiver tool to download
+      podcast episodes as soon as they become live with an integrated player.
     digest: deda8b85998adf900e8d769b16c68739cfd6d07e089c81f0ca182a3248993221
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/podgrab
     keywords:
@@ -5470,7 +5540,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
     digest: 728f0814bff6bace99998b5a4ace90f83f812187a7b142289377682b23a3d354
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/projectsend
     icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/projectsend.jpg
@@ -5503,7 +5574,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
     digest: 59744439079b007641706fbd054b2c6590f1336df8855bbc44ee2c5c9035489b
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/projectsend
     icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/projectsend.jpg
@@ -5536,7 +5608,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
     digest: c3033949a030244687357022fc85c999d1370036f1e7bc68d90412d56a1c1d7b
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/projectsend
     icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/projectsend.jpg
@@ -5570,7 +5643,8 @@ entries:
     - name: common
       repository: https://nicholaswilde.github.io/helm-charts/
       version: ~0.1.8
-    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
     digest: 4782501b8cfffc463ee40883bf674d3760665cfebece18ffc02a54feb5bb2674
     home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/projectsend
     icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg
@@ -5597,7 +5671,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
     digest: 57e4239805b4267c0d3ccde96ea4d46d4a1839581f58d0807487cb5b8b5c226d
     icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg
     keywords:
@@ -5623,7 +5698,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: ~0.1.7
-    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
     digest: 2c762d73b56726f2a7ea1b35f50980dd324b5cb86ba4936053b9ddfecbba5902
     icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg
     keywords:
@@ -5649,7 +5725,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: ~0.1.5
-    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
     digest: 08e68296c72ee7f8f49ecc7e2350fddeca3763e73d0f1f888c749948ac72c428
     icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg
     keywords:
@@ -5675,7 +5752,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: ~0.1.4
-    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
     digest: 30fcdacfd876947ef27b04d8d956948fac644105e7660045ae1323364265d262
     icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg
     keywords:
@@ -5701,7 +5779,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: 0.1.3
-    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
     digest: 7544bf926811ef1d4940fa91c0d3fad20a046c813eefefa3bf95a9b1731b8357
     icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg
     keywords:
@@ -5727,7 +5806,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: 0.1.2
-    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
     digest: 70d443407eae9eccf5f7ef3a79979fb09f7c242ab2e32cdca2e50e6606ca1a8a
     icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg
     keywords:
@@ -5753,7 +5833,8 @@ entries:
     - name: common
       repository: http://nicholaswilde.github.io/helm-charts/
       version: 0.1.0
-    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
     digest: 7d631f312e68ea43fca116a70ac515230a297f68916d886607abe26fce3e5648
     icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg
     keywords:
@@ -5775,7 +5856,8 @@ entries:
   - apiVersion: v2
     appVersion: r1070
     created: "2020-12-03T20:31:46.59339392Z"
-    description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
     digest: 01c9b53313f40c44f12c82c761ff8f074e711ee1f4fadbddc72f14e06e058185
     icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/charts/projectsend/img/projectsend-icon.jpg
     keywords:
@@ -7238,6 +7320,40 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/transmission-0.1.4/transmission-0.1.4.tgz
     version: 0.1.4
+  wiki:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: wiki
+          image: ghcr.io/nicholaswilde/wiki:900b76a-ls1
+    apiVersion: v2
+    appVersion: 900b76a
+    created: "2021-02-27T06:11:17.040046153Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A self-hosted well uh wiki engine or content management system.
+    digest: ec77924d07cd437ab01647bd8f38ed0c80ef2cad62b68751c5ab86fa4f54a2f8
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/wiki
+    keywords:
+    - wiki
+    - web
+    - blog
+    - cms
+    - app
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: wiki
+    sources:
+    - https://github.com/prologic/wiki
+    - https://github.com/nicholaswilde/docker-wiki
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/wiki-0.1.0/wiki-0.1.0.tgz
+    version: 0.1.0
   wikijs:
   - annotations:
       artifacthub.io/changes: |
@@ -7577,4 +7693,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-14T23:49:47.646909815-08:00"
+generated: "2021-02-27T06:11:17.041011949Z"
