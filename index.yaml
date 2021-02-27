@@ -6659,6 +6659,40 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/snipe-it-0.1.0/snipe-it-0.1.0.tgz
     version: 0.1.0
+  static:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: static
+          image: ghcr.io/nicholaswilde/static:ee8a20c-ls1
+    apiVersion: v2
+    appVersion: ee8a20c
+    created: "2021-02-27T22:32:36.35621872Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A self-hosted static file serving app which does nothing more than
+      just serve up static files from a mounted volume.
+    digest: 6e884eacacf2a0e8b610e43688d1aa72dbcc749117d7dab831a4de219de81034
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/static
+    keywords:
+    - app
+    - web
+    - filesystem
+    - static
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: static
+    sources:
+    - https://github.com/prologic/static
+    - https://github.com/nicholaswilde/docker-static
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/static-0.1.0/static-0.1.0.tgz
+    version: 0.1.0
   syncthing:
   - annotations:
       artifacthub.io/changes: |
@@ -7728,4 +7762,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-02-27T07:57:29.01490794Z"
+generated: "2021-02-27T22:32:36.357556237Z"
