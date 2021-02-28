@@ -1,0 +1,5 @@
+## more info https://github.com/crazy-max/ghaction-github-labeler
+- # enhancement
+  name: ":sparkles: enhancement"
+  color: "0054ca"
+  description: ""
