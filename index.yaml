@@ -7389,6 +7389,39 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/transmission-0.1.4/transmission-0.1.4.tgz
     version: 0.1.4
+  twtxt:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: twtxt
+          image: ghcr.io/nicholaswilde/twtxt:0.1.0-ls1
+    apiVersion: v2
+    appVersion: 0.1.0
+    created: "2021-02-28T06:00:53.320431102Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A Self-Hosted, Twitter™-like Decentralised microBlogging platform.
+      No ads, no tracking, your content, your data!
+    digest: 4918b20a0a534fc72da8d8fb376415c97bbc27810e0089abb25bbb729e1b9bd0
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/twtxt
+    icon: https://twtxt.net/media/XsLsDHuisnXcL6NuUkYguK.png
+    keywords:
+    - foo
+    - bar
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: twtxt
+    sources:
+    - https://github.com/jointwt/twtxt
+    - https://github.com/nicholaswilde/docker-twtxt
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/twtxt-0.1.0/twtxt-0.1.0.tgz
+    version: 0.1.0
   wiki:
   - annotations:
       artifacthub.io/changes: |
@@ -7762,4 +7795,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-02-27T22:32:36.357556237Z"
+generated: "2021-02-28T06:00:53.321242301Z"
