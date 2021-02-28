@@ -3776,6 +3776,40 @@ entries:
   hedgedoc:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to 1.7.2-ls9
+      artifacthub.io/images: |
+        - name: hedgedoc
+          image: ghcr.io/linuxserver/hedgedoc:1.7.2-ls9
+    apiVersion: v2
+    appVersion: 1.7.2
+    created: "2021-02-28T06:05:06.365276933Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: HedgeDoc lets you create real-time collaborative markdown notes.
+    digest: fe500ce885831177ef8a2d80578aa1dca188ea583adc33c20e6dfd54dd3b46df
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/hedgedoc
+    icon: https://avatars1.githubusercontent.com/u/67865462
+    keywords:
+    - hedgedoc
+    - hedge
+    - doc
+    - markdown
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: hedgedoc
+    sources:
+    - https://github.com/hedgedoc/hedgedoc
+    - https://hub.docker.com/r/linuxserver/hedgedoc
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/hedgedoc-0.1.14/hedgedoc-0.1.14.tgz
+    version: 0.1.14
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 1.7.2-ls8
       artifacthub.io/images: |
         - name: hedgedoc
@@ -7830,4 +7864,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-02-28T06:02:29.250407293Z"
+generated: "2021-02-28T06:05:06.366268374Z"
