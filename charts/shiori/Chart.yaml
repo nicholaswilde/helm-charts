@@ -1,0 +1,30 @@
+---
+apiVersion: v2
+appVersion: "v1.5.0"
+version: 0.1.0
+name: shiori
+description: A simple bookmark manager built with Go
+type: application
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/shiori"
+icon: "https://github.com/go-shiori/shiori/raw/master/internal/view/res/apple-touch-icon-152x152.png"
+dependencies:
+  - name: common
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - shiori
+  - bookmark
+  - bookmark-manager
+  - web-interface
+sources:
+  - https://github.com/go-shiori/shiori
+  - https://github.com/nicholaswilde/docker-shiori
+maintainers:
+  - name: nicholaswilde
+    email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Initial release.
+  artifacthub.io/images: |
+    - name: template
+      image: ghcr.io/linuxserver/template:0.1.0-ls1
