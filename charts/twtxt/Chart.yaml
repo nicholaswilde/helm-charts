@@ -1,0 +1,28 @@
+---
+apiVersion: v2
+appVersion: "0.1.0"
+version: 0.1.0
+name: twtxt
+description: A Self-Hosted, Twitter™-like Decentralised microBlogging platform. No ads, no tracking, your content, your data!
+type: application
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/twtxt"
+icon: "https://twtxt.net/media/XsLsDHuisnXcL6NuUkYguK.png"
+dependencies:
+  - name: common
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - foo
+  - bar
+sources:
+  - https://github.com/jointwt/twtxt
+  - https://github.com/nicholaswilde/docker-twtxt
+maintainers:
+  - name: nicholaswilde
+    email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Initial release.
+  artifacthub.io/images: |
+    - name: twtxt
+      image: ghcr.io/nicholaswilde/twtxt:0.1.0-ls1
