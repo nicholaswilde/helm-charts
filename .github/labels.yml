@@ -1,6 +1,6 @@
 ## more info https://github.com/crazy-max/ghaction-github-labeler
 - # chart request
-  name: ":chart_with_upwards_trend: chart request"
+  name: ":star: chart request"
   color: "e6e6e6"
   description: ""
 - # documentation
