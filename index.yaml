@@ -3809,6 +3809,40 @@ entries:
   hedgedoc:
   - annotations:
       artifacthub.io/changes: |
+        - Fixed chart tag extra line in values.yaml.
+      artifacthub.io/images: |
+        - name: hedgedoc
+          image: ghcr.io/linuxserver/hedgedoc:1.7.2-ls9
+    apiVersion: v2
+    appVersion: 1.7.2
+    created: "2021-03-01T01:48:23.526685074Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: HedgeDoc lets you create real-time collaborative markdown notes.
+    digest: 7ffafcb356e1c66b4380cc313421ab16a9425fa7dcf43f525715f489d8e75bd4
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/hedgedoc
+    icon: https://avatars1.githubusercontent.com/u/67865462
+    keywords:
+    - hedgedoc
+    - hedge
+    - doc
+    - markdown
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: hedgedoc
+    sources:
+    - https://github.com/hedgedoc/hedgedoc
+    - https://hub.docker.com/r/linuxserver/hedgedoc
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/hedgedoc-0.1.15/hedgedoc-0.1.15.tgz
+    version: 0.1.15
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 1.7.2-ls9
       artifacthub.io/images: |
         - name: hedgedoc
@@ -6048,6 +6082,40 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/projectsend-0.1.0/projectsend-0.1.0.tgz
     version: 0.1.0
+  shiori:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: template
+          image: ghcr.io/linuxserver/template:0.1.0-ls1
+    apiVersion: v2
+    appVersion: v1.5.0
+    created: "2021-03-01T01:48:23.654299739Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A simple bookmark manager built with Go
+    digest: 1cfd962aff82d01f9c8561f9f84a6f24cdc1b4e18708eb97cff9972e65282b13
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/shiori
+    icon: https://github.com/go-shiori/shiori/raw/master/internal/view/res/apple-touch-icon-152x152.png
+    keywords:
+    - shiori
+    - bookmark
+    - bookmark-manager
+    - web-interface
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: shiori
+    sources:
+    - https://github.com/go-shiori/shiori
+    - https://github.com/nicholaswilde/docker-shiori
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/shiori-0.1.0/shiori-0.1.0.tgz
+    version: 0.1.0
   shorturl:
   - annotations:
       artifacthub.io/changes: |
@@ -7964,4 +8032,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-02-28T17:13:34.761678913Z"
+generated: "2021-03-01T01:48:23.657367512Z"
