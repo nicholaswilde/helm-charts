@@ -1,0 +1,29 @@
+---
+apiVersion: v2
+appVersion: "10.5.8-r0"
+version: 0.1.0
+name: mariadb
+description: The open source relational database
+type: application
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/mariadb"
+icon: "https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/mariadb-icon.png"
+dependencies:
+  - name: common
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - db
+  - database
+  - mariadb
+sources:
+  - https://mariadb.org/
+  - https://github.com/linuxserver/docker-mariadb
+maintainers:
+  - name: nicholaswilde
+    email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Initial release.
+  artifacthub.io/images: |
+    - name: mariadb
+      image: ghcr.io/linuxserver/mariadb:alpine-10.5.8-r0-ls5
