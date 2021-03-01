@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "v1.5.0"
-version: 0.1.1
+version: 0.1.2
 name: shiori
 description: A simple bookmark manager built with Go
 type: application
@@ -11,6 +11,10 @@ dependencies:
   - name: common
     version: ~0.1.8
     repository: https://nicholaswilde.github.io/helm-charts/
+  - name: mariadb
+    version: ~0.1.1
+    repository: https://nicholaswilde.github.io/helm-charts/
+    condition: mariadb.enabled
 keywords:
   - shiori
   - bookmark
@@ -24,7 +28,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Updated artifacthub.io/images[0].name and artifacthub.io/images[0].image
+    - Added support for mariadb
   artifacthub.io/images: |
     - name: shiori
       image: ghcr.io/nicholaswilde/shiori:v1.5.0-ls1

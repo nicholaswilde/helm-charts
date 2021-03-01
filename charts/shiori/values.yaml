@@ -1,5 +1,5 @@
 ---
-# Default values for template.
+# Default values for shiori.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 image:
@@ -9,8 +9,8 @@ image:
   tag: "v1.5.0-ls1"
 
 secret: {}
-  # SHIORI_MYSQL_USER: user
-  # SHIORI_MYSQL_PASS: example
+  # SHIORI_MYSQL_USER: shiori
+  # SHIORI_MYSQL_PASS: shiori-pass
   # SHIORI_PG_USER: user
   # SHIORI_PG_PASS: example
 
@@ -20,7 +20,7 @@ env:
   # PUID: "1000"
   # PGID: "1000"
   # SHIORI_DIR: "/data"
-  # SHIORI_MYSQL_NAME: ""
+  # SHIORI_MYSQL_NAME: shiori
   # SHIORI_MYSQL_ADDRESS: ""
   # SHIORI_PG_HOST: ""
   # SHIORI_PG_PORT: ""
@@ -64,3 +64,25 @@ persistence:
     size: 1Gi
     ## Do not delete the pvc upon helm uninstall
     skipuninstall: false
+
+mariadb:
+  enabled: false
+  secret: {}
+    # MYSQL_ROOT_PASSWORD: shiori-pass
+    # MYSQL_USER: shiori
+    # MYSQL_PASSWORD: shiori-pass
+  env: {}
+    # TZ: "America/Los_Angeles"
+    # PUID: "1000"
+    # PGID: "1000"
+    # REMOTE_SQL: "http://URL1/your.sql,https://URL2/your.sql"
+    # MYSQL_DATABASE: shiori
+  persistence:
+    config:
+      enabled: false
+      emptyDir: false
+      mountPath: /config
+      # storageClass: "-"
+      accessMode: ReadWriteOnce
+      size: 1Gi
+      skipuninstall: false
