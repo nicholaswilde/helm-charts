@@ -6119,6 +6119,39 @@ entries:
   shiori:
   - annotations:
       artifacthub.io/changes: |
+        - Updated artifacthub.io/images[0].name and artifacthub.io/images[0].image
+      artifacthub.io/images: |
+        - name: shiori
+          image: ghcr.io/nicholaswilde/shiori:v1.5.0-ls1
+    apiVersion: v2
+    appVersion: v1.5.0
+    created: "2021-03-01T03:31:35.093997781Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A simple bookmark manager built with Go
+    digest: 0c1702d1f77f099099bca56330c1ce1ba0264bd15d95ebeeecf29f59fa0689c2
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/shiori
+    icon: https://github.com/go-shiori/shiori/raw/master/internal/view/res/apple-touch-icon-152x152.png
+    keywords:
+    - shiori
+    - bookmark
+    - bookmark-manager
+    - web-interface
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: shiori
+    sources:
+    - https://github.com/go-shiori/shiori
+    - https://github.com/nicholaswilde/docker-shiori
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/shiori-0.1.1/shiori-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |
         - Initial release.
       artifacthub.io/images: |
         - name: template
@@ -8066,4 +8099,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-01T01:54:26.545211628Z"
+generated: "2021-03-01T03:31:35.096270582Z"
