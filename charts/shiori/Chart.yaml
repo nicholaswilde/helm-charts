@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "v1.5.0"
-version: 0.1.0
+version: 0.1.1
 name: shiori
 description: A simple bookmark manager built with Go
 type: application
@@ -24,7 +24,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Initial release.
+    - Updated artifacthub.io/images[0].name and artifacthub.io/images[0].image
   artifacthub.io/images: |
-    - name: template
-      image: ghcr.io/linuxserver/template:0.1.0-ls1
+    - name: shiori
+      image: ghcr.io/nicholaswilde/shiori:v1.5.0-ls1
