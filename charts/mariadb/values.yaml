@@ -10,8 +10,8 @@ image:
 
 secret: {}
   # MYSQL_ROOT_PASSWORD: "ROOT_ACCESS_PASSWORD"
-  # MYSQL_USER=MYSQL_USER
-  # MYSQL_PASSWORD=DATABASE_PASSWORD
+  # MYSQL_USER: "MYSQL_USER"
+  # MYSQL_PASSWORD: "DATABASE_PASSWORD"
 
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -19,7 +19,7 @@ env:
   # PUID: "1000"
   # PGID: "1000"
   # REMOTE_SQL: "http://URL1/your.sql,https://URL2/your.sql"
-  # MYSQL_DATABASE=USER_DB_NAME #optional
+  # MYSQL_DATABASE: "USER_DB_NAME #optional"
 
 service:
   port:
