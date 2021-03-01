@@ -1,0 +1,12 @@
+---
+version: '3'
+
+includes:
+  deps: ./.taskfiles/deps.yaml
+  chart: ./.taskfiles/chart.yaml
+
+tasks:
+  default:
+    cmds:
+      - task -l
+    silent: true

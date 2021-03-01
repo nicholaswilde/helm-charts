@@ -1,0 +1,127 @@
+---
+version: '3'
+
+vars:
+  URL_GOREPLACE: 'https://github.com/webdevops/go-replace/releases/download/1.1.2/gr-{{ ARCH | replace "amd" "" }}-linux'
+  URL_HELM: "https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3"
+  URL_SEMVER: "https://github.com/fsaintjacques/semver-tool/raw/master/src/semver"
+  URL_YQ: 'https://github.com/mikefarah/yq/releases/download/v4.6.0/yq_linux_{{ ARCH }}'
+
+tasks:
+  install:
+    desc: Install all developer dependencies
+    cmds:
+      - task: _path-notify
+    deps:
+      - _distrib-reqs
+      - _helm
+      - pre-commit
+      - _go-replace
+      - _semver-tool
+      - _yq
+
+  helm:
+    desc: Install helm client
+    cmds:
+      - task: _path-notify
+    deps:
+      - _helm
+    silent: true
+
+  _helm:
+    cmds:
+      - echo "Installing helm"
+      - "wget -q -O - {{ .URL_HELM }} | USE_SUDO=false HELM_INSTALL_DIR=.bin bash"
+    status:
+      - test -e .bin/helm
+    deps:
+      - _distrib-reqs
+    silent: true
+
+  pre-commit:
+    desc: Install a precommit pip package
+    cmds:
+      - echo "Installing pre-commit"
+      - "python3 -m pip install --user pre-commit"
+    status:
+      - type pre-commit
+    deps:
+      - _distrib-reqs
+    silent: true
+
+  go-replace:
+    desc: Install go-replace
+    cmds:
+      - task: _path-notify
+    deps:
+      - _go_replace
+    silent: true
+
+  _go-replace:
+    cmds:
+      - echo "Installing go-replace"
+      - mkdir -p ".bin"
+      - wget -q {{ .URL_GOREPLACE }} -O .bin/go-replace
+      - chmod +x .bin/go-replace
+    status:
+      - test -e .bin/go-replace
+    deps:
+      - _distrib-reqs
+    silent: true
+
+  semver-tool:
+    desc: Install semver-tool
+    cmds:
+      - task: _path-notify
+    deps:
+      - _semver_tool
+    silent: true
+
+  _semver-tool:
+    cmds:
+      - echo "Installing semver-tool"
+      - mkdir -p ".bin"
+      - wget -q {{ .URL_SEMVER }} -O .bin/semver-tool
+      - chmod +x .bin/semver-tool
+    status:
+      - test -e .bin/semver-tool
+    deps:
+      - _distrib-reqs
+    silent: true
+
+  yq:
+    desc: Install yq
+    cmds:
+      - task: _path-notify
+    deps:
+      - _yq
+    silent: true
+
+  _yq:
+    cmds:
+      - echo "Installing yq"
+      - mkdir -p ".bin"
+      - wget -q {{ .URL_YQ }} -O .bin/yq
+      - chmod +x .bin/yq
+    status:
+      - test -e .bin/yq
+    deps:
+      - _distrib-reqs
+    silent: true
+
+  _path-notify:
+    cmds:
+      - echo "Be sure to update your PATH, PATH=\$PATH:\$PWD/.bin"
+    silent: true
+
+  _need:
+    cmds:
+      - type {{ .BIN }} 2>&1 >/dev/null || (echo "Please install {{.BIN}}"; exit 1)
+    silent: true
+
+  _distrib-reqs:
+    cmds:
+      - task deps:_need BIN=wget
+      - task deps:_need BIN=python3
+      - task deps:_need BIN=docker
+    silent: true

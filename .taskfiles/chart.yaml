@@ -1,0 +1,111 @@
+---
+version: '3'
+
+vars:
+  URL_TEMPLATE: "https://github.com/nicholaswilde/helm-template.git"
+  GIT_ROOT:
+    sh: "git rev-parse --show-toplevel"
+
+tasks:
+
+  create:
+    desc: Create a new chart
+    cmds:
+      - test -n "{{ .IMAGE }}" || (echo "Please define IMAGE parameter"; exit 1)
+      - ./scripts/init.sh {{ .IMAGE }}
+      - task: _dependency
+      - echo "Congratulations, charts/{{.CHART}} successfully generated, you can now edit chart informations ( Chart.yaml and values.yaml )"
+    status:
+      - test -d {{.GIT_ROOT}}/charts/{{.CHART}}
+    deps:
+      - _check-var
+    silent: true
+
+  create2:
+    desc: Create a new chart
+    cmds:
+      - git checkout -b add-chart-{{.CHART}}
+      - cp -r {{ .GIT_ROOT }}/templates/chart {{ .GIT_ROOT }}/charts/{{.CHART}}
+      - ./.bin/go-replace -s '${CHARTNAME}' -r "{{.CHART}}" --path={{.GIT_ROOT}}/charts/{{.CHART}} --path-pattern='*.*'
+    status:
+
+  tag:
+    desc: Print the tag of a chart
+    cmds:
+      - task: _print-key
+        vars:
+          FILE: "values.yaml"
+          KEY: ".image.tag"
+    silent: true
+
+  version:
+    desc: Print the version of a chart
+    cmds:
+      - task: _print-key
+        vars:
+          FILE: "Chart.yaml"
+          KEY: ".version"
+    silent: true
+
+  lint:
+    desc: Lint your chart code
+    dir: "{{.GIT_ROOT}}/charts/{{.CHART}}"
+    cmds:
+      - helm lint
+    deps:
+      - _dependency
+      - _check-dir
+
+  ct-lint:
+    desc: Run `ct lint` on your chart code
+    cmds:
+      - >-
+        docker run --rm -it \
+          --user $(id -u):$(id -g) \
+          -e "HELM_CONFIG_HOME=/tmp/helm" \
+          -e "HELM_CACHE_HOME=/tmp/helm" \
+          -v {{.GIT_ROOT}}:/ci \
+          -w /ci quay.io/helmpack/chart-testing:latest ct lint \
+          --charts charts/{{.CHART}} \
+          --config /ci/.github/ct.yaml
+    deps:
+      - _check-dir
+      - lint
+
+  helm-docs:
+    desc: Generate helm-docs
+    dir: "{{.GIT_ROOT}}/charts/{{.CHART}}"
+    cmds:
+      - "helm-docs"
+    deps:
+      - _check-dir
+    silent: true
+
+  _check-var:
+    cmds:
+      - test -n "{{ .CHART }}" || (echo "Please define CHART parameter"; exit 1)
+    silent: true
+
+  _check-dir:
+    dir: "{{.GIT_ROOT}}/charts"
+    cmds:
+      - test -d "{{.CHART}}" || (echo "Chart {{ .CHART }} doesn't exist"; exit 1)
+    deps:
+      - _check-var
+    silent: true
+
+  _dependency:
+    dir: "{{.GIT_ROOT}}/charts/{{.CHART}}"
+    cmds:
+      - test -d Chart.lock && rm Chart.lock || exit 0
+      - test -d tmpcharts && rm -rf tmpcharts || exit 0
+      - helm dependency update
+    silent: true
+
+  _print-key:
+    dir: "{{.GIT_ROOT}}/charts/{{.CHART}}"
+    cmds:
+      - 'printf "%s: %s\n" "{{ .KEY }}" "$({{ .GIT_ROOT }}/.bin/yq e {{ .KEY }} {{ .FILE }})"'
+    deps:
+      - _check-dir
+    silent: true
