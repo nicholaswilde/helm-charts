@@ -9,8 +9,8 @@ image:
   tag: "1.7.2-ls9"
 
 secret: {}
-# DB_USER: "hedgedoc"
-# DB_PASS: "<secret password>"
+  # DB_USER: "hedgedoc"
+  # DB_PASS: "hedgedoc-pass"
 
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -59,3 +59,25 @@ persistence:
     size: 1Gi
     ## Do not delete the pvc upon helm uninstall
     skipuninstall: false
+
+mariadb:
+  enabled: false
+  secret: {}
+    # MYSQL_ROOT_PASSWORD: hedgedoc-pass
+    # MYSQL_USER: hedgedoc
+    # MYSQL_PASSWORD: hedgedoc-pass
+  env: {}
+    # TZ: "America/Los_Angeles"
+    # PUID: "1000"
+    # PGID: "1000"
+    # REMOTE_SQL: "http://URL1/your.sql,https://URL2/your.sql"
+    # MYSQL_DATABASE: hedgedoc
+  persistence:
+    config:
+      enabled: false
+      emptyDir: false
+      mountPath: /config
+      # storageClass: "-"
+      accessMode: ReadWriteOnce
+      size: 1Gi
+      skipuninstall: false

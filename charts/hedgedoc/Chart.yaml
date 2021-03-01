@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 1.7.2
-version: 0.1.15
+version: 0.2.0
 name: hedgedoc
 description: HedgeDoc lets you create real-time collaborative markdown notes.
 type: application
@@ -11,6 +11,10 @@ dependencies:
   - name: common
     version: ~0.1.8
     repository: https://nicholaswilde.github.io/helm-charts/
+  - name: mariadb
+    version: ~0.1.1
+    repository: https://nicholaswilde.github.io/helm-charts/
+    condition: mariadb.enabled
 keywords:
   - hedgedoc
   - hedge
@@ -25,7 +29,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Fixed chart tag extra line in values.yaml.
+    - Added support for mariadb.
   artifacthub.io/images: |
     - name: hedgedoc
       image: ghcr.io/linuxserver/hedgedoc:1.7.2-ls9
