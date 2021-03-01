@@ -6184,6 +6184,43 @@ entries:
   shiori:
   - annotations:
       artifacthub.io/changes: |
+        - Added support for mariadb
+      artifacthub.io/images: |
+        - name: shiori
+          image: ghcr.io/nicholaswilde/shiori:v1.5.0-ls1
+    apiVersion: v2
+    appVersion: v1.5.0
+    created: "2021-03-01T05:35:50.821165145Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.1
+    description: A simple bookmark manager built with Go
+    digest: c2759cf773e97431640a418d034cee82483ad1112fee53f3a484bbeafebd824e
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/shiori
+    icon: https://github.com/go-shiori/shiori/raw/master/internal/view/res/apple-touch-icon-152x152.png
+    keywords:
+    - shiori
+    - bookmark
+    - bookmark-manager
+    - web-interface
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: shiori
+    sources:
+    - https://github.com/go-shiori/shiori
+    - https://github.com/nicholaswilde/docker-shiori
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/shiori-0.1.2/shiori-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |
         - Updated artifacthub.io/images[0].name and artifacthub.io/images[0].image
       artifacthub.io/images: |
         - name: shiori
@@ -8164,4 +8201,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-01T05:32:43.188931596Z"
+generated: "2021-03-01T05:35:50.821971569Z"
