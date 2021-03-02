@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 1.13.1
-version: 0.1.5
+appVersion: 1.14.0
+version: 0.1.6
 name: syncthing
 description: A continuous file synchronization program.
 type: application
@@ -23,7 +23,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 1.13.1
+    - Bumped tag to 1.14.0
+    - Removed nginx ingress annotation
   artifacthub.io/images: |
     - name: syncthing
-      image: syncthing/syncthing:1.13.1
+      image: syncthing/syncthing:1.14.0

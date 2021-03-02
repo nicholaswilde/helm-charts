@@ -6,23 +6,25 @@ image:
   repository: syncthing/syncthing
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.13.1"
+  tag: "1.14.0"
+
 secret: {}
+
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "America/Los_Angeles"
   # PUID: "1000"
   # PGID: "1000"
+
 service:
   port:
     port: 8384
   additionalPorts:
     - name: "22000-tcp"
       port: 22000
+
 ingress:
   enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
   hosts:
     - host: "syncthing.192.168.1.189.nip.io"
       paths:
@@ -33,6 +35,7 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
 persistence:
   config:
     enabled: false
