@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 4.1.0
-version: 1.0.4
+appVersion: 4.2.0
+version: 1.0.5
 name: cryptpad
 description: A Zero Knowledge realtime collaborative editor.
 type: application
@@ -25,7 +25,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Removed nginx ingress annotation.
+    - Bumped tag to 4.2.0-ls7
   artifacthub.io/images: |
     - name: cryptpad
-      image: ghcr.io/nicholaswilde/cryptpad:4.1.0-ls6
+      image: ghcr.io/nicholaswilde/cryptpad:4.2.0-ls7
