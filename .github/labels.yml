@@ -1,6 +1,10 @@
 ## more info https://github.com/crazy-max/ghaction-github-labeler
+- # bug
+  name: ":bug: bug"
+  color: "b60205"
+  description: ""
 - # chart request
-  name: ":star: chart request"
+  name: ":star: new chart"
   color: "e6e6e6"
   description: ""
 - # documentation
@@ -16,7 +20,7 @@
   color: "0054ca"
   description: ""
 - # feature request
-  name: ":bulb: feature request"
+  name: ":bulb: new feature"
   color: "0e8a16"
   description: ""
 - # good first issue
