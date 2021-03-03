@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 2.5.170
-version: 0.1.9
+version: 0.1.10
 name: wikijs
 description: The most powerful and extensible open source Wiki software.
 type: application
@@ -25,8 +25,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 2.5.170-ls23
-    - Removed nginx ingress annotation.
+    - Changed PVC accessModes to ReadWriteMany. Fixes #17.
   artifacthub.io/images: |
     - name: wikijs
       image: ghcr.io/linuxserver/wikijs:2.5.170-ls23

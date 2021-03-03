@@ -45,7 +45,7 @@ persistence:
     ## If you want to reuse an existing claim, you can pass the name of the PVC using
     ## the existingClaim variable
     # existingClaim: your-claim
-    accessMode: ReadWriteOnce
+    accessMode: ReadWriteMany
     size: 1Gi
     ## Do not delete the pvc upon helm uninstall
     skipuninstall: false
@@ -53,6 +53,7 @@ persistence:
     enabled: false
     emptyDir: false
     mountPath: /data
-    accessMode: ReadWriteOnce
+    accessMode: ReadWriteMany
     size: 1Gi
     skipuninstall: false
+
