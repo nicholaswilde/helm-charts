@@ -748,6 +748,42 @@ entries:
   bookstack:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to v0.31.7-ls125
+      artifacthub.io/images: |
+        - name: bookstack
+          image: ghcr.io/linuxserver/bookstack:v0.31.7-ls125
+    apiVersion: v2
+    appVersion: v0.31.7
+    created: "2021-03-03T05:23:39.142695135Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
+    digest: 10aaeb59bf48055098318202a83453e1696520b3604d9445967e81e1227981c7
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/bookstack
+    icon: https://avatars3.githubusercontent.com/u/20912696
+    keywords:
+    - bookstack
+    - book
+    - stack
+    - organizer
+    - server
+    - hosted
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: bookstack
+    sources:
+    - https://www.bookstackapp.com/
+    - https://hub.docker.com/r/linuxserver/bookstack
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/bookstack-0.1.15/bookstack-0.1.15.tgz
+    version: 0.1.15
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to v0.31.6-ls125
       artifacthub.io/images: |
         - name: bookstack
@@ -8341,4 +8377,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-03T05:13:27.349067718Z"
+generated: "2021-03-03T05:23:39.143604542Z"
