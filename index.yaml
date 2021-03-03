@@ -7971,6 +7971,40 @@ entries:
   wikijs:
   - annotations:
       artifacthub.io/changes: |
+        - Changed PVC accessModes to ReadWriteMany. Fixes #17.
+      artifacthub.io/images: |
+        - name: wikijs
+          image: ghcr.io/linuxserver/wikijs:2.5.170-ls23
+    apiVersion: v2
+    appVersion: 2.5.170
+    created: "2021-03-03T05:13:27.346317953Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: The most powerful and extensible open source Wiki software.
+    digest: 2226c4e58fd6c222742bd14eeaa089da73393c69c81cedf701a7a2a6581a1539
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/wikijs
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/wikijs.jpg
+    keywords:
+    - wiki
+    - js
+    - javascript
+    - text
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: wikijs
+    sources:
+    - https://wiki.js.org/
+    - https://hub.docker.com/r/linuxserver/wikijs
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.10/wikijs-0.1.10.tgz
+    version: 0.1.10
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 2.5.170-ls23
         - Removed nginx ingress annotation.
       artifacthub.io/images: |
@@ -8307,4 +8341,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-02T15:52:39.24660079Z"
+generated: "2021-03-03T05:13:27.349067718Z"
