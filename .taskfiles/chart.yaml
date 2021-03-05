@@ -21,13 +21,14 @@ tasks:
       - _check-var
     silent: true
 
-  create2:
-    desc: Create a new chart
+  repo:
+    desc: Print the repo of a chart
     cmds:
-      - git checkout -b add-chart-{{.CHART}}
-      - cp -r {{ .GIT_ROOT }}/templates/chart {{ .GIT_ROOT }}/charts/{{.CHART}}
-      - ./.bin/go-replace -s '${CHARTNAME}' -r "{{.CHART}}" --path={{.GIT_ROOT}}/charts/{{.CHART}} --path-pattern='*.*'
-    status:
+      - task: _print-key
+        vars:
+          FILE: "values.yaml"
+          KEY: ".image.repository"
+    silent: true
 
   tag:
     desc: Print the tag of a chart
