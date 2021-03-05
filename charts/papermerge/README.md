@@ -1,6 +1,6 @@
 # papermerge
 
-![Version: 0.3.2](https://img.shields.io/badge/Version-0.3.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.0.0rc38](https://img.shields.io/badge/AppVersion-v2.0.0rc38-informational?style=flat-square)
+![Version: 0.3.3](https://img.shields.io/badge/Version-0.3.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.0.0rc43](https://img.shields.io/badge/AppVersion-v2.0.0rc43-informational?style=flat-square)
 
 Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
 
