@@ -2,7 +2,7 @@
 name: Bug report
 about: Create a report to help us improve
 title: '[chart name] bug description'
-labels: bug
+labels: :bug: bug
 assignees: 'nicholaswilde'
 
 ---
