@@ -4117,6 +4117,44 @@ entries:
   hedgedoc:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to 1.7.2-ls10
+      artifacthub.io/images: |
+        - name: hedgedoc
+          image: ghcr.io/linuxserver/hedgedoc:1.7.2-ls10
+    apiVersion: v2
+    appVersion: 1.7.2
+    created: "2021-03-09T02:00:33.34274672Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.1
+    description: HedgeDoc lets you create real-time collaborative markdown notes.
+    digest: 70b6495909b4cbcc54ac7798693df060b29c02e2a8c6a22bc2dcfb8e52df3c83
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/hedgedoc
+    icon: https://avatars1.githubusercontent.com/u/67865462
+    keywords:
+    - hedgedoc
+    - hedge
+    - doc
+    - markdown
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: hedgedoc
+    sources:
+    - https://github.com/hedgedoc/hedgedoc
+    - https://hub.docker.com/r/linuxserver/hedgedoc
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/hedgedoc-0.2.1/hedgedoc-0.2.1.tgz
+    version: 0.2.1
+  - annotations:
+      artifacthub.io/changes: |
         - Added support for mariadb.
       artifacthub.io/images: |
         - name: hedgedoc
@@ -8747,4 +8785,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-09T01:59:20.10347329Z"
+generated: "2021-03-09T02:00:33.343839402Z"
