@@ -6,11 +6,10 @@ image:
   repository: ghcr.io/linuxserver/hedgedoc
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.7.2-ls9"
-
+  tag: "1.7.2-ls10"
 secret: {}
-  # DB_USER: "hedgedoc"
-  # DB_PASS: "hedgedoc-pass"
+# DB_USER: "hedgedoc"
+# DB_PASS: "hedgedoc-pass"
 
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -20,11 +19,9 @@ env:
   # DB_HOST: "mariadb"
   # DB_NAME: "hedgedoc"
   # DB_PORT: "3306"
-
 service:
   port:
     port: 3000
-
 ingress:
   enabled: true
   hosts:
@@ -37,7 +34,6 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
-
 persistence:
   config:
     enabled: false
@@ -59,19 +55,18 @@ persistence:
     size: 1Gi
     ## Do not delete the pvc upon helm uninstall
     skipuninstall: false
-
 mariadb:
   enabled: false
   secret: {}
-    # MYSQL_ROOT_PASSWORD: hedgedoc-pass
-    # MYSQL_USER: hedgedoc
-    # MYSQL_PASSWORD: hedgedoc-pass
+  # MYSQL_ROOT_PASSWORD: hedgedoc-pass
+  # MYSQL_USER: hedgedoc
+  # MYSQL_PASSWORD: hedgedoc-pass
   env: {}
-    # TZ: "America/Los_Angeles"
-    # PUID: "1000"
-    # PGID: "1000"
-    # REMOTE_SQL: "http://URL1/your.sql,https://URL2/your.sql"
-    # MYSQL_DATABASE: hedgedoc
+  # TZ: "America/Los_Angeles"
+  # PUID: "1000"
+  # PGID: "1000"
+  # REMOTE_SQL: "http://URL1/your.sql,https://URL2/your.sql"
+  # MYSQL_DATABASE: hedgedoc
   persistence:
     config:
       enabled: false

@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 1.7.2
-version: 0.2.0
+version: 0.2.1
 name: hedgedoc
 description: HedgeDoc lets you create real-time collaborative markdown notes.
 type: application
@@ -29,7 +29,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Added support for mariadb.
+    - Bumped tag to 1.7.2-ls10
   artifacthub.io/images: |
     - name: hedgedoc
-      image: ghcr.io/linuxserver/hedgedoc:1.7.2-ls9
+      image: ghcr.io/linuxserver/hedgedoc:1.7.2-ls10
