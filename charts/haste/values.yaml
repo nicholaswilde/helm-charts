@@ -6,20 +6,16 @@ image:
   repository: ghcr.io/nicholaswilde/haste
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "8ad9278-ls1"
-
+  tag: "ce75235-ls2"
 secret: {}
-
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "America/Los_Angeles"
   # PUID: "1000"
   # PGID: "1000"
-
 service:
   port:
     port: "7777"
-
 ingress:
   enabled: true
   annotations:
@@ -34,7 +30,6 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
-
 persistence:
   config:
     enabled: false

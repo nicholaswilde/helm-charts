@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "8ad9278"
-version: 0.1.2
+appVersion: "ce75235"
+version: 0.1.3
 name: haste
 description: An open-source pastebin software written in Node.JS, which is easily installable in any network.
 type: application
@@ -22,8 +22,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Updated artifacthub.io/images[0].image
-    - Updated icon url.
+    - Bumped tag to ce75235-ls2
   artifacthub.io/images: |
     - name: haste
-      image: ghcr.io/nicholaswilde/haste:8ad9278-ls1
+      image: ghcr.io/nicholaswilde/haste:ce75235-ls2
