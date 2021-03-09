@@ -5,3 +5,4 @@
 *.tgz
 *.save*
 charts/template/
+.bin/
