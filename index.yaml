@@ -5510,6 +5510,41 @@ entries:
   papermerge:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to v2.0.0rc45-ls29
+      artifacthub.io/images: |
+        - name: papermerge
+          image: ghcr.io/linuxserver/papermerge:v2.0.0rc45-ls29
+    apiVersion: v2
+    appVersion: v2.0.0rc45
+    created: "2021-03-10T04:25:36.39590271Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
+    digest: e6760a94fc1cb02b0dbd4763b9d6c322e4ae55c2610067324b27d787081d6fb5
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
+    keywords:
+    - paper
+    - merge
+    - document
+    - scan
+    - scanner
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: papermerge
+    sources:
+    - https://www.papermerge.com/
+    - https://hub.docker.com/r/linuxserver/papermerge
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/papermerge-0.3.5/papermerge-0.3.5.tgz
+    version: 0.3.5
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to v2.0.0rc45-ls28
       artifacthub.io/images: |
         - name: papermerge
@@ -8885,4 +8920,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-10T04:23:51.004079276Z"
+generated: "2021-03-10T04:25:36.397544303Z"
