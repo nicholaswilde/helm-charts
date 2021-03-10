@@ -11,8 +11,6 @@ secret: {}
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "America/Los_Angeles"
-  # PUID: "1000"
-  # PGID: "1000"
 service:
   port:
     port: 3000
@@ -28,6 +26,8 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+podSecurityContext:
+  fsGroup: 911
 persistence:
   config:
     enabled: false
