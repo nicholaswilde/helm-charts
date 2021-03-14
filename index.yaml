@@ -8725,6 +8725,40 @@ entries:
   wikijs:
   - annotations:
       artifacthub.io/changes: |
+        - Add pod security context for service user
+      artifacthub.io/images: |
+        - name: wikijs
+          image: ghcr.io/linuxserver/wikijs:2.5.170-ls24
+    apiVersion: v2
+    appVersion: 2.5.170
+    created: "2021-03-14T04:36:12.653346586Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: The most powerful and extensible open source Wiki software.
+    digest: e94308123a1a1ef4b89bbdb97b6f93b405bad1048dd39835dda33af19a6dce44
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/wikijs
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/wikijs.jpg
+    keywords:
+    - wiki
+    - js
+    - javascript
+    - text
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: wikijs
+    sources:
+    - https://wiki.js.org/
+    - https://hub.docker.com/r/linuxserver/wikijs
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.2.0/wikijs-0.2.0.tgz
+    version: 0.2.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 2.5.170-ls24
       artifacthub.io/images: |
         - name: wikijs
@@ -9129,4 +9163,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-14T04:31:44.886979005Z"
+generated: "2021-03-14T04:36:12.654366218Z"
