@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/snipe-it
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v5.1.3-ls120"
+  tag: "v5.1.3-ls121"
 secret: {}
 # MYSQL_ROOT_PASSWORD: ""
 # MYSQL_USER: "snipe"

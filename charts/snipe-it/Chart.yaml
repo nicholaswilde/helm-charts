@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: v5.1.3
-version: 0.2.6
+version: 0.2.7
 name: snipe-it
 description: Open source asset management
 type: application
@@ -24,7 +24,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to v5.1.3-ls120
+    - Bumped tag to v5.1.3-ls121
   artifacthub.io/images: |
     - name: snipe-it
-      image: ghcr.io/linuxserver/snipe-it:v5.1.3-ls120
+      image: ghcr.io/linuxserver/snipe-it:v5.1.3-ls121
