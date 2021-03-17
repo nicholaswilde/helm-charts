@@ -2956,6 +2956,40 @@ entries:
   diun:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to 4.14.0
+      artifacthub.io/images: |
+        - name: diun
+          image: ghcr.io/crazy-max/diun:4.14.0
+    apiVersion: v2
+    appVersion: 4.14.0
+    created: "2021-03-17T06:19:56.124338061Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Docker image update notifier
+    digest: e365b94a83dc4f49e599e4f77dd5b76cc24a678abdfc1ca26e23a6c2d9f36010
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/diun
+    icon: https://raw.githubusercontent.com/crazy-max/diun/master/.res/diun.png
+    keywords:
+    - docker
+    - notifier
+    - notification
+    - image
+    - update
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: diun
+    sources:
+    - https://crazymax.dev/diun/
+    - https://hub.docker.com/r/crazymax/diun
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/diun-0.2.8/diun-0.2.8.tgz
+    version: 0.2.8
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 4.13.0
       artifacthub.io/images: |
         - name: diun
@@ -9262,4 +9296,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-14T19:11:11.361706413Z"
+generated: "2021-03-17T06:19:56.126378465Z"
