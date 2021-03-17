@@ -6,8 +6,7 @@ image:
   repository: ghcr.io/crazy-max/diun
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "4.13.0"
-
+  tag: "4.14.0"
 secret: {}
 # DIUN_NOTIF_GOTIFY_TOKEN: ""
 

@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 4.13.0
-version: 0.2.7
+appVersion: 4.14.0
+version: 0.2.8
 name: diun
 description: Docker image update notifier
 type: application
@@ -25,7 +25,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 4.13.0
+    - Bumped tag to 4.14.0
   artifacthub.io/images: |
     - name: diun
-      image: ghcr.io/crazy-max/diun:4.13.0
+      image: ghcr.io/crazy-max/diun:4.14.0
