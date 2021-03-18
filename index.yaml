@@ -8213,6 +8213,38 @@ entries:
   transmission:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to 3.00-r2-ls81
+      artifacthub.io/images: |
+        - name: transmission
+          image: ghcr.io/linuxserver/transmission:3.00-r2-ls81
+    apiVersion: v2
+    appVersion: "3.00"
+    created: "2021-03-18T01:01:39.701542441Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A Fast, Easy, and Free BitTorrent Client.
+    digest: bdea3ae8534daea19b7053bb39c772fa6b88dd5b1d2deb94674afe7d47638baf
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/transmission/transmission
+    icon: https://raw.githubusercontent.com/transmission/transmission/master/web/public_html/images/webclip-icon.png
+    keywords:
+    - transmission
+    - bittorrent
+    - torrent
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: transmission
+    sources:
+    - https://transmissionbt.com/
+    - https://hub.docker.com/r/linuxserver/transmission
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/transmission-0.2.17/transmission-0.2.17.tgz
+    version: 0.2.17
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 3.00-r2-ls80
       artifacthub.io/images: |
         - name: transmission
@@ -9296,4 +9328,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-17T06:19:56.126378465Z"
+generated: "2021-03-18T01:01:39.703669056Z"
