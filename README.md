@@ -74,7 +74,7 @@ Inspiration for this repository has been taken from [k8s-at-home/charts](https:/
 
 ---
 
-## :closed_book: License
+## :balance_scale: License
 
 [Apache 2.0 License](./LICENSE)
 
