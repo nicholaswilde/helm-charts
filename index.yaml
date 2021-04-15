@@ -5201,6 +5201,37 @@ entries:
           image: ghcr.io/kanboard/kanboard:v1.2.18
     apiVersion: v2
     appVersion: 1.2.18
+    created: "2021-04-15T14:49:54.144827979Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: ⛔ DEPRECATED A free and open source Kanban project management software.
+    digest: 2690dd7cff24dad5c60a56db18778f6a0844efd7e99a50d87bbefd63408c6fce
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/kanboard
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/kanboard.png
+    keywords:
+    - kanboard
+    - project management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: kanboard
+    sources:
+    - https://kanboard.org/
+    - https://hub.docker.com/r/kanboard/kanboard
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/kanboard-0.1.6/kanboard-0.1.6.tgz
+    version: 0.1.6
+  - annotations:
+      artifacthub.io/changes: |
+        - Updated icon location
+      artifacthub.io/images: |
+        - name: kanboard
+          image: ghcr.io/kanboard/kanboard:v1.2.18
+    apiVersion: v2
+    appVersion: 1.2.18
     created: "2021-02-11T01:06:09.286261723Z"
     dependencies:
     - name: common
@@ -9360,4 +9391,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-15T14:40:14.88724451Z"
+generated: "2021-04-15T14:49:54.145806985Z"
