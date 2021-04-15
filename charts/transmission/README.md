@@ -1,8 +1,10 @@
 # transmission
 
-![Version: 0.2.17](https://img.shields.io/badge/Version-0.2.17-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.00](https://img.shields.io/badge/AppVersion-3.00-informational?style=flat-square)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)![Version: 0.2.18](https://img.shields.io/badge/Version-0.2.18-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.00](https://img.shields.io/badge/AppVersion-3.00-informational?style=flat-square)
 
-A Fast, Easy, and Free BitTorrent Client.
+⛔️ DEPRECATED A Fast, Easy, and Free BitTorrent Client.
+
+This chart has been depcrecated. Please use the [k8s@home version](https://artifacthub.io/packages/helm/k8s-at-home/transmission) instead.
 
 ## Dependencies
 

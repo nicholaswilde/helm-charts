@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
 appVersion: "3.00"
-version: 0.2.17
+version: 0.2.18
 name: transmission
-description: A Fast, Easy, and Free BitTorrent Client.
+description: ⛔️ DEPRECATED A Fast, Easy, and Free BitTorrent Client.
 type: application
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/transmission/transmission"
 icon: "https://raw.githubusercontent.com/transmission/transmission/master/web/public_html/images/webclip-icon.png"
