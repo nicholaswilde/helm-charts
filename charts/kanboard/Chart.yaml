@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
 appVersion: 1.2.18
-version: 0.1.5
+version: 0.1.6
 name: kanboard
-description: A free and open source Kanban project management software.
+description: ⛔ DEPRECATED A free and open source Kanban project management software.
 type: application
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/kanboard"
 icon: "https://github.com/nicholaswilde/helm-charts/raw/main/images/kanboard.png"
