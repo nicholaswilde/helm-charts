@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
 appVersion: 1.14.0
-version: 0.1.6
+version: 0.1.7
 name: syncthing
-description: A continuous file synchronization program.
+description: ⛔ DEPRECATED A continuous file synchronization program.
 type: application
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/syncthing"
 icon: "https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png"
