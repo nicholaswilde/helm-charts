@@ -1,8 +1,10 @@
 # wikijs
 
-![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.5.191](https://img.shields.io/badge/AppVersion-2.5.191-informational?style=flat-square)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/) ![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2.5.191](https://img.shields.io/badge/AppVersion-2.5.191-informational?style=flat-square)
 
-The most powerful and extensible open source Wiki software.
+⛔ DEPRECATED The most powerful and extensible open source Wiki software.
+
+This chart has been depcrecated. Please use the [k8s@home version](https://artifacthub.io/packages/helm/k8s-at-home/wikijs) instead.
 
 ## Dependencies
 

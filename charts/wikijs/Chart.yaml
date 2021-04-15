@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
 appVersion: 2.5.191
-version: 0.2.1
+version: 0.2.2
 name: wikijs
-description: The most powerful and extensible open source Wiki software.
+description: ⛔ DEPRECATED The most powerful and extensible open source Wiki software.
 type: application
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/wikijs"
 icon: "https://github.com/nicholaswilde/helm-charts/raw/main/images/wikijs.jpg"
