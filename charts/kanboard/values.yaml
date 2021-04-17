@@ -7,7 +7,7 @@ image:
   repository: ghcr.io/kanboard/kanboard
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.2.18"
+  tag: "v1.2.19"
 
 secret: {}
   # MYSQL_ROOT_PASSWORD: secret
