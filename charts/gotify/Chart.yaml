@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 2.0.21
-version: 0.2.5
+appVersion: 2.0.22
+version: 0.2.6
 name: gotify
 description: a simple server for sending and receiving messages
 type: application
@@ -24,8 +24,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Fixed linting issues.
-    - Bumped common to ~0.1.8
+    - Updated tag to 2.0.22
+    - Changed persistence.data.mountPath to /app/data
   artifacthub.io/images: |
     - name: gotify
-      image: gotify/server-arm7:2.0.21
+      image: gotify/server-arm7:2.0.22

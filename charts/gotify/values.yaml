@@ -63,7 +63,7 @@ persistence:
   data:
     enabled: false
     emptyDir: false
-    mountPath: /data
+    mountPath: /app/data
     ## gotify downloads data Persistent Volume Storage Class
     ## If defined, storageClassName: <storageClass>
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
