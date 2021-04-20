@@ -3,9 +3,12 @@
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Renovate Dashboard",
   "masterIssue": true,
+  "extends": [
+    "config:base"
+  ],
   "ignorePaths": [
     "charts/transmission/values.yaml",
     "charts/kanboard/values.yaml",
     "charts/wikijs/values.yaml",
-  ]
+  ],
 }
