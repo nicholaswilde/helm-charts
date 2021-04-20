@@ -2,6 +2,7 @@
   "enabled": true,
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Renovate Dashboard",
+  "masterIssue": true,
   "ignorePaths": [
     "charts/transmission/values.yaml",
     "charts/kanboard/values.yaml",
