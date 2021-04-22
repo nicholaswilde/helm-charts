@@ -1,8 +1,10 @@
 # haste
 
-![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: ce75235](https://img.shields.io/badge/AppVersion-ce75235-informational?style=flat-square)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/) ![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: ce75235](https://img.shields.io/badge/AppVersion-ce75235-informational?style=flat-square)
 
-An open-source pastebin software written in Node.JS, which is easily installable in any network.
+⛔ DEPRECATED An open-source pastebin software written in Node.JS, which is easily installable in any network.
+
+This chart has been depcrecated. Please use the [k8s@home version](https://artifacthub.io/packages/helm/k8s-at-home/haste-server) instead.
 
 ## Requirements
 
