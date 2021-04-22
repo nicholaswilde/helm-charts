@@ -1,8 +1,10 @@
 # bookstack
 
-![Version: 0.1.16](https://img.shields.io/badge/Version-0.1.16-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.31.8](https://img.shields.io/badge/AppVersion-v0.31.8-informational?style=flat-square)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/) ![Version: 0.1.17](https://img.shields.io/badge/Version-0.1.17-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.31.8](https://img.shields.io/badge/AppVersion-v0.31.8-informational?style=flat-square)
 
-A simple, self-hosted, easy-to-use platform for organising and storing information.
+⛔ DEPRECATED A simple, self-hosted, easy-to-use platform for organising and storing information.
+
+This chart has been depcrecated. Please use the [k8s@home version](https://artifacthub.io/packages/helm/k8s-at-home/bookstack) instead.
 
 ## Dependencies
 
