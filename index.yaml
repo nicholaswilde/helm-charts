@@ -8136,6 +8136,40 @@ entries:
           image: syncthing/syncthing:1.14.0
     apiVersion: v2
     appVersion: 1.14.0
+    created: "2021-04-24T18:38:14.115828364Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    deprecated: true
+    description: ⛔ DEPRECATED A continuous file synchronization program.
+    digest: 6f640718ee40228ecdcf2990ab3423b31572befeaef29e9ebeed4c19c15b0663
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/syncthing
+    icon: https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png
+    keywords:
+    - sync
+    - thing
+    - syncronization
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: syncthing
+    sources:
+    - https://syncthing.net/
+    - https://hub.docker.com/r/syncthing/syncthing
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/syncthing-0.1.8/syncthing-0.1.8.tgz
+    version: 0.1.8
+  - annotations:
+      artifacthub.io/changes: |
+        - Bumped tag to 1.14.0
+        - Removed nginx ingress annotation
+      artifacthub.io/images: |
+        - name: syncthing
+          image: syncthing/syncthing:1.14.0
+    apiVersion: v2
+    appVersion: 1.14.0
     created: "2021-04-15T14:53:10.728666984Z"
     dependencies:
     - name: common
@@ -9593,4 +9627,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-24T18:28:59.018116788Z"
+generated: "2021-04-24T18:38:14.116870866Z"
