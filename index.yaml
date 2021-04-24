@@ -4266,6 +4266,39 @@ entries:
           image: ghcr.io/nicholaswilde/haste:ce75235-ls2
     apiVersion: v2
     appVersion: ce75235
+    created: "2021-04-24T18:39:19.763249262Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    deprecated: true
+    description: ⛔ DEPRECATED An open-source pastebin software written in Node.JS,
+      which is easily installable in any network.
+    digest: 07ed7cddd59c9fe28a33b65a7478a58004e9e111bbdc53768fb9dc8b58095f6b
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/haste
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/haste.png
+    keywords:
+    - haste
+    - pastebin
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: haste
+    sources:
+    - https://github.com/zneix/haste-server
+    - https://hub.docker.com/r/nicholaswilde/haste
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/haste-0.1.5/haste-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/changes: |
+        - Deprecated
+      artifacthub.io/images: |
+        - name: haste
+          image: ghcr.io/nicholaswilde/haste:ce75235-ls2
+    apiVersion: v2
+    appVersion: ce75235
     created: "2021-04-22T18:18:30.375527985Z"
     dependencies:
     - name: common
@@ -9627,4 +9660,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-24T18:38:14.116870866Z"
+generated: "2021-04-24T18:39:19.764111573Z"
