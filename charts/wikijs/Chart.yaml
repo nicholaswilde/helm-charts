@@ -1,12 +1,13 @@
 ---
 apiVersion: v2
 appVersion: 2.5.191
-version: 0.2.2
+version: 0.2.3
 name: wikijs
 description: ⛔ DEPRECATED The most powerful and extensible open source Wiki software.
 type: application
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/wikijs"
 icon: "https://github.com/nicholaswilde/helm-charts/raw/main/images/wikijs.jpg"
+deprecated: true
 dependencies:
   - name: common
     version: ~0.1.8
@@ -25,7 +26,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 2.5.191-ls25
+    - Deprecated
   artifacthub.io/images: |
     - name: wikijs
       image: ghcr.io/linuxserver/wikijs:2.5.191-ls25
