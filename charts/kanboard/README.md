@@ -1,6 +1,6 @@
 # kanboard
 
-[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/) ![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2.18](https://img.shields.io/badge/AppVersion-1.2.18-informational?style=flat-square)
+![Version: 0.1.8](https://img.shields.io/badge/Version-0.1.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2.18](https://img.shields.io/badge/AppVersion-1.2.18-informational?style=flat-square)
 
 ⛔ DEPRECATED A free and open source Kanban project management software.
 
