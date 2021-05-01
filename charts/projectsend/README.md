@@ -1,6 +1,6 @@
 # projectsend
 
-![Version: 0.2.12](https://img.shields.io/badge/Version-0.2.12-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: r1070](https://img.shields.io/badge/AppVersion-r1070-informational?style=flat-square)
+![Version: 0.2.13](https://img.shields.io/badge/Version-0.2.13-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: r1070](https://img.shields.io/badge/AppVersion-r1070-informational?style=flat-square)
 
 A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
 

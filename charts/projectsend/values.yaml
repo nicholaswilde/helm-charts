@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/projectsend
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "r1070-ls61"
+  tag: "r1070-ls67"
 secret: {}
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
