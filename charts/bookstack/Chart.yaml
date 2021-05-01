@@ -1,12 +1,13 @@
 ---
 apiVersion: v2
 appVersion: v0.31.8
-version: 0.1.17
+version: 0.1.18
 name: bookstack
 description: ⛔ DEPRECATED A simple, self-hosted, easy-to-use platform for organising and storing information.
 type: application
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/bookstack"
 icon: "https://avatars3.githubusercontent.com/u/20912696"
+deprecate: true
 dependencies:
   - name: common
     version: ~0.1.8
@@ -26,7 +27,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to v0.31.8-ls126
+    - Deprecate
   artifacthub.io/images: |
     - name: bookstack
       image: ghcr.io/linuxserver/bookstack:v0.31.8-ls126
