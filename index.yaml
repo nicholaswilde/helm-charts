@@ -3810,6 +3810,37 @@ entries:
   friendica:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to 2021.04
+      artifacthub.io/images: |
+        - name: friendica
+          image: friendica:2021.04
+    apiVersion: v2
+    appVersion: "2021.04"
+    created: "2021-05-01T05:51:46.638032698Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Welcome to the free social web.
+    digest: d757169251027acaed075aecba5d2c7a999969f833b1024a844532dded539daf
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/friendica
+    icon: https://d1q6f0aelx0por.cloudfront.net/product-logos/library-friendica-logo.png
+    keywords:
+    - friend
+    - social
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: friendica
+    sources:
+    - https://friendi.ca/
+    - https://hub.docker.com/_/friendica
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/friendica-0.1.4/friendica-0.1.4.tgz
+    version: 0.1.4
+  - annotations:
+      artifacthub.io/changes: |
         - Fixed linting issues.
         - Bumped common to ~0.1.8
       artifacthub.io/images: |
@@ -9727,4 +9758,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-24T18:42:19.70709119Z"
+generated: "2021-05-01T05:51:46.640783795Z"
