@@ -3,7 +3,7 @@
 image:
   repository: ghcr.io/linuxserver/smokeping
   pullPolicy: IfNotPresent
-  tag: "2.7.3-r5-ls118"
+  tag: "2.7.3-r5-ls123"
 strategy:
   type: Recreate
 service:
@@ -16,8 +16,6 @@ env:
   # PGID: "1001"
 ingress:
   enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
   hosts:
     - host: "smokeping.192.168.1.199.nip.io"
       paths:
