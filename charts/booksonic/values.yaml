@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/booksonic
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.2-ls102"
+  tag: "1.2-ls109"
 secret: {}
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -19,8 +19,6 @@ service:
     port: 4040
 ingress:
   enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
   hosts:
     - host: "booksonic.192.168.1.193.nip.io"
       paths:
