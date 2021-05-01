@@ -6,12 +6,14 @@ image:
   repository: ghcr.io/nicholaswilde/cryptpad
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "4.2.1-ls8"
+  tag: "4.4.0-ls9"
+
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "America/Los_Angeles"
   # PUID: "1000"
   # PGID: "1000"
+
 service:
   port:
     port: 3000
