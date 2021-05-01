@@ -3512,6 +3512,41 @@ entries:
   etherpad:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to 1.8.13-ls7
+      artifacthub.io/images: |
+        - name: etherpad
+          image: ghcr.io/nicholaswilde/etherpad:1.8.13-ls7
+    apiVersion: v2
+    appVersion: 1.8.13
+    created: "2021-05-01T07:09:11.143751038Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A real-time collaborative editor scalable to thousands of simultaneous
+      real time users.
+    digest: aff16f879361ed2267584d967d6c8438806c7f922f30e01185cf9feb3621a62e
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/etherpad
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/etherpad.jpg
+    keywords:
+    - etherpad
+    - editor
+    - notepad
+    - pad
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: etherpad
+    sources:
+    - https://etherpad.org/
+    - https://github.com/ether/etherpad-lite
+    - https://hub.docker.com/r/nicholaswilde/etherpad
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/etherpad-0.1.10/etherpad-0.1.10.tgz
+    version: 0.1.10
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 1.8.12-ls6
       artifacthub.io/images: |
         - name: etherpad
@@ -10135,4 +10170,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-01T06:34:22.315105509Z"
+generated: "2021-05-01T07:09:11.147785381Z"
