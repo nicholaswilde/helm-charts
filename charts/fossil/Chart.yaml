@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "2.14"
-version: 0.1.2
+appVersion: "2.15.1"
+version: 0.1.3
 name: fossil
 description: A simple, high-reliability, distributed software configuration management system
 type: application
@@ -21,8 +21,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Fixed linting issues
-    - Bumped common to ~0.1.8
+    - Bumped tag to 2.15.1-ls2
   artifacthub.io/images: |
     - name: fossil
-      image: ghcr.io/nicholaswilde/fossil:2.14-ls1
+      image: ghcr.io/nicholaswilde/fossil:2.15.1-ls2
