@@ -6,7 +6,8 @@ image:
   repository: ghcr.io/linuxserver/cloud9
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.28.5-ls70"
+  tag: "1.29.1-ls76"
+
 secret: {}
 # USERNAME="" #optional
 # PASSWORD="" #optional
@@ -17,13 +18,13 @@ env:
   # PUID: "1000"
   # PGID: "1000"
   # GITURL=https://github.com/linuxserver/docker-cloud9.git #optional
+
 service:
   port:
     port: 8000
+
 ingress:
   enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
   hosts:
     - host: "cloud9.192.168.1.203.nip.io"
       paths:
@@ -33,6 +34,7 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
 persistence:
   code:
     enabled: false
