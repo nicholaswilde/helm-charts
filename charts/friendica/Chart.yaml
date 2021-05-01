@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "2021.09"
-version: 0.1.3
+appVersion: "2021.04"
+version: 0.1.4
 name: friendica
 description: Welcome to the free social web.
 type: application
@@ -22,8 +22,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Fixed linting issues.
-    - Bumped common to ~0.1.8
+    - Bumped tag to 2021.04
   artifacthub.io/images: |
     - name: friendica
-      image: friendica:2021.01
+      image: friendica:2021.04
