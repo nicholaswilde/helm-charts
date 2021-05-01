@@ -238,6 +238,39 @@ entries:
   booksonic:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to 1.2-ls109
+      artifacthub.io/images: |
+        - name: booksonic
+          image: ghcr.io/linuxserver/booksonic:1.2-ls109
+    apiVersion: v2
+    appVersion: "1.2"
+    created: "2021-05-01T06:07:40.453787985Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: The selfhosted audiobook server
+    digest: 30557a94649789ab25f5a60a08bc3ccf95bf545920da925fe57fc9514523059d
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/booksonic
+    icon: http://booksonic.org/assets/img/booksonic.png
+    keywords:
+    - audio
+    - audiobook
+    - server
+    - book
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: booksonic
+    sources:
+    - http://booksonic.org/
+    - https://hub.docker.com/r/linuxserver/booksonic
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/booksonic-0.2.16/booksonic-0.2.16.tgz
+    version: 0.2.16
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 1.2-ls102
       artifacthub.io/images: |
         - name: booksonic
@@ -9825,4 +9858,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-01T06:04:59.973480536Z"
+generated: "2021-05-01T06:07:40.454994842Z"
