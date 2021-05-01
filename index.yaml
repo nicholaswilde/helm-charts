@@ -6930,6 +6930,40 @@ entries:
   projectsend:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to r1070-ls67
+      artifacthub.io/images: |
+        - name: projectsend
+          image: ghcr.io/linuxserver/projectsend:r1070-ls67
+    apiVersion: v2
+    appVersion: r1070
+    created: "2021-05-01T06:17:13.485763385Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
+    digest: 06e1d359eae250573c7d42fe8ac80d3a07100e9418d935f20be77c1ca75f8730
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/projectsend
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/projectsend.jpg
+    keywords:
+    - project
+    - send
+    - upload
+    - files
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: projectsend
+    sources:
+    - https://www.projectsend.org/
+    - https://hub.docker.com/r/linuxserver/projectsend
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/projectsend-0.2.13/projectsend-0.2.13.tgz
+    version: 0.2.13
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to r1070-ls61
       artifacthub.io/images: |
         - name: projectsend
@@ -9929,4 +9963,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-01T06:13:47.810462523Z"
+generated: "2021-05-01T06:17:13.487505299Z"
