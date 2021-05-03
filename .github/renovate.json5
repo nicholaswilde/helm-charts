@@ -10,5 +10,6 @@
     "charts/transmission/values.yaml",
     "charts/kanboard/values.yaml",
     "charts/wikijs/values.yaml",
+    "charts/syncthing/values.yaml",
   ],
 }
