@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/mariadb
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "alpine-10.5.8-r0-ls5"
+  tag: "alpine-10.5.9-r0-ls14"
 
 secret: {}
   # MYSQL_ROOT_PASSWORD: "ROOT_ACCESS_PASSWORD"

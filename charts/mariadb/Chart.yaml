@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "10.5.8-r0"
-version: 0.1.1
+appVersion: "10.5.9"
+version: 0.1.2
 name: mariadb
 description: The open source relational database
 type: application
@@ -23,7 +23,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Replaced commented equal signs with colons in env and secret.
+    - Bumped tag to alpine-10.5.9-r0-ls14
   artifacthub.io/images: |
     - name: mariadb
-      image: ghcr.io/linuxserver/mariadb:alpine-10.5.8-r0-ls5
+      image: ghcr.io/linuxserver/mariadb:alpine-10.5.9-r0-ls14
