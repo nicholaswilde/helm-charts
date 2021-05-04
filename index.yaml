@@ -6045,6 +6045,38 @@ entries:
   mariadb:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to alpine-10.5.9-r0-ls14
+      artifacthub.io/images: |
+        - name: mariadb
+          image: ghcr.io/linuxserver/mariadb:alpine-10.5.9-r0-ls14
+    apiVersion: v2
+    appVersion: 10.5.9
+    created: "2021-05-04T01:00:12.035663091Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: The open source relational database
+    digest: de72d2535dceda87a0c31d01f056d0b2c489180923ecbb510c8c1a0abafeb4b4
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/mariadb
+    icon: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/mariadb-icon.png
+    keywords:
+    - db
+    - database
+    - mariadb
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: mariadb
+    sources:
+    - https://mariadb.org/
+    - https://github.com/linuxserver/docker-mariadb
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/mariadb-0.1.2/mariadb-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |
         - Replaced commented equal signs with colons in env and secret.
       artifacthub.io/images: |
         - name: mariadb
@@ -10342,4 +10374,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-03T23:30:24.408314081Z"
+generated: "2021-05-04T01:00:12.037132502Z"
