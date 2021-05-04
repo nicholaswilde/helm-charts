@@ -6045,6 +6045,38 @@ entries:
   mariadb:
   - annotations:
       artifacthub.io/changes: |
+        - Changed image to bionic
+      artifacthub.io/images: |
+        - name: mariadb
+          image: ghcr.io/linuxserver/mariadb:110.4.18mariabionic-ls19
+    apiVersion: v2
+    appVersion: 110.4.18
+    created: "2021-05-04T05:44:54.40978622Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: The open source relational database
+    digest: 38ee9f8a4f22622f26ae53393c5944b7834381181d3d68b8c060023ff1259350
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/mariadb
+    icon: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/mariadb-icon.png
+    keywords:
+    - db
+    - database
+    - mariadb
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: mariadb
+    sources:
+    - https://mariadb.org/
+    - https://github.com/linuxserver/docker-mariadb
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/mariadb-1.0.0/mariadb-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to alpine-10.5.9-r0-ls14
       artifacthub.io/images: |
         - name: mariadb
@@ -10374,4 +10406,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-04T01:00:12.037132502Z"
+generated: "2021-05-04T05:44:54.41128413Z"
