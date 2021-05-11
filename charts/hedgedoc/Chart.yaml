@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 1.8.0
-version: 0.3.0
+appVersion: 1.8.1
+version: 0.3.1
 name: hedgedoc
 description: HedgeDoc lets you create real-time collaborative markdown notes.
 type: application
@@ -29,7 +29,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 1.8.0-ls16
+    - Bumped tag to 1.8.1-ls18
   artifacthub.io/images: |
     - name: hedgedoc
-      image: ghcr.io/linuxserver/hedgedoc:1.8.0-ls16
+      image: ghcr.io/linuxserver/hedgedoc:1.8.1-ls18

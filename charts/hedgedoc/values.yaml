@@ -6,7 +6,8 @@ image:
   repository: ghcr.io/linuxserver/hedgedoc
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.8.0-ls16"
+  tag: "1.8.1-ls18"
+
 secret: {}
 # DB_USER: "hedgedoc"
 # DB_PASS: "hedgedoc-pass"
@@ -19,9 +20,11 @@ env:
   # DB_HOST: "mariadb"
   # DB_NAME: "hedgedoc"
   # DB_PORT: "3306"
+
 service:
   port:
     port: 3000
+
 ingress:
   enabled: true
   hosts:
@@ -34,6 +37,7 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
 persistence:
   config:
     enabled: false
