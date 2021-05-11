@@ -1782,6 +1782,40 @@ entries:
   cloud9:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to 1.29.2-ls76
+      artifacthub.io/images: |
+        - name: cloud9
+          image: ghcr.io/linuxserver/cloud9:1.29.2-ls76
+    apiVersion: v2
+    appVersion: 1.29.2
+    created: "2021-05-11T18:46:23.580858793Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A complete web based IDE with terminal access
+    digest: f3ab0a09275405d28e78551d9c94b82668b25ed0e6a0b7c9f31259b025628cf8
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/cloud9
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cloud9.png
+    keywords:
+    - cloud9
+    - ide
+    - terminal
+    - web
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: cloud9
+    sources:
+    - https://aws.amazon.com/cloud9/
+    - https://github.com/c9/core
+    - https://hub.docker.com/r/linuxserver/cloud9
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/cloud9-0.2.21/cloud9-0.2.21.tgz
+    version: 0.2.21
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 1.29.1-ls76
       artifacthub.io/images: |
         - name: cloud9
@@ -10439,4 +10473,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-11T18:44:05.138990889Z"
+generated: "2021-05-11T18:46:23.582042294Z"
