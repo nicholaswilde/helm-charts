@@ -6,8 +6,10 @@ image:
   repository: ghcr.io/linuxserver/booksonic
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.2-ls109"
+  tag: "1.2-ls110"
+
 secret: {}
+
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "America/Los_Angeles"
@@ -28,6 +30,7 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
 persistence:
   config:
     enabled: false
