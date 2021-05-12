@@ -68,7 +68,7 @@ tasks:
           -v {{.GIT_ROOT}}:/ci \
           -w /ci quay.io/helmpack/chart-testing:latest ct lint \
           --charts charts/{{.CHART}} \
-          --config /ci/.github/ct.yaml
+          --config /ci/.github/ct-lint.yaml
     deps:
       - _check-dir
       - lint
