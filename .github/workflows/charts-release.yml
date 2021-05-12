@@ -1,10 +1,13 @@
 ---
-name: Charts: Release
+name: "Charts: Release"
 
 on:
   push:
     branches: 
       - main
+    paths:
+      - 'charts/**'
+      - '!charts/**/README.md'
 
 jobs:
   release:
