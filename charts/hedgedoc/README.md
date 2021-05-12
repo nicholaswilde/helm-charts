@@ -1,6 +1,6 @@
 # hedgedoc
 
-![Version: 0.3.2](https://img.shields.io/badge/Version-0.3.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.8.2](https://img.shields.io/badge/AppVersion-1.8.2-informational?style=flat-square)
+![Version: 0.3.3](https://img.shields.io/badge/Version-0.3.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.8.2](https://img.shields.io/badge/AppVersion-1.8.2-informational?style=flat-square)
 
 HedgeDoc lets you create real-time collaborative markdown notes.
 
@@ -9,7 +9,7 @@ HedgeDoc lets you create real-time collaborative markdown notes.
 | Repository | Name | Version |
 |------------|------|---------|
 | https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.8 |
-| https://nicholaswilde.github.io/helm-charts/ | mariadb | ~0.1.1 |
+| https://nicholaswilde.github.io/helm-charts/ | mariadb | ~1.0.0 |
 
 ## TL;DR
 ```console
