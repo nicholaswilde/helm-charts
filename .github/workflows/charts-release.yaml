@@ -9,6 +9,7 @@ on:
     paths:
       - 'charts/**'
       - '!charts/**/README.md'
+      - '!charts/**/README.md.gotmpl'
 
 jobs:
   release:
