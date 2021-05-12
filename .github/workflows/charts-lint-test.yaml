@@ -4,8 +4,9 @@ name: "Charts: Lint and test"
 on:
   pull_request:
     paths:
-    - 'charts/**'
-    - '!charts/**/README.md'
+      - 'charts/**'
+      - '!charts/**/README.md'
+      - '!charts/**/README.md.gotmpl'
 
 jobs:
   changes-lint:
