@@ -8799,6 +8799,39 @@ entries:
   snipe-it:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to v5.1.5-ls129
+      artifacthub.io/images: |
+        - name: snipe-it
+          image: ghcr.io/linuxserver/snipe-it:v5.1.5-ls129
+    apiVersion: v2
+    appVersion: v5.1.5
+    created: "2021-05-13T15:14:57.067641383Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Open source asset management
+    digest: bbde64db1c276fa9345006ed8ac6e405c5c3c2a8d6b3c222b76f5945c8443568
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/snipe-it
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/snipe-it.jpg
+    keywords:
+    - snipeit
+    - snipe
+    - asset
+    - management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: snipe-it
+    sources:
+    - https://snipeitapp.com/
+    - https://hub.docker.com/r/linuxserver/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/snipe-it-0.2.9/snipe-it-0.2.9.tgz
+    version: 0.2.9
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to v5.1.5-ls128
       artifacthub.io/images: |
         - name: snipe-it
@@ -10760,4 +10793,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-13T03:23:19.325981055Z"
+generated: "2021-05-13T15:14:57.06902947Z"
