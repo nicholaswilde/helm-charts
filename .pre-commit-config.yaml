@@ -1,26 +1,22 @@
 ---
 repos:
-  - repo: local
+  # See https://pre-commit.com for more information
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
     hooks:
-      #- id: ct-lint
-        #name: "Chart Test: Lint"
-        #language: docker_image
-        #pass_filenames: false
-        #types: ['file']
-        #files: '^charts/.*(\.ya?ml|\.tpl|\.helmignore|NOTES.txt)'
-        #entry: -u 0 quay.io/helmpack/chart-testing:v3.3.1 ct
-        #args:
-        #  - lint
-        #  - --config
-        #  - .ct.yaml
-      - id: shellcheck
-        name: Test shell scripts with shellcheck
-        description: Shell scripts conform to shellcheck
-        entry: koalaman/shellcheck:latest
-        language: docker_image
-        types: [shell]
-        args: []
-        additional_dependencies: [shellcheck]
+    - id: trailing-whitespace
+    - id: end-of-file-fixer
+    - id: fix-byte-order-marker
+    - id: mixed-line-ending
+    - id: check-merge-conflict
+    - id: check-case-conflict
+
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.1.10
+    hooks:
+    - id: remove-crlf
+    - id: remove-tabs
+
   - repo: https://github.com/gruntwork-io/pre-commit
     rev: v0.1.12
     hooks:
