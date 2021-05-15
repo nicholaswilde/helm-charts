@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/nicholaswilde/babybuddy
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.5.1-ls3"
+  tag: "v1.6.0-ls4"
 
 secret:
   SECRET_KEY: "password"
