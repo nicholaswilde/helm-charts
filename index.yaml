@@ -4467,6 +4467,40 @@ entries:
   golinks:
   - annotations:
       artifacthub.io/changes: |
+        - Bumped tag to 154c581-ls2
+      artifacthub.io/images: |
+        - name: golinks
+          image: ghcr.io/nicholaswilde/golinks:154c581-ls2
+    apiVersion: v2
+    appVersion: 154c581
+    created: "2021-05-15T15:35:03.90661192Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A web app that allows you to create smart bookmarks, commands and
+      aliases by pointing your web browser's default search engine at a running instance.
+    digest: 6452a253877ba78cfbcdabe0b8995ad72b0e2b1ccb0712e3576790b11b5bf0bf
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/golinks
+    keywords:
+    - search
+    - browser
+    - bookmarks
+    - smart-bookmarks
+    - golinks
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: golinks
+    sources:
+    - https://github.com/prologic/golinks
+    - https://github.com/nicholaswilde/docker-golinks
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/golinks-0.1.1/golinks-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |
         - Initial release.
       artifacthub.io/images: |
         - name: golinks
@@ -11027,4 +11061,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-15T13:58:43.033758502Z"
+generated: "2021-05-15T15:35:03.908592722Z"
