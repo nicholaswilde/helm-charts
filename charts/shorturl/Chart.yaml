@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "v0.1.0"
-version: 0.1.2
+version: 0.1.3
 name: shorturl
 description: Self hosted web app for shortening urls (URL shortener)
 type: application
@@ -24,7 +24,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Updated artifacthub.io/images[0].image.
+    - Bumped tag to v0.1.0-ls2
   artifacthub.io/images: |
     - name: shorturl
-      image: ghcr.io/nicholaswilde/shorturl:v0.1.0-ls1
+      image: ghcr.io/nicholaswilde/shorturl:v0.1.0-ls2
