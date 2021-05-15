@@ -144,6 +144,39 @@ entries:
   blog:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to v1.3-ls2
+      artifacthub.io/images: |
+        - name: blog
+          image: ghcr.io/nicholaswilde/blog:v1.3-ls2
+    apiVersion: v2
+    appVersion: v1.3
+    created: "2021-05-15T21:32:30.70688007Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Lightweight self-hosted facebook-styled PHP blog.
+    digest: 6395bb7a77b96a267646a5934be79a38f2c266c9a3dfe16fa157b52966abf135
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/blog
+    keywords:
+    - blog
+    - php
+    - self
+    - hosted
+    - facebook
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: blog
+    sources:
+    - https://github.com/m1k1o/blog
+    - https://github.com/nicholaswilde/docker-blog
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/blog-0.1.2/blog-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |
         - Initial release.
       artifacthub.io/images: |
         - name: blog
@@ -11135,4 +11168,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-15T16:45:51.282380386Z"
+generated: "2021-05-15T21:32:30.708154975Z"
