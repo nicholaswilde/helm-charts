@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "110.4.19"
-version: 1.0.1
+version: 1.0.2
 name: mariadb
 description: The open source relational database
 type: application
@@ -23,7 +23,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 110.4.19mariabionic-ls20
+    - Bumped tag to 110.4.19mariabionic-ls21
   artifacthub.io/images: |
     - name: mariadb
-      image: ghcr.io/linuxserver/mariadb:110.4.19mariabionic-ls20
+      image: ghcr.io/linuxserver/mariadb:110.4.19mariabionic-ls21
