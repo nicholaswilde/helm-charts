@@ -82,6 +82,15 @@ tasks:
       - _check-dir
     silent: true
 
+  ct-install:
+    desc: Run `ct install` on your chart code
+    dir: "{{.GIT_ROOT}}"
+    cmds:
+       - >-
+          ct install --charts charts/{{.CHART}} --config .github/ct-lint.yaml
+    deps:
+      - _check-dir
+
   _check-var:
     cmds:
       - test -n "{{ .CHART }}" || (echo "Please define CHART parameter"; exit 1)
