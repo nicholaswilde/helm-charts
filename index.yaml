@@ -1418,6 +1418,43 @@ entries:
   chyrp-lite:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to v2021.02-ls2
+      artifacthub.io/images: |
+        - name: chyrp-lite
+          image: ghcr.io/nicholaswilde/chyrp-lite:v2021.02-ls2
+    apiVersion: v2
+    appVersion: v2021.02
+    created: "2021-05-15T16:45:51.280628796Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: An ultra-lightweight blogging engine, written in PHP.
+    digest: bf18eed3611c223aaf5eaaceb254244eac1672e287a428cda8428308478d9b40
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/chyrp-lite
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/chyrp-lite.svg
+    keywords:
+    - docker
+    - chyrp
+    - lite
+    - blog
+    - engine
+    - php
+    - twig
+    - html5
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: chyrp-lite
+    sources:
+    - https://github.com/xenocrat/chyrp-lite
+    - https://github.com/nicholaswilde/docker-chyrp-lite
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/chyrp-lite-0.1.2/chyrp-lite-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |
         - Updated persistance volumes in values.yaml.
       artifacthub.io/images: |
         - name: chyrp-lite
@@ -11098,4 +11135,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-15T15:38:23.637786559Z"
+generated: "2021-05-15T16:45:51.282380386Z"
