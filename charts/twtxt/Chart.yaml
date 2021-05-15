@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "0.1.0"
-version: 0.1.0
+appVersion: "0.1.1"
+version: 0.1.1
 name: twtxt
 description: A Self-Hosted, Twitter™-like Decentralised microBlogging platform. No ads, no tracking, your content, your data!
 type: application
@@ -12,17 +12,19 @@ dependencies:
     version: ~0.1.8
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
-  - foo
-  - bar
+  - twtxt
+  - blogging
+  - blog
+  - social-network
 sources:
-  - https://github.com/jointwt/twtxt
+  - https://github.com/prologic/twtxt
   - https://github.com/nicholaswilde/docker-twtxt
 maintainers:
   - name: nicholaswilde
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Initial release.
+    - Bumped tag to 0.1.1-ls2
   artifacthub.io/images: |
     - name: twtxt
-      image: ghcr.io/nicholaswilde/twtxt:0.1.0-ls1
+      image: ghcr.io/nicholaswilde/twtxt:0.1.1-ls2
