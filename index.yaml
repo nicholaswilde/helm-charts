@@ -10727,6 +10727,39 @@ entries:
   wiki:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to 900b76a-ls2
+      artifacthub.io/images: |
+        - name: wiki
+          image: ghcr.io/nicholaswilde/wiki:900b76a-ls2
+    apiVersion: v2
+    appVersion: 900b76a
+    created: "2021-05-18T23:41:35.470134792Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A self-hosted well uh wiki engine or content management system.
+    digest: d8a913a7a31f0db40412e613730ed73d467b9bc0658a30329ff582d686ef287b
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/wiki
+    keywords:
+    - wiki
+    - web
+    - blog
+    - cms
+    - app
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: wiki
+    sources:
+    - https://github.com/prologic/wiki
+    - https://github.com/nicholaswilde/docker-wiki
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/wiki-0.1.1/wiki-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |
         - Initial release.
       artifacthub.io/images: |
         - name: wiki
@@ -11302,4 +11335,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-18T21:29:09.926382524Z"
+generated: "2021-05-18T23:41:35.471251216Z"
