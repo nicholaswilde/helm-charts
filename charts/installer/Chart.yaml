@@ -24,7 +24,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Updated artifacthub.io/images[0].image
+    - Bump tag to 0.2.9-ls4
   artifacthub.io/images: |
     - name: installer
-      image: ghcr.io/nicholaswilde/installer:0.2.9-ls3
+      image: ghcr.io/nicholaswilde/installer:0.2.9-ls4
