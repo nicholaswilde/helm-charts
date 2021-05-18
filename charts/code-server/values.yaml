@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/code-server
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v3.10.0-ls79"
+  tag: "v3.10.1-ls79"
 
 secret: {}
 # PASSWORD: password
