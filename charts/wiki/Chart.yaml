@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "900b76a"
-version: 0.1.0
+version: 0.1.1
 name: wiki
 description: A self-hosted well uh wiki engine or content management system.
 type: application
@@ -25,7 +25,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Initial release.
+    - Bump tag to 900b76a-ls2
   artifacthub.io/images: |
     - name: wiki
-      image: ghcr.io/nicholaswilde/wiki:900b76a-ls1
+      image: ghcr.io/nicholaswilde/wiki:900b76a-ls2

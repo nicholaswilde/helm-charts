@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/nicholaswilde/wiki
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "900b76a-ls1"
+  tag: "900b76a-ls2"
 
 secret: {}
 
