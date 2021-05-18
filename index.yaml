@@ -5972,6 +5972,38 @@ entries:
   installer:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to 0.2.9-ls4
+      artifacthub.io/images: |
+        - name: installer
+          image: ghcr.io/nicholaswilde/installer:0.2.9-ls4
+    apiVersion: v2
+    appVersion: 0.2.9
+    created: "2021-05-18T21:29:09.923058391Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Quickly install pre-compiled binaries from Github releases.
+    digest: bf038961f95a403a1c9ad404b91e34ec5821b645270c23b9b58daddc3ac283a5
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/installer
+    keywords:
+    - installer
+    - binary
+    - binaries
+    - compiled
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: installer
+    sources:
+    - https://github.com/jpillora/installer
+    - https://hub.docker.com/r/nicholaswilde/installer
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/installer-0.2.8/installer-0.2.8.tgz
+    version: 0.2.8
+  - annotations:
+      artifacthub.io/changes: |
         - Updated artifacthub.io/images[0].image
       artifacthub.io/images: |
         - name: installer
@@ -11270,4 +11302,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-18T21:03:06.215574676Z"
+generated: "2021-05-18T21:29:09.926382524Z"
