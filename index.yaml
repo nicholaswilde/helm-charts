@@ -6727,6 +6727,40 @@ entries:
   notes:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to ee287b9-ls2
+      artifacthub.io/images: |
+        - name: notes
+          image: ghcr.io/nicholaswilde/notes:ee287b9-ls2
+    apiVersion: v2
+    appVersion: ee287b9
+    created: "2021-05-18T21:03:06.207253897Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A self-hosted note taking web app that lets you keep track of your
+      notes and search them in a easy and minimal way.
+    digest: 3f7aa2b0810e43d357997077888ece09c5afa9f59f28f617dd1da174eac42709
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/notes
+    keywords:
+    - markdown
+    - notes
+    - app
+    - web
+    - webapp
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: notes
+    sources:
+    - https://github.com/prologic/notes
+    - https://github.com/nicholaswilde/docker-notes
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/notes-0.1.2/notes-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |
         - Initial release.
       artifacthub.io/images: |
         - name: notes
@@ -11236,4 +11270,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-18T19:30:29.261159399Z"
+generated: "2021-05-18T21:03:06.215574676Z"
