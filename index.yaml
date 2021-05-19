@@ -9701,6 +9701,39 @@ entries:
   static:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to ee8a20c-ls2
+      artifacthub.io/images: |
+        - name: static
+          image: ghcr.io/nicholaswilde/static:ee8a20c-ls2
+    apiVersion: v2
+    appVersion: ee8a20c
+    created: "2021-05-19T01:17:43.805092067Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A self-hosted static file serving app which does nothing more than
+      just serve up static files from a mounted volume.
+    digest: b1dd8396c12c0d458540241b6123d893282f3517af69bb1b9d35917d713b15e2
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/static
+    keywords:
+    - app
+    - web
+    - filesystem
+    - static
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: static
+    sources:
+    - https://github.com/prologic/static
+    - https://github.com/nicholaswilde/docker-static
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/static-0.1.1/static-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |
         - Initial release.
       artifacthub.io/images: |
         - name: static
@@ -11335,4 +11368,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-18T23:41:35.471251216Z"
+generated: "2021-05-19T01:17:43.80641948Z"
