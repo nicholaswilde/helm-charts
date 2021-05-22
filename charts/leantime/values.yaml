@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/nicholaswilde/leantime
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "2.1.7-ls5"
+  tag: "2.1.7-ls6"
 
 secret: {}
   # LEAN_DB_USER: "admin"
