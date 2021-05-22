@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 1.2.0
-version: 0.1.5
+version: 0.1.6
 name: novnc
 description: The open source VNC client
 type: application
@@ -23,7 +23,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Changed icon location
+    - Bump tag to 1.2.0-ls3
   artifacthub.io/images: |
     - name: novnc
-      image: ghcr.io/nicholaswilde/novnc:1.2.0-ls2
+      image: ghcr.io/nicholaswilde/novnc:1.2.0-ls3
