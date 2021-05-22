@@ -6600,6 +6600,39 @@ entries:
   leantime:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to 2.1.7-ls6
+      artifacthub.io/images: |
+        - name: template
+          image: ghcr.io/nicholaswilde/leantime:2.1.7-ls6
+    apiVersion: v2
+    appVersion: 2.1.7
+    created: "2021-05-22T08:45:32.18110557Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Straightforward open source project management system to make your
+      ideas reality.
+    digest: 9292b62ffbb1d1646a186561f924d427d1a9960681cc6e548872d14795dbe1b3
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/leantime
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/leantime.jpg
+    keywords:
+    - leantime
+    - project
+    - management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: leantime
+    sources:
+    - https://leantime.io/
+    - https://hub.docker.com/r/nicholaswilde/leantime
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/leantime-0.1.2/leantime-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |
         - Updated artifacthub.io/images[0].image
       artifacthub.io/images: |
         - name: template
@@ -11567,4 +11600,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-22T08:09:24.24022536Z"
+generated: "2021-05-22T08:45:32.18250937Z"
