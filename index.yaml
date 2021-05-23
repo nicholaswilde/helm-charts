@@ -1,5 +1,40 @@
 apiVersion: v1
 entries:
+  audacity:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: audacity
+          image: ghcr.io/linuxserver/audacity:3.0.2-ls6
+    apiVersion: v2
+    appVersion: 3.0.2
+    created: "2021-05-23T07:26:09.697904211Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: An easy-to-use, multi-track audio editor and recorder
+    digest: 5a981acd4a0442a983f01cc376617fe86d5f382c19bc28b465a0395dd08fe78c
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/audacity
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/audacity-logo.png
+    keywords:
+    - audacity
+    - music
+    - recorder
+    - editor
+    - audio
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: audacity
+    sources:
+    - https://github.com/linuxserver/docker-audacity
+    - https://www.audacityteam.org/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/audacity-0.1.0/audacity-0.1.0.tgz
+    version: 0.1.0
   babybuddy:
   - annotations:
       artifacthub.io/changes: |
@@ -7166,6 +7201,39 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/mariadb-0.1.0/mariadb-0.1.0.tgz
     version: 0.1.0
+  mstream:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: mstream
+          image: ghcr.io/linuxserver/mstream:v4.7.0-ls52
+    apiVersion: v2
+    appVersion: v4.7.0
+    created: "2021-05-23T07:26:09.811287308Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A personal music streaming server
+    digest: 25f4ba998c1a5ba328a543e418e57315d49a11416b91d12f6d201211bb04399b
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/mstream
+    icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/images/mstream.png
+    keywords:
+    - mstream
+    - server
+    - music
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: mstream
+    sources:
+    - https://github.com/linuxserver/docker-mstream
+    - https://mstream.io/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/mstream-0.1.0/mstream-0.1.0.tgz
+    version: 0.1.0
   muximux:
   - annotations:
       artifacthub.io/changes: |
@@ -11983,4 +12051,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-23T07:02:21.93330913Z"
+generated: "2021-05-23T07:26:09.81296564Z"
