@@ -1,0 +1,30 @@
+---
+apiVersion: v2
+appVersion: "3.12.1"
+version: 0.1.0
+name: sqlitebrowser
+description: A high quality, visual, open source tool to create, design, and edit database files compatible with SQLite
+type: application
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/sqlitebrowser"
+icon: "https://sqlitebrowser.org/images/sqlitebrowser.svg"
+dependencies:
+  - name: common
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - sqlite
+  - browser
+  - sqlitebrowser
+  - database
+sources:
+  - https://github.com/linuxserver/docker-sqlitebrowser
+  - https://sqlitebrowser.org/
+maintainers:
+  - name: nicholaswilde
+    email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Initial release.
+  artifacthub.io/images: |
+    - name: sqlitebrowser
+      image: ghcr.io/linuxserver/sqlitebrowser:3.12.1-33048202104041633ubuntu18.04.1-ls37
