@@ -7201,6 +7201,42 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/mariadb-0.1.0/mariadb-0.1.0.tgz
     version: 0.1.0
+  medusa:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: medusa
+          image: ghcr.io/linuxserver/medusa:v0.5.12-ls72
+    apiVersion: v2
+    appVersion: v0.5.12
+    created: "2021-05-23T23:16:30.223940555Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: An automatic Video Library Manager for TV Shows
+    digest: b684167ba49a96bae80c2e9c34ef3b59ecc9a6db28bfd8891d0a1de077a5a7d1
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/medusa
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/medusa-icon.png
+    keywords:
+    - medusa
+    - video
+    - library
+    - manager
+    - tv
+    - shows
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: medusa
+    sources:
+    - https://github.com/linuxserver/docker-medusa
+    - https://pymedusa.com/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/medusa-0.1.0/medusa-0.1.0.tgz
+    version: 0.1.0
   mstream:
   - annotations:
       artifacthub.io/changes: |
@@ -12120,4 +12156,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-23T07:43:01.023030492Z"
+generated: "2021-05-23T23:16:30.237812073Z"
