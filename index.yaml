@@ -8197,6 +8197,41 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/papermerge-0.1.0/papermerge-0.1.0.tgz
     version: 0.1.0
+  photoshow:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: photoshow
+          image: ghcr.io/linuxserver/photoshow:48aabb98-ls99
+    apiVersion: v2
+    appVersion: 48aabb98
+    created: "2021-05-23T05:04:17.474253403Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A gallery software at its easiest, it doesn't even require a database.
+    digest: bbfa9900a2fe2e109aec3a85752fecb3520b3b8771f6d10c922c514775e9d85d
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/photoshow
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/photoshow-icon.png
+    keywords:
+    - photoshow
+    - photo
+    - show
+    - gallary
+    - image
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: photoshow
+    sources:
+    - https://github.com/thibaud-rohmer/PhotoShow
+    - https://github.com/linuxserver/docker-photoshow
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/photoshow-0.1.0/photoshow-0.1.0.tgz
+    version: 0.1.0
   podgrab:
   - annotations:
       artifacthub.io/changes: |
@@ -11638,4 +11673,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-23T04:47:21.174547595Z"
+generated: "2021-05-23T05:04:17.475575719Z"
