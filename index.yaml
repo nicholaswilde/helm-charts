@@ -8577,6 +8577,41 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/photoshow-0.1.0/photoshow-0.1.0.tgz
     version: 0.1.0
+  pixapop:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: pixapop
+          image: ghcr.io/linuxserver/pixapop:v1.2-ls15
+    apiVersion: v2
+    appVersion: v1.2
+    created: "2021-05-23T23:36:25.816134354Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: An open-source single page application to view your photos in the
+      easiest way possible.
+    digest: c319193984ff825437a0509cee869a61f432e3596f43f8d65a7a999630c3f456
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/pixapop
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pixapop.png
+    keywords:
+    - pixapop
+    - photo
+    - gallery
+    - image
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: pixapop
+    sources:
+    - https://github.com/linuxserver/docker-pixapop
+    - https://github.com/bierdok/pixapop
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/pixapop-0.1.0/pixapop-0.1.0.tgz
+    version: 0.1.0
   podgrab:
   - annotations:
       artifacthub.io/changes: |
@@ -12156,4 +12191,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-23T23:16:30.237812073Z"
+generated: "2021-05-23T23:36:25.817391572Z"
