@@ -1,0 +1,32 @@
+---
+apiVersion: v2
+appVersion: "v0.5.12"
+version: 0.1.0
+name: medusa
+description: An automatic Video Library Manager for TV Shows
+type: application
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/medusa"
+icon: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/medusa-icon.png"
+dependencies:
+  - name: common
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - medusa
+  - video
+  - library
+  - manager
+  - tv
+  - shows
+sources:
+  - https://github.com/linuxserver/docker-medusa
+  - https://pymedusa.com/
+maintainers:
+  - name: nicholaswilde
+    email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Initial release.
+  artifacthub.io/images: |
+    - name: medusa
+      image: ghcr.io/linuxserver/medusa:v0.5.12-ls72
