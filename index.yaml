@@ -7132,6 +7132,41 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/mariadb-0.1.0/mariadb-0.1.0.tgz
     version: 0.1.0
+  muximux:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: muximux
+          image: ghcr.io/linuxserver/muximux:057352e8-ls82
+    apiVersion: v2
+    appVersion: "057352e8"
+    created: "2021-05-23T06:38:39.070336324Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A lightweight portal to view & manage your HTPC apps without having
+      to run anything more than a PHP enabled webserver
+    digest: e8adf96bb84174ff43481389df7319733498541781b01fdd5f92f49be24c5b92
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/muximux
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/muximux-icon.png
+    keywords:
+    - muximux
+    - htpc
+    - manage
+    - portal
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: muximux
+    sources:
+    - https://github.com/linuxserver/docker-muximux
+    - https://github.com/mescon/Muximux
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/muximux-0.1.0/muximux-0.1.0.tgz
+    version: 0.1.0
   notes:
   - annotations:
       artifacthub.io/changes: |
@@ -11880,4 +11915,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-23T06:30:07.225786596Z"
+generated: "2021-05-23T06:38:39.071852506Z"
