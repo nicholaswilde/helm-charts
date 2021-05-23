@@ -1,0 +1,30 @@
+---
+apiVersion: v2
+appVersion: "1.2.0"
+version: 0.1.0
+name: remmina
+description: A remote desktop client written in GTK
+type: application
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/remmina"
+icon: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/remmina-icon.png"
+dependencies:
+  - name: common
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - remina
+  - remote
+  - desktop
+  - client
+sources:
+  - https://github.com/linuxserver/docker-remmina
+  - https://remmina.org/
+maintainers:
+  - name: nicholaswilde
+    email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Initial release.
+  artifacthub.io/images: |
+    - name: remmina
+      image: ghcr.io/linuxserver/remmina:1.2.0-rcgit.29dfsg-1ubuntu1-ls54
