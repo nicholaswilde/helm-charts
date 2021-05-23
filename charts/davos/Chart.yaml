@@ -1,0 +1,29 @@
+---
+apiVersion: v2
+appVersion: "2.2.1"
+version: 0.1.0
+name: davos
+description: An FTP automation tool that periodically scans given host locations for new files.
+type: application
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/davos"
+icon: "https://github.com/linuxserver/davos/raw/master/src/main/resources/static/android-chrome-192x192.png"
+dependencies:
+  - name: common
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - davos
+  - ftp
+  - automation
+sources:
+  - https://github.com/linuxserver/docker-davos
+  - https://github.com/linuxserver/davos/
+maintainers:
+  - name: nicholaswilde
+    email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Initial release.
+  artifacthub.io/images: |
+    - name: davos
+      image: ghcr.io/linuxserver/davos:2.2.1-ls74
