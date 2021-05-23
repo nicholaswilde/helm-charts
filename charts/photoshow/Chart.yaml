@@ -1,0 +1,31 @@
+---
+apiVersion: v2
+appVersion: "48aabb98"
+version: 0.1.0
+name: photoshow
+description: A gallery software at its easiest, it doesn't even require a database.
+type: application
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/photoshow"
+icon: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/photoshow-icon.png"
+dependencies:
+  - name: common
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - photoshow
+  - photo
+  - show
+  - gallary
+  - image
+sources:
+  - https://github.com/thibaud-rohmer/PhotoShow
+  - https://github.com/linuxserver/docker-photoshow
+maintainers:
+  - name: nicholaswilde
+    email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Initial release.
+  artifacthub.io/images: |
+    - name: photoshow
+      image: ghcr.io/linuxserver/photoshow:48aabb98-ls99
