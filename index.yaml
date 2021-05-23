@@ -9301,6 +9301,40 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/shorturl-0.1.0/shorturl-0.1.0.tgz
     version: 0.1.0
+  sickchill:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: sickchill
+          image: ghcr.io/linuxserver/sickchill:2021.5.10-1-ls63
+    apiVersion: v2
+    appVersion: 2021.5.10
+    created: "2021-05-23T07:02:21.931971131Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: An Automatic Video Library Manager for TV Shows
+    digest: cc869a3a1773fe629385784bf76368bac5002c2434a2e9dfc2806f2e16f858dd
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/sickchill
+    icon: https://github.com/SickChill/SickChill/raw/master/sickchill/gui/slick/images/ico/android-chrome-256x256.png
+    keywords:
+    - sickchill
+    - video
+    - library
+    - manager
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: sickchill
+    sources:
+    - https://github.com/linuxserver/docker-sickchill
+    - https://github.com/SickChill/SickChill
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/sickchill-0.1.0/sickchill-0.1.0.tgz
+    version: 0.1.0
   smokeping:
   - annotations:
       artifacthub.io/changes: |
@@ -11949,4 +11983,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-23T06:50:07.011745799Z"
+generated: "2021-05-23T07:02:21.93330913Z"
