@@ -1,0 +1,31 @@
+---
+apiVersion: v2
+appVersion: "nightly-eef26d18"
+version: 0.1.0
+name: beets
+description: A music library manager and not, for the most part, a music player.
+type: application
+home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/beets"
+icon: "https://github.com/nicholaswilde/helm-charts/raw/main/images/beets.png"
+dependencies:
+  - name: common
+    version: ~0.1.8
+    repository: https://nicholaswilde.github.io/helm-charts/
+keywords:
+  - music
+  - library
+  - manager
+  - player
+  - beets
+sources:
+  - https://github.com/linuxserver/docker-beets
+  - https://beets.io/
+maintainers:
+  - name: nicholaswilde
+    email: ncwilde43@gmail.com
+annotations:
+  artifacthub.io/changes: |
+    - Initial release.
+  artifacthub.io/images: |
+    - name: beets
+      image: ghcr.io/linuxserver/beets:nightly-eef26d18-ls67
