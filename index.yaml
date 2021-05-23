@@ -176,6 +176,41 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/babybuddy-0.1.0/babybuddy-0.1.0.tgz
     version: 0.1.0
+  beets:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: beets
+          image: ghcr.io/linuxserver/beets:nightly-eef26d18-ls67
+    apiVersion: v2
+    appVersion: nightly-eef26d18
+    created: "2021-05-23T06:03:22.581399001Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A music library manager and not, for the most part, a music player.
+    digest: 6350421de55a35538abbb9c123021a11ea8a17b5129084983dc3da9aac6c9e2c
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/beets
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/beets.png
+    keywords:
+    - music
+    - library
+    - manager
+    - player
+    - beets
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: beets
+    sources:
+    - https://github.com/linuxserver/docker-beets
+    - https://beets.io/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/beets-0.1.0/beets-0.1.0.tgz
+    version: 0.1.0
   blog:
   - annotations:
       artifacthub.io/changes: |
@@ -11742,4 +11777,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-23T05:29:33.286713623Z"
+generated: "2021-05-23T06:03:22.582779302Z"
