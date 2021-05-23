@@ -3673,6 +3673,40 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/cryptpad-0.1.0/cryptpad-0.1.0.tgz
     version: 0.1.0
+  davos:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: davos
+          image: ghcr.io/linuxserver/davos:2.2.1-ls74
+    apiVersion: v2
+    appVersion: 2.2.1
+    created: "2021-05-23T06:21:08.953295009Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: An FTP automation tool that periodically scans given host locations
+      for new files.
+    digest: da1e80c365573b7729a857a222f4f592e6bb2a881480c1b71709b5d01ae51d75
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/davos
+    icon: https://github.com/linuxserver/davos/raw/master/src/main/resources/static/android-chrome-192x192.png
+    keywords:
+    - davos
+    - ftp
+    - automation
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: davos
+    sources:
+    - https://github.com/linuxserver/docker-davos
+    - https://github.com/linuxserver/davos/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/davos-0.1.0/davos-0.1.0.tgz
+    version: 0.1.0
   digikam:
   - annotations:
       artifacthub.io/changes: |
@@ -11811,4 +11845,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-23T06:11:06.783820625Z"
+generated: "2021-05-23T06:21:08.95494007Z"
