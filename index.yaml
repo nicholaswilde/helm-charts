@@ -9136,6 +9136,39 @@ entries:
   remmina:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to 1.2.0-rcgit.29dfsg-1ubuntu1-ls55
+      artifacthub.io/images: |
+        - name: remmina
+          image: ghcr.io/linuxserver/remmina:1.2.0-rcgit.29dfsg-1ubuntu1-ls55
+    apiVersion: v2
+    appVersion: 1.2.0
+    created: "2021-05-24T14:22:43.067361492Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A remote desktop client written in GTK
+    digest: b1033f5ec8b730ed6a35849ade7965bac1f59d6ac4163d9510d052fffc7d16bb
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/remmina
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/remmina-icon.png
+    keywords:
+    - remina
+    - remote
+    - desktop
+    - client
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: remmina
+    sources:
+    - https://github.com/linuxserver/docker-remmina
+    - https://remmina.org/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/remmina-0.1.1/remmina-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |
         - Initial release.
       artifacthub.io/images: |
         - name: remmina
@@ -12223,4 +12256,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-24T05:38:26.311897086Z"
+generated: "2021-05-24T14:22:43.070373109Z"
