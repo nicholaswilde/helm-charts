@@ -3,17 +3,21 @@
 image:
   repository: ghcr.io/linuxserver/smokeping
   pullPolicy: IfNotPresent
-  tag: "2.7.3-r5-ls124"
+  tag: "2.7.3-r5-ls125"
+
 strategy:
   type: Recreate
+
 service:
   port:
     port: 80
+
 secret: {}
 env:
   TZ: "America/Los_Angeles"
   # PUID: "1001"
   # PGID: "1001"
+
 ingress:
   enabled: true
   hosts:
@@ -25,6 +29,7 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
 persistence:
   config:
     enabled: false
