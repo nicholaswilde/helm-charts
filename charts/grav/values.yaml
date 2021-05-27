@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/grav
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.7.15-ls7"
+  tag: "1.7.15-ls8"
 
 secret: {}
 
