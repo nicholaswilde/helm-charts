@@ -6,20 +6,20 @@ image:
   repository: ghcr.io/linuxserver/snipe-it
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v5.1.5-ls129"
+  tag: "v5.1.5-ls131"
 
 secret: {}
-# MYSQL_ROOT_PASSWORD: ""
-# MYSQL_USER: "snipe"
-# MYSQL_PASSWORD: ""
+  # MYSQL_ROOT_PASSWORD: snipe-it-pass
+  # MYSQL_USER: snipe-it
+  # MYSQL_PASSWORD: snipe-it-pass
 
 env: {}
-# PUID: "1000"
-# PGID: "1000"
-# MYSQL_DATABASE: "snipe"
-# APP_URL: "< your application URL IE 192.168.10.1:8080>"
-# MYSQL_PORT_3306_TCP_ADDR: "mysql"
-# MYSQL_PORT_3306_TCP_PORT: "3306"
+  # PUID: "1000"
+  # PGID: "1000"
+  # MYSQL_DATABASE: "snipe-it"
+  # APP_URL: "192.168.1.206:8080"
+  # MYSQL_PORT_3306_TCP_ADDR: "mysql"
+  # MYSQL_PORT_3306_TCP_PORT: "3306"
 
 service:
   port:
@@ -58,3 +58,25 @@ persistence:
     size: 1Gi
     ## Do not delete the pvc upon helm uninstall
     skipuninstall: false
+
+mariadb:
+  enabled: false
+  secret: {}
+    # MYSQL_ROOT_PASSWORD: snipe-it-pass
+    # MYSQL_USER: snipe-it
+    # MYSQL_PASSWORD: snipe-it-pass
+  env: {}
+    # TZ: "America/Los_Angeles"
+    # PUID: "1000"
+    # PGID: "1000"
+    # REMOTE_SQL: "http://URL1/your.sql,https://URL2/your.sql"
+    # MYSQL_DATABASE: snipe-it
+  persistence:
+    config:
+      enabled: false
+      emptyDir: false
+      mountPath: /config
+      # storageClass: "-"
+      accessMode: ReadWriteOnce
+      size: 1Gi
+      skipuninstall: false

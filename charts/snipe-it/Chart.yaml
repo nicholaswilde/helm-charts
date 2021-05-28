@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: v5.1.5
-version: 0.2.9
+version: 0.3.0
 name: snipe-it
 description: Open source asset management
 type: application
@@ -11,6 +11,10 @@ dependencies:
   - name: common
     version: ~0.1.8
     repository: https://nicholaswilde.github.io/helm-charts/
+  - name: mariadb
+    version: ~1.0.0
+    repository: https://nicholaswilde.github.io/helm-charts/
+    condition: mariadb.enabled
 keywords:
   - snipeit
   - snipe
@@ -24,7 +28,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to v5.1.5-ls129
+    - Bump tag to v5.1.5-ls131
+    - Add mariadb support
   artifacthub.io/images: |
     - name: snipe-it
-      image: ghcr.io/linuxserver/snipe-it:v5.1.5-ls129
+      image: ghcr.io/linuxserver/snipe-it:v5.1.5-ls131
