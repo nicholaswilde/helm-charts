@@ -10296,6 +10296,44 @@ entries:
   snipe-it:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to v5.1.5-ls131
+        - Add mariadb support
+      artifacthub.io/images: |
+        - name: snipe-it
+          image: ghcr.io/linuxserver/snipe-it:v5.1.5-ls131
+    apiVersion: v2
+    appVersion: v5.1.5
+    created: "2021-05-28T04:16:11.037228215Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.0
+    description: Open source asset management
+    digest: bea7edda8a8b864b4dc29a81f288ec884d917c83b31c3fb7844daab23703a24b
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/snipe-it
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/snipe-it.jpg
+    keywords:
+    - snipeit
+    - snipe
+    - asset
+    - management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: snipe-it
+    sources:
+    - https://snipeitapp.com/
+    - https://hub.docker.com/r/linuxserver/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/snipe-it-0.3.0/snipe-it-0.3.0.tgz
+    version: 0.3.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to v5.1.5-ls129
       artifacthub.io/images: |
         - name: snipe-it
@@ -12459,4 +12497,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-28T03:38:48.126595982Z"
+generated: "2021-05-28T04:16:11.038499432Z"
