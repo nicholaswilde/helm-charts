@@ -7,6 +7,6 @@ chart-dirs:
 excluded-charts:
   - charts/common
 chart-repos:
-  - k8s-at-home-libraries=https://library-charts.k8s-at-home.com
+  - bitnami=https://charts.bitnami.com/bitnami
   - k8s-at-home=https://k8s-at-home.com/charts
-  - nicholaswilde=https://nicholaswilde.github.io/helm-charts/
+  - nicholaswilde=https://nicholaswilde.github.io/helm-charts
