@@ -87,7 +87,7 @@ tasks:
     dir: "{{.GIT_ROOT}}"
     cmds:
        - >-
-          ct install --charts charts/{{.CHART}} --config .github/ct-lint.yaml
+          ct install --charts charts/{{.CHART}} --config .github/ct-install.yaml
     deps:
       - _check-dir
 
