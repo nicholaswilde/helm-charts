@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "1.2.0"
-version: 0.1.1
+version: 0.1.2
 name: remmina
 description: A remote desktop client written in GTK
 type: application
@@ -24,7 +24,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to 1.2.0-rcgit.29dfsg-1ubuntu1-ls55
+    - Bump tag to 1.2.0-rcgit.29dfsg-1ubuntu1-ls56
   artifacthub.io/images: |
     - name: remmina
-      image: ghcr.io/linuxserver/remmina:1.2.0-rcgit.29dfsg-1ubuntu1-ls55
+      image: ghcr.io/linuxserver/remmina:1.2.0-rcgit.29dfsg-1ubuntu1-ls56

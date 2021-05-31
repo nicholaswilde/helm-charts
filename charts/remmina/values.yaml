@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/remmina
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.2.0-rcgit.29dfsg-1ubuntu1-ls55"
+  tag: "1.2.0-rcgit.29dfsg-1ubuntu1-ls56"
 
 secret: {}
 
