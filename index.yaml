@@ -1802,6 +1802,46 @@ entries:
   clarkson:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to v1.1.2-ls18
+        - Add mariadb support
+      artifacthub.io/images: |
+        - name: clarkson
+          image: ghcr.io/linuxserver/clarkson:v1.1.2-ls18
+    apiVersion: v2
+    appVersion: v1.1.2
+    created: "2021-05-31T16:01:50.358406445Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.0
+    description: A web-based dashboard application that gives you a neat and clean
+      interface for logging your fuel fill-ups for all of your vehicles.
+    digest: 1553afa1a23aca204b943113effc244ced800a9d11200847f094fc8c066067e2
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
+    icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
+    keywords:
+    - fuel
+    - car
+    - log
+    - fill-up
+    - vehicle
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: clarkson
+    sources:
+    - https://github.com/linuxserver/Clarkson
+    - https://hub.docker.com/r/linuxserver/clarkson
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/clarkson-0.2.0/clarkson-0.2.0.tgz
+    version: 0.2.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to v1.1.2-ls17
       artifacthub.io/images: |
         - name: clarkson
@@ -12766,4 +12806,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-31T15:52:26.527095974Z"
+generated: "2021-05-31T16:01:50.360148067Z"
