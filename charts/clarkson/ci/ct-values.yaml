@@ -12,14 +12,14 @@ service:
   port:
     port: 3000
 
-secret: {}
-  # MYSQL_USERNAME: clarkson
-  # MYSQL_PASSWORD: clarkson-pass
+secret:
+  MYSQL_USERNAME: clarkson
+  MYSQL_PASSWORD: clarkson-pass
 
 env:
   TZ: "America/Los_Angeles"
-  # ENABLE_REGISTRATIONS: "true"
-  # MYSQL_HOST: clarkson
+  ENABLE_REGISTRATIONS: "true"
+  MYSQL_HOST: clarkson
   # PUID: "1001"
   # PGID: "1001"
 
@@ -43,11 +43,11 @@ probes:
     enabled: false
 
 mariadb:
-  enabled: false
-  secret: {}
-    # MYSQL_ROOT_PASSWORD: clarkson-pass
-    # MYSQL_USER: clarkson
-    # MYSQL_PASSWORD: clarkson-pass
+  enabled: true
+  secret:
+    MYSQL_ROOT_PASSWORD: clarkson-pass
+    MYSQL_USER: clarkson
+    MYSQL_PASSWORD: clarkson-pass
   env:
     TZ: "America/Los_Angeles"
   # PUID: "1000"
