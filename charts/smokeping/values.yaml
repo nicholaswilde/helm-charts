@@ -3,7 +3,7 @@
 image:
   repository: ghcr.io/linuxserver/smokeping
   pullPolicy: IfNotPresent
-  tag: "2.7.3-r5-ls125"
+  tag: "2.7.3-r5-ls126"
 
 strategy:
   type: Recreate
