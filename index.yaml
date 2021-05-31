@@ -7439,6 +7439,41 @@ entries:
   medusa:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to v0.5.12-ls73
+      artifacthub.io/images: |
+        - name: medusa
+          image: ghcr.io/linuxserver/medusa:v0.5.12-ls73
+    apiVersion: v2
+    appVersion: v0.5.12
+    created: "2021-05-31T06:40:59.092136275Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: An automatic Video Library Manager for TV Shows
+    digest: 7d21f009d8741a510cf05f00d1af279c222b0aa86d086d339563b454bcc847ea
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/medusa
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/medusa-icon.png
+    keywords:
+    - medusa
+    - video
+    - library
+    - manager
+    - tv
+    - shows
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: medusa
+    sources:
+    - https://github.com/linuxserver/docker-medusa
+    - https://pymedusa.com/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/medusa-0.1.1/medusa-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |
         - Initial release.
       artifacthub.io/images: |
         - name: medusa
@@ -12563,4 +12598,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-31T06:37:38.09285385Z"
+generated: "2021-05-31T06:40:59.094431992Z"
