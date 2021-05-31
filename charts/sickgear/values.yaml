@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/sickgear
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "release_0.23.21-ls82"
+  tag: "release_0.23.22-ls83"
 
 secret: {}
 
