@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: v3.10.2
-version: 0.2.2
+version: 0.2.3
 name: code-server
 description: Run VS Code on any machine anywhere and access it in the browser.
 type: application
@@ -24,7 +24,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to v3.10.2-ls80
+    - Bump tag to v3.10.2-ls81
   artifacthub.io/images: |
     - name: code-server
-      image: ghcr.io/linuxserver/code-server:v3.10.2-ls80
+      image: ghcr.io/linuxserver/code-server:v3.10.2-ls81
