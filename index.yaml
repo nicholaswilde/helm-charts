@@ -4371,6 +4371,39 @@ entries:
   doublecommander:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to 0.8.2-1-ls55
+      artifacthub.io/images: |
+        - name: doublecommander
+          image: ghcr.io/linuxserver/doublecommander:0.8.2-1-ls55
+    apiVersion: v2
+    appVersion: 0.8.2
+    created: "2021-06-01T15:07:38.543813639Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A free cross platform open source file manager with two panels side
+      by side.
+    digest: 971b134265dfbeb77255f78473738b16ca6697073527b4966431358ac461ccaa
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/doublecommander
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doublecommander-icon.png
+    keywords:
+    - doublecommander
+    - file
+    - manager
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: doublecommander
+    sources:
+    - https://github.com/linuxserver/docker-doublecommander
+    - https://doublecmd.sourceforge.io/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/doublecommander-0.1.1/doublecommander-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |
         - Initial release.
       artifacthub.io/images: |
         - name: doublecommander
@@ -12806,4 +12839,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-31T16:01:50.360148067Z"
+generated: "2021-06-01T15:07:38.545269493Z"
