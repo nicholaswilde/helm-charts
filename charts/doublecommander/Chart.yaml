@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "0.8.2"
-version: 0.1.0
+version: 0.1.1
 name: doublecommander
 description: A free cross platform open source file manager with two panels side by side.
 type: application
@@ -23,7 +23,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Initial release.
+    - Bump tag to 0.8.2-1-ls55
   artifacthub.io/images: |
     - name: doublecommander
-      image: ghcr.io/linuxserver/doublecommander:0.8.2-1-ls54
+      image: ghcr.io/linuxserver/doublecommander:0.8.2-1-ls55
