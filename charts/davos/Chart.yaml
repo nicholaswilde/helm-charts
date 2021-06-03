@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "2.2.1"
-version: 0.1.0
+version: 0.1.1
 name: davos
 description: An FTP automation tool that periodically scans given host locations for new files.
 type: application
@@ -23,7 +23,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Initial release.
+    - Bump tag to 2.2.1-ls75
   artifacthub.io/images: |
     - name: davos
-      image: ghcr.io/linuxserver/davos:2.2.1-ls74
+      image: ghcr.io/linuxserver/davos:2.2.1-ls75
