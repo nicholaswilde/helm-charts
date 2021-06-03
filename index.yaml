@@ -3919,6 +3919,39 @@ entries:
   davos:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to 2.2.1-ls75
+      artifacthub.io/images: |
+        - name: davos
+          image: ghcr.io/linuxserver/davos:2.2.1-ls75
+    apiVersion: v2
+    appVersion: 2.2.1
+    created: "2021-06-03T04:21:09.702241863Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: An FTP automation tool that periodically scans given host locations
+      for new files.
+    digest: 10b5e47f9c5168275a2e9514edb84a93f7a83bccc4da7ea0faabaf84b7487fd3
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/davos
+    icon: https://github.com/linuxserver/davos/raw/master/src/main/resources/static/android-chrome-192x192.png
+    keywords:
+    - davos
+    - ftp
+    - automation
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: davos
+    sources:
+    - https://github.com/linuxserver/docker-davos
+    - https://github.com/linuxserver/davos/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/davos-0.1.1/davos-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |
         - Initial release.
       artifacthub.io/images: |
         - name: davos
@@ -12872,4 +12905,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-03T04:14:26.096475845Z"
+generated: "2021-06-03T04:21:09.705491855Z"
