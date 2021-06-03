@@ -4020,6 +4020,40 @@ entries:
   digikam:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to 7.2.0-ls26
+      artifacthub.io/images: |
+        - name: digikam
+          image: ghcr.io/linuxserver/digikam:7.2.0-ls26
+    apiVersion: v2
+    appVersion: 7.2.0
+    created: "2021-06-03T14:37:29.315572718Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Professional Photo Management with the Power of Open Source
+    digest: b0109d9fcafb0dac9c576e79637c7669e8be88f8862a9941d8496e76e2fe8dee
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/digikam
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam.png
+    keywords:
+    - digikam
+    - photo
+    - management
+    - image
+    - gallery
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: digikam
+    sources:
+    - https://github.com/linuxserver/docker-digikam
+    - https://www.digikam.org/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/digikam-0.1.1/digikam-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |
         - Initial release.
       artifacthub.io/images: |
         - name: digikam
@@ -13041,4 +13075,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-03T05:31:46.888112967Z"
+generated: "2021-06-03T14:37:29.317118038Z"
