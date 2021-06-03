@@ -5557,6 +5557,39 @@ entries:
   grav:
   - annotations:
       artifacthub.io/changes: |
+        - Bump tag to 1.7.16-ls8
+      artifacthub.io/images: |
+        - name: grav
+          image: ghcr.io/linuxserver/grav:1.7.16-ls8
+    apiVersion: v2
+    appVersion: 1.7.16
+    created: "2021-06-03T04:14:26.095102437Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A Fast, Simple, and Flexible, file-based Web-platform.
+    digest: f35085c33fdd88b0f49c7ca0213e201a697206f0e30a90433d98a68b99e229f4
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/grav
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/grav-logo.png
+    keywords:
+    - grav
+    - web
+    - platform
+    - file
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: grav
+    sources:
+    - https://github.com/linuxserver/docker-grav
+    - https://github.com/getgrav/grav/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/grav-0.1.2/grav-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |
         - Bump tag to 1.7.15-ls8
       artifacthub.io/images: |
         - name: grav
@@ -12839,4 +12872,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-01T15:07:38.545269493Z"
+generated: "2021-06-03T04:14:26.096475845Z"
