@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/digikam
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "7.2.0-ls25"
+  tag: "7.2.0-ls26"
 
 secret: {}
 
