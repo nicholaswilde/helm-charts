@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "057352e8"
-version: 0.1.0
+version: 0.1.1
 name: muximux
 description: A lightweight portal to view & manage your HTPC apps without having to run anything more than a PHP enabled webserver
 type: application
@@ -24,7 +24,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Initial release.
+    - Bump tag to 057352e8-ls83
   artifacthub.io/images: |
     - name: muximux
-      image: ghcr.io/linuxserver/muximux:057352e8-ls82
+      image: ghcr.io/linuxserver/muximux:057352e8-ls83
