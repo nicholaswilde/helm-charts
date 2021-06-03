@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/mstream
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v4.7.0-ls52"
+  tag: "v5.1.0-ls53"
 
 secret:
   USER: admin
