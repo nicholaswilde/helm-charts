@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "379fd3d0"
-version: 0.1.0
+version: 0.1.1
 name: headphones
 description: An automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.
 type: application
@@ -23,7 +23,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Initial release.
+    - Bump tag to 379fd3d0-ls75
   artifacthub.io/images: |
     - name: headphones
-      image: ghcr.io/linuxserver/headphones:379fd3d0-ls74
+      image: ghcr.io/linuxserver/headphones:379fd3d0-ls75
