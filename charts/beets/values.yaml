@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/beets
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "nightly-0d624191-ls71"
+  tag: "nightly-0d624191-ls72"
 
 secret: {}
 
