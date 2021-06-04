@@ -1,58 +1,64 @@
 ---
-# Default values for etherpad.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/nicholaswilde/helm-charts/tree/main/charts/common/values.yaml
+#
+
 image:
   repository: ghcr.io/nicholaswilde/etherpad
   pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
   tag: "1.8.13-ls8"
 
 secret: {}
 
+# See more environment variables in the etherpad documentation
+# https://github.com/ether/etherpad-lite/blob/develop/doc/docker.md
+# For Mariadb, use DB_TYPE: mysql https://github.com/ether/etherpad-lite/issues/4214
 env: {}
+  # DB_TYPE: mysql
 
 service:
   port:
     port: 9001
 
 ingress:
-  enabled: true
-  hosts:
-    - host: "etherpad.192.168.1.203.nip.io"
-      paths:
-        - path: /
-          # Ignored if not kubeVersion >= 1.14-0
-          pathType: Prefix
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+  enabled: false
+
 persistence:
   data:
-    enabled: false
+    enabled: true
     emptyDir: false
     mountPath: /opt/etherpad-lite/var
-    ## Template downloads data Persistent Volume Storage Class
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
-    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
-    ##   GKE, AWS & OpenStack)
-    ##
-    # storageClass: "-"
-    ##
-    ## If you want to reuse an existing claim, you can pass the name of the PVC using
-    ## the existingClaim variable
-    # existingClaim: your-claim
     accessMode: ReadWriteOnce
     size: 1Gi
-    ## Do not delete the pvc upon helm uninstall
-    skipuninstall: false
   app:
-    enabled: false
+    enabled: true
     emptyDir: false
     mountPath: /opt/etherpad-lite/app
     accessMode: ReadWriteOnce
     size: 1Gi
-    skipuninstall: false
+
+# Enable mariadb
+# https://github.com/nicholaswilde/helm-charts/blob/main/charts/mariadb/values.yaml
+mariadb:
+  enabled: false
+  secret:
+    MYSQL_ROOT_PASSWORD: "etherpad-pass"
+    MYSQL_PASSWORD: "etherpad-pass"
+  env:
+    MYSQL_USER: "etherpad"
+    MYSQL_DATABASE: "etherpad-mariadb"
+  fullnameOverride: etherpad-mariadb
+
+# Enable postgres
+# https://github.com/nicholaswilde/helm-charts/blob/main/charts/postgres/values.yaml
+postgres:
+  enabled: false
+  secret:
+    POSTGRES_PASSWORD: "etherpad-pass"
+  env:
+    POSTGRES_USER: "etherpad"
+    POSTGRES_DB: "etherpad-postgres"
+  fullnameOverride: etherpad-postgres
