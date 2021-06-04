@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "14.0"
-version: 0.1.3
+version: 0.2.0
 name: odoo
 description: All-in-one business software. Beautiful. Easy-to-use. CRM, Accounting, PM, HR, Procurement, Point of Sale, MRP, Marketing, etc.
 type: application
@@ -11,6 +11,10 @@ dependencies:
   - name: common
     version: ~0.1.8
     repository: https://nicholaswilde.github.io/helm-charts/
+  - name: postgres
+    version: ~0.1.0
+    repository: https://nicholaswilde.github.io/helm-charts/
+    condition: postgres.enabled
 keywords:
   - odoo
   - crm
@@ -27,8 +31,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Fixed linting issues.
-    - Bumped common to ~0.1.8
+    - Add support for postgres
+    - Bump tag to 14.0-ls3
   artifacthub.io/images: |
     - name: odoo
-      image: ghcr.io/nicholaswilde/odoo:14.0-ls1
+      image: ghcr.io/nicholaswilde/odoo:14.0-ls3
