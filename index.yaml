@@ -8314,6 +8314,51 @@ entries:
   papermerge:
   - annotations:
       artifacthub.io/changes: |
+        - Add mariadb support.
+        - Add postgres support.
+        - A lot of config has changed.
+      artifacthub.io/images: |
+        - name: papermerge
+          image: ghcr.io/linuxserver/papermerge:v2.0.1-ls5
+    apiVersion: v2
+    appVersion: v2.0.1
+    created: "2021-06-04T18:06:59.570142663Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.3
+    - condition: postgres.enabled
+      name: postgres
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.0
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
+    digest: f81353809f5606df6eec49db0a68586fadb9dc06d37005275ce0aa39afd21c72
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
+    keywords:
+    - paper
+    - merge
+    - document
+    - scan
+    - scanner
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: papermerge
+    sources:
+    - https://www.papermerge.com/
+    - https://hub.docker.com/r/linuxserver/papermerge
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/papermerge-1.0.0/papermerge-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bump tag to v2.0.1-ls5
       artifacthub.io/images: |
         - name: papermerge
@@ -13317,4 +13362,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-04T15:04:51.619048585Z"
+generated: "2021-06-04T18:06:59.571664832Z"
