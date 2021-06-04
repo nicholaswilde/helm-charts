@@ -1,63 +1,62 @@
 ---
-# Default values for Papermerge.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/nicholaswilde/helm-charts/blob/main/charts/common/values.yaml
+#
+
 image:
   repository: ghcr.io/linuxserver/papermerge
   pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
   tag: "v2.0.1-ls5"
 
 secret: {}
 
+# See more environment variables in the papermerge documentation
+# https://papermerge.com/docs/Installation/settings.html
+# https://github.com/linuxserver/docker-papermerge
 env:
-  # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-  TZ: "America/Los_Angeles"
-  # PUID: "1000"
-  # PGID: "1000"
-  # REDIS_URL: ""
+  # TZ: ""
 
 service:
   port:
     port: 8000
 
 ingress:
-  enabled: true
-  hosts:
-    - host: "papermerge.192.168.1.193.nip.io"
-      paths:
-        - path: "/"
-          pathType: Prefix
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+  enabled: false
 
 persistence:
   config:
     enabled: false
     emptyDir: false
     mountPath: /config
-    accessMode: ReadWriteOnce
-    size: 1Gi
-    skipuninstall: false
   data:
     enabled: false
     emptyDir: false
     mountPath: /data
-    ## Template downloads data Persistent Volume Storage Class
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
-    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
-    ##   GKE, AWS & OpenStack)
-    ##
-    # storageClass: "-"
-    ##
-    ## If you want to reuse an existing claim, you can pass the name of the PVC using
-    ## the existingClaim variable
-    # existingClaim: your-claim
     accessMode: ReadWriteOnce
     size: 1Gi
-    ## Do not delete the pvc upon helm uninstall
-    skipuninstall: false
+
+# Enabled mariadb
+# ... for more options see https://github.com/nicholaswilde/helm-charts/blob/main/charts/mariadb/values.yaml
+mariadb:
+  enabled: false
+  secret:
+    MYSQL_ROOT_PASSWORD: "papermerge-pass"
+    MYSQL_PASSWORD: "papermerge-pass"
+  env:
+    MYSQL_USER: "papermerge"
+    MYSQL_DATABASE: "papermerge-mariadb"
+  fullnameOverride: papermerge-mariadb
+
+# Enabled postgres
+# ... for more options see https://github.com/nicholaswilde/helm-charts/blob/main/charts/postgres/values.yaml
+postgres:
+  enabled: false
+  secret:
+    POSTGRES_PASSWORD: "papermerge-pass"
+  env:
+    POSTGRES_USER: "papermerge"
+    POSTGRES_DB: "papermerge-postgres"
+  fullnameOverride: papermerge-postgres

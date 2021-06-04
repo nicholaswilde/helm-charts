@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: v2.0.1
-version: 0.3.11
+version: 1.0.0
 name: papermerge
 description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
 type: application
@@ -11,6 +11,14 @@ dependencies:
   - name: common
     version: ~0.1.8
     repository: https://nicholaswilde.github.io/helm-charts/
+  - name: mariadb
+    version: ~1.0.3
+    repository: https://nicholaswilde.github.io/helm-charts/
+    condition: mariadb.enabled
+  - name: postgres
+    version: ~0.1.0
+    repository: https://nicholaswilde.github.io/helm-charts/
+    condition: postgres.enabled
 keywords:
   - paper
   - merge
@@ -25,7 +33,9 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to v2.0.1-ls5
+    - Add mariadb support.
+    - Add postgres support.
+    - A lot of config has changed.
   artifacthub.io/images: |
     - name: papermerge
       image: ghcr.io/linuxserver/papermerge:v2.0.1-ls5
