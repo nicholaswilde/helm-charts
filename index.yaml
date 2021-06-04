@@ -4606,6 +4606,50 @@ entries:
   etherpad:
   - annotations:
       artifacthub.io/changes: |
+        - Add support for mariadb and postgres
+        - Removed a bunch of config options
+      artifacthub.io/images: |
+        - name: etherpad
+          image: ghcr.io/nicholaswilde/etherpad:1.8.13-ls8
+    apiVersion: v2
+    appVersion: 1.8.13
+    created: "2021-06-04T20:21:02.918813203Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.3
+    - condition: postgres.enabled
+      name: postgres
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.0
+    description: A real-time collaborative editor scalable to thousands of simultaneous
+      real time users.
+    digest: 3be76085d60f6a29f2286ef50d3bf283baec9e7aab798c0be1f5ec51d66c7ea7
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/etherpad
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/etherpad.jpg
+    keywords:
+    - etherpad
+    - editor
+    - notepad
+    - pad
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: etherpad
+    sources:
+    - https://etherpad.org/
+    - https://github.com/ether/etherpad-lite
+    - https://hub.docker.com/r/nicholaswilde/etherpad
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/etherpad-1.0.0/etherpad-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bump tag to 1.8.13-ls8
       artifacthub.io/images: |
         - name: etherpad
@@ -13362,4 +13406,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-04T18:06:59.571664832Z"
+generated: "2021-06-04T20:21:02.920417533Z"
