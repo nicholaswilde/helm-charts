@@ -9325,6 +9325,39 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
     version: 0.1.0
+  postgres:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: template
+          image: postgres:13.3
+    apiVersion: v2
+    appVersion: "13.3"
+    created: "2021-06-04T05:13:29.847149702Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: The World's Most Advanced Open Source Relational Database
+    digest: 06e2464774c985c230d45b2fdaeb9e4e0bea9d58cf7e8015b41eb1f801afa007
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/postgres
+    icon: https://d1q6f0aelx0por.cloudfront.net/product-logos/library-postgres-logo.png
+    keywords:
+    - postgres
+    - database
+    - relational
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: postgres
+    sources:
+    - https://www.postgresql.org/
+    - https://github.com/docker-library/postgres
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/postgres-0.1.0/postgres-0.1.0.tgz
+    version: 0.1.0
   projectsend:
   - annotations:
       artifacthub.io/changes: |
@@ -13174,4 +13207,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-03T19:53:19.041478155Z"
+generated: "2021-06-04T05:13:29.848976821Z"
