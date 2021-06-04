@@ -6,7 +6,7 @@ image:
   repository: ghcr.io/linuxserver/booksonic
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.2-ls112"
+  tag: "1.2-ls113"
 
 secret: {}
 
@@ -16,6 +16,7 @@ env:
   PUID: "1000"
   PGID: "1000"
   CONTEXT_PATH: "url-base"
+
 service:
   port:
     port: 4040
