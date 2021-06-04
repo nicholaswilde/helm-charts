@@ -3451,6 +3451,25 @@ entries:
   common:
   - annotations:
       artifacthub.io/changes: |
+        - Add string placeholders and comments.
+    apiVersion: v2
+    created: "2021-06-04T22:23:50.525888534Z"
+    description: Function library for nicholaswilde's helm charts
+    digest: 04d69361543fcc2c2b76bee89bd6e343c7a63af5a083460a19aa23d274362cc7
+    home: https://github.com/nicholaswilde/helm-charts/tree/master/charts/common
+    keywords:
+    - nicholaswilde
+    - common
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: common
+    type: library
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/common-0.1.9/common-0.1.9.tgz
+    version: 0.1.9
+  - annotations:
+      artifacthub.io/changes: |
         - Fixed linting issues.
     apiVersion: v2
     created: "2021-01-27T08:51:49.553729069Z"
@@ -13406,4 +13425,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-04T20:21:02.920417533Z"
+generated: "2021-06-04T22:23:50.52758463Z"
