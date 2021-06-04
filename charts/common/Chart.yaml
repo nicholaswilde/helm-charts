@@ -1,8 +1,9 @@
+---
 apiVersion: v2
 name: common
 description: Function library for nicholaswilde's helm charts
 type: library
-version: 0.1.8
+version: 0.1.9
 keywords:
   - nicholaswilde
   - common
@@ -12,4 +13,4 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Fixed linting issues.
+    - Add string placeholders and comments.

@@ -20,16 +20,23 @@ command: []
 # Override the default args
 args: []
 
-serviceAccount:
-  # Specifies whether a service account should be created
-  create: false
-  # Annotations to add to the service account
-  annotations: {}
-  # The name of the service account to use.
-  # If not set and create is true, a name is generated using the fullname template
-  name: ""
+nameOverride: ""
+fullnameOverride: ""
+
+## Use this to populate a secret with the values you specify.
+## Be aware that these values are not encrypted by default, and could therefore visible
+## to anybody with access to the values.yaml file.
+secret: {}
+  # PASSWORD: my-password
 
 env: {}
+  # TZ: UTC
+
+envFrom: []
+# - configMapRef:
+#     name: config-map-name
+# - secretRef:
+#     name: secret-name
 
 rbac: {}
 #  additionalSubjects:
@@ -64,10 +71,22 @@ podAnnotations: {}
   ## useful if you enable diun.watch_repo
   # exclude_tags: ""
 
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: false
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
 # When using hostNetwork make sure you set dnsPolicy to ClusterFirstWithHostNet
 hostNetwork: false
 
 dnsPolicy: ClusterFirst
+
+# Configure the Security Context for the Pod
+podSecurityContext: {}
 
 initContainers: []
 
@@ -214,6 +233,18 @@ hostAliases: []
 #   hostnames:
 #   - "example.com"
 #   - "www.example.com"
+
+resources: {}
+# We usually recommend not to specify default resources and to leave this as a conscious
+# choice for the user. This also increases chances charts run on environments with little
+# resources, such as Minikube. If you do want to specify resources, uncomment the following
+# lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+# limits:
+#   cpu: 100m
+#   memory: 128Mi
+# requests:
+#   cpu: 100m
+#   memory: 128Mi
 
 addons:
   vpn:
