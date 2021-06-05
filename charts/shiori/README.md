@@ -1,18 +1,16 @@
 # shiori
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.5.0](https://img.shields.io/badge/AppVersion-v1.5.0-informational?style=flat-square)
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.5.0](https://img.shields.io/badge/AppVersion-v1.5.0-informational?style=flat-square)
 
 A simple bookmark manager built with Go
-
-## Requirements
-* [mysql](https://github.com/nicholaswilde/helm-charts/wiki/Databases)
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.8 |
+| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.9 |
 | https://nicholaswilde.github.io/helm-charts/ | mariadb | ~1.0.0 |
+| https://nicholaswilde.github.io/helm-charts/ | postgres | ~0.1.0 |
 
 ## TL;DR
 ```console

@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "v1.5.0"
-version: 0.1.4
+version: 1.0.0
 name: shiori
 description: A simple bookmark manager built with Go
 type: application
@@ -9,12 +9,16 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/shiori"
 icon: "https://github.com/go-shiori/shiori/raw/master/internal/view/res/apple-touch-icon-152x152.png"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.9
     repository: https://nicholaswilde.github.io/helm-charts/
   - name: mariadb
     version: ~1.0.0
     repository: https://nicholaswilde.github.io/helm-charts/
     condition: mariadb.enabled
+  - name: postgres
+    version: ~0.1.0
+    repository: https://nicholaswilde.github.io/helm-charts/
+    condition: postgres.enabled
 keywords:
   - shiori
   - bookmark
@@ -28,7 +32,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to v1.5.0-ls2
+    - Add postgres support
+    - Bump common to 0.1.9
   artifacthub.io/images: |
     - name: shiori
       image: ghcr.io/nicholaswilde/shiori:v1.5.0-ls2
