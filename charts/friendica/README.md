@@ -1,6 +1,6 @@
 # friendica
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2021.04](https://img.shields.io/badge/AppVersion-2021.04-informational?style=flat-square)
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2021.04](https://img.shields.io/badge/AppVersion-2021.04-informational?style=flat-square)
 
 Welcome to the free social web.
 
@@ -8,7 +8,8 @@ Welcome to the free social web.
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.8 |
+| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.9 |
+| https://nicholaswilde.github.io/helm-charts/ | mariadb | ~1.0.3 |
 
 ## TL;DR
 ```console
