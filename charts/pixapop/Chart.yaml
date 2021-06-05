@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "v1.2"
-version: 0.1.0
+version: 1.0.0
 name: pixapop
 description: An open-source single page application to view your photos in the easiest way possible.
 type: application
@@ -24,7 +24,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Initial release.
+    - Cleanup values.yaml
   artifacthub.io/images: |
     - name: pixapop
       image: ghcr.io/linuxserver/pixapop:v1.2-ls15
