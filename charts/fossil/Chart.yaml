@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "2.15.1"
-version: 0.1.3
+version: 1.0.0
 name: fossil
 description: A simple, high-reliability, distributed software configuration management system
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/fossil"
 icon: "https://fossil-scm.org/home/doc/trunk/www/fossil3.gif"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.9
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - fossil
@@ -21,7 +21,12 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 2.15.1-ls2
+    - kind: changed
+      description: Cleanup values.yaml
+    - kind: changed
+      description: Bump common tag to 0.1.9
+    - kind: changed
+      description: Bump tag to 2.15.1-ls4
   artifacthub.io/images: |
     - name: fossil
-      image: ghcr.io/nicholaswilde/fossil:2.15.1-ls2
+      image: ghcr.io/nicholaswilde/fossil:2.15.1-ls4
