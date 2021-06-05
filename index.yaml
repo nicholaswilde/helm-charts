@@ -5204,6 +5204,42 @@ entries:
   fossil:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Cleanup values.yaml
+        - kind: changed
+          description: Bump common tag to 0.1.9
+        - kind: changed
+          description: Bump tag to 2.15.1-ls4
+      artifacthub.io/images: |
+        - name: fossil
+          image: ghcr.io/nicholaswilde/fossil:2.15.1-ls4
+    apiVersion: v2
+    appVersion: 2.15.1
+    created: "2021-06-05T18:35:30.229627358Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.9
+    description: A simple, high-reliability, distributed software configuration management
+      system
+    digest: 52bae41210bb37aaabf0b5c459a1abe7aabb1e1edaaac050eae628107aba0a0e
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/fossil
+    icon: https://fossil-scm.org/home/doc/trunk/www/fossil3.gif
+    keywords:
+    - fossil
+    - scm
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: fossil
+    sources:
+    - https://fossil-scm.org/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/fossil-1.0.0/fossil-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to 2.15.1-ls2
       artifacthub.io/images: |
         - name: fossil
@@ -13652,4 +13688,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-05T15:55:39.826868452Z"
+generated: "2021-06-05T18:35:30.231222739Z"
