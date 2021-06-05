@@ -1,64 +1,50 @@
 ---
-# Default values for template.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/nicholaswilde/helm-charts/tree/main/charts/common/values.yaml
+#
+
 image:
   repository: ghcr.io/linuxserver/projectsend
   pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
   tag: "r1070-ls70"
 
 secret: {}
 
-env:
-  # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-  TZ: "America/Los_Angeles"
-  MAX_UPLOAD: <5000>
-  # PUID: "1000"
-  # PGID: "1000"
+# See more environment variables in the projectsend documentation
+# https://www.projectsend.org/how-to-install-projectsend/
+env: {}
+  # TZ:
 
 service:
   port:
     port: 80
 
 ingress:
-  enabled: true
-  hosts:
-    - host: "projectsend.192.168.1.203.nip.io"
-      paths:
-        - path: "/"
-          pathType: Prefix
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+  enabled: false
 
 persistence:
   config:
     enabled: false
     emptyDir: false
     mountPath: /config
-    accessMode: ReadWriteOnce
-    size: 1Gi
-    ## Do not delete the pvc upon helm uninstall
-    skipuninstall: false
   data:
     enabled: false
     emptyDir: false
     mountPath: /data
-    ## Template downloads data Persistent Volume Storage Class
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
-    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
-    ##   GKE, AWS & OpenStack)
-    ##
-    # storageClass: "-"
-    ##
-    ## If you want to reuse an existing claim, you can pass the name of the PVC using
-    ## the existingClaim variable
-    # existingClaim: your-claim
     accessMode: ReadWriteOnce
     size: 1Gi
-    ## Do not delete the pvc upon helm uninstall
-    skipuninstall: false
+
+# Enable mariadb
+# https://github.com/nicholaswilde/helm-charts/blob/main/charts/mariadb/values.yaml
+mariadb:
+  enabled: false
+  secret:
+    MYSQL_ROOT_PASSWORD: "projectsend-pass"
+    MYSQL_PASSWORD: "projectsend-pass"
+  env:
+    MYSQL_USER: "projectsend"
+    MYSQL_DATABASE: "projectsend-mariadb"
+  fullnameOverride: projectsend-mariadb
