@@ -1,0 +1,1134 @@
+{
+    "$id": "http://json-schema.org/schema#",
+    "$schema": "http://json-schema.org/schema#",
+    "default": {},
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "controllerType",
+        "controllerAnnotations",
+        "controllerLabels",
+        "replicas",
+        "strategy",
+        "command",
+        "args",
+        "nameOverride",
+        "fullnameOverride",
+        "secret",
+        "env",
+        "envFrom",
+        "rbac",
+        "podAnnotations",
+        "serviceAccount",
+        "hostNetwork",
+        "dnsPolicy",
+        "podSecurityContext",
+        "initContainers",
+        "additionalContainers",
+        "probes",
+        "service",
+        "ingress",
+        "persistence",
+        "additionalVolumes",
+        "additionalVolumeMounts",
+        "nodeSelector",
+        "affinity",
+        "tolerations",
+        "hostAliases",
+        "resources",
+        "addons"
+    ],
+    "title": "Common Chart JSON Schema",
+    "type": "object",
+    "properties": {
+        "controllerType": {
+            "$id": "#/properties/controllerType",
+            "default": "deployment",
+            "description": "Options are deployment, daemonset or statefulset",
+            "title": "Controller type",
+            "type": "string"
+        },
+        "controllerAnnotations": {
+            "$id": "#/properties/controllerAnnotations",
+            "default": {},
+            "description": "Set annotations on the deployment/statefulset/daemonset.",
+            "required": [],
+            "title": "Controller annotations",
+            "type": "object",
+            "additionalProperties": false
+        },
+        "controllerLabels": {
+            "$id": "#/properties/controllerLabels",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Controller labels",
+            "type": "object",
+            "additionalProperties": false
+        },
+        "replicas": {
+            "$id": "#/properties/replicas",
+            "default": 1,
+            "description": "Number of replicas.",
+            "title": "Replicas",
+            "type": "integer"
+        },
+        "strategy": {
+            "$id": "#/properties/strategy",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "type"
+            ],
+            "title": "Strategy used to replace old Pods by new ones",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "$id": "#/properties/strategy/properties/type",
+                    "default": "RollingUpdate",
+                    "description": "For Deployments, valid values are Recreate and RollingUpdate For StatefulSets, valid values are OnDelete and RollingUpdate. DaemonSets ignore this",
+                    "title": "Type of strategy",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "command": {
+            "$id": "#/properties/command",
+            "default": [],
+            "description": "An explanation about the purpose of this instance.",
+            "title": "Override the default command",
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/command/items"
+            }
+        },
+        "args": {
+            "$id": "#/properties/args",
+            "default": [],
+            "description": "An explanation about the purpose of this instance.",
+            "title": "Override the default args",
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/args/items"
+            }
+        },
+        "nameOverride": {
+            "$id": "#/properties/nameOverride",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "title": "Override the name",
+            "type": "string"
+        },
+        "fullnameOverride": {
+            "$id": "#/properties/fullnameOverride",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "title": "Override the full name",
+            "type": "string"
+        },
+        "secret": {
+            "$id": "#/properties/secret",
+            "default": {},
+            "description": "Use this to populate a secret with the values you specify. Be aware that these values are not encrypted by default, and could therefore visible to anybody with access to the values.yaml file.",
+            "required": [],
+            "title": "Create a secret",
+            "type": "object",
+            "additionalProperties": false
+        },
+        "env": {
+            "$id": "#/properties/env",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Environmental variables",
+            "type": "object",
+            "additionalProperties": false
+        },
+        "envFrom": {
+            "$id": "#/properties/envFrom",
+            "type": "array",
+            "title": "The envFrom schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/envFrom/items"
+            }
+        },
+        "rbac": {
+            "$id": "#/properties/rbac",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "RBAC",
+            "type": "object",
+            "additionalProperties": false
+        },
+        "podAnnotations": {
+            "$id": "#/properties/podAnnotations",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Pod annotations",
+            "type": "object",
+            "additionalProperties": false
+        },
+        "serviceAccount": {
+            "$id": "#/properties/serviceAccount",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "create",
+                "annotations",
+                "name"
+            ],
+            "title": "Service account",
+            "type": "object",
+            "properties": {
+                "create": {
+                    "$id": "#/properties/serviceAccount/properties/create",
+                    "default": false,
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Create a service account",
+                    "type": "boolean"
+                },
+                "annotations": {
+                    "$id": "#/properties/serviceAccount/properties/annotations",
+                    "default": {},
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [],
+                    "title": "Service account annotations",
+                    "type": "object",
+                    "additionalProperties": false
+                },
+                "name": {
+                    "$id": "#/properties/serviceAccount/properties/name",
+                    "default": "",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Name of the service account",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "hostNetwork": {
+            "$id": "#/properties/hostNetwork",
+            "default": false,
+            "description": "When using hostNetwork make sure you set dnsPolicy to ClusterFirstWithHostNet",
+            "title": "Host Network",
+            "type": "boolean"
+        },
+        "dnsPolicy": {
+            "$id": "#/properties/dnsPolicy",
+            "default": "ClusterFirst",
+            "description": "An explanation about the purpose of this instance.",
+            "title": "DNS policy",
+            "type": "string"
+        },
+        "podSecurityContext": {
+            "$id": "#/properties/podSecurityContext",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Pod security context",
+            "type": "object",
+            "additionalProperties": false
+        },
+        "initContainers": {
+            "$id": "#/properties/initContainers",
+            "default": [],
+            "description": "An explanation about the purpose of this instance.",
+            "title": "Init containers",
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/initContainers/items"
+            }
+        },
+        "additionalContainers": {
+            "$id": "#/properties/additionalContainers",
+            "default": [],
+            "description": "An explanation about the purpose of this instance.",
+            "title": "Additional containers",
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/additionalContainers/items"
+            }
+        },
+        "probes": {
+            "$id": "#/properties/probes",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "liveness",
+                "readiness",
+                "startup"
+            ],
+            "title": "Container probes",
+            "type": "object",
+            "properties": {
+                "liveness": {
+                    "$id": "#/properties/probes/properties/liveness",
+                    "default": {},
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "initialDelaySeconds",
+                        "failureThreshold",
+                        "timeoutSeconds"
+                    ],
+                    "title": "Liveness probe",
+                    "type": "object",
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/probes/properties/liveness/properties/enabled",
+                            "default": true,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Enable liveness probe",
+                            "type": "boolean"
+                        },
+                        "initialDelaySeconds": {
+                            "$id": "#/properties/probes/properties/liveness/properties/initialDelaySeconds",
+                            "default": 30,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Initial delay seconds for liveness probe",
+                            "type": "integer"
+                        },
+                        "failureThreshold": {
+                            "$id": "#/properties/probes/properties/liveness/properties/failureThreshold",
+                            "default": 5,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Failure threshold for liveness probe",
+                            "type": "integer"
+                        },
+                        "timeoutSeconds": {
+                            "$id": "#/properties/probes/properties/liveness/properties/timeoutSeconds",
+                            "default": 10,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Timeout seconds for liveness probe",
+                            "type": "integer"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "readiness": {
+                    "$id": "#/properties/probes/properties/readiness",
+                    "default": {},
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "initialDelaySeconds",
+                        "failureThreshold",
+                        "timeoutSeconds"
+                    ],
+                    "title": "Readiness probe",
+                    "type": "object",
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/probes/properties/readiness/properties/enabled",
+                            "default": true,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Enable readiness probe",
+                            "type": "boolean"
+                        },
+                        "initialDelaySeconds": {
+                            "$id": "#/properties/probes/properties/readiness/properties/initialDelaySeconds",
+                            "default": 30,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Initial delay seconds for readiness probe",
+                            "type": "integer"
+                        },
+                        "failureThreshold": {
+                            "$id": "#/properties/probes/properties/readiness/properties/failureThreshold",
+                            "default": 0,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Failure threshold for readiness probe",
+                            "type": "integer"
+                        },
+                        "timeoutSeconds": {
+                            "$id": "#/properties/probes/properties/readiness/properties/timeoutSeconds",
+                            "default": 0,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Timeout seconds for readiness probe",
+                            "type": "integer"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "startup": {
+                    "$id": "#/properties/probes/properties/startup",
+                    "default": {},
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "initialDelaySeconds",
+                        "failureThreshold",
+                        "periodSeconds"
+                    ],
+                    "title": "Startup probe",
+                    "type": "object",
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/probes/properties/startup/properties/enabled",
+                            "default": false,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Enable startup probe",
+                            "type": "boolean"
+                        },
+                        "initialDelaySeconds": {
+                            "$id": "#/properties/probes/properties/startup/properties/initialDelaySeconds",
+                            "default": 5,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Initial delay seconds for startup probe",
+                            "type": "integer"
+                        },
+                        "failureThreshold": {
+                            "$id": "#/properties/probes/properties/startup/properties/failureThreshold",
+                            "default": 30,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Failure threshold for startup probe",
+                            "type": "integer"
+                        },
+                        "periodSeconds": {
+                            "$id": "#/properties/probes/properties/startup/properties/periodSeconds",
+                            "default": 10,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Period seconds for startup probe",
+                            "type": "integer"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        },
+        "service": {
+            "$id": "#/properties/service",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "enabled",
+                "type",
+                "port",
+                "additionalPorts",
+                "annotations",
+                "labels",
+                "additionalServices"
+            ],
+            "title": "Service",
+            "type": "object",
+            "properties": {
+                "enabled": {
+                    "$id": "#/properties/service/properties/enabled",
+                    "default": true,
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Enable service",
+                    "type": "boolean"
+                },
+                "type": {
+                    "$id": "#/properties/service/properties/type",
+                    "default": "ClusterIP",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Type of service",
+                    "type": "string"
+                },
+                "port": {
+                    "$id": "#/properties/service/properties/port",
+                    "default": {},
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "port",
+                        "name",
+                        "protocol",
+                        "targetPort"
+                    ],
+                    "title": "Service port",
+                    "type": "object",
+                    "properties": {
+                        "port": {
+                            "$id": "#/properties/service/properties/port/properties/port",
+                            "default": null,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Port number",
+                            "type": "null"
+                        },
+                        "name": {
+                            "$id": "#/properties/service/properties/port/properties/name",
+                            "default": null,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Port name",
+                            "type": "null"
+                        },
+                        "protocol": {
+                            "$id": "#/properties/service/properties/port/properties/protocol",
+                            "default": "TCP",
+                            "description": "An explanation about the purpose of this instance.",
+                           "title": "Port protocol",
+                            "type": "string"
+                        },
+                        "targetPort": {
+                            "$id": "#/properties/service/properties/port/properties/targetPort",
+                            "default": null,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Target port",
+                            "type": "null"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "additionalPorts": {
+                    "$id": "#/properties/service/properties/additionalPorts",
+                    "type": "array",
+                    "title": "The additionalPorts schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "additionalItems": false,
+                    "items": {
+                        "$id": "#/properties/service/properties/additionalPorts/items"
+                    }
+                },
+                "annotations": {
+                    "$id": "#/properties/service/properties/annotations",
+                    "type": "object",
+                    "title": "The annotations schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "required": [],
+                    "additionalProperties": false
+                },
+                "labels": {
+                    "$id": "#/properties/service/properties/labels",
+                    "type": "object",
+                    "title": "The labels schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "required": [],
+                    "additionalProperties": false
+                },
+                "additionalServices": {
+                    "$id": "#/properties/service/properties/additionalServices",
+                    "type": "array",
+                    "title": "The additionalServices schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "additionalItems": false,
+                    "items": {
+                        "$id": "#/properties/service/properties/additionalServices/items"
+                    }
+                }
+            },
+            "additionalProperties": false
+        },
+        "ingress": {
+            "$id": "#/properties/ingress",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "enabled",
+                "annotations",
+                "labels",
+                "hosts",
+                "tls",
+                "additionalIngresses"
+            ],
+            "title": "Ingress",
+            "type": "object",
+            "properties": {
+                "enabled": {
+                    "$id": "#/properties/ingress/properties/enabled",
+                    "default": false,
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Enable ingress",
+                    "type": "boolean"
+                },
+                "annotations": {
+                    "$id": "#/properties/ingress/properties/annotations",
+                    "default": {},
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [],
+                    "title": "Ingress annotations",
+                    "type": "object",
+                    "additionalProperties": false
+                },
+                "labels": {
+                    "$id": "#/properties/ingress/properties/labels",
+                    "default": {},
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [],
+                    "title": "Ingress labels",
+                    "type": "object",
+                    "additionalProperties": false
+                },
+                "hosts": {
+                    "$id": "#/properties/ingress/properties/hosts",
+                    "default": [],
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Ingress hosts",
+                    "type": "array",
+                    "additionalItems": false,
+                    "items": {
+                        "$id": "#/properties/ingress/properties/hosts/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/ingress/properties/hosts/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "required": [
+                                    "host",
+                                    "paths"
+                                ],
+                                "properties": {
+                                    "host": {
+                                        "$id": "#/properties/ingress/properties/hosts/items/anyOf/0/properties/host",
+                                        "default": "http://common.192.168.1.202.nip.io",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "title": "Ingress host",
+                                        "type": "string"
+                                    },
+                                    "paths": {
+                                        "$id": "#/properties/ingress/properties/hosts/items/anyOf/0/properties/paths",
+                                        "default": [],
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "title": "Host paths",
+                                        "type": "array",
+                                        "additionalItems": false,
+                                        "items": {
+                                            "$id": "#/properties/ingress/properties/hosts/items/anyOf/0/properties/paths/items",
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/ingress/properties/hosts/items/anyOf/0/properties/paths/items/anyOf/0",
+                                                    "type": "object",
+                                                    "title": "The first anyOf schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": {},
+                                                    "required": [
+                                                        "path",
+                                                        "pathType"
+                                                    ],
+                                                    "properties": {
+                                                        "path": {
+                                                            "$id": "#/properties/ingress/properties/hosts/items/anyOf/0/properties/paths/items/anyOf/0/properties/path",
+                                                            "default": "/",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "title": "The path schema",
+                                                            "type": "string"
+                                                        },
+                                                        "pathType": {
+                                                            "$id": "#/properties/ingress/properties/hosts/items/anyOf/0/properties/paths/items/anyOf/0/properties/pathType",
+                                                            "default": "Prefix",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "title": "Host path type",
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "additionalProperties": false
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        ]
+                    }
+                },
+                "tls": {
+                    "$id": "#/properties/ingress/properties/tls",
+                    "default": [],
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Ingress TLS",
+                    "type": "array",
+                    "additionalItems": false,
+                    "items": {
+                        "$id": "#/properties/ingress/properties/tls/items"
+                    }
+                },
+                "additionalIngresses": {
+                    "$id": "#/properties/ingress/properties/additionalIngresses",
+                    "default": [],
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Additional ingresses",
+                    "type": "array",
+                    "additionalItems": false,
+                    "items": {
+                        "$id": "#/properties/ingress/properties/additionalIngresses/items"
+                    }
+                }
+            },
+            "additionalProperties": false
+        },
+        "persistence": {
+            "$id": "#/properties/persistence",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "config",
+                "shared"
+            ],
+            "title": "Persistent volumes",
+            "type": "object",
+            "properties": {
+                "config": {
+                    "$id": "#/properties/persistence/properties/config",
+                    "default": {},
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "mountPath",
+                        "accessMode",
+                        "size",
+                        "skipuninstall"
+                    ],
+                    "title": "Config persistent volume",
+                    "type": "object",
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/persistence/properties/config/properties/enabled",
+                            "default": false,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Enable config persistent volume",
+                            "type": "boolean"
+                        },
+                        "mountPath": {
+                            "$id": "#/properties/persistence/properties/config/properties/mountPath",
+                            "default": "/config",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Config mount path",
+                            "type": "string"
+                        },
+                        "accessMode": {
+                         "$id": "#/properties/persistence/properties/config/properties/accessMode",
+                            "default": "ReadWriteOnce",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Config access mode",
+                            "type": "string"
+                        },
+                        "size": {
+                            "$id": "#/properties/persistence/properties/config/properties/size",
+                            "default": "1Gi",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Config size",
+                            "type": "string"
+                        },
+                        "skipuninstall": {
+                            "$id": "#/properties/persistence/properties/config/properties/skipuninstall",
+                            "default": false,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Config skip uninstall",
+                            "type": "boolean"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "shared": {
+                    "$id": "#/properties/persistence/properties/shared",
+                    "default": {},
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "emptyDir",
+                        "mountPath"
+                    ],
+                    "title": "Shared persistent volume",
+                    "type": "object",
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/persistence/properties/shared/properties/enabled",
+                            "default": false,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Enable shared persistent volume",
+                            "type": "boolean"
+                        },
+                        "emptyDir": {
+                            "$id": "#/properties/persistence/properties/shared/properties/emptyDir",
+                            "default": true,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Shared empty dir",
+                            "type": "boolean"
+                        },
+                        "mountPath": {
+                            "$id": "#/properties/persistence/properties/shared/properties/mountPath",
+                            "default": "/shared",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Shared mount path",
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        },
+        "additionalVolumes": {
+            "$id": "#/properties/additionalVolumes",
+            "default": [],
+            "description": "An explanation about the purpose of this instance.",
+            "title": "Additional volumes",
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/additionalVolumes/items"
+            }
+        },
+        "additionalVolumeMounts": {
+            "$id": "#/properties/additionalVolumeMounts",
+            "default": [],
+            "description": "An explanation about the purpose of this instance.",
+            "title": "Additional volume mounts",
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/additionalVolumeMounts/items"
+            }
+        },
+        "nodeSelector": {
+            "$id": "#/properties/nodeSelector",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Node selector",
+            "type": "object",
+            "additionalProperties": false
+        },
+        "affinity": {
+            "$id": "#/properties/affinity",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Affinity",
+            "type": "object",
+            "additionalProperties": false
+        },
+        "tolerations": {
+            "$id": "#/properties/tolerations",
+            "default": [],
+            "description": "An explanation about the purpose of this instance.",
+            "title": "Tolerations",
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/tolerations/items"
+            }
+        },
+        "hostAliases": {
+            "$id": "#/properties/hostAliases",
+            "default": [],
+            "description": "An explanation about the purpose of this instance.",
+            "title": "Host aliases",
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "$id": "#/properties/hostAliases/items"
+            }
+        },
+        "resources": {
+            "$id": "#/properties/resources",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Resources",
+            "type": "object",
+            "additionalProperties": false
+        },
+        "addons": {
+            "$id": "#/properties/addons",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "vpn"
+            ],
+            "title": "Addons",
+            "type": "object",
+            "properties": {
+                "vpn": {
+                    "$id": "#/properties/addons/properties/vpn",
+                    "type": "object",
+                    "title": "The vpn schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "required": [
+                        "enabled",
+                        "type",
+                        "openvpn",
+                        "wireguard",
+                        "imagePullPolicy",
+                        "securityContext",
+                        "env",
+                        "configFile",
+                        "scripts",
+                        "additionalVolumeMounts",
+                        "livenessProbe",
+                        "networkPolicy"
+                    ],
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/addons/properties/vpn/properties/enabled",
+                            "type": "boolean",
+                            "title": "The enabled schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "type": {
+                            "$id": "#/properties/addons/properties/vpn/properties/type",
+                            "type": "string",
+                            "title": "The type schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "openvpn": {
+                            "$id": "#/properties/addons/properties/vpn/properties/openvpn",
+                            "type": "object",
+                            "title": "The openvpn schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "required": [
+                                "image",
+                                "auth",
+                                "authSecret"
+                            ],
+                            "properties": {
+                                "image": {
+                                    "$id": "#/properties/addons/properties/vpn/properties/openvpn/properties/image",
+                                    "default": {},
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "required": [
+                                        "repository",
+                                        "tag"
+                                    ],
+                                    "title": "Tag used when pulling images",
+                                    "type": "object",
+                                    "properties": {
+                                        "repository": {
+                                            "$id": "#/properties/addons/properties/vpn/properties/openvpn/properties/image/properties/repository",
+                                            "type": "string",
+                                            "title": "The repository schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": ""
+                                        },
+                                        "tag": {
+                                            "$id": "#/properties/addons/properties/vpn/properties/openvpn/properties/image/properties/tag",
+                                            "type": "string",
+                                            "title": "The tag schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": ""
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                },
+                                "auth": {
+                                    "$id": "#/properties/addons/properties/vpn/properties/openvpn/properties/auth",
+                                    "type": "null",
+                                    "title": "The auth schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": null
+                                },
+                                "authSecret": {
+                                    "$id": "#/properties/addons/properties/vpn/properties/openvpn/properties/authSecret",
+                                    "type": "null",
+                                    "title": "The authSecret schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": null
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "wireguard": {
+                            "$id": "#/properties/addons/properties/vpn/properties/wireguard",
+                            "type": "object",
+                            "title": "The wireguard schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "required": [
+                                "image"
+                            ],
+                            "properties": {
+                                "image": {
+                                    "$id": "#/properties/addons/properties/vpn/properties/wireguard/properties/image",
+                                    "type": "object",
+                                    "title": "The image schema",
+                                    "description": "An explanation about the purposf this instance.",
+                                    "default": {},
+                                    "required": [
+                                        "repository",
+                                        "tag"
+                                    ],
+                                    "properties": {
+                                        "repository": {
+                                            "$id": "#/properties/addons/properties/vpn/properties/wireguard/properties/image/properties/repository",
+                                            "type": "string",
+                                            "title": "The repository schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": ""
+                                        },
+                                        "tag": {
+                                            "$id": "#/properties/addons/properties/vpn/properties/wireguard/properties/image/properties/tag",
+                                            "type": "string",
+                                            "title": "The tag schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": ""
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "imagePullPolicy": {
+                            "$id": "#/properties/addons/properties/vpn/properties/imagePullPolicy",
+                            "type": "string",
+                            "title": "The imagePullPolicy schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                        },
+                        "securityContext": {
+                            "$id": "#/properties/addons/properties/vpn/properties/securityContext",
+                            "type": "object",
+                            "title": "The securityContext schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "required": [
+                                "capabilities"
+                            ],
+                            "properties": {
+                                "capabilities": {
+                                    "$id": "#/properties/addons/properties/vpn/properties/securityContext/properties/capabilities",
+                                    "type": "object",
+                                    "title": "The capabilities schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "required": [
+                                        "add"
+                                    ],
+                                    "properties": {
+                                        "add": {
+                                            "$id": "#/properties/addons/properties/vpn/properties/securityContext/properties/capabilities/properties/add",
+                                            "type": "array",
+                                            "title": "The add schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": [],
+                                            "additionalItems": false,
+                                            "items": {
+                                                "$id": "#/properties/addons/properties/vpn/properties/securityContext/properties/capabilities/properties/add/items",
+                                                "anyOf": [
+                                                    {
+                                                        "$id": "#/properties/addons/properties/vpn/properties/securityContext/properties/capabilities/properties/add/items/anyOf/0",
+                                                        "type": "string",
+                                                        "title": "The first anyOf schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": ""
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "env": {
+                            "$id": "#/properties/addons/properties/vpn/properties/env",
+                            "type": "object",
+                            "title": "The env schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "required": [],
+                            "additionalProperties": false
+                        },
+                        "configFile": {
+                            "$id": "#/properties/addons/properties/vpn/properties/configFile",
+                            "type": "null",
+                            "title": "The configFile schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null
+                        },
+                        "scripts": {
+                            "$id": "#/properties/addons/properties/vpn/properties/scripts",
+                            "type": "object",
+                            "title": "The scripts schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "required": [
+                                "up",
+                                "down"
+                            ],
+                            "properties": {
+                                "up": {
+                                    "$id": "#/properties/addons/properties/vpn/properties/scripts/properties/up",
+                                    "type": "null",
+                                    "title": "The up schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": null
+                                },
+                                "down": {
+                                    "$id": "#/properties/addons/properties/vpn/properties/scripts/properties/down",
+                                    "type": "null",
+                                    "title": "The down schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": null
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "additionalVolumeMounts": {
+                            "$id": "#/properties/addons/properties/vpn/properties/additionalVolumeMounts",
+                            "type": "array",
+                            "title": "The additionalVolumeMounts schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "additionalItems": false,
+                            "items": {
+                                "$id": "#/properties/addons/properties/vpn/properties/additionalVolumeMounts/items"
+                            }
+                        },
+                        "livenessProbe": {
+                            "$id": "#/properties/addons/properties/vpn/properties/livenessProbe",
+                            "type": "object",
+                            "title": "The livenessProbe schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "required": [],
+                            "additionalProperties": false
+                        },
+                        "networkPolicy": {
+                            "$id": "#/properties/addons/properties/vpn/properties/networkPolicy",
+                            "type": "object",
+                            "title": "The networkPolicy schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "required": [
+                                "enabled",
+                                "egress"
+                            ],
+                            "properties": {
+                                "enabled": {
+                                    "$id": "#/properties/addons/properties/vpn/properties/networkPolicy/properties/enabled",
+                                    "type": "boolean",
+                                    "title": "The enabled schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": false
+                                },
+                                "egress": {
+                                    "$id": "#/properties/addons/properties/vpn/properties/networkPolicy/properties/egress",
+                                    "type": "null",
+                                    "title": "The egress schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": null
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}
