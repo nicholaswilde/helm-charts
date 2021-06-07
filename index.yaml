@@ -3494,6 +3494,26 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Remove additionalProperties from values.schema.json
+    apiVersion: v2
+    created: "2021-06-07T16:13:40.006851768Z"
+    description: Function library for nicholaswilde's helm charts
+    digest: b8018a49ac7c196a9d7c373dad85f21977128d9db3777267869b59d80aea3959
+    home: https://github.com/nicholaswilde/helm-charts/tree/master/charts/common
+    keywords:
+    - nicholaswilde
+    - common
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: common
+    type: library
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/common-0.1.13/common-0.1.13.tgz
+    version: 0.1.13
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Removed required objects from values.schema.json
     apiVersion: v2
     created: "2021-06-07T16:02:37.46335807Z"
@@ -13748,4 +13768,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-07T16:02:37.464888152Z"
+generated: "2021-06-07T16:13:40.008244778Z"
