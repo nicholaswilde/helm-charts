@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/linuxserver/mstream
   pullPolicy: IfNotPresent
-  tag: "v5.1.3-ls53"
+  tag: "v5.1.9-ls53"
 
 secret: {}
   # PASSWORD: password
