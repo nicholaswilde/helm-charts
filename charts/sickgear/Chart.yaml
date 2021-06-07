@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "release_0.23.21"
-version: 0.1.1
+appVersion: "release_0.23.22"
+version: 0.1.2
 name: sickgear
 description: Provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/sickgear"
 icon: "https://avatars.githubusercontent.com/u/9690267?s=200&v=4"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - sickgear
@@ -24,7 +24,14 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to release_0.23.22-ls83
+    - kinda: added
+      description: values.schema.json
+    - kind: changed
+      description: Simplify values.yaml
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Bump tag to release_0.23.22-ls84
   artifacthub.io/images: |
     - name: sickgear
-      image: ghcr.io/linuxserver/sickgear:release_0.23.22-ls83
+      image: ghcr.io/linuxserver/sickgear:release_0.23.22-ls84
