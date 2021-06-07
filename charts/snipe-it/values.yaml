@@ -1,82 +1,51 @@
 ---
-# Default values for snipe-it.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/nicholaswilde/helm-charts/tree/main/charts/common/values.yaml
+#
+
 image:
   repository: ghcr.io/linuxserver/snipe-it
   pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: "v5.1.5-ls131"
+  tag: "v5.1.5-ls132"
 
 secret: {}
   # MYSQL_ROOT_PASSWORD: snipe-it-pass
-  # MYSQL_USER: snipe-it
   # MYSQL_PASSWORD: snipe-it-pass
 
+# See more environment variables in the snipe documentation
+# https://github.com/linuxserver/docker-snipe-it#parameters
 env: {}
-  # PUID: "1000"
-  # PGID: "1000"
-  # MYSQL_DATABASE: "snipe-it"
-  # APP_URL: "192.168.1.206:8080"
-  # MYSQL_PORT_3306_TCP_ADDR: "mysql"
+  # NGINX_APP_URL: "192.168.1.206:8080"
+  # MYSQL_USER: snipe-it
+  # MYSQL_DATABASE: "snipe-it-mariadb"
+  # MYSQL_PORT_3306_TCP_ADDR: "snipe-it-mariadb"
   # MYSQL_PORT_3306_TCP_PORT: "3306"
 
 service:
   port:
     port: 80
+
 ingress:
-  enabled: true
-  hosts:
-    - host: "snipeit.192.168.1.203.nip.io"
-      paths:
-        - path: /
-          # Ignored if not kubeVersion >= 1.14-0
-          pathType: Prefix
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+  enabled: false
 
 persistence:
-  data:
+  config:
     enabled: false
     emptyDir: false
-    mountPath: /var/lib/mysql
-    ## Template downloads data Persistent Volume Storage Class
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
-    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
-    ##   GKE, AWS & OpenStack)
-    ##
-    # storageClass: "-"
-    ##
-    ## If you want to reuse an existing claim, you can pass the name of the PVC using
-    ## the existingClaim variable
-    # existingClaim: your-claim
+    mountPath: /config
     accessMode: ReadWriteOnce
-    size: 1Gi
-    ## Do not delete the pvc upon helm uninstall
-    skipuninstall: false
 
+# Enable mariadb
+# https://github.com/nicholaswilde/helm-charts/blob/main/charts/mariadb/values.yaml
 mariadb:
   enabled: false
-  secret: {}
-    # MYSQL_ROOT_PASSWORD: snipe-it-pass
-    # MYSQL_USER: snipe-it
-    # MYSQL_PASSWORD: snipe-it-pass
-  env: {}
-    # TZ: "America/Los_Angeles"
-    # PUID: "1000"
-    # PGID: "1000"
-    # REMOTE_SQL: "http://URL1/your.sql,https://URL2/your.sql"
-    # MYSQL_DATABASE: snipe-it
-  persistence:
-    config:
-      enabled: false
-      emptyDir: false
-      mountPath: /config
-      # storageClass: "-"
-      accessMode: ReadWriteOnce
-      size: 1Gi
-      skipuninstall: false
+  secret:
+    MYSQL_ROOT_PASSWORD: snipe-it-pass
+    MYSQL_PASSWORD: snipe-it-pass
+  env:
+    MYSQL_DATABASE: snipe-it-mariadb
+    MYSQL_USER: snipe-it
+  fullnameOverride: snipe-it-mariadb

@@ -1,0 +1,23 @@
+---
+secret:
+  MYSQL_ROOT_PASSWORD: snipe-it-pass
+  MYSQL_PASSWORD: snipe-it-pass
+
+env:
+  MYSQL_USER: snipe-it
+  MYSQL_DATABASE: "snipe-it-mariadb"
+  MYSQL_PORT_3306_TCP_ADDR: "snipe-it-mariadb"
+  MYSQL_PORT_3306_TCP_PORT: "3306"
+  NGINX_APP_URL: "snipe-it"
+
+fullnameOverride: snipe-it
+
+mariadb:
+  enabled: true
+  fullnameOverride: snipe-it-mariadb
+  secret:
+    MYSQL_ROOT_PASSWORD: snipe-it-pass
+    MYSQL_PASSWORD: snipe-it-pass
+  env:
+    MYSQL_DATABASE: snipe-it-mariadb
+    MYSQL_USER: snipe-it
