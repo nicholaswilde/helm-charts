@@ -3,40 +3,6 @@
     "$schema": "http://json-schema.org/schema#",
     "default": {},
     "description": "The root schema comprises the entire JSON document.",
-    "required": [
-        "controllerType",
-        "controllerAnnotations",
-        "controllerLabels",
-        "replicas",
-        "strategy",
-        "command",
-        "args",
-        "nameOverride",
-        "fullnameOverride",
-        "secret",
-        "env",
-        "envFrom",
-        "rbac",
-        "podAnnotations",
-        "serviceAccount",
-        "hostNetwork",
-        "dnsPolicy",
-        "podSecurityContext",
-        "initContainers",
-        "additionalContainers",
-        "probes",
-        "service",
-        "ingress",
-        "persistence",
-        "additionalVolumes",
-        "additionalVolumeMounts",
-        "nodeSelector",
-        "affinity",
-        "tolerations",
-        "hostAliases",
-        "resources",
-        "addons"
-    ],
     "title": "Common Chart JSON Schema",
     "type": "object",
     "properties": {
@@ -51,7 +17,6 @@
             "$id": "#/properties/controllerAnnotations",
             "default": {},
             "description": "Set annotations on the deployment/statefulset/daemonset.",
-            "required": [],
             "title": "Controller annotations",
             "type": "object",
             "additionalProperties": false
@@ -60,7 +25,6 @@
             "$id": "#/properties/controllerLabels",
             "default": {},
             "description": "An explanation about the purpose of this instance.",
-            "required": [],
             "title": "Controller labels",
             "type": "object",
             "additionalProperties": false
@@ -75,9 +39,6 @@
         "strategy": {
             "$id": "#/properties/strategy",
             "description": "An explanation about the purpose of this instance.",
-            "required": [
-                "type"
-            ],
             "title": "Strategy used to replace old Pods by new ones",
             "type": "object",
             "properties": {
@@ -131,7 +92,6 @@
             "$id": "#/properties/secret",
             "default": {},
             "description": "Use this to populate a secret with the values you specify. Be aware that these values are not encrypted by default, and could therefore visible to anybody with access to the values.yaml file.",
-            "required": [],
             "title": "Create a secret",
             "type": "object",
             "additionalProperties": false
@@ -140,7 +100,6 @@
             "$id": "#/properties/env",
             "default": {},
             "description": "An explanation about the purpose of this instance.",
-            "required": [],
             "title": "Environmental variables",
             "type": "object",
             "additionalProperties": false
@@ -160,7 +119,6 @@
             "$id": "#/properties/rbac",
             "default": {},
             "description": "An explanation about the purpose of this instance.",
-            "required": [],
             "title": "RBAC",
             "type": "object",
             "additionalProperties": false
@@ -169,7 +127,6 @@
             "$id": "#/properties/podAnnotations",
             "default": {},
             "description": "An explanation about the purpose of this instance.",
-            "required": [],
             "title": "Pod annotations",
             "type": "object",
             "additionalProperties": false
@@ -177,11 +134,6 @@
         "serviceAccount": {
             "$id": "#/properties/serviceAccount",
             "description": "An explanation about the purpose of this instance.",
-            "required": [
-                "create",
-                "annotations",
-                "name"
-            ],
             "title": "Service account",
             "type": "object",
             "properties": {
@@ -196,7 +148,6 @@
                     "$id": "#/properties/serviceAccount/properties/annotations",
                     "default": {},
                     "description": "An explanation about the purpose of this instance.",
-                    "required": [],
                     "title": "Service account annotations",
                     "type": "object",
                     "additionalProperties": false
@@ -229,7 +180,6 @@
             "$id": "#/properties/podSecurityContext",
             "default": {},
             "description": "An explanation about the purpose of this instance.",
-            "required": [],
             "title": "Pod security context",
             "type": "object",
             "additionalProperties": false
@@ -259,23 +209,12 @@
         "probes": {
             "$id": "#/properties/probes",
             "description": "An explanation about the purpose of this instance.",
-            "required": [
-                "liveness",
-                "readiness",
-                "startup"
-            ],
             "title": "Container probes",
             "type": "object",
             "properties": {
                 "liveness": {
                     "$id": "#/properties/probes/properties/liveness",
                     "description": "An explanation about the purpose of this instance.",
-                    "required": [
-                        "enabled",
-                        "initialDelaySeconds",
-                        "failureThreshold",
-                        "timeoutSeconds"
-                    ],
                     "title": "Liveness probe",
                     "type": "object",
                     "properties": {
@@ -313,12 +252,6 @@
                 "readiness": {
                     "$id": "#/properties/probes/properties/readiness",
                     "description": "An explanation about the purpose of this instance.",
-                    "required": [
-                        "enabled",
-                        "initialDelaySeconds",
-                        "failureThreshold",
-                        "timeoutSeconds"
-                    ],
                     "title": "Readiness probe",
                     "type": "object",
                     "properties": {
@@ -356,12 +289,6 @@
                 "startup": {
                     "$id": "#/properties/probes/properties/startup",
                     "description": "An explanation about the purpose of this instance.",
-                    "required": [
-                        "enabled",
-                        "initialDelaySeconds",
-                        "failureThreshold",
-                        "periodSeconds"
-                    ],
                     "title": "Startup probe",
                     "type": "object",
                     "properties": {
@@ -402,15 +329,6 @@
         "service": {
             "$id": "#/properties/service",
             "description": "An explanation about the purpose of this instance.",
-            "required": [
-                "enabled",
-                "type",
-                "port",
-                "additionalPorts",
-                "annotations",
-                "labels",
-                "additionalServices"
-            ],
             "title": "Service",
             "type": "object",
             "properties": {
@@ -431,12 +349,6 @@
                 "port": {
                     "$id": "#/properties/service/properties/port",
                     "description": "An explanation about the purpose of this instance.",
-                    "required": [
-                        "port",
-                        "name",
-                        "protocol",
-                        "targetPort"
-                    ],
                     "title": "Service port",
                     "type": "object",
                     "properties": {
@@ -488,7 +400,6 @@
                     "title": "The annotations schema",
                     "description": "An explanation about the purpose of this instance.",
                     "default": {},
-                    "required": [],
                     "additionalProperties": false
                 },
                 "labels": {
@@ -497,7 +408,6 @@
                     "title": "The labels schema",
                     "description": "An explanation about the purpose of this instance.",
                     "default": {},
-                    "required": [],
                     "additionalProperties": false
                 },
                 "additionalServices": {
@@ -517,14 +427,6 @@
         "ingress": {
             "$id": "#/properties/ingress",
             "description": "An explanation about the purpose of this instance.",
-            "required": [
-                "enabled",
-                "annotations",
-                "labels",
-                "hosts",
-                "tls",
-                "additionalIngresses"
-            ],
             "title": "Ingress",
             "type": "object",
             "properties": {
@@ -539,7 +441,6 @@
                     "$id": "#/properties/ingress/properties/annotations",
                     "default": {},
                     "description": "An explanation about the purpose of this instance.",
-                    "required": [],
                     "title": "Ingress annotations",
                     "type": "object",
                     "additionalProperties": false
@@ -548,7 +449,6 @@
                     "$id": "#/properties/ingress/properties/labels",
                     "default": {},
                     "description": "An explanation about the purpose of this instance.",
-                    "required": [],
                     "title": "Ingress labels",
                     "type": "object",
                     "additionalProperties": false
@@ -569,10 +469,6 @@
                                 "title": "The first anyOf schema",
                                 "description": "An explanation about the purpose of this instance.",
                                 "default": {},
-                                "required": [
-                                    "host",
-                                    "paths"
-                                ],
                                 "properties": {
                                     "host": {
                                         "$id": "#/properties/ingress/properties/hosts/items/anyOf/0/properties/host",
@@ -597,10 +493,6 @@
                                                     "title": "The first anyOf schema",
                                                     "description": "An explanation about the purpose of this instance.",
                                                     "default": {},
-                                                    "required": [
-                                                        "path",
-                                                        "pathType"
-                                                    ],
                                                     "properties": {
                                                         "path": {
                                                             "$id": "#/properties/ingress/properties/hosts/items/anyOf/0/properties/paths/items/anyOf/0/properties/path",
@@ -656,23 +548,12 @@
         "persistence": {
             "$id": "#/properties/persistence",
             "description": "An explanation about the purpose of this instance.",
-            "required": [
-                "config",
-                "shared"
-            ],
             "title": "Persistent volumes",
             "type": "object",
             "properties": {
                 "config": {
                     "$id": "#/properties/persistence/properties/config",
                     "description": "An explanation about the purpose of this instance.",
-                    "required": [
-                        "enabled",
-                        "mountPath",
-                        "accessMode",
-                        "size",
-                        "skipuninstall"
-                    ],
                     "title": "Config persistent volume",
                     "type": "object",
                     "properties": {
@@ -717,11 +598,6 @@
                 "shared": {
                     "$id": "#/properties/persistence/properties/shared",
                     "description": "An explanation about the purpose of this instance.",
-                    "required": [
-                        "enabled",
-                        "emptyDir",
-                        "mountPath"
-                    ],
                     "title": "Shared persistent volume",
                     "type": "object",
                     "properties": {
@@ -778,7 +654,6 @@
             "$id": "#/properties/nodeSelector",
             "default": {},
             "description": "An explanation about the purpose of this instance.",
-            "required": [],
             "title": "Node selector",
             "type": "object",
             "additionalProperties": false
@@ -787,7 +662,6 @@
             "$id": "#/properties/affinity",
             "default": {},
             "description": "An explanation about the purpose of this instance.",
-            "required": [],
             "title": "Affinity",
             "type": "object",
             "additionalProperties": false
@@ -818,7 +692,6 @@
             "$id": "#/properties/resources",
             "default": {},
             "description": "An explanation about the purpose of this instance.",
-            "required": [],
             "title": "Resources",
             "type": "object",
             "additionalProperties": false
@@ -826,9 +699,6 @@
         "addons": {
             "$id": "#/properties/addons",
             "description": "An explanation about the purpose of this instance.",
-            "required": [
-                "vpn"
-            ],
             "title": "Addons",
             "type": "object",
             "properties": {
@@ -837,20 +707,6 @@
                     "type": "object",
                     "title": "The vpn schema",
                     "description": "An explanation about the purpose of this instance.",
-                    "required": [
-                        "enabled",
-                        "type",
-                        "openvpn",
-                        "wireguard",
-                        "imagePullPolicy",
-                        "securityContext",
-                        "env",
-                        "configFile",
-                        "scripts",
-                        "additionalVolumeMounts",
-                        "livenessProbe",
-                        "networkPolicy"
-                    ],
                     "properties": {
                         "enabled": {
                             "$id": "#/properties/addons/properties/vpn/properties/enabled",
@@ -871,19 +727,10 @@
                             "type": "object",
                             "title": "The openvpn schema",
                             "description": "An explanation about the purpose of this instance.",
-                            "required": [
-                                "image",
-                                "auth",
-                                "authSecret"
-                            ],
                             "properties": {
                                 "image": {
                                     "$id": "#/properties/addons/properties/vpn/properties/openvpn/properties/image",
                                     "description": "An explanation about the purpose of this instance.",
-                                    "required": [
-                                        "repository",
-                                        "tag"
-                                    ],
                                     "title": "Tag used when pulling images",
                                     "type": "object",
                                     "properties": {
@@ -926,19 +773,12 @@
                             "type": "object",
                             "title": "The wireguard schema",
                             "description": "An explanation about the purpose of this instance.",
-                            "required": [
-                                "image"
-                            ],
                             "properties": {
                                 "image": {
                                     "$id": "#/properties/addons/properties/vpn/properties/wireguard/properties/image",
                                     "type": "object",
                                     "title": "The image schema",
                                     "description": "An explanation about the purposf this instance.",
-                                    "required": [
-                                        "repository",
-                                        "tag"
-                                    ],
                                     "properties": {
                                         "repository": {
                                             "$id": "#/properties/addons/properties/vpn/properties/wireguard/properties/image/properties/repository",
@@ -973,9 +813,6 @@
                             "title": "The securityContext schema",
                             "description": "An explanation about the purpose of this instance.",
                             "default": {},
-                            "required": [
-                                "capabilities"
-                            ],
                             "properties": {
                                 "capabilities": {
                                     "$id": "#/properties/addons/properties/vpn/properties/securityContext/properties/capabilities",
@@ -983,9 +820,6 @@
                                     "title": "The capabilities schema",
                                     "description": "An explanation about the purpose of this instance.",
                                     "default": {},
-                                    "required": [
-                                        "add"
-                                    ],
                                     "properties": {
                                         "add": {
                                             "$id": "#/properties/addons/properties/vpn/properties/securityContext/properties/capabilities/properties/add",
@@ -1019,7 +853,6 @@
                             "title": "The env schema",
                             "description": "An explanation about the purpose of this instance.",
                             "default": {},
-                            "required": [],
                             "additionalProperties": false
                         },
                         "configFile": {
@@ -1034,10 +867,6 @@
                             "type": "object",
                             "title": "The scripts schema",
                             "description": "An explanation about the purpose of this instance.",
-                            "required": [
-                                "up",
-                                "down"
-                            ],
                             "properties": {
                                 "up": {
                                     "$id": "#/properties/addons/properties/vpn/properties/scripts/properties/up",
@@ -1073,7 +902,6 @@
                             "title": "The livenessProbe schema",
                             "description": "An explanation about the purpose of this instance.",
                             "default": {},
-                            "required": [],
                             "additionalProperties": false
                         },
                         "networkPolicy": {
@@ -1081,10 +909,6 @@
                             "type": "object",
                             "title": "The networkPolicy schema",
                             "description": "An explanation about the purpose of this instance.",
-                            "required": [
-                                "enabled",
-                                "egress"
-                            ],
                             "properties": {
                                 "enabled": {
                                     "$id": "#/properties/addons/properties/vpn/properties/networkPolicy/properties/enabled",

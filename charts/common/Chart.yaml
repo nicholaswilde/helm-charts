@@ -3,7 +3,7 @@ apiVersion: v2
 name: common
 description: Function library for nicholaswilde's helm charts
 type: library
-version: 0.1.11
+version: 0.1.12
 keywords:
   - nicholaswilde
   - common
@@ -14,4 +14,4 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Removed some defaults from values.schema.json
+      description: Removed required objects from values.schema.json
