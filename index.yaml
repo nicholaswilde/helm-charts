@@ -3493,6 +3493,26 @@ entries:
   common:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Removed some defaults from values.schema.json
+    apiVersion: v2
+    created: "2021-06-07T14:47:16.974758221Z"
+    description: Function library for nicholaswilde's helm charts
+    digest: c2c385ec28e2a4e6fbd8328e8f4c6d81cf48b5b96c53f5f97ed81da27d1be928
+    home: https://github.com/nicholaswilde/helm-charts/tree/master/charts/common
+    keywords:
+    - nicholaswilde
+    - common
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: common
+    type: library
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/common-0.1.11/common-0.1.11.tgz
+    version: 0.1.11
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: values.schema.json
     apiVersion: v2
@@ -13708,4 +13728,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-06T06:26:42.192707132Z"
+generated: "2021-06-07T14:47:16.976415772Z"
