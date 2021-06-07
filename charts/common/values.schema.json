@@ -74,7 +74,6 @@
         },
         "strategy": {
             "$id": "#/properties/strategy",
-            "default": {},
             "description": "An explanation about the purpose of this instance.",
             "required": [
                 "type"
@@ -177,7 +176,6 @@
         },
         "serviceAccount": {
             "$id": "#/properties/serviceAccount",
-            "default": {},
             "description": "An explanation about the purpose of this instance.",
             "required": [
                 "create",
@@ -260,7 +258,6 @@
         },
         "probes": {
             "$id": "#/properties/probes",
-            "default": {},
             "description": "An explanation about the purpose of this instance.",
             "required": [
                 "liveness",
@@ -272,7 +269,6 @@
             "properties": {
                 "liveness": {
                     "$id": "#/properties/probes/properties/liveness",
-                    "default": {},
                     "description": "An explanation about the purpose of this instance.",
                     "required": [
                         "enabled",
@@ -316,7 +312,6 @@
                 },
                 "readiness": {
                     "$id": "#/properties/probes/properties/readiness",
-                    "default": {},
                     "description": "An explanation about the purpose of this instance.",
                     "required": [
                         "enabled",
@@ -360,7 +355,6 @@
                 },
                 "startup": {
                     "$id": "#/properties/probes/properties/startup",
-                    "default": {},
                     "description": "An explanation about the purpose of this instance.",
                     "required": [
                         "enabled",
@@ -407,7 +401,6 @@
         },
         "service": {
             "$id": "#/properties/service",
-            "default": {},
             "description": "An explanation about the purpose of this instance.",
             "required": [
                 "enabled",
@@ -437,7 +430,6 @@
                 },
                 "port": {
                     "$id": "#/properties/service/properties/port",
-                    "default": {},
                     "description": "An explanation about the purpose of this instance.",
                     "required": [
                         "port",
@@ -524,7 +516,6 @@
         },
         "ingress": {
             "$id": "#/properties/ingress",
-            "default": {},
             "description": "An explanation about the purpose of this instance.",
             "required": [
                 "enabled",
@@ -664,7 +655,6 @@
         },
         "persistence": {
             "$id": "#/properties/persistence",
-            "default": {},
             "description": "An explanation about the purpose of this instance.",
             "required": [
                 "config",
@@ -675,7 +665,6 @@
             "properties": {
                 "config": {
                     "$id": "#/properties/persistence/properties/config",
-                    "default": {},
                     "description": "An explanation about the purpose of this instance.",
                     "required": [
                         "enabled",
@@ -727,7 +716,6 @@
                 },
                 "shared": {
                     "$id": "#/properties/persistence/properties/shared",
-                    "default": {},
                     "description": "An explanation about the purpose of this instance.",
                     "required": [
                         "enabled",
@@ -837,7 +825,6 @@
         },
         "addons": {
             "$id": "#/properties/addons",
-            "default": {},
             "description": "An explanation about the purpose of this instance.",
             "required": [
                 "vpn"
@@ -850,7 +837,6 @@
                     "type": "object",
                     "title": "The vpn schema",
                     "description": "An explanation about the purpose of this instance.",
-                    "default": {},
                     "required": [
                         "enabled",
                         "type",
@@ -885,7 +871,6 @@
                             "type": "object",
                             "title": "The openvpn schema",
                             "description": "An explanation about the purpose of this instance.",
-                            "default": {},
                             "required": [
                                 "image",
                                 "auth",
@@ -894,7 +879,6 @@
                             "properties": {
                                 "image": {
                                     "$id": "#/properties/addons/properties/vpn/properties/openvpn/properties/image",
-                                    "default": {},
                                     "description": "An explanation about the purpose of this instance.",
                                     "required": [
                                         "repository",
@@ -942,7 +926,6 @@
                             "type": "object",
                             "title": "The wireguard schema",
                             "description": "An explanation about the purpose of this instance.",
-                            "default": {},
                             "required": [
                                 "image"
                             ],
@@ -952,7 +935,6 @@
                                     "type": "object",
                                     "title": "The image schema",
                                     "description": "An explanation about the purposf this instance.",
-                                    "default": {},
                                     "required": [
                                         "repository",
                                         "tag"
@@ -1052,7 +1034,6 @@
                             "type": "object",
                             "title": "The scripts schema",
                             "description": "An explanation about the purpose of this instance.",
-                            "default": {},
                             "required": [
                                 "up",
                                 "down"
@@ -1100,7 +1081,6 @@
                             "type": "object",
                             "title": "The networkPolicy schema",
                             "description": "An explanation about the purpose of this instance.",
-                            "default": {},
                             "required": [
                                 "enabled",
                                 "egress"
