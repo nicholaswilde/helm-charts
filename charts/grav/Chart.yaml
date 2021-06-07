@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "1.7.16"
-version: 0.1.2
+version: 0.1.3
 name: grav
 description: A Fast, Simple, and Flexible, file-based Web-platform.
 type: application
