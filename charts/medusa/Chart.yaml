@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "v0.5.12"
-version: 0.1.1
+version: 0.1.2
 name: medusa
 description: An automatic Video Library Manager for TV Shows
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/medusa"
 icon: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/medusa-icon.png"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - medusa
@@ -26,7 +26,12 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to v0.5.12-ls73
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump tag to v0.5.12-ls74
+    - kind: changed
+      description: Bump common to 0.1.13
   artifacthub.io/images: |
     - name: medusa
-      image: ghcr.io/linuxserver/medusa:v0.5.12-ls73
+      image: ghcr.io/linuxserver/medusa:v0.5.12-ls74
