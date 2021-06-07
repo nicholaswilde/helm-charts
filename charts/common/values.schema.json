@@ -1,8 +1,5 @@
 {
-    "$id": "http://json-schema.org/schema#",
     "$schema": "http://json-schema.org/schema#",
-    "default": {},
-    "description": "The root schema comprises the entire JSON document.",
     "title": "Common Chart JSON Schema",
     "type": "object",
     "properties": {
@@ -18,16 +15,14 @@
             "default": {},
             "description": "Set annotations on the deployment/statefulset/daemonset.",
             "title": "Controller annotations",
-            "type": "object",
-            "additionalProperties": false
+            "type": "object"
         },
         "controllerLabels": {
             "$id": "#/properties/controllerLabels",
             "default": {},
             "description": "An explanation about the purpose of this instance.",
             "title": "Controller labels",
-            "type": "object",
-            "additionalProperties": false
+            "type": "object"
         },
         "replicas": {
             "$id": "#/properties/replicas",
@@ -49,8 +44,7 @@
                     "title": "Type of strategy",
                     "type": "string"
                 }
-            },
-            "additionalProperties": false
+            }
         },
         "command": {
             "$id": "#/properties/command",
@@ -93,16 +87,14 @@
             "default": {},
             "description": "Use this to populate a secret with the values you specify. Be aware that these values are not encrypted by default, and could therefore visible to anybody with access to the values.yaml file.",
             "title": "Create a secret",
-            "type": "object",
-            "additionalProperties": false
+            "type": "object"
         },
         "env": {
             "$id": "#/properties/env",
             "default": {},
             "description": "An explanation about the purpose of this instance.",
             "title": "Environmental variables",
-            "type": "object",
-            "additionalProperties": false
+            "type": "object"
         },
         "envFrom": {
             "$id": "#/properties/envFrom",
@@ -120,16 +112,14 @@
             "default": {},
             "description": "An explanation about the purpose of this instance.",
             "title": "RBAC",
-            "type": "object",
-            "additionalProperties": false
+            "type": "object"
         },
         "podAnnotations": {
             "$id": "#/properties/podAnnotations",
             "default": {},
             "description": "An explanation about the purpose of this instance.",
             "title": "Pod annotations",
-            "type": "object",
-            "additionalProperties": false
+            "type": "object"
         },
         "serviceAccount": {
             "$id": "#/properties/serviceAccount",
@@ -149,8 +139,7 @@
                     "default": {},
                     "description": "An explanation about the purpose of this instance.",
                     "title": "Service account annotations",
-                    "type": "object",
-                    "additionalProperties": false
+                    "type": "object"
                 },
                 "name": {
                     "$id": "#/properties/serviceAccount/properties/name",
@@ -159,8 +148,7 @@
                     "title": "Name of the service account",
                     "type": "string"
                 }
-            },
-            "additionalProperties": false
+            }
         },
         "hostNetwork": {
             "$id": "#/properties/hostNetwork",
@@ -181,8 +169,7 @@
             "default": {},
             "description": "An explanation about the purpose of this instance.",
             "title": "Pod security context",
-            "type": "object",
-            "additionalProperties": false
+            "type": "object"
         },
         "initContainers": {
             "$id": "#/properties/initContainers",
@@ -246,8 +233,7 @@
                             "title": "Timeout seconds for liveness probe",
                             "type": "integer"
                         }
-                    },
-                    "additionalProperties": false
+                    }
                 },
                 "readiness": {
                     "$id": "#/properties/probes/properties/readiness",
@@ -283,8 +269,7 @@
                             "title": "Timeout seconds for readiness probe",
                             "type": "integer"
                         }
-                    },
-                    "additionalProperties": false
+                    }
                 },
                 "startup": {
                     "$id": "#/properties/probes/properties/startup",
@@ -320,11 +305,9 @@
                             "title": "Period seconds for startup probe",
                             "type": "integer"
                         }
-                    },
-                    "additionalProperties": false
+                    }
                 }
-            },
-            "additionalProperties": false
+            }
         },
         "service": {
             "$id": "#/properties/service",
@@ -380,8 +363,7 @@
                             "title": "Target port",
                             "type": "null"
                         }
-                    },
-                    "additionalProperties": false
+                    }
                 },
                 "additionalPorts": {
                     "$id": "#/properties/service/properties/additionalPorts",
@@ -399,16 +381,14 @@
                     "type": "object",
                     "title": "The annotations schema",
                     "description": "An explanation about the purpose of this instance.",
-                    "default": {},
-                    "additionalProperties": false
+                    "default": {}
                 },
                 "labels": {
                     "$id": "#/properties/service/properties/labels",
                     "type": "object",
                     "title": "The labels schema",
                     "description": "An explanation about the purpose of this instance.",
-                    "default": {},
-                    "additionalProperties": false
+                    "default": {}
                 },
                 "additionalServices": {
                     "$id": "#/properties/service/properties/additionalServices",
@@ -421,8 +401,7 @@
                         "$id": "#/properties/service/properties/additionalServices/items"
                     }
                 }
-            },
-            "additionalProperties": false
+            }
         },
         "ingress": {
             "$id": "#/properties/ingress",
@@ -442,16 +421,14 @@
                     "default": {},
                     "description": "An explanation about the purpose of this instance.",
                     "title": "Ingress annotations",
-                    "type": "object",
-                    "additionalProperties": false
+                    "type": "object"
                 },
                 "labels": {
                     "$id": "#/properties/ingress/properties/labels",
                     "default": {},
                     "description": "An explanation about the purpose of this instance.",
                     "title": "Ingress labels",
-                    "type": "object",
-                    "additionalProperties": false
+                    "type": "object"
                 },
                 "hosts": {
                     "$id": "#/properties/ingress/properties/hosts",
@@ -508,14 +485,12 @@
                                                             "title": "Host path type",
                                                             "type": "string"
                                                         }
-                                                    },
-                                                    "additionalProperties": false
+                                                    }
                                                 }
                                             ]
                                         }
                                     }
-                                },
-                                "additionalProperties": false
+                                }
                             }
                         ]
                     }
@@ -542,8 +517,7 @@
                         "$id": "#/properties/ingress/properties/additionalIngresses/items"
                     }
                 }
-            },
-            "additionalProperties": false
+            }
         },
         "persistence": {
             "$id": "#/properties/persistence",
@@ -592,8 +566,7 @@
                             "title": "Config skip uninstall",
                             "type": "boolean"
                         }
-                    },
-                    "additionalProperties": false
+                    }
                 },
                 "shared": {
                     "$id": "#/properties/persistence/properties/shared",
@@ -622,11 +595,9 @@
                             "title": "Shared mount path",
                             "type": "string"
                         }
-                    },
-                    "additionalProperties": false
+                    }
                 }
-            },
-            "additionalProperties": false
+            }
         },
         "additionalVolumes": {
             "$id": "#/properties/additionalVolumes",
@@ -655,16 +626,14 @@
             "default": {},
             "description": "An explanation about the purpose of this instance.",
             "title": "Node selector",
-            "type": "object",
-            "additionalProperties": false
+            "type": "object"
         },
         "affinity": {
             "$id": "#/properties/affinity",
             "default": {},
             "description": "An explanation about the purpose of this instance.",
             "title": "Affinity",
-            "type": "object",
-            "additionalProperties": false
+            "type": "object"
         },
         "tolerations": {
             "$id": "#/properties/tolerations",
@@ -693,8 +662,7 @@
             "default": {},
             "description": "An explanation about the purpose of this instance.",
             "title": "Resources",
-            "type": "object",
-            "additionalProperties": false
+            "type": "object"
         },
         "addons": {
             "$id": "#/properties/addons",
@@ -748,8 +716,7 @@
                                             "description": "An explanation about the purpose of this instance.",
                                             "default": ""
                                         }
-                                    },
-                                    "additionalProperties": false
+                                    }
                                 },
                                 "auth": {
                                     "$id": "#/properties/addons/properties/vpn/properties/openvpn/properties/auth",
@@ -765,8 +732,7 @@
                                     "description": "An explanation about the purpose of this instance.",
                                     "default": null
                                 }
-                            },
-                            "additionalProperties": false
+                            }
                         },
                         "wireguard": {
                             "$id": "#/properties/addons/properties/vpn/properties/wireguard",
@@ -794,11 +760,9 @@
                                             "description": "An explanation about the purpose of this instance.",
                                             "default": ""
                                         }
-                                    },
-                                    "additionalProperties": false
+                                    }
                                 }
-                            },
-                            "additionalProperties": false
+                            }
                         },
                         "imagePullPolicy": {
                             "$id": "#/properties/addons/properties/vpn/properties/imagePullPolicy",
@@ -841,19 +805,16 @@
                                                 ]
                                             }
                                         }
-                                    },
-                                    "additionalProperties": false
+                                    }
                                 }
-                            },
-                            "additionalProperties": false
+                            }
                         },
                         "env": {
                             "$id": "#/properties/addons/properties/vpn/properties/env",
                             "type": "object",
                             "title": "The env schema",
                             "description": "An explanation about the purpose of this instance.",
-                            "default": {},
-                            "additionalProperties": false
+                            "default": {}
                         },
                         "configFile": {
                             "$id": "#/properties/addons/properties/vpn/properties/configFile",
@@ -882,8 +843,7 @@
                                     "description": "An explanation about the purpose of this instance.",
                                     "default": null
                                 }
-                            },
-                            "additionalProperties": false
+                            }
                         },
                         "additionalVolumeMounts": {
                             "$id": "#/properties/addons/properties/vpn/properties/additionalVolumeMounts",
@@ -901,8 +861,7 @@
                             "type": "object",
                             "title": "The livenessProbe schema",
                             "description": "An explanation about the purpose of this instance.",
-                            "default": {},
-                            "additionalProperties": false
+                            "default": {}
                         },
                         "networkPolicy": {
                             "$id": "#/properties/addons/properties/vpn/properties/networkPolicy",
@@ -924,15 +883,11 @@
                                     "description": "An explanation about the purpose of this instance.",
                                     "default": null
                                 }
-                            },
-                            "additionalProperties": false
+                            }
                         }
-                    },
-                    "additionalProperties": false
+                    }
                 }
-            },
-            "additionalProperties": false
+            }
         }
-    },
-    "additionalProperties": false
+    }
 }
