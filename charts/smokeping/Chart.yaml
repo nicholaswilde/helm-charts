@@ -29,7 +29,7 @@ annotations:
       description: Bump common to 0.1.13
     - kind: changed
       description: Bump tag to 2.7.3-r5-ls127
-    - kinda: changed
+    - kind: changed
       description: Simplify values.yaml
     - kind: removed
       descrition: secret from values.yaml
