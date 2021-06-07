@@ -8,7 +8,7 @@ A Fast, Simple, and Flexible, file-based Web-platform.
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.8 |
+| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.13 |
 
 ## TL;DR
 ```console
