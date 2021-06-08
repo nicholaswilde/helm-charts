@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "2.7.3"
-version: 0.1.21
+version: 0.1.22
 name: smokeping
 description: Keep track of your network latency.
 type: application
@@ -32,7 +32,7 @@ annotations:
     - kind: changed
       description: Simplify values.yaml
     - kind: removed
-      descrition: secret from values.yaml
+      description: secret from values.yaml
   artifacthub.io/images: |
     - name: smokeping
       image: ghcr.io/linuxserver/smokeping:2.7.3-r5-ls127
