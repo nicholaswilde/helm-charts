@@ -11377,6 +11377,47 @@ entries:
         - kind: changed
           description: Simplify values.yaml
         - kind: removed
+          description: secret from values.yaml
+      artifacthub.io/images: |
+        - name: smokeping
+          image: ghcr.io/linuxserver/smokeping:2.7.3-r5-ls127
+    apiVersion: v2
+    appVersion: 2.7.3
+    created: "2021-06-08T14:40:24.399429323Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: Keep track of your network latency.
+    digest: d599a5086f8b3395a92c458a1b398bcd763dcf3066518d8ac4a445ce7cad110c
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/smokeping
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/smokeping.png
+    keywords:
+    - smokeping
+    - network
+    - latency
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: smokeping
+    sources:
+    - https://oss.oetiker.ch/smokeping/
+    - https://hub.docker.com/r/linuxserver/smokeping
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/smokeping-0.1.22/smokeping-0.1.22.tgz
+    version: 0.1.22
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Bump tag to 2.7.3-r5-ls127
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: removed
           descrition: secret from values.yaml
       artifacthub.io/images: |
         - name: smokeping
@@ -14274,4 +14315,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-08T14:36:27.384087451Z"
+generated: "2021-06-08T14:40:24.401197433Z"
