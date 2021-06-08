@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "v1.1.2"
-version: 0.2.1
+version: 0.2.2
 name: clarkson
 description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
 type: application
@@ -31,15 +31,15 @@ annotations:
   artifacthub.io/changes: |
     - kind: added
       description: values.schema.json
-    - kind: updated
+    - kind: changed
       description: Bump common to 0.1.13
-    - kind: updated
+    - kind: changed
       description: Bump mariadb to 1.0.3
-    - kind: updated
+    - kind: changed
       description: Remove unnecessary values from ct-values.yaml
-    - kind: updated
+    - kind: changed
       description: Simplify values.yaml
-    - kind: removed
+    - kind: changed
       description: probes from values.yaml
     - kind: removed
       description: persistence from values.yaml
