@@ -1952,6 +1952,58 @@ entries:
   clarkson:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: updated
+          description: Bump common to 0.1.13
+        - kind: updated
+          description: Bump mariadb to 1.0.3
+        - kind: updated
+          description: Remove unnecessary values from ct-values.yaml
+        - kind: updated
+          description: Simplify values.yaml
+        - kind: removed
+          description: probes from values.yaml
+        - kind: removed
+          description: persistence from values.yaml
+      artifacthub.io/images: |
+        - name: clarkson
+          image: ghcr.io/linuxserver/clarkson:v1.1.2-ls18
+    apiVersion: v2
+    appVersion: v1.1.2
+    created: "2021-06-08T00:03:44.735476338Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.3
+    description: A web-based dashboard application that gives you a neat and clean
+      interface for logging your fuel fill-ups for all of your vehicles.
+    digest: f085f50362aa8d00b5d45742e5acf84b74aa1b8584f6321da3e4b52b806e3759
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
+    icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
+    keywords:
+    - fuel
+    - car
+    - log
+    - fill-up
+    - vehicle
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: clarkson
+    sources:
+    - https://github.com/linuxserver/Clarkson
+    - https://hub.docker.com/r/linuxserver/clarkson
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/clarkson-0.2.1/clarkson-0.2.1.tgz
+    version: 0.2.1
+  - annotations:
+      artifacthub.io/changes: |
         - Bump tag to v1.1.2-ls18
         - Add mariadb support
       artifacthub.io/images: |
@@ -14100,4 +14152,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-07T22:04:33.45610915Z"
+generated: "2021-06-08T00:03:44.736968157Z"
