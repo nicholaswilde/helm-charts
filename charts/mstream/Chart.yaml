@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "v5.1.9"
-version: 2.0.1
+appVersion: "v5.1.10"
+version: 2.0.2
 name: mstream
 description: A personal music streaming server
 type: application
@@ -23,12 +23,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: values.schema.json
     - kind: changed
-      description: Bump tag to v5.1.9-ls53
-    - kind: changed
-      description: Bump common tag to 0.1.13
+      description: Bump tag to v5.1.10-ls54
   artifacthub.io/images: |
     - name: mstream
-      image: ghcr.io/linuxserver/mstream:v5.1.9-ls53
+      image: ghcr.io/linuxserver/mstream:v5.1.10-ls54
