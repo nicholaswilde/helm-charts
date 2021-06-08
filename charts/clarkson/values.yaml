@@ -1,5 +1,11 @@
 ---
-# Default values for Clarkson
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/nicholaswilde/helm-charts/tree/main/charts/common/values.yaml
+#
+
 image:
   repository: ghcr.io/linuxserver/clarkson
   pullPolicy: IfNotPresent
@@ -13,53 +19,26 @@ service:
     port: 3000
 
 secret: {}
-  # MYSQL_USERNAME: clarkson
-  # MYSQL_PASSWORD: clarkson-pass
+  #MYSQL_PASSWORD: clarkson-pass
 
-env:
-  TZ: "America/Los_Angeles"
+# See more environment variables in the clarkson documentation
+# https://github.com/linuxserver/docker-clarkson#parameters
+env: {}
+  # MYSQL_USERNAME: clarkson
+  # MYSQL_HOST: clarkson-mariadb
   # ENABLE_REGISTRATIONS: "true"
-  # MYSQL_HOST: clarkson
-  # PUID: "1001"
-  # PGID: "1001"
 
 ingress:
-  enabled: true
-  hosts:
-    - host: "clarkson.192.168.1.206.nip.io"
-      paths:
-        - path: "/"
-          pathType: Prefix
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+  enabled: false
 
-# Probes configuration
-probes:
-  liveness:
-    enabled: false
-  readiness:
-    enabled: false
-
+# Enable mariadb
+# https://github.com/nicholaswilde/helm-charts/blob/main/charts/mariadb/values.yaml
 mariadb:
   enabled: false
-  secret: {}
-    # MYSQL_ROOT_PASSWORD: clarkson-pass
-    # MYSQL_USER: clarkson
-    # MYSQL_PASSWORD: clarkson-pass
+  secret:
+    MYSQL_ROOT_PASSWORD: clarkson-pass
+    MYSQL_PASSWORD: clarkson-pass
   env:
-    TZ: "America/Los_Angeles"
-  # PUID: "1000"
-  # PGID: "1000"
-  # REMOTE_SQL: "http://URL1/your.sql,https://URL2/your.sql"
-    MYSQL_DATABASE: clarkson
-  persistence:
-    config:
-      enabled: false
-      emptyDir: false
-      mountPath: /config
-      # storageClass: "-"
-      accessMode: ReadWriteOnce
-      size: 1Gi
-      skipuninstall: false
+    MYSQL_USER: clarkson
+    MYSQL_DATABASE: clarkson-mariadb
+  fullnameOverride: clarkson-mariadb

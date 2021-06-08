@@ -1,65 +1,18 @@
 ---
-# Default values for Clarkson
-image:
-  repository: ghcr.io/linuxserver/clarkson
-  pullPolicy: IfNotPresent
-  tag: "v1.1.2-ls18"
-
-strategy:
-  type: Recreate
-
-service:
-  port:
-    port: 3000
-
 secret:
-  MYSQL_USERNAME: clarkson
   MYSQL_PASSWORD: clarkson-pass
 
 env:
-  TZ: "America/Los_Angeles"
   ENABLE_REGISTRATIONS: "true"
-  MYSQL_HOST: clarkson
-  # PUID: "1001"
-  # PGID: "1001"
-
-ingress:
-  enabled: true
-  hosts:
-    - host: "clarkson.192.168.1.206.nip.io"
-      paths:
-        - path: "/"
-          pathType: Prefix
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
-
-# Probes configuration
-probes:
-  liveness:
-    enabled: false
-  readiness:
-    enabled: false
+  MYSQL_HOST: clarkson-mariadb
+  MYSQL_USERNAME: clarkson
 
 mariadb:
   enabled: true
   secret:
     MYSQL_ROOT_PASSWORD: clarkson-pass
-    MYSQL_USER: clarkson
     MYSQL_PASSWORD: clarkson-pass
   env:
-    TZ: "America/Los_Angeles"
-  # PUID: "1000"
-  # PGID: "1000"
-  # REMOTE_SQL: "http://URL1/your.sql,https://URL2/your.sql"
+    MYSQL_USER: clarkson
     MYSQL_DATABASE: clarkson
-  persistence:
-    config:
-      enabled: false
-      emptyDir: false
-      mountPath: /config
-      # storageClass: "-"
-      accessMode: ReadWriteOnce
-      size: 1Gi
-      skipuninstall: false
+  fullnameOverride: clarkson-mariadb

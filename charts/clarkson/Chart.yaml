@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "v1.1.2"
-version: 0.2.0
+version: 0.2.1
 name: clarkson
 description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
 type: application
@@ -9,10 +9,10 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson"
 icon: "https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
   - name: mariadb
-    version: ~1.0.0
+    version: ~1.0.3
     repository: https://nicholaswilde.github.io/helm-charts/
     condition: mariadb.enabled
 keywords:
@@ -29,8 +29,20 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to v1.1.2-ls18
-    - Add mariadb support
+    - kind: added
+      description: values.schema.json
+    - kind: updated
+      description: Bump common to 0.1.13
+    - kind: updated
+      description: Bump mariadb to 1.0.3
+    - kind: updated
+      description: Remove unnecessary values from ct-values.yaml
+    - kind: updated
+      description: Simplify values.yaml
+    - kind: removed
+      description: probes from values.yaml
+    - kind: removed
+      description: persistence from values.yaml
   artifacthub.io/images: |
     - name: clarkson
       image: ghcr.io/linuxserver/clarkson:v1.1.2-ls18

@@ -1,0 +1,127 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "required": [
+        "image",
+        "service",
+        "ingress"
+    ],
+    "title": "clarkson Chart JSON Schema",
+    "type": "object",
+    "properties": {
+        "image": {
+            "$id": "#/properties/image",
+            "type": "object",
+            "title": "Chart image object",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "repository",
+                "pullPolicy",
+                "tag"
+            ],
+            "properties": {
+                "repository": {
+                    "$id": "#/properties/image/properties/repository",
+                    "default": "ghcr.io/linuxserver/clarkson",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image repository",
+                    "type": "string"
+                },
+                "pullPolicy": {
+                    "$id": "#/properties/image/properties/pullPolicy",
+                    "default": "IfNotPresent",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image pull policy",
+                    "type": "string"
+                },
+                "tag": {
+                    "$id": "#/properties/image/properties/tag",
+                    "default": "v1.1.2-ls18",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image tag",
+                    "type": "string"
+                }
+            }
+        },
+        "secret": {
+            "$id": "#/properties/secret",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Chart secret",
+            "type": "object"
+        },
+        "env": {
+            "$id": "#/properties/env",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Environmental variables",
+            "type": "object"
+        },
+        "service": {
+            "$id": "#/properties/service",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "port"
+            ],
+            "title": "Service object",
+            "type": "object",
+            "properties": {
+                "port": {
+                    "$id": "#/properties/service/properties/port",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "port"
+                    ],
+                    "title": "Service port object",
+                    "type": "object",
+                    "properties": {
+                        "port": {
+                            "$id": "#/properties/service/properties/port/properties/port",
+                            "default": 3000,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Service port number",
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        },
+        "ingress": {
+            "$id": "#/properties/ingress",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "enabled"
+            ],
+            "title": "Ingress object",
+            "type": "object",
+            "properties": {
+                "enabled": {
+                    "$id": "#/properties/ingress/properties/enabled",
+                    "default": false,
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Enable ingress",
+                    "type": "boolean"
+                }
+            }
+        },
+        "strategy": {
+            "$id": "#/properties/strategy",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "type"
+            ],
+            "title": "Strategy object",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "$id": "#/properties/ingress/properties/type",
+                    "default": "Recreate",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Strategy type",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
