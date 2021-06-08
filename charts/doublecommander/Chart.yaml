@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "0.8.2"
-version: 0.1.1
+version: 1.0.0
 name: doublecommander
 description: A free cross platform open source file manager with two panels side by side.
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/doublecomma
 icon: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doublecommander-icon.png"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - doublecommander
@@ -23,7 +23,16 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to 0.8.2-1-ls55
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump tag to 0.8.2-1-ls56
+    - kind: changed
+      description: Simplify values.yaml
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: removed
+      description: secret from values.yaml
   artifacthub.io/images: |
     - name: doublecommander
-      image: ghcr.io/linuxserver/doublecommander:0.8.2-1-ls55
+      image: ghcr.io/linuxserver/doublecommander:0.8.2-1-ls56
