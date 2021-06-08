@@ -4825,6 +4825,48 @@ entries:
   doublecommander:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump tag to 0.8.2-1-ls56
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: removed
+          description: secret from values.yaml
+      artifacthub.io/images: |
+        - name: doublecommander
+          image: ghcr.io/linuxserver/doublecommander:0.8.2-1-ls56
+    apiVersion: v2
+    appVersion: 0.8.2
+    created: "2021-06-08T14:59:27.222445994Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A free cross platform open source file manager with two panels side
+      by side.
+    digest: f22d7de296105216baae01d82b618391a1f3a9278a4a77ace94719d44f74e506
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/doublecommander
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doublecommander-icon.png
+    keywords:
+    - doublecommander
+    - file
+    - manager
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: doublecommander
+    sources:
+    - https://github.com/linuxserver/docker-doublecommander
+    - https://doublecmd.sourceforge.io/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/doublecommander-1.0.0/doublecommander-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bump tag to 0.8.2-1-ls55
       artifacthub.io/images: |
         - name: doublecommander
@@ -14315,4 +14357,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-08T14:40:24.401197433Z"
+generated: "2021-06-08T14:59:27.223998915Z"
