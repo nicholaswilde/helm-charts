@@ -8343,6 +8343,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Bump tag to v5.1.11-ls55
+      artifacthub.io/images: |
+        - name: mstream
+          image: ghcr.io/linuxserver/mstream:v5.1.11-ls55
+    apiVersion: v2
+    appVersion: v5.1.11
+    created: "2021-06-09T02:33:54.309255384Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A personal music streaming server
+    digest: 178bc9729d2469418dac15d193700f35bd0f9e13c9ddcbfb7f827ff4a00742dc
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/mstream
+    icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/images/mstream.png
+    keywords:
+    - mstream
+    - server
+    - music
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: mstream
+    sources:
+    - https://github.com/linuxserver/docker-mstream
+    - https://mstream.io/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/mstream-2.0.3/mstream-2.0.3.tgz
+    version: 2.0.3
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump tag to v5.1.10-ls54
       artifacthub.io/images: |
         - name: mstream
@@ -14357,4 +14390,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-08T14:59:27.223998915Z"
+generated: "2021-06-09T02:33:54.310932107Z"
