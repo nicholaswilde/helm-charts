@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "nightly-0d624191"
-version: 0.1.2
+version: 1.0.0
 name: beets
 description: A music library manager and not, for the most part, a music player.
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/beets"
 icon: "https://github.com/nicholaswilde/helm-charts/raw/main/images/beets.png"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - music
@@ -25,7 +25,16 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to nightly-0d624191-ls72
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Simplify values.yaml
+    - kind: changed
+      description: Bump tag to nightly-0d624191-ls73
+    - kind: removed
+      description: secret from values.yaml
   artifacthub.io/images: |
     - name: beets
-      image: ghcr.io/linuxserver/beets:nightly-0d624191-ls72
+      image: ghcr.io/linuxserver/beets:nightly-0d624191-ls73
