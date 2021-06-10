@@ -12814,6 +12814,49 @@ entries:
   sqlitebrowser:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Bump tag to 3.12.2-02876202105241947ubuntu18.04.1-ls40
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: removed
+          description: secret from values.yaml
+      artifacthub.io/images: |
+        - name: sqlitebrowser
+          image: ghcr.io/linuxserver/sqlitebrowser:3.12.2-02876202105241947ubuntu18.04.1-ls40
+    apiVersion: v2
+    appVersion: 3.12.2
+    created: "2021-06-10T19:58:07.162073055Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A high quality, visual, open source tool to create, design, and edit
+      database files compatible with SQLite
+    digest: 7d1b52f54658a85b3c757fba232b9f7d481fc647968a08d0c3770907b6666f3b
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/sqlitebrowser
+    icon: https://sqlitebrowser.org/images/sqlitebrowser.svg
+    keywords:
+    - sqlite
+    - browser
+    - sqlitebrowser
+    - database
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: sqlitebrowser
+    sources:
+    - https://github.com/linuxserver/docker-sqlitebrowser
+    - https://sqlitebrowser.org/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/sqlitebrowser-1.0.0/sqlitebrowser-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bump tag to 3.12.2-02876202105241947ubuntu18.04.1-ls39
       artifacthub.io/images: |
         - name: sqlitebrowser
@@ -14584,4 +14627,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-10T18:46:47.193286372Z"
+generated: "2021-06-10T19:58:07.164615964Z"
