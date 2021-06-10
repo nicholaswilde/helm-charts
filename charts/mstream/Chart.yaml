@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "v5.1.11"
-version: 2.0.3
+appVersion: "v5.1.16"
+version: 2.0.4
 name: mstream
 description: A personal music streaming server
 type: application
@@ -24,7 +24,7 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump tag to v5.1.11-ls55
+      description: Bump tag to v5.1.16-ls55
   artifacthub.io/images: |
     - name: mstream
-      image: ghcr.io/linuxserver/mstream:v5.1.11-ls55
+      image: ghcr.io/linuxserver/mstream:v5.1.16-ls55
