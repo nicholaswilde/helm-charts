@@ -9,14 +9,12 @@
 image:
   repository: ghcr.io/linuxserver/papermerge
   pullPolicy: IfNotPresent
-  tag: "v2.0.1-ls5"
-
-secret: {}
+  tag: "v2.0.1-ls6"
 
 # See more environment variables in the papermerge documentation
 # https://papermerge.com/docs/Installation/settings.html
 # https://github.com/linuxserver/docker-papermerge
-env:
+env: {}
   # TZ: ""
 
 service:
