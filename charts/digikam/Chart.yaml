@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "7.2.0"
-version: 0.1.1
+version: 0.1.2
 name: digikam
 description: Professional Photo Management with the Power of Open Source
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/digikam"
 icon: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam.png"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - digikam
@@ -25,7 +25,14 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to 7.2.0-ls26
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Bump tag to 7.2.0-ls27
+    - kind: removed
+      description: secret from values.yaml
   artifacthub.io/images: |
     - name: digikam
-      image: ghcr.io/linuxserver/digikam:7.2.0-ls26
+      image: ghcr.io/linuxserver/digikam:7.2.0-ls27
