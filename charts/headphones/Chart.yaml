@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "379fd3d0"
-version: 0.1.1
+version: 1.0.0
 name: headphones
 description: An automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/headphones"
 icon: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/headphones-banner.png"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 sources:
   - https://github.com/linuxserver/docker-headphones
@@ -23,7 +23,16 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to 379fd3d0-ls75
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Simplify values.yaml
+    - kind: changed
+      description: Bump tag to 379fd3d0-ls76
+    - kind: removed
+      description: secret from values.yaml
   artifacthub.io/images: |
     - name: headphones
-      image: ghcr.io/linuxserver/headphones:379fd3d0-ls75
+      image: ghcr.io/linuxserver/headphones:379fd3d0-ls76
