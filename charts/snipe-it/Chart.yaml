@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: v5.1.5
-version: 1.0.0
+appVersion: v5.1.6
+version: 1.0.1
 name: snipe-it
 description: Open source asset management
 type: application
@@ -28,20 +28,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: values.schema.json
     - kind: changed
-      description: Bump common to 0.1.13
-    - kind: changed
-      description: Bump mariadb to 1.0.3
-    - kind: changed
-      description: BREAKING data PVC to config
-    - kind: changed
-      description: Bump tag to v5.1.5-ls132
-    - kind: changed
-      description: Simplify values.yaml
-    - kind: changed
-      description: APP_UR to NGINX_APP_URL
+      description: Bump tag to v5.1.6-ls133
   artifacthub.io/images: |
     - name: snipe-it
-      image: ghcr.io/linuxserver/snipe-it:v5.1.5-ls132
+      image: ghcr.io/linuxserver/snipe-it:v5.1.6-ls133
