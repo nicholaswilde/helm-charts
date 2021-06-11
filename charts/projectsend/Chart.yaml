@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: r1070
-version: 1.0.0
+version: 1.0.1
 name: projectsend
 description: A self-hosted application that lets you upload files and assign them to specific clients that you create yourself
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/projectsend
 icon: "https://github.com/nicholaswilde/helm-charts/raw/main/images/projectsend.jpg"
 dependencies:
   - name: common
-    version: ~0.1.9
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
   - name: mariadb
     version: ~1.0.3
@@ -28,9 +28,14 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Add mariadb support
-    - Bump common tag to 0.1.9
-    - Cleanup values.yaml
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common tag to 0.1.13
+    - kind: changed
+      description: Bump tag to r1070-ls71
+    - kind: removed
+      description: secret from values.yaml
   artifacthub.io/images: |
     - name: projectsend
       image: ghcr.io/linuxserver/projectsend:r1070-ls70
