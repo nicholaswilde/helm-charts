@@ -1,6 +1,6 @@
 # mstream
 
-![Version: 2.0.4](https://img.shields.io/badge/Version-2.0.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v5.1.16](https://img.shields.io/badge/AppVersion-v5.1.16-informational?style=flat-square)
+![Version: 2.0.5](https://img.shields.io/badge/Version-2.0.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v5.1.18](https://img.shields.io/badge/AppVersion-v5.1.18-informational?style=flat-square)
 
 A personal music streaming server
 
