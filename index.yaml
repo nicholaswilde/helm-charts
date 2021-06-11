@@ -10371,6 +10371,51 @@ entries:
   projectsend:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common tag to 0.1.13
+        - kind: changed
+          description: Bump tag to r1070-ls71
+        - kind: removed
+          description: secret from values.yaml
+      artifacthub.io/images: |
+        - name: projectsend
+          image: ghcr.io/linuxserver/projectsend:r1070-ls70
+    apiVersion: v2
+    appVersion: r1070
+    created: "2021-06-11T03:53:54.624939873Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.3
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
+    digest: 2ed2d13d98e8c653af6c1cc5b384fa49ea02f74456272d83951e778f9113d6e3
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/projectsend
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/projectsend.jpg
+    keywords:
+    - project
+    - send
+    - upload
+    - files
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: projectsend
+    sources:
+    - https://www.projectsend.org/
+    - https://hub.docker.com/r/linuxserver/projectsend
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/projectsend-1.0.1/projectsend-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |
         - Add mariadb support
         - Bump common tag to 0.1.9
         - Cleanup values.yaml
@@ -14627,4 +14672,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-10T19:58:07.164615964Z"
+generated: "2021-06-11T03:53:54.626194491Z"
