@@ -6628,6 +6628,48 @@ entries:
   headphones:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: changed
+          description: Bump tag to 379fd3d0-ls76
+        - kind: removed
+          description: secret from values.yaml
+      artifacthub.io/images: |
+        - name: headphones
+          image: ghcr.io/linuxserver/headphones:379fd3d0-ls76
+    apiVersion: v2
+    appVersion: 379fd3d0
+    created: "2021-06-11T04:38:00.463414283Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: An automated music downloader for NZB and Torrent, written in Python.
+      It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.
+    digest: 900f4d305cf459085990c8d5add73c5d82e950e7a90eb62809116d1ccb292e0a
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/headphones
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/headphones-banner.png
+    keywords:
+    - headphones
+    - music
+    - downloader
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: headphones
+    sources:
+    - https://github.com/linuxserver/docker-headphones
+    - https://github.com/rembo10/headphones
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/headphones-1.0.0/headphones-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bump tag to 379fd3d0-ls75
       artifacthub.io/images: |
         - name: headphones
@@ -14746,4 +14788,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-11T04:17:48.994471022Z"
+generated: "2021-06-11T04:38:00.466281991Z"
