@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 1.8.2
-version: 0.3.4
+version: 1.0.0
 name: hedgedoc
 description: HedgeDoc lets you create real-time collaborative markdown notes.
 type: application
@@ -9,10 +9,10 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/hedgedoc"
 icon: "https://avatars1.githubusercontent.com/u/67865462"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
   - name: mariadb
-    version: ~1.0.0
+    version: ~1.0.4
     repository: https://nicholaswilde.github.io/helm-charts/
     condition: mariadb.enabled
 keywords:
@@ -29,7 +29,16 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump chart to 1.8.2-ls19
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Bump chart to 1.8.2-ls20
+    - kind: changed
+      description: Bump mariadb to 1.0.4
+    - kind: changed
+      description: Simplify values.yaml
   artifacthub.io/images: |
     - name: hedgedoc
-      image: ghcr.io/linuxserver/hedgedoc:1.8.2-ls19
+      image: ghcr.io/linuxserver/hedgedoc:1.8.2-ls20
