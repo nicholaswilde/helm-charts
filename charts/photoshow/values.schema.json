@@ -1,0 +1,244 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "required": [
+        "image",
+        "service",
+        "ingress"
+    ],
+    "title": "photoshow Chart JSON Schema",
+    "type": "object",
+    "properties": {
+        "image": {
+            "$id": "#/properties/image",
+            "type": "object",
+            "title": "Chart image object",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "repository",
+                "pullPolicy",
+                "tag"
+            ],
+            "properties": {
+                "repository": {
+                    "$id": "#/properties/image/properties/repository",
+                    "default": "ghcr.io/linuxserver/photoshow",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image repository",
+                    "type": "string"
+                },
+                "pullPolicy": {
+                    "$id": "#/properties/image/properties/pullPolicy",
+                    "default": "IfNotPresent",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image pull policy",
+                    "type": "string"
+                },
+                "tag": {
+                    "$id": "#/properties/image/properties/tag",
+                    "default": "",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image tag",
+                    "type": "string"
+                }
+            }
+        },
+        "env": {
+            "$id": "#/properties/env",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Environmental variables",
+            "type": "object"
+        },
+        "service": {
+            "$id": "#/properties/service",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "port"
+            ],
+            "title": "Service object",
+            "type": "object",
+            "properties": {
+                "port": {
+                    "$id": "#/properties/service/properties/port",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "port"
+                    ],
+                    "title": "Service port object",
+                    "type": "object",
+                    "properties": {
+                        "port": {
+                            "$id": "#/properties/service/properties/port/properties/port",
+                            "default": 80,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Service port number",
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        },
+        "ingress": {
+            "$id": "#/properties/ingress",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "enabled"
+            ],
+            "title": "Ingress object",
+            "type": "object",
+            "properties": {
+                "enabled": {
+                    "$id": "#/properties/ingress/properties/enabled",
+                    "default": false,
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Enable ingress",
+                    "type": "boolean"
+                }
+            }
+        },
+        "persistence": {
+            "$id": "#/properties/persistence",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Persistence object",
+            "type": "object",
+            "properties": {
+                "config": {
+                    "$id": "#/properties/persistence/properties/config",
+                    "type": "object",
+                    "title": "config PVC",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "emptyDir",
+                        "mountPath"
+                    ],
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/persistence/properties/config/properties/enabled",
+                            "type": "boolean",
+                            "title": "Enable config PVC",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "emptyDir": {
+                            "$id": "#/properties/persistence/properties/config/properties/emptyDir",
+                            "type": "boolean",
+                            "title": "config emptyDir",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "mountPath": {
+                            "$id": "#/properties/persistence/properties/config/properties/mountPath",
+                            "default": "/config",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "config mount path",
+                            "type": "string"
+                        }
+                    }
+                },
+                "pictures": {
+                    "$id": "#/properties/persistence/properties/pictures",
+                    "type": "object",
+                    "title": "pictures PVC",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "emptyDir",
+                        "mountPath",
+                        "accessMode",
+                        "size"
+                    ],
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/persistence/properties/pictures/properties/enabled",
+                            "type": "boolean",
+                            "title": "Enable pictures PVC",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "emptyDir": {
+                            "$id": "#/properties/persistence/properties/pictures/properties/emptyDir",
+                            "type": "boolean",
+                            "title": "pictures emptyDir",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "mountPath": {
+                            "$id": "#/properties/persistence/properties/pictures/properties/mountPath",
+                            "default": "/pictures",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "pictures mount path",
+                            "type": "string"
+                        },
+                        "accessMode": {
+                            "$id": "#/properties/persistence/properties/pictures/properties/accessMode",
+                            "default": "ReadWriteOnce",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "pictures access mode",
+                            "type": "string"
+                        },
+                        "size": {
+                            "$id": "#/properties/persistence/properties/pictures/properties/size",
+                            "default": "1Gi",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "pictures size",
+                            "type": "string"
+                        }
+                    }
+                },
+                "thumbs": {
+                    "$id": "#/properties/persistence/properties/thumbs",
+                    "type": "object",
+                    "title": "thumbs PVC",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "emptyDir",
+                        "mountPath",
+                        "accessMode",
+                        "size"
+                    ],
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/persistence/properties/thumbs/properties/enabled",
+                            "type": "boolean",
+                            "title": "Enable thumbs PVC",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "emptyDir": {
+                            "$id": "#/properties/persistence/properties/thumbs/properties/emptyDir",
+                            "type": "boolean",
+                            "title": "thumbs emptyDir",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "mountPath": {
+                            "$id": "#/properties/persistence/properties/thumbs/properties/mountPath",
+                            "default": "/thumbs",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "thumbs mount path",
+                            "type": "string"
+                        },
+                        "accessMode": {
+                            "$id": "#/properties/persistence/properties/thumbs/properties/accessMode",
+                            "default": "ReadWriteOnce",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "thumbs access mode",
+                            "type": "string"
+                        },
+                        "size": {
+                            "$id": "#/properties/persistence/properties/thumbs/properties/size",
+                            "default": "1Gi",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "thumbs size",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

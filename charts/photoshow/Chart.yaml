@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "48aabb98"
-version: 0.1.1
+version: 1.0.0
 name: photoshow
 description: A gallery software at its easiest, it doesn't even require a database.
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/photoshow"
 icon: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/photoshow-icon.png"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - photoshow
@@ -25,7 +25,14 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to 48aabb98-ls100
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Bump tag to 48aabb98-ls101
+    - kind: changed
+      description: Simply values.yaml
   artifacthub.io/images: |
     - name: photoshow
-      image: ghcr.io/linuxserver/photoshow:48aabb98-ls100
+      image: ghcr.io/linuxserver/photoshow:48aabb98-ls101
