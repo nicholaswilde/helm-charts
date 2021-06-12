@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "110.4.19"
-version: 1.0.3
+version: 1.0.4
 name: mariadb
 description: The open source relational database
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/mariadb"
 icon: "https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/mariadb-icon.png"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - db
@@ -23,7 +23,18 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to 110.4.19mariabionic-ls22
+    - kind: added
+      description: values.schema.json
+    - kind: added
+      description: ci/ct-values.yaml
+    - kind: added
+      description: ingress to values.yaml
+    - kind: changed
+      description: Bump tag to 110.4.19mariabionic-ls23
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Simplify values.yaml
   artifacthub.io/images: |
     - name: mariadb
-      image: ghcr.io/linuxserver/mariadb:110.4.19mariabionic-ls22
+      image: ghcr.io/linuxserver/mariadb:110.4.19mariabionic-ls23

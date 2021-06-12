@@ -1,0 +1,254 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "required": [
+        "image",
+        "service",
+        "ingress"
+    ],
+    "title": "mariadb Chart JSON Schema",
+    "type": "object",
+    "properties": {
+        "image": {
+            "$id": "#/properties/image",
+            "type": "object",
+            "title": "Chart image object",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "repository",
+                "pullPolicy",
+                "tag"
+            ],
+            "properties": {
+                "repository": {
+                    "$id": "#/properties/image/properties/repository",
+                    "default": "ghcr.io/linuxserver/mariadb",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image repository",
+                    "type": "string"
+                },
+                "pullPolicy": {
+                    "$id": "#/properties/image/properties/pullPolicy",
+                    "default": "IfNotPresent",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image pull policy",
+                    "type": "string"
+                },
+                "tag": {
+                    "$id": "#/properties/image/properties/tag",
+                    "default": "",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image tag",
+                    "type": "string"
+                }
+            }
+        },
+        "secret": {
+            "$id": "#/properties/secret",
+            "type": "object",
+            "title": "The secret schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "MYSQL_ROOT_PASSWORD": "ROOT_ACCESS_PASSWORD",
+                    "MYSQL_PASSWORD": "DATABASE_PASSWORD"
+                }
+            ],
+            "required": [
+                "MYSQL_ROOT_PASSWORD"
+            ],
+            "properties": {
+                "MYSQL_ROOT_PASSWORD": {
+                    "$id": "#/properties/secret/properties/MYSQL_ROOT_PASSWORD",
+                    "default": "",
+                    "description": "Set this to root password for installation (minimum 4 characters)",
+                    "examples": [
+                        "ROOT_ACCESS_PASSWORD"
+                    ],
+                    "title": "mariadb root password",
+                    "type": "string"
+                },
+                "MYSQL_PASSWORD": {
+                    "$id": "#/properties/secret/properties/MYSQL_PASSWORD",
+                    "default": "",
+                    "description": "Set this to the password you want to use for you MYSQL_USER (minimum 4 characters)",
+                    "examples": [
+                        "DATABASE_PASSWORD"
+                    ],
+                    "title": "mariadb password",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "env": {
+            "$id": "#/properties/env",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                {
+                    "TZ": "America/Los_Angeles",
+                    "PUID": "1000",
+                    "PGID": "1000",
+                    "MYSQL_USER": "MYSQL_USER",
+                    "REMOTE_SQL": "http://URL1/your.sql,https://URL2/your.sql",
+                    "MYSQL_DATABASE": "USER_DB_NAME #optional"
+                }
+            ],
+            "title": "Environmental variables",
+            "type": "object",
+            "properties": {
+                "TZ": {
+                    "$id": "#/properties/env/properties/TZ",
+                    "default": "",
+                    "description": "Specify a timezone to use",
+                    "examples": [
+                        "America/Los_Angeles"
+                    ],
+                    "title": "Container timezone",
+                    "type": "string"
+                },
+                "PUID": {
+                    "$id": "#/properties/env/properties/PUID",
+                    "default": "",
+                    "description": "An explanation about the purpose of this instance.",
+                    "examples": [
+                        "1000"
+                    ],
+                    "title": "Container user id",
+                    "type": "string"
+                },
+                "PGID": {
+                    "$id": "#/properties/env/properties/PGID",
+                    "default": "",
+                    "description": "An explanation about the purpose of this instance.",
+                    "examples": [
+                        "1000"
+                    ],
+                    "title": "Container group id",
+                    "type": "string"
+                },
+                "MYSQL_USER": {
+                    "$id": "#/properties/env/properties/MYSQL_USER",
+                    "default": "",
+                    "description": "This user will have superuser access to the database specified by MYSQL_DATABASE",
+                    "examples": [
+                        "MYSQL_USER"
+                    ],
+                    "title": "mariadb user",
+                    "type": "string"
+                },
+                "REMOTE_SQL": {
+                    "$id": "#/properties/env/properties/REMOTE_SQL",
+                    "default": "",
+                    "description": "Set this to ingest sql files from an http/https endpoint (comma seperated array)",
+                    "examples": [
+                        "http://URL1/your.sql,https://URL2/your.sql"
+                    ],
+                    "title": "Remote SQL URL",
+                    "type": "string"
+                },
+                "MYSQL_DATABASE": {
+                    "$id": "#/properties/env/properties/MYSQL_DATABASE",
+                    "type": "string",
+                    "title": "The MYSQL_DATABASE schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "USER_DB_NAME"
+                    ]
+                }
+            }
+        },
+        "service": {
+            "$id": "#/properties/service",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "port"
+            ],
+            "title": "Service object",
+            "type": "object",
+            "properties": {
+                "port": {
+                    "$id": "#/properties/service/properties/port",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "port"
+                    ],
+                    "title": "Service port object",
+                    "type": "object",
+                    "properties": {
+                        "port": {
+                            "$id": "#/properties/service/properties/port/properties/port",
+                            "default": 8081,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Service port number",
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        },
+        "ingress": {
+            "$id": "#/properties/ingress",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "enabled"
+            ],
+            "title": "Ingress object",
+            "type": "object",
+            "properties": {
+                "enabled": {
+                    "$id": "#/properties/ingress/properties/enabled",
+                    "default": false,
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Enable ingress",
+                    "type": "boolean"
+                }
+            }
+        },
+        "persistence": {
+            "$id": "#/properties/persistence",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Persistence object",
+            "type": "object",
+            "properties": {
+                "config": {
+                    "$id": "#/properties/persistence/properties/config",
+                    "type": "object",
+                    "title": "config PVC",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "emptyDir",
+                        "mountPath"
+                    ],
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/persistence/properties/config/properties/enabled",
+                            "type": "boolean",
+                            "title": "Enable config PVC",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "emptyDir": {
+                            "$id": "#/properties/persistence/properties/config/properties/emptyDir",
+                            "type": "boolean",
+                            "title": "config emptyDir",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "mountPath": {
+                            "$id": "#/properties/persistence/properties/config/properties/mountPath",
+                            "default": "/config",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "config mount path",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

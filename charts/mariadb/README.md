@@ -1,6 +1,6 @@
 # mariadb
 
-![Version: 1.0.3](https://img.shields.io/badge/Version-1.0.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 110.4.19](https://img.shields.io/badge/AppVersion-110.4.19-informational?style=flat-square)
+![Version: 1.0.4](https://img.shields.io/badge/Version-1.0.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 110.4.19](https://img.shields.io/badge/AppVersion-110.4.19-informational?style=flat-square)
 
 The open source relational database
 
@@ -11,7 +11,7 @@ The open source relational database
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.8 |
+| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.13 |
 
 ## TL;DR
 ```console
