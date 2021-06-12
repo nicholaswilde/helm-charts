@@ -10374,6 +10374,47 @@ entries:
   photoshow:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Bump tag to 48aabb98-ls101
+        - kind: changed
+          description: Simply values.yaml
+      artifacthub.io/images: |
+        - name: photoshow
+          image: ghcr.io/linuxserver/photoshow:48aabb98-ls101
+    apiVersion: v2
+    appVersion: 48aabb98
+    created: "2021-06-12T07:21:48.266695824Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A gallery software at its easiest, it doesn't even require a database.
+    digest: c19c44efc29e91d2392b94c2c353ea8f5d0c7e833cb7ae268734910833192671
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/photoshow
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/photoshow-icon.png
+    keywords:
+    - photoshow
+    - photo
+    - show
+    - gallary
+    - image
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: photoshow
+    sources:
+    - https://github.com/thibaud-rohmer/PhotoShow
+    - https://github.com/linuxserver/docker-photoshow
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/photoshow-1.0.0/photoshow-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bump tag to 48aabb98-ls100
       artifacthub.io/images: |
         - name: photoshow
@@ -14918,4 +14959,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-12T07:04:27.203542445Z"
+generated: "2021-06-12T07:21:48.268412616Z"
