@@ -1,0 +1,294 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "required": [
+        "image",
+        "service",
+        "ingress"
+    ],
+    "title": "booksonic Chart JSON Schema",
+    "type": "object",
+    "properties": {
+        "image": {
+            "$id": "#/properties/image",
+            "type": "object",
+            "title": "Chart image object",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "repository",
+                "pullPolicy",
+                "tag"
+            ],
+            "properties": {
+                "repository": {
+                    "$id": "#/properties/image/properties/repository",
+                    "default": "ghcr.io/linuxserver/booksonic",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image repository",
+                    "type": "string"
+                },
+                "pullPolicy": {
+                    "$id": "#/properties/image/properties/pullPolicy",
+                    "default": "IfNotPresent",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image pull policy",
+                    "type": "string"
+                },
+                "tag": {
+                    "$id": "#/properties/image/properties/tag",
+                    "default": "1.2-ls114",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image tag",
+                    "type": "string"
+                }
+            }
+        },
+        "env": {
+            "$id": "#/properties/env",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Environmental variables",
+            "type": "object"
+        },
+        "service": {
+            "$id": "#/properties/service",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "port"
+            ],
+            "title": "Service object",
+            "type": "object",
+            "properties": {
+                "port": {
+                    "$id": "#/properties/service/properties/port",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "port"
+                    ],
+                    "title": "Service port object",
+                    "type": "object",
+                    "properties": {
+                        "port": {
+                            "$id": "#/properties/service/properties/port/properties/port",
+                            "default": 4040,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Service port number",
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        },
+        "ingress": {
+            "$id": "#/properties/ingress",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "enabled"
+            ],
+            "title": "Ingress object",
+            "type": "object",
+            "properties": {
+                "enabled": {
+                    "$id": "#/properties/ingress/properties/enabled",
+                    "default": false,
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Enable ingress",
+                    "type": "boolean"
+                }
+            }
+        },
+        "persistence": {
+            "$id": "#/properties/persistence",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Persistence object",
+            "type": "object",
+            "properties": {
+                "config": {
+                    "$id": "#/properties/persistence/properties/config",
+                    "type": "object",
+                    "title": "config PVC",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "emptyDir",
+                        "mountPath"
+                    ],
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/persistence/properties/config/properties/enabled",
+                            "type": "boolean",
+                            "title": "Enable config PVC",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "emptyDir": {
+                            "$id": "#/properties/persistence/properties/config/properties/emptyDir",
+                            "type": "boolean",
+                            "title": "config emptyDir",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "mountPath": {
+                            "$id": "#/properties/persistence/properties/config/properties/mountPath",
+                            "default": "/config",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "config mount path",
+                            "type": "string"
+                        }
+                    }
+                },
+                "audiobooks": {
+                    "$id": "#/properties/persistence/properties/audiobooks",
+                    "type": "object",
+                    "title": "audiobooks PVC",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "emptyDir",
+                        "mountPath",
+                        "accessMode",
+                        "size"
+                    ],
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/persistence/properties/audiobooks/properties/enabled",
+                            "type": "boolean",
+                            "title": "Enable audiobooks PVC",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "emptyDir": {
+                            "$id": "#/properties/persistence/properties/audiobooks/properties/emptyDir",
+                            "type": "boolean",
+                            "title": "audiobooks emptyDir",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "mountPath": {
+                            "$id": "#/properties/persistence/properties/audiobooks/properties/mountPath",
+                            "default": "/audiobooks",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "audiobooks mount path",
+                            "type": "string"
+                        },
+                        "accessMode": {
+                            "$id": "#/properties/persistence/properties/audiobooks/properties/accessMode",
+                            "default": "ReadWriteOnce",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "audiobooks access mode",
+                            "type": "string"
+                        },
+                        "size": {
+                            "$id": "#/properties/persistence/properties/audiobooks/properties/size",
+                            "default": "1Gi",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "audiobooks size",
+                            "type": "string"
+                        }
+                    }
+                },
+                "podcasts": {
+                    "$id": "#/properties/persistence/properties/podcasts",
+                    "type": "object",
+                    "title": "podcasts PVC",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "emptyDir",
+                        "mountPath",
+                        "accessMode",
+                        "size"
+                    ],
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/persistence/properties/podcasts/properties/enabled",
+                            "type": "boolean",
+                            "title": "Enable podcasts PVC",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "emptyDir": {
+                            "$id": "#/properties/persistence/properties/podcasts/properties/emptyDir",
+                            "type": "boolean",
+                            "title": "podcasts emptyDir",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "mountPath": {
+                            "$id": "#/properties/persistence/properties/podcasts/properties/mountPath",
+                            "default": "/podcasts",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "podcasts mount path",
+                            "type": "string"
+                        },
+                        "accessMode": {
+                            "$id": "#/properties/persistence/properties/podcasts/properties/accessMode",
+                            "default": "ReadWriteOnce",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "podcasts access mode",
+                            "type": "string"
+                        },
+                        "size": {
+                            "$id": "#/properties/persistence/properties/podcasts/properties/size",
+                            "default": "1Gi",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "podcasts size",
+                            "type": "string"
+                        }
+                    }
+                },
+                "othermedia": {
+                    "$id": "#/properties/persistence/properties/othermedia",
+                    "type": "object",
+                    "title": "othermedia PVC",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "emptyDir",
+                        "mountPath",
+                        "accessMode",
+                        "size"
+                    ],
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/persistence/properties/othermedia/properties/enabled",
+                            "type": "boolean",
+                            "title": "Enable othermedia PVC",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "emptyDir": {
+                            "$id": "#/properties/persistence/properties/othermedia/properties/emptyDir",
+                            "type": "boolean",
+                            "title": "othermedia emptyDir",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "mountPath": {
+                            "$id": "#/properties/persistence/properties/othermedia/properties/mountPath",
+                            "default": "/othermedia",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "othermedia mount path",
+                            "type": "string"
+                        },
+                        "accessMode": {
+                            "$id": "#/properties/persistence/properties/othermedia/properties/accessMode",
+                            "default": "ReadWriteOnce",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "othermedia access mode",
+                            "type": "string"
+                        },
+                        "size": {
+                            "$id": "#/properties/persistence/properties/othermedia/properties/size",
+                            "default": "1Gi",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "othermedia size",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
