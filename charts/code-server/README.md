@@ -1,6 +1,6 @@
 # code-server
 
-![Version: 0.2.3](https://img.shields.io/badge/Version-0.2.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v3.10.2](https://img.shields.io/badge/AppVersion-v3.10.2-informational?style=flat-square)
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v3.10.2](https://img.shields.io/badge/AppVersion-v3.10.2-informational?style=flat-square)
 
 Run VS Code on any machine anywhere and access it in the browser.
 
@@ -8,7 +8,7 @@ Run VS Code on any machine anywhere and access it in the browser.
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.8 |
+| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.13 |
 
 ## TL;DR
 ```console
