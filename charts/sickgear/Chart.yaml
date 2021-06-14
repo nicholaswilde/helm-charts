@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "release_0.24.1"
-version: 0.2.2
+appVersion: "release_0.24.2"
+version: 0.2.3
 name: sickgear
 description: Provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more
 type: application
@@ -25,7 +25,7 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump tag to release_0.24.1-ls86
+      description: Bump tag to release_0.24.2-ls86
   artifacthub.io/images: |
     - name: sickgear
-      image: ghcr.io/linuxserver/sickgear:release_0.24.1-ls86
+      image: ghcr.io/linuxserver/sickgear:release_0.24.2-ls86
