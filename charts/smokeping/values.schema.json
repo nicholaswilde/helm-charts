@@ -35,7 +35,7 @@
                 },
                 "tag": {
                     "$id": "#/properties/image/properties/tag",
-                    "default": "2.7.3-r5-ls127",
+                    "default": "2.7.3-r5-ls128",
                     "description": "An explanation about the purpose of this instance.",
                     "title": "Image tag",
                     "type": "string"
