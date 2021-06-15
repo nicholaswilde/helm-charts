@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "1.7.16"
-version: 0.1.3
+version: 0.1.4
 name: grav
 description: A Fast, Simple, and Flexible, file-based Web-platform.
 type: application
@@ -24,16 +24,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: values.schema.json
     - kind: changed
-      description: Bump common to 0.1.13
-    - kind: changed
-      description: Bump tag to 1.7.16-ls9
-    - kind: changed
-      description: Simplify values.yaml
-    - kind: removed
-      description: secret from values.yaml
+      description: Change tag to version-1.7.16 to reduce number of chart releases.
   artifacthub.io/images: |
     - name: grav
-      image: ghcr.io/linuxserver/grav:1.7.16-ls9
+      image: ghcr.io/linuxserver/grav:version-1.7.16

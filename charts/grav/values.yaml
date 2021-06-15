@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/linuxserver/grav
   pullPolicy: IfNotPresent
-  tag: "1.7.16-ls9"
+  tag: "version-1.7.16"
 
 # See more environment variables in the grav documentation
 # https://github.com/linuxserver/docker-grav#parameters
