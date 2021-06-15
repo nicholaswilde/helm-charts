@@ -5066,6 +5066,40 @@ entries:
   doublecommander:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to 0.8.2-1-ls57
+      artifacthub.io/images: |
+        - name: doublecommander
+          image: ghcr.io/linuxserver/doublecommander:0.8.2-1-ls57
+    apiVersion: v2
+    appVersion: 0.8.2
+    created: "2021-06-15T18:53:02.528165606Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A free cross platform open source file manager with two panels side
+      by side.
+    digest: 3ba88d4b2984f44386ab219153b53c51e9e849c24d790dc556e9d32919772875
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/doublecommander
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doublecommander-icon.png
+    keywords:
+    - doublecommander
+    - file
+    - manager
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: doublecommander
+    sources:
+    - https://github.com/linuxserver/docker-doublecommander
+    - https://doublecmd.sourceforge.io/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/doublecommander-1.0.1/doublecommander-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: values.schema.json
         - kind: changed
@@ -6407,6 +6441,40 @@ entries:
     - https://github.com/nicholaswilde/helm-charts/releases/download/gotify-0.1.0/gotify-0.1.0.tgz
     version: 0.1.0
   grav:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-1.7.16 to reduce number of chart releases.
+      artifacthub.io/images: |
+        - name: grav
+          image: ghcr.io/linuxserver/grav:version-1.7.16
+    apiVersion: v2
+    appVersion: 1.7.16
+    created: "2021-06-15T18:53:02.656629043Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A Fast, Simple, and Flexible, file-based Web-platform.
+    digest: b3c950602e16c7d496c041d242157766c8afc17afa4bb345d60727a4d3404904
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/grav
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/grav-logo.png
+    keywords:
+    - grav
+    - web
+    - platform
+    - file
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: grav
+    sources:
+    - https://github.com/linuxserver/docker-grav
+    - https://github.com/getgrav/grav/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/grav-0.1.4/grav-0.1.4.tgz
+    version: 0.1.4
   - annotations:
       artifacthub.io/changes: |
         - kind: added
@@ -15227,4 +15295,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-14T22:46:55.007326086Z"
+generated: "2021-06-15T18:53:02.658117451Z"
