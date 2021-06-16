@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "057352e8"
-version: 1.0.0
+version: 1.0.1
 name: muximux
 description: A lightweight portal to view & manage your HTPC apps without having to run anything more than a PHP enabled webserver
 type: application
