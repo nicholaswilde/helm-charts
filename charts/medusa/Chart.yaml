@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "v0.5.12"
-version: 0.1.2
+appVersion: "v0.5.13"
+version: 0.1.3
 name: medusa
 description: An automatic Video Library Manager for TV Shows
 type: application
@@ -26,12 +26,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: values.schema.json
     - kind: changed
-      description: Bump tag to v0.5.12-ls74
-    - kind: changed
-      description: Bump common to 0.1.13
+      description: Change tag to version-v0.5.13 to reduce number of chart updates.
   artifacthub.io/images: |
     - name: medusa
-      image: ghcr.io/linuxserver/medusa:v0.5.12-ls74
+      image: ghcr.io/linuxserver/medusa:version-v0.5.13
