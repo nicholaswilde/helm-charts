@@ -9125,6 +9125,41 @@ entries:
   muximux:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Changed tag to version-057352e8 to reduce number of chart updates.
+      artifacthub.io/images: |
+        - name: muximux
+          image: ghcr.io/linuxserver/muximux:version-057352e8
+    apiVersion: v2
+    appVersion: "057352e8"
+    created: "2021-06-16T15:53:19.32752213Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A lightweight portal to view & manage your HTPC apps without having
+      to run anything more than a PHP enabled webserver
+    digest: 15d0c7ba96e726c8d982c988d2e314d6103611327b16f9c41d312aa90fb4e99e
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/muximux
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/muximux-icon.png
+    keywords:
+    - muximux
+    - htpc
+    - manage
+    - portal
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: muximux
+    sources:
+    - https://github.com/linuxserver/docker-muximux
+    - https://github.com/mescon/Muximux
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/muximux-1.0.1/muximux-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: values.schema.json
         - kind: changed
@@ -15369,4 +15404,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-15T19:46:05.027719141Z"
+generated: "2021-06-16T15:53:19.334068508Z"
