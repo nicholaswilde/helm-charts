@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/linuxserver/muximux
   pullPolicy: IfNotPresent
-  tag: "057352e8-ls84"
+  tag: "version-057352e8"
 
 # See more environment variables in the muximux documentation
 # https://github.com/linuxserver/docker-muximux#parameters

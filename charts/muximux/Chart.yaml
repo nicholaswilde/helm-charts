@@ -24,16 +24,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: values.schema.json
     - kind: changed
-      description: Bump tag to 057352e8-ls84
-    - kind: changed
-      description: Bump common to 0.1.13
-    - kind: changed
-      description: Simplify values.yaml
-    - kind: removed
-      description: secret in values.yaml
+      description: Changed tag to version-057352e8 to reduce number of chart updates.
   artifacthub.io/images: |
     - name: muximux
-      image: ghcr.io/linuxserver/muximux:057352e8-ls84
+      image: ghcr.io/linuxserver/muximux:version-057352e8
