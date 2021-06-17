@@ -5780,6 +5780,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: added
+          description: Update port default in values schema.
+      artifacthub.io/images: |
+        - name: template
+          image: ghcr.io/linuxserver/filezilla:version-3.51.0-r1
+    apiVersion: v2
+    appVersion: 3.51.0-r1
+    created: "2021-06-17T23:18:02.497606802Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A Helm chart for Kubernetes
+    digest: f28a8ec18f9b1f0c08325291c9dd1b5400515c26616bde8a3bd2296fbd65bb08
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/filezilla
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/filezilla-logo.png
+    keywords:
+    - filezilla
+    - ftp
+    - sftp
+    - ftps
+    - client
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: filezilla
+    sources:
+    - https://filezilla-project.org/
+    - https://github.com/linuxserver/docker-filezilla
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/filezilla-1.0.1/filezilla-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
           description: Initial release.
       artifacthub.io/images: |
         - name: template
@@ -15704,4 +15739,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-17T23:14:01.043425601Z"
+generated: "2021-06-17T23:18:02.499374915Z"
