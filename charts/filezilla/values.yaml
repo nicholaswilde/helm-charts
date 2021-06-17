@@ -1,0 +1,31 @@
+---
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/nicholaswilde/helm-charts/tree/main/charts/common/values.yaml
+#
+image:
+  repository: ghcr.io/linuxserver/filezilla
+  pullPolicy: IfNotPresent
+  tag: "version-3.51.0-r1"
+
+# See more environment variables in the filezilla documentation
+# https://github.com/linuxserver/docker-filezilla#parameters
+env: {}
+  # TZ: ""
+  # PUID: "1000"
+  # PGID: "1000"
+
+service:
+  port:
+    port: 3000
+
+ingress:
+  enabled: false
+
+persistence:
+  config:
+    enabled: false
+    emptyDir: false
+    mountPath: /config
