@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "7.2.0"
-version: 0.1.2
+version: 0.1.3
 name: digikam
 description: Professional Photo Management with the Power of Open Source
 type: application
@@ -25,14 +25,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: values.schema.json
     - kind: changed
-      description: Bump common to 0.1.13
-    - kind: changed
-      description: Bump tag to 7.2.0-ls27
-    - kind: removed
-      description: secret from values.yaml
+      description: Changed tag to version-7.2.0 to reduce number of chart updates.
   artifacthub.io/images: |
     - name: digikam
-      image: ghcr.io/linuxserver/digikam:7.2.0-ls27
+      image: ghcr.io/linuxserver/digikam:version-7.2.0
