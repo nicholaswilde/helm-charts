@@ -11039,6 +11039,45 @@ entries:
   projectsend:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-r1070 to reduce number of chart updates.
+      artifacthub.io/images: |
+        - name: projectsend
+          image: ghcr.io/linuxserver/projectsend:version-r1070
+    apiVersion: v2
+    appVersion: r1070
+    created: "2021-06-17T05:09:00.847539659Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.3
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
+    digest: 5652584151fd777447b734657d507757d3be4cdd7d89c4c811474d7490054478
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/projectsend
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/projectsend.jpg
+    keywords:
+    - project
+    - send
+    - upload
+    - files
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: projectsend
+    sources:
+    - https://www.projectsend.org/
+    - https://hub.docker.com/r/linuxserver/projectsend
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/projectsend-1.0.2/projectsend-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: values.schema.json
         - kind: changed
@@ -15481,4 +15520,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-17T05:03:56.297701371Z"
+generated: "2021-06-17T05:09:00.84966564Z"
