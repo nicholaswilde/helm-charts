@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/linuxserver/sickgear
   pullPolicy: IfNotPresent
-  tag: "release_0.24.2-ls86"
+  tag: "version-release_0.24.3"
 
 # See more environment variables in the sickgear documentation
 # https://github.com/linuxserver/docker-sickgear#parameters
