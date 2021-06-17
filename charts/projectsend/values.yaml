@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/linuxserver/projectsend
   pullPolicy: IfNotPresent
-  tag: "r1070-ls71"
+  tag: "version-r1070"
 
 # See more environment variables in the projectsend documentation
 # https://www.projectsend.org/how-to-install-projectsend/

@@ -35,20 +35,12 @@
                 },
                 "tag": {
                     "$id": "#/properties/image/properties/tag",
-                    "default": "",
+                    "default": "version-r1070",
                     "description": "An explanation about the purpose of this instance.",
                     "title": "Image tag",
                     "type": "string"
                 }
             }
-        },
-        "secret": {
-            "$id": "#/properties/secret",
-            "default": {},
-            "description": "An explanation about the purpose of this instance.",
-            "required": [],
-            "title": "Chart secret",
-            "type": "object"
         },
         "env": {
             "$id": "#/properties/env",
