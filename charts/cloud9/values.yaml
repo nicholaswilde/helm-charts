@@ -1,20 +1,24 @@
 ---
-# Default values for Cloud9.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/nicholaswilde/helm-charts/tree/main/charts/common/values.yaml
+#
+
 image:
   repository: ghcr.io/linuxserver/cloud9
   pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.29.2-ls78"
+  tag: "version-1.29.2"
 
 secret: {}
 # USERNAME="" #optional
 # PASSWORD="" #optional
 
-env:
-  # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-  TZ: "America/Los_Angeles"
+# See more environment variables in the cloud9 documentation
+# https://github.com/linuxserver/docker-cloud9#parameters
+env: {}
+  # TZ: "UTC"
   # PUID: "1000"
   # PGID: "1000"
   # GITURL=https://github.com/linuxserver/docker-cloud9.git #optional
@@ -24,16 +28,7 @@ service:
     port: 8000
 
 ingress:
-  enabled: true
-  hosts:
-    - host: "cloud9.192.168.1.203.nip.io"
-      paths:
-        - path: "/"
-          pathType: Prefix
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+  enabled: false
 
 persistence:
   code:
@@ -42,30 +37,9 @@ persistence:
     mountPath: /code
     accessMode: ReadWriteOnce
     size: 1Gi
-    ## Do not delete the pvc upon helm uninstall
-    skipuninstall: false
   sock:
     enabled: false
     emptyDir: false
     mountPath: /var/run/docker.sock
-    ## Template downloads data Persistent Volume Storage Class
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
-    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
-    ##   GKE, AWS & OpenStack)
-    ##
-    # storageClass: "-"
-    ##
-    ## If you want to reuse an existing claim, you can pass the name of the PVC using
-    ## the existingClaim variable
-    # existingClaim: your-claim
     accessMode: ReadWriteOnce
     size: 1Gi
-    ## Do not delete the pvc upon helm uninstall
-    skipuninstall: false
-
-livenessProbe:
-  enabled: false
-readinessProbe:
-  enabled: false

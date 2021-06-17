@@ -1,6 +1,6 @@
 appVersion: 1.29.2
 apiVersion: v2
-version: 0.2.22
+version: 1.0.0
 name: cloud9
 description: A complete web based IDE with terminal access
 type: application
@@ -8,7 +8,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/cloud9"
 icon: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cloud9.png"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - cloud9
@@ -24,7 +24,16 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to 1.29.2-ls78
-  artifacthub.io/images: |
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Changed tag to version-1.29.2 to reduce number of chart updates.
+    - kind: changed
+      description: Simplify values.yaml
+    - kind: removed
+      description: probes from values.yaml which enables them by default.
+artifacthub.io/images: |
     - name: cloud9
-      image: ghcr.io/linuxserver/cloud9:1.29.2-ls78
+      image: ghcr.io/linuxserver/cloud9:version-1.29.2
