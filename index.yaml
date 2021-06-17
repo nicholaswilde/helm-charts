@@ -13230,6 +13230,44 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Change tag to version-v5.1.6 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: snipe-it
+          image: ghcr.io/linuxserver/snipe-it:version-v5.1.6
+    apiVersion: v2
+    appVersion: v5.1.6
+    created: "2021-06-17T18:37:18.817167538Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.3
+    description: Open source asset management
+    digest: 9ad2d2ec0e082c50067ad2b57ed2251d7de34482032452f97cd445f3ac536bc3
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/snipe-it
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/snipe-it.jpg
+    keywords:
+    - snipeit
+    - snipe
+    - asset
+    - management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: snipe-it
+    sources:
+    - https://snipeitapp.com/
+    - https://hub.docker.com/r/linuxserver/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/snipe-it-1.0.2/snipe-it-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump tag to v5.1.6-ls133
       artifacthub.io/images: |
         - name: snipe-it
@@ -15595,4 +15633,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-17T18:31:55.334318996Z"
+generated: "2021-06-17T18:37:18.818699865Z"
