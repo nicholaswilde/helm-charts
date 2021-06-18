@@ -10985,6 +10985,41 @@ entries:
   photoshow:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-48aabb98 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: photoshow
+          image: ghcr.io/linuxserver/photoshow:version-48aabb98
+    apiVersion: v2
+    appVersion: 48aabb98
+    created: "2021-06-18T19:47:05.417625789Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A gallery software at its easiest, it doesn't even require a database.
+    digest: 9142470894b7f3d1e07bfa5ffdd2613f796d72ff3daf123432bdd51f00c0a289
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/photoshow
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/photoshow-icon.png
+    keywords:
+    - photoshow
+    - photo
+    - show
+    - gallary
+    - image
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: photoshow
+    sources:
+    - https://github.com/thibaud-rohmer/PhotoShow
+    - https://github.com/linuxserver/docker-photoshow
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/photoshow-1.0.1/photoshow-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: values.schema.json
         - kind: changed
@@ -15785,4 +15820,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-18T05:45:37.132468929Z"
+generated: "2021-06-18T19:47:05.419418677Z"
