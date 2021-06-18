@@ -674,6 +674,40 @@ entries:
   booksonic:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-1.2 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: booksonic
+          image: ghcr.io/linuxserver/booksonic:version-1.2
+    apiVersion: v2
+    appVersion: "1.2"
+    created: "2021-06-18T19:52:27.939014435Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: The selfhosted audiobook server
+    digest: edacfa5e6a46dfbd3d4e289aa558a6cab9e9c4d14d941197988f14fda7c69f77
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/booksonic
+    icon: http://booksonic.org/assets/img/booksonic.png
+    keywords:
+    - audio
+    - audiobook
+    - server
+    - book
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: booksonic
+    sources:
+    - http://booksonic.org/
+    - https://hub.docker.com/r/linuxserver/booksonic
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/booksonic-1.0.1/booksonic-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: values.schema.json
         - kind: changed
@@ -15820,4 +15854,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-18T19:47:05.419418677Z"
+generated: "2021-06-18T19:52:27.940880669Z"
