@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/linuxserver/photoshow
   pullPolicy: IfNotPresent
-  tag: "48aabb98-ls101"
+  tag: "version-48aabb98"
 
 # See more environment variables in the photoshow documentation
 # https://github.com/linuxserver/docker-photoshow#parameters

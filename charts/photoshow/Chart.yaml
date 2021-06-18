@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "48aabb98"
-version: 1.0.0
+version: 1.0.1
 name: photoshow
 description: A gallery software at its easiest, it doesn't even require a database.
 type: application
@@ -25,14 +25,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: values.schema.json
     - kind: changed
-      description: Bump common to 0.1.13
-    - kind: changed
-      description: Bump tag to 48aabb98-ls101
-    - kind: changed
-      description: Simply values.yaml
+      description: Change tag to version-48aabb98 to reduce the number of chart updates.
   artifacthub.io/images: |
     - name: photoshow
-      image: ghcr.io/linuxserver/photoshow:48aabb98-ls101
+      image: ghcr.io/linuxserver/photoshow:version-48aabb98
