@@ -1,6 +1,6 @@
 # beets
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: nightly-0d624191](https://img.shields.io/badge/AppVersion-nightly--0d624191-informational?style=flat-square)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 7e702a03](https://img.shields.io/badge/AppVersion-7e702a03-informational?style=flat-square)
 
 A music library manager and not, for the most part, a music player.
 

@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "nightly-0d624191"
-version: 1.0.0
+appVersion: "7e702a03"
+version: 1.0.1
 name: beets
 description: A music library manager and not, for the most part, a music player.
 type: application
@@ -25,16 +25,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: values.schema.json
     - kind: changed
-      description: Bump common to 0.1.13
-    - kind: changed
-      description: Simplify values.yaml
-    - kind: changed
-      description: Bump tag to nightly-0d624191-ls73
-    - kind: removed
-      description: secret from values.yaml
+      description: Change tag to nightly-version-7e702a03 to reduce the number of chart updates.
   artifacthub.io/images: |
     - name: beets
-      image: ghcr.io/linuxserver/beets:nightly-0d624191-ls73
+      image: ghcr.io/linuxserver/beets:nightly-version-7e702a03
