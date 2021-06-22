@@ -183,6 +183,48 @@ entries:
   babybuddy:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: 'BREAKING Changed repo to LSIO and so a lot of configs have changed'
+        - kind: changed
+          description: Bump common to 0.1.13
+      artifacthub.io/images: |
+        - name: babybuddy
+          image: ghcr.io/linuxserver/babybuddy:version-v1.6.0
+    apiVersion: v2
+    appVersion: v1.6.0
+    created: "2021-06-22T21:33:03.18332751Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: postgres.enabled
+      name: postgres
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.0
+    description: Helps caregivers track sleep, feedings, diaper changes, tummy time
+      and more to learn about and predict baby's needs without (as much) guess work.
+    digest: f203217fd0fd9be9dd83e7bbc47a619ae47c57ee296ac73db7124d5da41e1b74
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/babybuddy
+    icon: https://github.com/babybuddy/babybuddy/raw/master/babybuddy/static_src/logo/icon.png
+    keywords:
+    - baby
+    - buddy
+    - tracker
+    - parents
+    - parenting
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: babybuddy
+    sources:
+    - https://github.com/babybuddy/babybuddy
+    - https://github.com/nicholaswilde/docker-babybuddy
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/babybuddy-2.0.0/babybuddy-2.0.0.tgz
+    version: 2.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Add postgres support.
         - Simplify values.
         - Bump tag to v1.6.0-ls6
@@ -15958,4 +16000,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-22T21:25:02.352191075Z"
+generated: "2021-06-22T21:33:03.185152634Z"
