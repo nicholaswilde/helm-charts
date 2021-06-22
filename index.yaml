@@ -4,6 +4,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Change tag to version-3.0.2 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: audacity
+          image: ghcr.io/linuxserver/audacity:version-3.0.2
+    apiVersion: v2
+    appVersion: 3.0.2
+    created: "2021-06-22T21:25:02.349189371Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: An easy-to-use, multi-track audio editor and recorder
+    digest: f6b9b594a92c55570a7106e5b5f828633100c8447aa64ba55b33e97cf20b6266
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/audacity
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/audacity-logo.png
+    keywords:
+    - audacity
+    - music
+    - recorder
+    - editor
+    - audio
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: audacity
+    sources:
+    - https://github.com/linuxserver/docker-audacity
+    - https://www.audacityteam.org/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/audacity-0.1.4/audacity-0.1.4.tgz
+    version: 0.1.4
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump tag to 3.0.2-ls9
       artifacthub.io/images: |
         - name: audacity
@@ -15923,4 +15958,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-22T21:20:18.745689455Z"
+generated: "2021-06-22T21:25:02.352191075Z"
