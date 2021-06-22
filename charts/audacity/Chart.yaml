@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "3.0.2"
-version: 0.1.3
+version: 0.1.4
 name: audacity
 description: An easy-to-use, multi-track audio editor and recorder
 type: application
@@ -26,7 +26,7 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump tag to 3.0.2-ls9
+      description: Change tag to version-3.0.2 to reduce the number of chart updates.
   artifacthub.io/images: |
     - name: audacity
-      image: ghcr.io/linuxserver/audacity:3.0.2-ls9
+      image: ghcr.io/linuxserver/audacity:version-3.0.2
