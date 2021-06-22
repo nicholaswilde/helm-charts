@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/linuxserver/doublecommander
   pullPolicy: IfNotPresent
-  tag: "0.8.2-1-ls57"
+  tag: "version-0.8.2-1"
 
 # See more environment variables in the doublecommander documentation
 # https://github.com/linuxserver/docker-doublecommander#parameters
