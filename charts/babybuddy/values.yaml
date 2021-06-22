@@ -7,21 +7,14 @@
 #
 
 image:
-  repository: nicholaswilde/babybuddy
+  repository: ghcr.io/linuxserver/babybuddy
   pullPolicy: IfNotPresent
-  tag: "v1.6.0-ls6"
-
-secret:
-  SECRET_KEY: "password"
+  tag: "version-v1.6.0"
 
 # See more environment variables in the babybuddy documentation
-# https://github.com/babybuddy/babybuddy#configuration
-env:
-  ALLOWED_HOSTS: '*'
-  # sqlite
-  DJANGO_SETTINGS_MODULE: 'babybuddy.settings.base'
-  # postgres
-  # DJANGO_SETTINGS_MODULE: 'babybuddy.settings.docker'
+# https://github.com/linuxserver/docker-babybuddy#parameters
+env: {}
+  # TZ:
 
 service:
   port:
@@ -31,18 +24,10 @@ ingress:
   enabled: false
 
 persistence:
-  data:
+  config:
     enabled: false
     emptyDir: false
-    mountPath: /app/data
-    accessMode: ReadWriteOnce
-    size: 1Gi
-  media:
-    enabled: false
-    emptyDir: false
-    mountPath: /app/media
-    accessMode: ReadWriteOnce
-    size: 1Gi
+    mountPath: /config
 
 # Enable postgres
 # https://github.com/nicholaswilde/helm-charts/blob/main/charts/postgres/values.yaml

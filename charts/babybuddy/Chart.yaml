@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "v1.6.0"
-version: 1.0.0
+version: 2.0.0
 name: babybuddy
 description: Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work.
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/babybuddy"
 icon: "https://github.com/babybuddy/babybuddy/raw/master/babybuddy/static_src/logo/icon.png"
 dependencies:
   - name: common
-    version: ~0.1.9
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
   - name: postgres
     version: ~0.1.0
@@ -29,10 +29,10 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Add postgres support.
-    - Simplify values.
-    - Bump tag to v1.6.0-ls6
-    - Bump common to 0.1.9
+    - kind: changed
+      description: 'BREAKING Changed repo to LSIO and so a lot of configs have changed'
+    - kind: changed
+      description: Bump common to 0.1.13
   artifacthub.io/images: |
     - name: babybuddy
-      image: ghcr.io/nicholaswilde/babybuddy:v1.6.0-ls6
+      image: ghcr.io/linuxserver/babybuddy:version-v1.6.0
