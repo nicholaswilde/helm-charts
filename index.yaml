@@ -14221,6 +14221,41 @@ entries:
   sqlitebrowser:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-3.12.2-02876202105241947ubuntu18.04.1 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: sqlitebrowser
+          image: ghcr.io/linuxserver/sqlitebrowser:version-3.12.2-02876202105241947ubuntu18.04.1
+    apiVersion: v2
+    appVersion: 3.12.2
+    created: "2021-06-23T22:15:48.181024156Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A high quality, visual, open source tool to create, design, and edit
+      database files compatible with SQLite
+    digest: b43e286dcb000bb04b0a48a60e6fe8931ad061fc76f136c5950f7dc8a85e702e
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/sqlitebrowser
+    icon: https://sqlitebrowser.org/images/sqlitebrowser.svg
+    keywords:
+    - sqlite
+    - browser
+    - sqlitebrowser
+    - database
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: sqlitebrowser
+    sources:
+    - https://github.com/linuxserver/docker-sqlitebrowser
+    - https://sqlitebrowser.org/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/sqlitebrowser-1.0.1/sqlitebrowser-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: values.schema.json
         - kind: changed
@@ -16034,4 +16069,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-22T21:37:15.991929083Z"
+generated: "2021-06-23T22:15:48.182591766Z"
