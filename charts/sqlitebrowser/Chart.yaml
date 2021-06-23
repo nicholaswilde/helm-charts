@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "3.12.2"
-version: 1.0.0
+version: 1.0.1
 name: sqlitebrowser
 description: A high quality, visual, open source tool to create, design, and edit database files compatible with SQLite
 type: application
@@ -24,16 +24,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: values.schema.json
     - kind: changed
-      description: Bump common to 0.1.13
-    - kind: changed
-      description: Bump tag to 3.12.2-02876202105241947ubuntu18.04.1-ls40
-    - kind: changed
-      description: Simplify values.yaml
-    - kind: removed
-      description: secret from values.yaml
+      description: Change tag to version-3.12.2-02876202105241947ubuntu18.04.1 to reduce the number of chart updates.
   artifacthub.io/images: |
     - name: sqlitebrowser
-      image: ghcr.io/linuxserver/sqlitebrowser:3.12.2-02876202105241947ubuntu18.04.1-ls40
+      image: ghcr.io/linuxserver/sqlitebrowser:version-3.12.2-02876202105241947ubuntu18.04.1

@@ -35,7 +35,7 @@
                 },
                 "tag": {
                     "$id": "#/properties/image/properties/tag",
-                    "default": "3.12.2-02876202105241947ubuntu18.04.1-ls40",
+                    "default": "version-3.12.2-02876202105241947ubuntu18.04.1",
                     "description": "An explanation about the purpose of this instance.",
                     "title": "Image tag",
                     "type": "string"
