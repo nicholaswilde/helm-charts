@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: v5.1.6
-version: 1.0.2
+appVersion: 5.1.7
+version: 1.0.3
 name: snipe-it
 description: Open source asset management
 type: application
@@ -29,7 +29,7 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Change tag to version-v5.1.6 to reduce the number of chart updates.
+      description: Bump tag to version-5.1.7
   artifacthub.io/images: |
     - name: snipe-it
-      image: ghcr.io/linuxserver/snipe-it:version-v5.1.6
+      image: ghcr.io/linuxserver/snipe-it:version-5.1.7
