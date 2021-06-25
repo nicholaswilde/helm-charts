@@ -9,10 +9,10 @@
 image:
   repository: ghcr.io/linuxserver/mariadb
   pullPolicy: IfNotPresent
-  tag: "110.4.19mariabionic-ls23"
+  tag: "version-110.4.20mariabionic"
 
-secret: {}
-  # MYSQL_ROOT_PASSWORD: "ROOT_ACCESS_PASSWORD"
+secret:
+  MYSQL_ROOT_PASSWORD: "ROOT_ACCESS_PASSWORD"
   # MYSQL_PASSWORD: "DATABASE_PASSWORD"
 
 # See more environment variables in the mariadb documentation
