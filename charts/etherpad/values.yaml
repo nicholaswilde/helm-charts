@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/nicholaswilde/etherpad
   pullPolicy: IfNotPresent
-  tag: "1.8.13-ls8"
+  tag: "version-1.8.13"
 
 secret: {}
 

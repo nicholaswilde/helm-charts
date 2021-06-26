@@ -1,6 +1,6 @@
 # etherpad
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.8.13](https://img.shields.io/badge/AppVersion-1.8.13-informational?style=flat-square)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.8.13](https://img.shields.io/badge/AppVersion-1.8.13-informational?style=flat-square)
 
 A real-time collaborative editor scalable to thousands of simultaneous real time users.
 
@@ -8,8 +8,8 @@ A real-time collaborative editor scalable to thousands of simultaneous real time
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.8 |
-| https://nicholaswilde.github.io/helm-charts/ | mariadb | ~1.0.3 |
+| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.13 |
+| https://nicholaswilde.github.io/helm-charts/ | mariadb | ~1.0.5 |
 | https://nicholaswilde.github.io/helm-charts/ | postgres | ~0.1.0 |
 
 ## TL;DR

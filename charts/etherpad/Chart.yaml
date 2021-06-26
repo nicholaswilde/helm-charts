@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 1.8.13
-version: 1.0.0
+version: 1.0.1
 name: etherpad
 description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
 type: application
@@ -9,10 +9,10 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/etherpad"
 icon: "https://github.com/nicholaswilde/helm-charts/raw/main/images/etherpad.jpg"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
   - name: mariadb
-    version: ~1.0.3
+    version: ~1.0.5
     repository: https://nicholaswilde.github.io/helm-charts/
     condition: mariadb.enabled
   - name: postgres
@@ -33,8 +33,12 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Add support for mariadb and postgres
-    - Removed a bunch of config options
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Bump mariadb to 1.0.5
+    - kind: changed
+      description: Change tag to version-1.8.13 to reduce the number of chart updates.
   artifacthub.io/images: |
     - name: etherpad
-      image: ghcr.io/nicholaswilde/etherpad:1.8.13-ls8
+      image: ghcr.io/nicholaswilde/etherpad:version-1.8.13
