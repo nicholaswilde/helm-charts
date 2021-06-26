@@ -31,7 +31,7 @@ annotations:
     - kind: changed
       description: Bump tag to version-r1295.
     - kind: changed
-      description: Bup mariadb to 1.0.5.
+      description: Bump mariadb to 1.0.5.
   artifacthub.io/images: |
     - name: projectsend
       image: ghcr.io/linuxserver/projectsend:version-r1295
