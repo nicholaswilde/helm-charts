@@ -1,0 +1,299 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "required": [
+        "image",
+        "service",
+        "ingress"
+    ],
+    "title": "shiori Chart JSON Schema",
+    "type": "object",
+    "properties": {
+        "image": {
+            "$id": "#/properties/image",
+            "type": "object",
+            "title": "Chart image object",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "repository",
+                "pullPolicy",
+                "tag"
+            ],
+            "properties": {
+                "repository": {
+                    "$id": "#/properties/image/properties/repository",
+                    "default": "ghcr.io/nicholaswilde/shiori",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image repository",
+                    "type": "string"
+                },
+                "pullPolicy": {
+                    "$id": "#/properties/image/properties/pullPolicy",
+                    "default": "IfNotPresent",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image pull policy",
+                    "type": "string"
+                },
+                "tag": {
+                    "$id": "#/properties/image/properties/tag",
+                    "default": "version-v1.5.0",
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Image tag",
+                    "type": "string"
+                }
+            }
+        },
+        "secret": {
+            "$id": "#/properties/secret",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Chart secret",
+            "type": "object"
+        },
+        "env": {
+            "$id": "#/properties/env",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Environmental variables",
+            "type": "object"
+        },
+        "service": {
+            "$id": "#/properties/service",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "port"
+            ],
+            "title": "Service object",
+            "type": "object",
+            "properties": {
+                "port": {
+                    "$id": "#/properties/service/properties/port",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "port"
+                    ],
+                    "title": "Service port object",
+                    "type": "object",
+                    "properties": {
+                        "port": {
+                            "$id": "#/properties/service/properties/port/properties/port",
+                            "default": 8080,
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "Service port number",
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        },
+        "ingress": {
+            "$id": "#/properties/ingress",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "enabled"
+            ],
+            "title": "Ingress object",
+            "type": "object",
+            "properties": {
+                "enabled": {
+                    "$id": "#/properties/ingress/properties/enabled",
+                    "default": false,
+                    "description": "An explanation about the purpose of this instance.",
+                    "title": "Enable ingress",
+                    "type": "boolean"
+                }
+            }
+        },
+        "persistence": {
+            "$id": "#/properties/persistence",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [],
+            "title": "Persistence object",
+            "type": "object",
+            "properties": {
+                "data": {
+                    "$id": "#/properties/persistence/properties/data",
+                    "type": "object",
+                    "title": "data PVC",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [
+                        "enabled",
+                        "emptyDir",
+                        "mountPath"
+                    ],
+                    "properties": {
+                        "enabled": {
+                            "$id": "#/properties/persistence/properties/data/properties/enabled",
+                            "type": "boolean",
+                            "title": "Enable data PVC",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "emptyDir": {
+                            "$id": "#/properties/persistence/properties/data/properties/emptyDir",
+                            "type": "boolean",
+                            "title": "data emptyDir",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false
+                        },
+                        "mountPath": {
+                            "$id": "#/properties/persistence/properties/data/properties/mountPath",
+                            "default": "/data",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "data mount path",
+                            "type": "string"
+                        },
+                        "accessMode": {
+                            "$id": "#/properties/persistence/properties/data/properties/accessMode",
+                            "default": "ReadWriteOnce",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "data access mode",
+                            "type": "string"
+                        },
+                        "size": {
+                            "$id": "#/properties/persistence/properties/data/properties/size",
+                            "default": "1Gi",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "data size",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+         "mariadb": {
+            "$id": "#/properties/mariadb",
+            "type": "object",
+            "title": "The mariadb schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "enabled"
+            ],
+            "properties": {
+                "enabled": {
+                    "$id": "#/properties/mariadb/properties/enabled",
+                    "type": "boolean",
+                    "title": "Enable mariadb",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false
+                },
+                "secret": {
+                    "$id": "#/properties/mariadb/properties/secret",
+                    "type": "object",
+                    "title": "Mariadb secret",
+                    "description": "An explanation about the purpose of this instance.",
+                    "properties": {
+                        "MYSQL_ROOT_PASSWORD": {
+                            "$id": "#/properties/mariadb/properties/secret/properties/MYSQL_ROOT_PASSWORD",
+                            "type": "string",
+                            "title": "mariadb root password",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "shiori-pass"
+                        },
+                        "MYSQL_PASSWORD": {
+                            "$id": "#/properties/mariadb/properties/secret/properties/MYSQL_PASSWORD",
+                            "type": "string",
+                            "title": "mariadb password",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "shiori-pass"
+                        }
+                    }
+                },
+                "env": {
+                    "$id": "#/properties/mariadb/properties/env",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [],
+                    "title": "mariadb env variables",
+                    "type": "object",
+                    "properties": {
+                        "MYSQL_USER": {
+                            "$id": "#/properties/mariadb/properties/env/properties/MYSQL_USER",
+                            "default": "shiori",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "mariadb user",
+                            "type": "string"
+                        },
+                        "MYSQL_DATABASE": {
+                            "$id": "#/properties/mariadb/properties/env/properties/MYSQL_DATABASE",
+                            "default": "shiori-mariadb",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "mariadb database",
+                            "type": "string"
+                        }
+                    }
+                },
+                "fullnameOverride": {
+                    "$id": "#/properties/mariadb/properties/fullnameOverride",
+                    "type": "string",
+                    "title": "Set the entire name definition",
+                    "description": "Set the entire name definition.",
+                    "default": "shiori-mariadb"
+                }
+            }
+        },
+         "postgres": {
+            "$id": "#/properties/postgres",
+            "type": "object",
+            "title": "The postgres schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "enabled"
+            ],
+            "properties": {
+                "enabled": {
+                    "$id": "#/properties/postgres/properties/enabled",
+                    "type": "boolean",
+                    "title": "Enable postgres",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false
+                },
+                "secret": {
+                    "$id": "#/properties/postgres/properties/secret",
+                    "type": "object",
+                    "title": "postgres secret",
+                    "description": "An explanation about the purpose of this instance.",
+                    "properties": {
+                        "POSTGRES_PASSWORD": {
+                            "$id": "#/properties/postgres/properties/secret/properties/MYSQL_PASSWORD",
+                            "type": "string",
+                            "title": "postgres password",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "shiori-pass"
+                        }
+                    }
+                },
+                "env": {
+                    "$id": "#/properties/postgres/properties/env",
+                    "description": "An explanation about the purpose of this instance.",
+                    "required": [],
+                    "title": "postgres env variables",
+                    "type": "object",
+                    "properties": {
+                        "POSTGRES_USER": {
+                            "$id": "#/properties/postgres/properties/env/properties/MYSQL_USER",
+                            "default": "shiori",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "postgres user",
+                            "type": "string"
+                        },
+                        "POSTGRES_DB": {
+                            "$id": "#/properties/postgres/properties/env/properties/MYSQL_DATABASE",
+                            "default": "shiori-postgres",
+                            "description": "An explanation about the purpose of this instance.",
+                            "title": "postgres database",
+                            "type": "string"
+                        }
+                    }
+                },
+                "fullnameOverride": {
+                    "$id": "#/properties/postgres/properties/fullnameOverride",
+                    "type": "string",
+                    "title": "Set the entire name definition",
+                    "description": "Set the entire name definition.",
+                    "default": "shiori-postgres"
+                }
+            }
+        }
+    }
+}

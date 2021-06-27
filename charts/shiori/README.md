@@ -1,6 +1,6 @@
 # shiori
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.5.0](https://img.shields.io/badge/AppVersion-v1.5.0-informational?style=flat-square)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v1.5.0](https://img.shields.io/badge/AppVersion-v1.5.0-informational?style=flat-square)
 
 A simple bookmark manager built with Go
 
@@ -8,8 +8,8 @@ A simple bookmark manager built with Go
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.9 |
-| https://nicholaswilde.github.io/helm-charts/ | mariadb | ~1.0.0 |
+| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.13 |
+| https://nicholaswilde.github.io/helm-charts/ | mariadb | ~1.0.5 |
 | https://nicholaswilde.github.io/helm-charts/ | postgres | ~0.1.0 |
 
 ## TL;DR
