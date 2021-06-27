@@ -624,6 +624,46 @@ entries:
   blog:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: changed
+          description: Change tag to version-v1.3 in order to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: blog
+          image: ghcr.io/nicholaswilde/blog:version-v1.3
+    apiVersion: v2
+    appVersion: v1.3
+    created: "2021-06-27T07:59:17.005055545Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: Lightweight self-hosted facebook-styled PHP blog.
+    digest: de5e13a09956a7c1edb19a5d95e34606bdcd900c8d8f8e73d95be989432b4fdf
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/blog
+    keywords:
+    - blog
+    - php
+    - self
+    - hosted
+    - facebook
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: blog
+    sources:
+    - https://github.com/m1k1o/blog
+    - https://github.com/nicholaswilde/docker-blog
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/blog-1.0.0/blog-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bump tag to v1.3-ls2
       artifacthub.io/images: |
         - name: blog
@@ -16491,4 +16531,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-27T07:43:01.075997733Z"
+generated: "2021-06-27T07:59:17.007522857Z"
