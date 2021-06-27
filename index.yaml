@@ -9824,6 +9824,49 @@ entries:
   notes:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Change tag to version-ee287b9 in order to reduce the number of chart updates.
+        - kind: changed
+          description: simply values.yaml
+        - kind: removed
+          description: secret from values.yaml
+      artifacthub.io/images: |
+        - name: notes
+          image: ghcr.io/nicholaswilde/notes:version-ee287b9
+    apiVersion: v2
+    appVersion: ee287b9
+    created: "2021-06-27T07:26:23.338421634Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A self-hosted note taking web app that lets you keep track of your
+      notes and search them in a easy and minimal way.
+    digest: 066aef3cfad6525d9832922bef806597a1dac2e6e536dea023a29e7bf24634e5
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/notes
+    keywords:
+    - markdown
+    - notes
+    - app
+    - web
+    - webapp
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: notes
+    sources:
+    - https://github.com/prologic/notes
+    - https://github.com/nicholaswilde/docker-notes
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/notes-1.0.0/notes-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bump tag to ee287b9-ls2
       artifacthub.io/images: |
         - name: notes
@@ -16367,4 +16410,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-26T17:10:14.384394763Z"
+generated: "2021-06-27T07:26:23.342239652Z"
