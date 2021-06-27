@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "ee287b9"
-version: 0.1.2
+version: 1.0.0
 name: notes
 description: A self-hosted note taking web app that lets you keep track of your notes and search them in a easy and minimal way.
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/notes"
 icon: ""
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - markdown
@@ -25,7 +25,16 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to ee287b9-ls2
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Change tag to version-ee287b9 in order to reduce the number of chart updates.
+    - kind: changed
+      description: simply values.yaml
+    - kind: removed
+      description: secret from values.yaml
   artifacthub.io/images: |
     - name: notes
-      image: ghcr.io/nicholaswilde/notes:ee287b9-ls2
+      image: ghcr.io/nicholaswilde/notes:version-ee287b9
