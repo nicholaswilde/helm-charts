@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "154c581"
-version: 0.1.1
+version: 1.0.0
 name: golinks
 description: A web app that allows you to create smart bookmarks, commands and aliases by pointing your web browser's default search engine at a running instance.
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/golinks"
 icon: ""
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - search
@@ -25,7 +25,14 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to 154c581-ls2
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Simplify values.yaml
+    - kind: changed
+      description: Change tag to version-154c581 in order to reduce the number of chart updates.
   artifacthub.io/images: |
     - name: golinks
-      image: ghcr.io/nicholaswilde/golinks:154c581-ls2
+      image: ghcr.io/nicholaswilde/golinks:version-154c581
