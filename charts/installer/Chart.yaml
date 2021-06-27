@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "0.2.9"
-version: 0.2.8
+version: 1.0.0
 name: installer
 description: Quickly install pre-compiled binaries from Github releases.
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/installer"
@@ -24,7 +24,14 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to 0.2.9-ls4
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Simplify values.json
+    - kind: changed
+      description: Change tag to version-0.2.9 in order to reduce the number of chart updates
   artifacthub.io/images: |
     - name: installer
-      image: ghcr.io/nicholaswilde/installer:0.2.9-ls4
+      image: ghcr.io/nicholaswilde/installer:version-0.2.9

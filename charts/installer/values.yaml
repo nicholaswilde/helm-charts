@@ -1,29 +1,28 @@
 ---
-# Default values for installer.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/nicholaswilde/helm-charts/tree/main/charts/common/values.yaml
+#
+
 image:
   repository: ghcr.io/nicholaswilde/installer
   pullPolicy: IfNotPresent
-  tag: "0.2.9-ls4"
+  tag: "version-0.2.9"
 
 secret: {}
-# USER: ""
-# GH_TOKEN: ""
+  # USER: ""
+  # GH_TOKEN: ""
+
+# See more environment variables in the installer documentation
+# https://github.com/nicholaswilde/docker-installer
+env: {}
+  # TZ: ""
 
 service:
   port:
     port: 3000
+
 ingress:
-  enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
-  hosts:
-    - host: "installer.192.168.1.199.nip.io"
-      paths:
-        - path: "/"
-          pathType: Prefix
-  # tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+  enabled: false
