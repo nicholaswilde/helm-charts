@@ -12577,6 +12577,54 @@ entries:
   shiori:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Bump mariadb to 1.0.5
+        - kind: changed
+          description: Change tag to version-v1.5.0 in order to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: shiori
+          image: ghcr.io/nicholaswilde/shiori:version-v1.5.0
+    apiVersion: v2
+    appVersion: v1.5.0
+    created: "2021-06-27T08:13:02.31204911Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.5
+    - condition: postgres.enabled
+      name: postgres
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.0
+    description: A simple bookmark manager built with Go
+    digest: 9ce14738b797d22f9ebbd40b5e0c2c60f889309025d11c9f0179622979fb35f7
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/shiori
+    icon: https://github.com/go-shiori/shiori/raw/master/internal/view/res/apple-touch-icon-152x152.png
+    keywords:
+    - shiori
+    - bookmark
+    - bookmark-manager
+    - web-interface
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: shiori
+    sources:
+    - https://github.com/go-shiori/shiori
+    - https://github.com/nicholaswilde/docker-shiori
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/shiori-1.0.1/shiori-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |
         - Add postgres support
         - Bump common to 0.1.9
       artifacthub.io/images: |
@@ -16531,4 +16579,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-27T07:59:17.007522857Z"
+generated: "2021-06-27T08:13:02.313866103Z"
