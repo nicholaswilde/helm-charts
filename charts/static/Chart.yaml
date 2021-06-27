@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "ee8a20c"
-version: 0.1.1
+version: 1.0.0
 name: static
 description: A self-hosted static file serving app which does nothing more than just serve up static files from a mounted volume.
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/static"
 icon: ""
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - app
@@ -24,7 +24,16 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to ee8a20c-ls2
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Simplify values.yaml
+    - kind: changed
+      description: Change tag to version-ee8a20c in order to reduce the number of chart updates.
+    - kind: removed
+      description: secret from values.yaml
   artifacthub.io/images: |
     - name: static
-      image: ghcr.io/nicholaswilde/static:ee8a20c-ls2
+      image: ghcr.io/nicholaswilde/static:version-ee8a20c
