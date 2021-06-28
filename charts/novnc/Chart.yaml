@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 1.2.0
-version: 0.1.6
+version: 1.0.0
 name: novnc
 description: The open source VNC client
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/novnc"
 icon: "https://github.com/nicholaswilde/helm-charts/raw/main/images/novnc.png"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - novnc
@@ -23,7 +23,12 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to 1.2.0-ls3
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Change tag to version-1.2.0 to reduce the number of chart updates.
   artifacthub.io/images: |
     - name: novnc
-      image: ghcr.io/nicholaswilde/novnc:1.2.0-ls3
+      image: ghcr.io/nicholaswilde/novnc:version-1.2.0
