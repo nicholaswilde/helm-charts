@@ -10056,6 +10056,43 @@ entries:
   novnc:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Change tag to version-1.2.0 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: novnc
+          image: ghcr.io/nicholaswilde/novnc:version-1.2.0
+    apiVersion: v2
+    appVersion: 1.2.0
+    created: "2021-06-28T14:10:13.205176254Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: The open source VNC client
+    digest: 2337fc1cfe1fcd309709aa116ec70507cf08f27a8fe767e08bd9ffef5b18fc32
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/novnc
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/novnc.png
+    keywords:
+    - novnc
+    - vnc
+    - remote
+    - desktop
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: novnc
+    sources:
+    - https://novnc.com/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/novnc-1.0.0/novnc-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bump tag to 1.2.0-ls3
       artifacthub.io/images: |
         - name: novnc
@@ -16620,4 +16657,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-27T08:27:04.38042188Z"
+generated: "2021-06-28T14:10:13.207965726Z"
