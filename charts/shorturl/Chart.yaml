@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "v0.1.0"
-version: 0.1.3
+version: 1.0.0
 name: shorturl
 description: Self hosted web app for shortening urls (URL shortener)
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/shorturl"
 icon: ""
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - url
@@ -24,7 +24,16 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bumped tag to v0.1.0-ls2
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Simplify values.yaml
+    - kind: changed
+      description: Change tag to version-v0.1.0 to reduce the number of chart updates.
+    - kind: removed
+      description: secret from values.yaml
   artifacthub.io/images: |
     - name: shorturl
-      image: ghcr.io/nicholaswilde/shorturl:v0.1.0-ls2
+      image: ghcr.io/nicholaswilde/shorturl:version-v0.1.0
