@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/linuxserver/snipe-it
   pullPolicy: IfNotPresent
-  tag: "version-5.1.7"
+  tag: "version-v5.1.7"
 
 secret: {}
   # MYSQL_ROOT_PASSWORD: snipe-it-pass
