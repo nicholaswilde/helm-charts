@@ -16202,6 +16202,46 @@ entries:
   wiki:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: changed
+          description: Change tag to version-900b76a to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: wiki
+          image: ghcr.io/nicholaswilde/wiki:version-900b76a
+    apiVersion: v2
+    appVersion: 900b76a
+    created: "2021-06-29T05:28:25.686905302Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A self-hosted well uh wiki engine or content management system.
+    digest: 86264d37ad9acd62b60ae816b59a98a5289a69ad5b2acbd5e04403087e256f58
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/wiki
+    keywords:
+    - wiki
+    - web
+    - blog
+    - cms
+    - app
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: wiki
+    sources:
+    - https://github.com/prologic/wiki
+    - https://github.com/nicholaswilde/docker-wiki
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/wiki-1.0.0/wiki-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bump tag to 900b76a-ls2
       artifacthub.io/images: |
         - name: wiki
@@ -16810,4 +16850,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-29T04:54:57.214478292Z"
+generated: "2021-06-29T05:28:25.689261593Z"
