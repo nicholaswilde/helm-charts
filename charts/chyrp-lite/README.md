@@ -1,6 +1,6 @@
 # chyrp-lite
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2021.02](https://img.shields.io/badge/AppVersion-v2021.02-informational?style=flat-square)
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2021.03](https://img.shields.io/badge/AppVersion-v2021.03-informational?style=flat-square)
 
 An ultra-lightweight blogging engine, written in PHP.
 
@@ -11,7 +11,7 @@ An ultra-lightweight blogging engine, written in PHP.
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.8 |
+| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.13 |
 
 ## TL;DR
 ```console

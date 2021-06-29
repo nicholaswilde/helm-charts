@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "v2021.02"
-version: 0.1.2
+appVersion: "v2021.03"
+version: 1.0.0
 name: chyrp-lite
 description: An ultra-lightweight blogging engine, written in PHP.
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/chyrp-lite"
 icon: "https://github.com/nicholaswilde/helm-charts/raw/main/images/chyrp-lite.svg"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - docker
@@ -28,7 +28,14 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to v2021.02-ls2
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Change tag to version-v2021.03 in order to reduce the number of chart updates
+    - kind: removed
+      description: secret from values.yaml
   artifacthub.io/images: |
     - name: chyrp-lite
-      image: ghcr.io/nicholaswilde/chyrp-lite:v2021.02-ls2
+      image: ghcr.io/nicholaswilde/chyrp-lite:version-v2021.03
