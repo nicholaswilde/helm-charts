@@ -12923,6 +12923,47 @@ entries:
   shorturl:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: changed
+          description: Change tag to version-v0.1.0 to reduce the number of chart updates.
+        - kind: removed
+          description: secret from values.yaml
+      artifacthub.io/images: |
+        - name: shorturl
+          image: ghcr.io/nicholaswilde/shorturl:version-v0.1.0
+    apiVersion: v2
+    appVersion: v0.1.0
+    created: "2021-06-29T04:08:14.855491533Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: Self hosted web app for shortening urls (URL shortener)
+    digest: a07bf728a836a100268b2b67dc5b36f5392702015ef6b0d409cc27e3cae261df
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/shorturl
+    keywords:
+    - url
+    - shortener
+    - shorten
+    - shorturl
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: shorturl
+    sources:
+    - https://github.com/prologic/shorturl
+    - https://github.com/nicholaswilde/docker-shorturl
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/shorturl-1.0.0/shorturl-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Bumped tag to v0.1.0-ls2
       artifacthub.io/images: |
         - name: shorturl
@@ -16730,4 +16771,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-29T01:20:08.89097188Z"
+generated: "2021-06-29T04:08:14.85763175Z"
