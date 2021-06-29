@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "900b76a"
-version: 0.1.1
+version: 1.0.0
 name: wiki
 description: A self-hosted well uh wiki engine or content management system.
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/wiki"
 icon: ""
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - wiki
@@ -25,7 +25,14 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Bump tag to 900b76a-ls2
+    - kind: added
+      description: values.schema.json
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Simplify values.yaml
+    - kind: changed
+      description: Change tag to version-900b76a to reduce the number of chart updates.
   artifacthub.io/images: |
     - name: wiki
-      image: ghcr.io/nicholaswilde/wiki:900b76a-ls2
+      image: ghcr.io/nicholaswilde/wiki:version-900b76a

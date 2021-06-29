@@ -1,6 +1,6 @@
 # wiki
 
-![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 900b76a](https://img.shields.io/badge/AppVersion-900b76a-informational?style=flat-square)
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 900b76a](https://img.shields.io/badge/AppVersion-900b76a-informational?style=flat-square)
 
 A self-hosted well uh wiki engine or content management system.
 
@@ -11,7 +11,7 @@ A self-hosted well uh wiki engine or content management system.
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.8 |
+| https://nicholaswilde.github.io/helm-charts/ | common | ~0.1.13 |
 
 ## TL;DR
 ```console
