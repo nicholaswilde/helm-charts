@@ -1,0 +1,36 @@
+---
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/nicholaswilde/helm-charts/tree/main/charts/common/values.yaml
+#
+
+image:
+  repository: ghcr.io/linuxserver/piwigo
+  pullPolicy: IfNotPresent
+  tag: "version-11.5.0"
+
+# See more environment variables in the template documentation
+# https://template.org/docs
+env: {}
+  # TZ: ""
+
+service:
+  port:
+    port: 80
+
+ingress:
+  enabled: false
+
+persistence:
+  config:
+    enabled: false
+    emptyDir: false
+    mountPath: /config
+  gallery:
+    enabled: false
+    emptyDir: false
+    mountPath: /gallery
+    accessMode: ReadWriteOnce
+    size: 1Gi
