@@ -11823,6 +11823,42 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/photoshow-0.1.0/photoshow-0.1.0.tgz
     version: 0.1.0
+  piwigo:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial release.
+      artifacthub.io/images: |
+        - name: piwigo
+          image: ghcr.io/linuxserver/piwigo:version-11.5.0
+    apiVersion: v2
+    appVersion: 11.5.0
+    created: "2021-06-30T05:24:55.864993813Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A is photo gallery software for the web, built by an active community
+      of users and developers.
+    digest: 57c0cc9d5ba538b3bc61ed89c3cc95708e7a38e6bd0e3168b26f92f46b4ca176
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/piwigo
+    icon: https://avatars.githubusercontent.com/u/9326886?s=200&v=4
+    keywords:
+    - piwigo
+    - gallery
+    - photo
+    - image
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: piwigo
+    sources:
+    - http://piwigo.org/
+    - https://github.com/linuxserver/docker-piwigo
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/piwigo-1.0.0/piwigo-1.0.0.tgz
+    version: 1.0.0
   pixapop:
   - annotations:
       artifacthub.io/changes: |
@@ -17055,4 +17091,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-30T04:08:09.353466113Z"
+generated: "2021-06-30T05:24:55.866947787Z"
