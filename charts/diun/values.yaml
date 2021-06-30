@@ -1,21 +1,25 @@
 ---
-# Default values for Diun
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/nicholaswilde/helm-charts/tree/main/charts/common/values.yaml
+#
+
 image:
   repository: ghcr.io/crazy-max/diun
   pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: "4.17.0"
+  tag: "4.19.0"
 
 secret: {}
 # DIUN_NOTIF_GOTIFY_TOKEN: ""
 
 service:
   enabled: false
+
+# See more environment variables in the diun documentation
 # https://crazymax.dev/diun/config/
 env:
-  # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "America/Los_Angeles"
   LOG_LEVEL: "info"
   LOG_JSON: "false"
@@ -27,6 +31,7 @@ env:
   DIUN_NOTIF_GOTIFY_TIMEOUT: "10s"
   # Kubernetes
   DIUN_PROVIDERS_KUBERNETES: "true"
+
 rbac:
   rules:
     - apiGroups:
@@ -37,26 +42,14 @@ rbac:
         - get
         - watch
         - list
+
 persistence:
   data:
     enabled: false
     emptyDir: false
     mountPath: /data
-    ## Template downloads data Persistent Volume Storage Class
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
-    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
-    ##   GKE, AWS & OpenStack)
-    ##
-    # storageClass: "-"
-    ##
-    ## If you want to reuse an existing claim, you can pass the name of the PVC using
-    ## the existingClaim variable
-    # existingClaim: your-claim
     accessMode: ReadWriteOnce
     size: 1Gi
-    ## Do not delete the pvc upon helm uninstall
-    skipuninstall: false
+
 serviceAccount:
   create: true
