@@ -1,14 +1,14 @@
 ---
 apiVersion: v2
-appVersion: 2.0.22
-version: 0.2.6
+appVersion: 2.0.23
+version: 1.0.0
 name: gotify
 description: a simple server for sending and receiving messages
 type: application
 home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/gotify"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.13
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - server
@@ -24,8 +24,12 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - Updated tag to 2.0.22
-    - Changed persistence.data.mountPath to /app/data
+    - kind: changed
+      description: Bump common to 0.1.13
+    - kind: changed
+      description: Bump tag to 2.0.23
+    - kind: changed
+      description: Simplify values.yaml
   artifacthub.io/images: |
     - name: gotify
-      image: gotify/server-arm7:2.0.22
+      image: gotify/server-arm7:2.0.23

@@ -1,17 +1,24 @@
-# Default values for Gotify.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
+---
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/nicholaswilde/helm-charts/tree/main/charts/common/values.yaml
+#
 
 image:
   repository: gotify/server-arm7
+  # repository: gotify/server-arm64
+  # repository: gotify/server
   pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: "2.0.22"
+  tag: "2.0.23"
 
 secret:
   user: "admin"
   pass: "admin"
 
+# See more environment variables in the gotify documentation
+# https://gotify.net/docs/config#environment-variables
 env:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "America/Los_Angeles"
@@ -46,37 +53,12 @@ service:
     port: 80
 
 ingress:
-  enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: 192.168.1.0/24
-  hosts:
-    - host: "gotify.192.168.1.189.nip.io"
-      paths:
-        - path: "/"
-          pathType: Prefix
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+  enabled: false
 
 persistence:
   data:
     enabled: false
     emptyDir: false
     mountPath: /app/data
-    ## gotify downloads data Persistent Volume Storage Class
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
-    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
-    ##   GKE, AWS & OpenStack)
-    ##
-    # storageClass: "-"
-    ##
-    ## If you want to reuse an existing claim, you can pass the name of the PVC using
-    ## the existingClaim variable
-    # existingClaim: your-claim
     accessMode: ReadWriteOnce
     size: 1Gi
-    ## Do not delete the pvc upon helm uninstall
-    skipuninstall: false
