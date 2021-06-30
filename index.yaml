@@ -6763,6 +6763,44 @@ entries:
   gotify:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Bump tag to 2.0.23
+        - kind: changed
+          description: Simplify values.yaml
+      artifacthub.io/images: |
+        - name: gotify
+          image: gotify/server-arm7:2.0.23
+    apiVersion: v2
+    appVersion: 2.0.23
+    created: "2021-06-30T04:08:09.348520985Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: a simple server for sending and receiving messages
+    digest: ce340e4f37854a07d6035411b798ef11d9d20fac4d71b4f52794121095f675d1
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/gotify
+    icon: https://gotify.net/img/logo.png
+    keywords:
+    - server
+    - gotify
+    - messages
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: gotify
+    sources:
+    - https://gotify.net/
+    - https://github.com/gotify/server
+    - https://hub.docker.com/r/gotify/server
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/gotify-1.0.0/gotify-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
         - Updated tag to 2.0.22
         - Changed persistence.data.mountPath to /app/data
       artifacthub.io/images: |
@@ -17017,4 +17055,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-30T03:55:48.820951565Z"
+generated: "2021-06-30T04:08:09.353466113Z"
