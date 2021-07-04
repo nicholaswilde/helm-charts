@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 1.8.13
-version: 1.0.1
+appVersion: 1.8.14
+version: 1.0.2
 name: etherpad
 description: A real-time collaborative editor scalable to thousands of simultaneous real time users.
 type: application
@@ -34,11 +34,7 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump common to 0.1.13
-    - kind: changed
-      description: Bump mariadb to 1.0.5
-    - kind: changed
-      description: Change tag to version-1.8.13 to reduce the number of chart updates.
+      description: Bump tag to 1.8.14
   artifacthub.io/images: |
     - name: etherpad
-      image: ghcr.io/nicholaswilde/etherpad:version-1.8.13
+      image: ghcr.io/nicholaswilde/etherpad:version-1.8.14
