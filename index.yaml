@@ -5704,6 +5704,50 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Bump tag to 1.8.14
+      artifacthub.io/images: |
+        - name: etherpad
+          image: ghcr.io/nicholaswilde/etherpad:version-1.8.14
+    apiVersion: v2
+    appVersion: 1.8.14
+    created: "2021-07-04T06:57:44.42185056Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.5
+    - condition: postgres.enabled
+      name: postgres
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.0
+    description: A real-time collaborative editor scalable to thousands of simultaneous
+      real time users.
+    digest: e61fa0b618926ab2c6daabb787f76b311ce7c7d37d19fea650117735b4ba1a54
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/etherpad
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/etherpad.jpg
+    keywords:
+    - etherpad
+    - editor
+    - notepad
+    - pad
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: etherpad
+    sources:
+    - https://etherpad.org/
+    - https://github.com/ether/etherpad-lite
+    - https://hub.docker.com/r/nicholaswilde/etherpad
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/etherpad-1.0.2/etherpad-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump common to 0.1.13
         - kind: changed
           description: Bump mariadb to 1.0.5
@@ -17091,4 +17135,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-30T05:24:55.866947787Z"
+generated: "2021-07-04T06:57:44.423998685Z"
