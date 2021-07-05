@@ -13871,6 +13871,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Change tag to version-2.7.3-r5 in order to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: smokeping
+          image: ghcr.io/linuxserver/smokeping:version-2.7.3-r5
+    apiVersion: v2
+    appVersion: 2.7.3
+    created: "2021-07-05T22:31:44.164247821Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: Keep track of your network latency.
+    digest: e21c0f657d067fda0b9a2f1226c457bc653b84996c21f8dfc55a23cfceb100d0
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/smokeping
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/smokeping.png
+    keywords:
+    - smokeping
+    - network
+    - latency
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: smokeping
+    sources:
+    - https://oss.oetiker.ch/smokeping/
+    - https://hub.docker.com/r/linuxserver/smokeping
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/smokeping-0.1.24/smokeping-0.1.24.tgz
+    version: 0.1.24
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump tag to 2.7.3-r5-ls128
       artifacthub.io/images: |
         - name: smokeping
@@ -17239,4 +17272,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-07-05T22:26:05.427202729Z"
+generated: "2021-07-05T22:31:44.16730906Z"
