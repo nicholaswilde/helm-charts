@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/linuxserver/code-server
   pullPolicy: IfNotPresent
-  tag: "v3.10.2-ls82"
+  tag: "version-v3.10.2"
 
 secret: {}
 # PASSWORD: password

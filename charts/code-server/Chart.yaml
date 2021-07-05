@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: v3.10.2
-version: 1.0.0
+version: 1.0.1
 name: code-server
 description: Run VS Code on any machine anywhere and access it in the browser.
 type: application
@@ -24,14 +24,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: values.schema.json
     - kind: changed
-      description: Bump common to 0.1.13
-    - kind: changed
-      description: Simplify values.yaml
-    - kind: changed
-      description: Bump tag to v3.10.2-ls82
+      description: Change tag to version-v3.10.2 in order to reduce the number of chart updates
   artifacthub.io/images: |
     - name: code-server
-      image: ghcr.io/linuxserver/code-server:v3.10.2-ls82
+      image: ghcr.io/linuxserver/code-server:version-v3.10.2
