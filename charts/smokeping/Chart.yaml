@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "2.7.3"
-version: 0.1.23
+version: 0.1.24
 name: smokeping
 description: Keep track of your network latency.
 type: application
@@ -24,7 +24,7 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump tag to 2.7.3-r5-ls128
+      description: Change tag to version-2.7.3-r5 in order to reduce the number of chart updates.
   artifacthub.io/images: |
     - name: smokeping
-      image: ghcr.io/linuxserver/smokeping:2.7.3-r5-ls128
+      image: ghcr.io/linuxserver/smokeping:version-2.7.3-r5
