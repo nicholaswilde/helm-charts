@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/linuxserver/medusa
   pullPolicy: IfNotPresent
-  tag: "version-v0.5.13"
+  tag: "version-v0.5.14"
 
 secret: {}
 
