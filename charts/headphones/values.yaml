@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/linuxserver/headphones
   pullPolicy: IfNotPresent
-  tag: "379fd3d0-ls76"
+  tag: "version-58edc604"
 
 # See more environment variables in the headphones documentation
 # https://github.com/linuxserver/docker-headphones#parameters
