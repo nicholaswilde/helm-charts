@@ -35,7 +35,7 @@
                 },
                 "tag": {
                     "$id": "#/properties/image/properties/tag",
-                    "default": "",
+                    "default": "version-1.8.2",
                     "description": "An explanation about the purpose of this instance.",
                     "title": "Image tag",
                     "type": "string"
@@ -78,7 +78,7 @@
                     "properties": {
                         "port": {
                             "$id": "#/properties/service/properties/port/properties/port",
-                            "default": 8081,
+                            "default": 3000,
                             "description": "An explanation about the purpose of this instance.",
                             "title": "Service port number",
                             "type": "integer"
