@@ -10810,6 +10810,40 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/odoo-0.1.1/odoo-0.1.1.tgz
     version: 0.1.1
+  olivetin:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial release.
+      artifacthub.io/images: |
+        - name: olivetin
+          image: ghcr.io/olivetin/olivetin:version-2021-05-28
+    apiVersion: v2
+    appVersion: "2021-05-28"
+    created: "2021-07-11T07:25:36.445542969Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A web interface for running Linux shell commands.
+    digest: b350d3c1b6d3333a8877f009a287825daefbda756b21c2ea0326c28354773675
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/olivetin
+    icon: https://avatars.githubusercontent.com/u/85869711?s=200&v=4
+    keywords:
+    - olivetin
+    - shell
+    - commands
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: olivetin
+    sources:
+    - https://github.com/OliveTin/OliveTin
+    - https://github.com/nicholaswilde/docker-olivetin
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/olivetin-1.0.0/olivetin-1.0.0.tgz
+    version: 1.0.0
   papermerge:
   - annotations:
       artifacthub.io/changes: |
@@ -17488,4 +17522,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-07-10T15:21:43.853237896Z"
+generated: "2021-07-11T07:25:36.447660951Z"
