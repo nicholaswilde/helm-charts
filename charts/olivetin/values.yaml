@@ -1,0 +1,42 @@
+---
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/nicholaswilde/helm-charts/tree/main/charts/common/values.yaml
+#
+image:
+  repository: ghcr.io/nicholaswilde/olivetin
+  pullPolicy: IfNotPresent
+  tag: "version-2021-05-28"
+
+# See more environment variables in the olivetin documentation
+# https://github.com/nicholaswilde/docker-olivetin
+env:
+  TZ: "UTC"
+
+service:
+  port:
+    port: 1337
+
+ingress:
+  enabled: false
+
+persistence:
+  config:
+    enabled: false
+    emptyDir: false
+    mountPath: /config
+
+config: |
+  listenAddressWebUI: localhost:1340  # Listen on all addresses available, port 1337
+  ListenAddressSingleHTTPFrontend: 0.0.0.0:1337 # Listen on all addresses available, port 1337
+  logLevel: "INFO"
+  actions:
+    - title: Restart Plex
+      icon: smile
+      shell: docker restart plex
+
+    # This will send 1 ping
+    - title: Ping Google.com
+      shell: ping google.com -c 1
