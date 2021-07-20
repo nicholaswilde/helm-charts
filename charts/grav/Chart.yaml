@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "1.7.17"
-version: 0.1.5
+appVersion: "1.7.18"
+version: 0.1.6
 name: grav
 description: A Fast, Simple, and Flexible, file-based Web-platform.
 type: application
@@ -25,7 +25,7 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump tag to version-1.7.17
+      description: Bump tag to version-1.7.18
   artifacthub.io/images: |
     - name: grav
-      image: ghcr.io/linuxserver/grav:version-1.7.17
+      image: ghcr.io/linuxserver/grav:version-1.7.18
