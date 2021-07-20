@@ -484,6 +484,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Bump tag to nightly-version-600c9283
+      artifacthub.io/images: |
+        - name: beets
+          image: ghcr.io/linuxserver/beets:nightly-version-600c9283
+    apiVersion: v2
+    appVersion: 600c9283
+    created: "2021-07-20T02:01:16.089352054Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A music library manager and not, for the most part, a music player.
+    digest: c0539758b3d793877553120d353dc655b1001964f85da6ce2975425fe931cfb3
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/beets
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/beets.png
+    keywords:
+    - music
+    - library
+    - manager
+    - player
+    - beets
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: beets
+    sources:
+    - https://github.com/linuxserver/docker-beets
+    - https://beets.io/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/beets-1.0.2/beets-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Change tag to nightly-version-7e702a03 to reduce the number of chart updates.
       artifacthub.io/images: |
         - name: beets
@@ -17699,4 +17734,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-07-20T01:58:18.53406615Z"
+generated: "2021-07-20T02:01:16.091040885Z"
