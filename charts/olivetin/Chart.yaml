@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "2021-05-28"
-version: 1.0.0
+version: 1.0.1
 name: olivetin
 description: A web interface for running Linux shell commands.
 type: application
@@ -24,7 +24,7 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: added
-      description: Initial release.
+      description: Fix image repo..
   artifacthub.io/images: |
     - name: olivetin
-      image: ghcr.io/olivetin/olivetin:version-2021-05-28
+      image: ghcr.io/nicholaswilde/olivetin:version-2021-05-28
