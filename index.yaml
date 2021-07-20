@@ -3684,6 +3684,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Bump tag to version-v3.11.0
+      artifacthub.io/images: |
+        - name: code-server
+          image: ghcr.io/linuxserver/code-server:version-v3.11.0
+    apiVersion: v2
+    appVersion: v3.11.0
+    created: "2021-07-20T02:04:10.457977894Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: Run VS Code on any machine anywhere and access it in the browser.
+    digest: 106974ffa2df9ba48e876e6aa1f4dc0ec7f88fd55ac135724c19845868041aef
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/code-server
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/code-server.jpg
+    keywords:
+    - code
+    - vs
+    - visual studio
+    - vscode
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: code-server
+    sources:
+    - https://github.com/cdr/code-server
+    - https://hub.docker.com/r/linuxserver/code-server
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/code-server-1.1.0/code-server-1.1.0.tgz
+    version: 1.1.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Change tag to version-v3.10.2 in order to reduce the number of chart updates
       artifacthub.io/images: |
         - name: code-server
@@ -17734,4 +17768,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-07-20T02:01:16.091040885Z"
+generated: "2021-07-20T02:04:10.460421354Z"
