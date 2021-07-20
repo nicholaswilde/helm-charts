@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "v1.6.0"
-version: 2.0.0
+appVersion: "v1.7.0"
+version: 2.1.0
 name: babybuddy
 description: Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work.
 type: application
@@ -30,9 +30,7 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: 'BREAKING Changed repo to LSIO and so a lot of configs have changed'
-    - kind: changed
-      description: Bump common to 0.1.13
+      description: Bump tag to version-v1.7.0
   artifacthub.io/images: |
     - name: babybuddy
-      image: ghcr.io/linuxserver/babybuddy:version-v1.6.0
+      image: ghcr.io/linuxserver/babybuddy:version-v1.7.0
