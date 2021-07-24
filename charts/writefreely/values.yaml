@@ -1,0 +1,148 @@
+---
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/nicholaswilde/helm-charts/tree/main/charts/common/values.yaml
+#
+
+image:
+  repository: ghcr.io/nicholaswilde/writefreely
+  pullPolicy: IfNotPresent
+  tag: "version-0.13.1"
+
+secret: {}
+
+# See more environment variables in the template documentation
+# https://template.org/docs
+env: {}
+  # TZ: ""
+
+service:
+  port:
+    port: 8080
+
+ingress:
+  enabled: false
+
+persistence:
+  config:
+    enabled: false
+    emptyDir: false
+    mountPath: /config
+  defaults:
+    enabled: false
+    emptyDir: false
+    mountPath: /defaults
+    accessMode: ReadWriteOnce
+    size: 1Gi
+  app:
+    enabled: false
+    emptyDir: false
+    mountPath: /app
+    accessMode: ReadWriteOnce
+    size: 1Gi
+
+config: |
+  [server]
+  hidden_host          =
+  port                 = 8080
+  bind                 = 0.0.0.0
+  tls_cert_path        =
+  tls_key_path         =
+  autocert             = false
+  templates_parent_dir =
+  static_parent_dir    =
+  pages_parent_dir     =
+  keys_parent_dir      =
+  hash_seed            =
+  gopher_port          = 0
+
+  [database]
+  type     = sqlite3
+  filename = app.db
+  username =
+  password =
+  database =
+  host     = localhost
+  port     = 3306
+  tls      = false
+
+  [app]
+  site_name             = blog
+  site_description      =
+  host                  = http://0.0.0.0:8080
+  theme                 = write
+  editor                =
+  disable_js            = false
+  webfonts              = true
+  landing               =
+  simple_nav            = false
+  wf_modesty            = false
+  chorus                = false
+  forest                = false
+  disable_drafts        = false
+  single_user           = true
+  open_registration     = false
+  open_deletion         = false
+  min_username_len      = 3
+  max_blogs             = 1
+  federation            = true
+  public_stats          = true
+  monetization          = false
+  notes_only            = false
+  private               = false
+  local_timeline        = false
+  user_invites          =
+  default_visibility    =
+  update_checks         = false
+  disable_password_auth = false
+
+  [oauth.slack]
+  client_id          =
+  client_secret      =
+  team_id            =
+  callback_proxy     =
+  callback_proxy_api =
+
+  [oauth.writeas]
+  client_id          =
+  client_secret      =
+  auth_location      =
+  token_location     =
+  inspect_location   =
+  callback_proxy     =
+  callback_proxy_api =
+
+  [oauth.gitlab]
+  client_id          =
+  client_secret      =
+  host               =
+  display_name       =
+  callback_proxy     =
+  callback_proxy_api =
+
+  [oauth.gitea]
+  client_id          =
+  client_secret      =
+  host               =
+  display_name       =
+  callback_proxy     =
+  callback_proxy_api =
+
+  [oauth.generic]
+  client_id          =
+  client_secret      =
+  host               =
+  display_name       =
+  callback_proxy     =
+  callback_proxy_api =
+  token_endpoint     =
+  inspect_endpoint   =
+  auth_endpoint      =
+  scope              =
+  allow_disconnect   = false
+  map_user_id        =
+  map_username       =
+  map_display_name   =
+  map_email          =
