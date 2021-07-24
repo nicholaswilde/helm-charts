@@ -17801,4 +17801,37 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/wikijs-0.1.0/wikijs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-07-20T04:06:37.044830923Z"
+  writefreely:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial release.
+      artifacthub.io/images: |
+        - name: writefreely
+          image: ghcr.io/nicholaswilde/writefreely:version-0.13.1
+    apiVersion: v2
+    appVersion: 0.13.1
+    created: "2021-07-24T04:34:50.68323749Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A simple, federated blogging platform.
+    digest: 19898315307d4361b076313db01ff663546ec6dcff0a5283e38adcf9f82b222b
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/writefreely
+    icon: https://avatars.githubusercontent.com/u/45876560?s=200&v=4
+    keywords:
+    - writefreely
+    - blog
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: writefreely
+    sources:
+    - https://github.com/writefreely/writefreely
+    - https://github.com/nicholaswilde/docker-writefreely
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/writefreely-1.0.0/writefreely-1.0.0.tgz
+    version: 1.0.0
+generated: "2021-07-24T04:34:50.687277611Z"
