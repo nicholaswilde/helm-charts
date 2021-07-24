@@ -9837,6 +9837,42 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Bump tag to version-v0.5.15
+      artifacthub.io/images: |
+        - name: medusa
+          image: ghcr.io/linuxserver/medusa:version-v0.5.15
+    apiVersion: v2
+    appVersion: v0.5.15
+    created: "2021-07-24T04:43:28.864216274Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: An automatic Video Library Manager for TV Shows
+    digest: ef4f66ad6d890d55deec31932b2fa589b5de885b7b8ccbe8285a3bf136f6c6dc
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/medusa
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/medusa-icon.png
+    keywords:
+    - medusa
+    - video
+    - library
+    - manager
+    - tv
+    - shows
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: medusa
+    sources:
+    - https://github.com/linuxserver/docker-medusa
+    - https://pymedusa.com/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/medusa-0.1.5/medusa-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump tag to version-v0.5.14
       artifacthub.io/images: |
         - name: medusa
@@ -17834,4 +17870,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/writefreely-1.0.0/writefreely-1.0.0.tgz
     version: 1.0.0
-generated: "2021-07-24T04:34:50.687277611Z"
+generated: "2021-07-24T04:43:28.867106112Z"
