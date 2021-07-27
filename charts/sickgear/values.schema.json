@@ -35,7 +35,7 @@
                 },
                 "tag": {
                     "$id": "#/properties/image/properties/tag",
-                    "default": "version-release_0.24.12",
+                    "default": "version-release_0.24.13",
                     "description": "An explanation about the purpose of this instance.",
                     "title": "Image tag",
                     "type": "string"
