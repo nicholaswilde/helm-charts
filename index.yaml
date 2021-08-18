@@ -10271,6 +10271,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Bump tag to version-v5.2.5
+      artifacthub.io/images: |
+        - name: mstream
+          image: ghcr.io/linuxserver/mstream:version-v5.2.5
+    apiVersion: v2
+    appVersion: v5.2.5
+    created: "2021-08-18T17:47:44.593013793Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A personal music streaming server
+    digest: d205bbfac8c9c0570a49d6f16ddb50939a91f593e1f1da20e6d0d0e00a697877
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/mstream
+    icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/images/mstream.png
+    keywords:
+    - mstream
+    - server
+    - music
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: mstream
+    sources:
+    - https://github.com/linuxserver/docker-mstream
+    - https://mstream.io/
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/mstream-2.1.2/mstream-2.1.2.tgz
+    version: 2.1.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump tag to version-v5.2.1
       artifacthub.io/images: |
         - name: mstream
@@ -18223,4 +18256,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/writefreely-1.0.0/writefreely-1.0.0.tgz
     version: 1.0.0
-generated: "2021-08-18T17:42:53.130800803Z"
+generated: "2021-08-18T17:47:44.596383862Z"
