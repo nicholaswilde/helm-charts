@@ -1,6 +1,6 @@
 # medusa
 
-![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.5.15](https://img.shields.io/badge/AppVersion-v0.5.15-informational?style=flat-square)
+![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.5.17](https://img.shields.io/badge/AppVersion-v0.5.17-informational?style=flat-square)
 
 An automatic Video Library Manager for TV Shows
 
