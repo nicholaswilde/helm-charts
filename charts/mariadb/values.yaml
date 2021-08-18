@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/linuxserver/mariadb
   pullPolicy: IfNotPresent
-  tag: "version-110.4.20mariabionic"
+  tag: "version-110.4.21mariabionic"
 
 secret:
   MYSQL_ROOT_PASSWORD: "ROOT_ACCESS_PASSWORD"
