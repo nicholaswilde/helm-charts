@@ -4499,6 +4499,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Bump tag to version-4.10.0
+      artifacthub.io/images: |
+        - name: cryptpad
+          image: ghcr.io/nicholaswilde/cryptpad:version-4.10.0
+    apiVersion: v2
+    appVersion: 4.10.0
+    created: "2021-08-18T17:14:47.726997615Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A Zero Knowledge realtime collaborative editor.
+    digest: dfd7033f6404dbd99c066ff3d8f6d9c7a8ff065c950fa06b8df60b73d33adeb8
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/cryptpad
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/cryptpad.jpg
+    keywords:
+    - cryptpad
+    - pad
+    - text
+    - editor
+    - collaborate
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: cryptpad
+    sources:
+    - https://cryptpad.fr/
+    - https://hub.docker.com/r/nicholaswilde/cryptpad
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/cryptpad-2.3.0/cryptpad-2.3.0.tgz
+    version: 2.3.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump tag to version-4.9.0
       artifacthub.io/images: |
         - name: cryptpad
@@ -18008,4 +18043,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/writefreely-1.0.0/writefreely-1.0.0.tgz
     version: 1.0.0
-generated: "2021-08-01T05:44:24.294027724Z"
+generated: "2021-08-18T17:14:47.72918343Z"
