@@ -9,7 +9,7 @@
 image:
   repository: ghcr.io/linuxserver/beets
   pullPolicy: IfNotPresent
-  tag: "nightly-version-58cfa735"
+  tag: "version-1.5.0"
 
 # See more environment variables in the beets documentation
 # https://github.com/linuxserver/docker-beets#parameters

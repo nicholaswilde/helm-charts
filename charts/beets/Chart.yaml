@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: "58cfa735"
-version: 1.0.3
+appVersion: "1.5.0"
+version: 2.0.0
 name: beets
 description: A music library manager and not, for the most part, a music player.
 type: application
@@ -26,7 +26,9 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump tag to nightly-version-58cfa735
+      description: Bump tag to version-1.5.0
+    - kind: changed
+      description: BREAKING! Move to release version 1.5.0
   artifacthub.io/images: |
     - name: beets
-      image: ghcr.io/linuxserver/beets:nightly-version-58cfa735
+      image: ghcr.io/linuxserver/beets:version-1.5.0

@@ -35,7 +35,7 @@
                 },
                 "tag": {
                     "$id": "#/properties/image/properties/tag",
-                    "default": "nightly-version-58cfa735",
+                    "default": "version-1.5.0",
                     "description": "An explanation about the purpose of this instance.",
                     "title": "Image tag",
                     "type": "string"
