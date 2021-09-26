@@ -8193,6 +8193,45 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Bump chart to version-1.9.0
+      artifacthub.io/images: |
+        - name: hedgedoc
+          image: ghcr.io/linuxserver/hedgedoc:version-1.9.0
+    apiVersion: v2
+    appVersion: 1.9.0
+    created: "2021-09-26T06:57:56.868638511Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.5
+    description: HedgeDoc lets you create real-time collaborative markdown notes.
+    digest: e49ce037f7a198b858cbbf3b323b07127114ac56a6ffc95d42bb6b4380986ebe
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/hedgedoc
+    icon: https://avatars1.githubusercontent.com/u/67865462
+    keywords:
+    - hedgedoc
+    - hedge
+    - doc
+    - markdown
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: hedgedoc
+    sources:
+    - https://github.com/hedgedoc/hedgedoc
+    - https://hub.docker.com/r/linuxserver/hedgedoc
+    type: application
+    urls:
+    - https://github.com/nicholaswilde/helm-charts/releases/download/hedgedoc-1.1.0/hedgedoc-1.1.0.tgz
+    version: 1.1.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Change chart to version-1.8.2 in order to reduce the number of chart updates.
         - kind: changed
           description: Bump mariadb to 1.0.5
@@ -18329,4 +18368,4 @@ entries:
     urls:
     - https://github.com/nicholaswilde/helm-charts/releases/download/writefreely-1.0.0/writefreely-1.0.0.tgz
     version: 1.0.0
-generated: "2021-09-26T06:54:24.622951154Z"
+generated: "2021-09-26T06:57:56.870824935Z"
