@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: 1.8.2
-version: 1.0.1
+appVersion: 1.9.0
+version: 1.1.0
 name: hedgedoc
 description: HedgeDoc lets you create real-time collaborative markdown notes.
 type: application
@@ -30,9 +30,7 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Change chart to version-1.8.2 in order to reduce the number of chart updates.
-    - kind: changed
-      description: Bump mariadb to 1.0.5
+      description: Bump chart to version-1.9.0
   artifacthub.io/images: |
     - name: hedgedoc
-      image: ghcr.io/linuxserver/hedgedoc:version-1.8.2
+      image: ghcr.io/linuxserver/hedgedoc:version-1.9.0
