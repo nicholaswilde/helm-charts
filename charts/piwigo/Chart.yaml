@@ -28,4 +28,4 @@ annotations:
       description: Initial release.
   artifacthub.io/images: |
     - name: piwigo
-      image: ghcr.io/linuxserver/piwigo:version-11.5.0
+      image: ghcr.io/linuxserver/piwigo:version-12.2.0
