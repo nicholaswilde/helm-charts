@@ -15,15 +15,21 @@ The main container included in the controller.
   securityContext:
     {{- toYaml . | nindent 4 }}
   {{- end }}
-  {{- if or .Values.env .Values.secret }}
+  {{- if or .Values.env .Values.secret .Values.envFrom }}
   envFrom:
   {{- if .Values.env }}
     - configMapRef:
         name: {{ include "common.names.fullname" . }}
   {{- end }}
+  {{- if .Values.envFrom }}
+  {{- with .Values.envFrom }}
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+  {{- end }}
   {{- if .Values.secret }}
     - secretRef:
         name: {{ include "common.names.fullname" . }}
+  {{- end }}
   {{- end }}
   {{- end }}
   {{- include "common.controller.ports" . | trim | nindent 2 }}
