@@ -14,8 +14,6 @@ within the common library.
 {{- if hasKey $values "nameSuffix" -}}
   {{- $ingressName = printf "%v-%v" $ingressName $values.nameSuffix -}}
 {{ end -}}
-{{- $svcName := $values.serviceName | default (include "common.names.fullname" .) -}}
-{{- $svcPort := $values.servicePort | default $.Values.service.port.port -}}
 apiVersion: {{ include "common.capabilities.ingress.apiVersion" . }}
 kind: Ingress
 metadata:
@@ -47,13 +45,13 @@ spec:
             pathType: {{ .pathType }}
             backend:
               {{- if ne $version "networking.k8s.io/v1" }}
-              serviceName: {{ $svcName }}
-              servicePort: {{ $svcPort }}
+              serviceName: {{ .backend.serviceName }}
+              servicePort: {{ .backend.servicePort }}
               {{- else }}
               service:
-                name: {{ $svcName }}
+                name: {{ .backend.serviceName }}
                 port:
-                  number: {{ $svcPort }}
+                  number: {{ .backend.servicePort  }}
               {{- end }}
           {{- end }}
   {{- end }}
