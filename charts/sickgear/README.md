@@ -1,6 +1,6 @@
 # sickgear
 
-![Version: 0.2.14](https://img.shields.io/badge/Version-0.2.14-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: release_0.24.14](https://img.shields.io/badge/AppVersion-release_0.24.14-informational?style=flat-square)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: release_0.25.4](https://img.shields.io/badge/AppVersion-release_0.25.4-informational?style=flat-square)
 
 Provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more
 

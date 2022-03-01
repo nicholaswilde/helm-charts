@@ -2,7 +2,7 @@
 image:
   repository: ghcr.io/nicholaswilde/cryptpad
   pullPolicy: IfNotPresent
-  tag: "version-4.9.0"
+  tag: "version-4.10.0"
 
 env: {}
   # TZ: "America/Los_Angeles"

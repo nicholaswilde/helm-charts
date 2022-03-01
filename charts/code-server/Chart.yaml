@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
-appVersion: v3.11.0
-version: 1.1.0
+appVersion: v3.11.1
+version: 1.1.1
 name: code-server
 description: Run VS Code on any machine anywhere and access it in the browser.
 type: application
@@ -25,7 +25,7 @@ maintainers:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump tag to version-v3.11.0
+      description: Bump tag to version-v3.11.1
   artifacthub.io/images: |
     - name: code-server
-      image: ghcr.io/linuxserver/code-server:version-v3.11.0
+      image: ghcr.io/linuxserver/code-server:version-v3.11.1
