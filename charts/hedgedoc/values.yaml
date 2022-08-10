@@ -12,7 +12,7 @@ image:
   tag: "version-1.9.4"
 
 secret: {}
-  # DB_PASS: "hedgedoc-pass"
+  # CMD_DB_PASS: "hedgedoc-pass"
 
 # See more environment variables in the hedgedoc documentation
 # https://github.com/linuxserver/docker-hedgedoc#parameters
@@ -20,10 +20,10 @@ env: {}
   # TZ:
   # PUID: "1000"
   # PGID: "1000"
-  # DB_USER: "hedgedoc"
-  # DB_HOST: "mariadb"
-  # DB_NAME: "hedgedoc"
-  # DB_PORT: "3306"
+  # CMD_DB_USER: "hedgedoc"
+  # CMD_DB_HOST: "mariadb"
+  # CMD_DB_NAME: "hedgedoc"
+  # CMD_DB_PORT: "3306"
 
 service:
   port:
