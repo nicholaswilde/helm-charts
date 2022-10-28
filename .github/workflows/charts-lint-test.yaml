@@ -94,7 +94,7 @@ jobs:
         fetch-depth: 0
 
     - name: Install Helm
-      uses: azure/setup-helm@v1.1
+      uses: azure/setup-helm@v3.4
       with:
         version: v3.5.3
 
@@ -125,7 +125,7 @@ jobs:
       run: sudo apt-get update && sudo apt-get install -y jq libjq-dev
 
     - name: Install Helm
-      uses: azure/setup-helm@v1.1
+      uses: azure/setup-helm@v3.4
       with:
         version: v3.5.3
 
@@ -162,7 +162,7 @@ jobs:
         fetch-depth: 0
 
     - name: Install Helm
-      uses: azure/setup-helm@v1.1
+      uses: azure/setup-helm@v3.4
       with:
         version: v3.5.3
 
