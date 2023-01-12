@@ -71,6 +71,9 @@ podAnnotations: {}
   ## useful if you enable diun.watch_repo
   # exclude_tags: ""
 
+# Set labels on the pod
+podLabels: {}
+
 serviceAccount:
   # Specifies whether a service account should be created
   create: false
