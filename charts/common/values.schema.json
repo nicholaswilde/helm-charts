@@ -121,6 +121,13 @@
             "title": "Pod annotations",
             "type": "object"
         },
+        "podLabels": {
+            "$id": "#/properties/podLabels",
+            "default": {},
+            "description": "An explanation about the purpose of this instance.",
+            "title": "Pod labels",
+            "type": "object"
+        },
         "serviceAccount": {
             "$id": "#/properties/serviceAccount",
             "description": "An explanation about the purpose of this instance.",
